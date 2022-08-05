@@ -49,27 +49,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>windows切换版本</title>
-    <url>/2022/08/05/windows%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</url>
-    <content><![CDATA[<hr>
-<p>本文提供win10&#x2F;win11系统切换专业工作站版本的方法以及windows个版本激活系统的工具</p>
-<span id="more"></span>
-
-<h1 id="一、切换版本"><a href="#一、切换版本" class="headerlink" title="一、切换版本"></a>一、切换版本</h1><p>首先使用管理员权限打开cmd命令提示符<br>以win10为例，可以通过按<code>win+s</code>打开搜索窗口，输入cmd，点击以管理员权限打开<br><img src="https://img-blog.csdnimg.cn/5527c6376adf491eae98a3de54dd1f1f.png" alt="在这里插入图片描述"><br>在cmd窗口中依次输入以下命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">slmgr /ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J</span><br><span class="line"></span><br><span class="line">slmgr /skms zh.us.to</span><br><span class="line"></span><br><span class="line">slmgr /ato</span><br><span class="line"></span><br><span class="line">slmgr /xpr</span><br></pre></td></tr></table></figure>
-
-<p>每次输入一行命令后等待几秒，弹窗提示不用管<br>打开系统设置-&gt;关于，看到版本已经切换为专业工作站版<br><img src="https://img-blog.csdnimg.cn/0097ef281a144260a0efbe0eef9adfe7.png" alt="在这里插入图片描述"></p>
-<h1 id="二、激活系统"><a href="#二、激活系统" class="headerlink" title="二、激活系统"></a>二、激活系统</h1><p>如果提示系统未激活，可以使用HEUKMS等软件进行激活，这里推荐一个好用的软件<code>HWIDGen</code><br>激活时选择数字激活，切记运行前关闭所有安全软件<br><img src="https://img-blog.csdnimg.cn/aa2c779e14034710956c7f9e4837b0ac.png" alt="在这里插入图片描述"><br>如遇激活失败，尝试切换KMS38激活</p>
-<p>激活完成，本文到此结束<br>附上激活软件下载链接：<a href="https://wwd.lanzouw.com/iVS5n08xwd0h">蓝奏云</a> 密码：2g5i</p>
-]]></content>
-      <categories>
-        <category>系统相关</category>
-      </categories>
-      <tags>
-        <tag>windows激活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>宝塔面板Aria2配置</title>
     <url>/2022/08/05/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BFAria2%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<hr>
@@ -136,6 +115,27 @@
       </categories>
       <tags>
         <tag>aria2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows切换版本</title>
+    <url>/2022/08/05/windows%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</url>
+    <content><![CDATA[<hr>
+<p>本文提供win10&#x2F;win11系统切换专业工作站版本的方法以及windows个版本激活系统的工具</p>
+<span id="more"></span>
+
+<h1 id="一、切换版本"><a href="#一、切换版本" class="headerlink" title="一、切换版本"></a>一、切换版本</h1><p>首先使用管理员权限打开cmd命令提示符<br>以win10为例，可以通过按<code>win+s</code>打开搜索窗口，输入cmd，点击以管理员权限打开<br><img src="https://img-blog.csdnimg.cn/5527c6376adf491eae98a3de54dd1f1f.png" alt="在这里插入图片描述"><br>在cmd窗口中依次输入以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">slmgr /ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J</span><br><span class="line"></span><br><span class="line">slmgr /skms zh.us.to</span><br><span class="line"></span><br><span class="line">slmgr /ato</span><br><span class="line"></span><br><span class="line">slmgr /xpr</span><br></pre></td></tr></table></figure>
+
+<p>每次输入一行命令后等待几秒，弹窗提示不用管<br>打开系统设置-&gt;关于，看到版本已经切换为专业工作站版<br><img src="https://img-blog.csdnimg.cn/0097ef281a144260a0efbe0eef9adfe7.png" alt="在这里插入图片描述"></p>
+<h1 id="二、激活系统"><a href="#二、激活系统" class="headerlink" title="二、激活系统"></a>二、激活系统</h1><p>如果提示系统未激活，可以使用HEUKMS等软件进行激活，这里推荐一个好用的软件<code>HWIDGen</code><br>激活时选择数字激活，切记运行前关闭所有安全软件<br><img src="https://img-blog.csdnimg.cn/aa2c779e14034710956c7f9e4837b0ac.png" alt="在这里插入图片描述"><br>如遇激活失败，尝试切换KMS38激活</p>
+<p>激活完成，本文到此结束<br>附上激活软件下载链接：<a href="https://wwd.lanzouw.com/iVS5n08xwd0h">蓝奏云</a> 密码：2g5i</p>
+]]></content>
+      <categories>
+        <category>系统相关</category>
+      </categories>
+      <tags>
+        <tag>windows激活</tag>
       </tags>
   </entry>
 </search>
