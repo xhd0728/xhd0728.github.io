@@ -20,27 +20,35 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"xhd0728.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.3","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+    <meta name="description" content="本文主要记录通过frp映射跳过国内网站备案认证的方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://xhd0728.github.io/2022/08/05/hello-world/index.html">
+<meta property="og:title" content="frp免备案创建网站域名映射">
+<meta property="og:url" content="https://xhd0728.github.io/2022/08/05/frp%E5%85%8D%E5%A4%87%E6%A1%88%E5%88%9B%E5%BB%BA%E7%BD%91%E7%AB%99%E5%9F%9F%E5%90%8D%E6%98%A0%E5%B0%84/index.html">
 <meta property="og:site_name" content="KOKOMI_BLOG">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.">
+<meta property="og:description" content="本文主要记录通过frp映射跳过国内网站备案认证的方法">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-08-05T09:25:56.470Z">
-<meta property="article:modified_time" content="2022-08-05T10:34:22.000Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/63f2eb757c5746c2a47d9a425cb34a9f.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/42fd9c511f794897b7480c3593208a01.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7836eb9823224b3eb676521701b874a7.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/3e570f7c5e234d2586c2b3d285c5fc9d.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/4c27f663e46d4a4ab52730def9a8d823.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/548f6bc5bda24c1fb2351b739439970c.png">
+<meta property="article:published_time" content="2022-08-05T14:02:59.000Z">
+<meta property="article:modified_time" content="2022-08-05T14:04:28.000Z">
 <meta property="article:author" content="xhd0728">
+<meta property="article:tag" content="frp内网穿透">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/63f2eb757c5746c2a47d9a425cb34a9f.png">
 
 
-<link rel="canonical" href="https://xhd0728.github.io/2022/08/05/hello-world/">
+<link rel="canonical" href="https://xhd0728.github.io/2022/08/05/frp%E5%85%8D%E5%A4%87%E6%A1%88%E5%88%9B%E5%BB%BA%E7%BD%91%E7%AB%99%E5%9F%9F%E5%90%8D%E6%98%A0%E5%B0%84/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://xhd0728.github.io/2022/08/05/hello-world/","path":"2022/08/05/hello-world/","title":"Hello World"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://xhd0728.github.io/2022/08/05/frp%E5%85%8D%E5%A4%87%E6%A1%88%E5%88%9B%E5%BB%BA%E7%BD%91%E7%AB%99%E5%9F%9F%E5%90%8D%E6%98%A0%E5%B0%84/","path":"2022/08/05/frp免备案创建网站域名映射/","title":"frp免备案创建网站域名映射"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hello World | KOKOMI_BLOG</title>
+<title>frp免备案创建网站域名映射 | KOKOMI_BLOG</title>
   
 
   <script src="/js/third-party/analytics/baidu-analytics.js"></script>
@@ -145,7 +153,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%A4%87%E4%BB%BD%E7%AB%99%E7%82%B9"><span class="nav-number">1.</span> <span class="nav-text">一、备份站点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%88%9B%E5%BB%BAfrp%E6%98%A0%E5%B0%84"><span class="nav-number">2.</span> <span class="nav-text">二、创建frp映射</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BAfrp%E9%9A%A7%E9%81%93"><span class="nav-number">2.1.</span> <span class="nav-text">1.创建frp隧道</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E8%8E%B7%E5%8F%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">2.2.</span> <span class="nav-text">2.获取配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90"><span class="nav-number">2.3.</span> <span class="nav-text">3.配置域名解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E9%85%8D%E7%BD%AEfrpc%E4%B8%BB%E7%A8%8B%E5%BA%8F"><span class="nav-number">2.4.</span> <span class="nav-text">4.配置frpc主程序</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -244,7 +252,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xhd0728.github.io/2022/08/05/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://xhd0728.github.io/2022/08/05/frp%E5%85%8D%E5%A4%87%E6%A1%88%E5%88%9B%E5%BB%BA%E7%BD%91%E7%AB%99%E5%9F%9F%E5%90%8D%E6%98%A0%E5%B0%84/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/pm.png">
@@ -257,12 +265,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hello World | KOKOMI_BLOG">
+      <meta itemprop="name" content="frp免备案创建网站域名映射 | KOKOMI_BLOG">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          frp免备案创建网站域名映射
         </h1>
 
         <div class="post-meta-container">
@@ -274,7 +282,16 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-08-05 17:25:56 / 修改时间：18:34:22" itemprop="dateCreated datePublished" datetime="2022-08-05T17:25:56+08:00">2022-08-05</time>
+      <time title="创建时间：2022-08-05 22:02:59 / 修改时间：22:04:28" itemprop="dateCreated datePublished" datetime="2022-08-05T22:02:59+08:00">2022-08-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">网站相关</span></a>
+        </span>
     </span>
 
   
@@ -287,21 +304,23 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+        <hr>
+<p>本文主要记录通过frp映射跳过国内网站备案认证的方法</p>
 <span id="more"></span>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h1 id="一、备份站点"><a href="#一、备份站点" class="headerlink" title="一、备份站点"></a>一、备份站点</h1><p>以Linux宝塔面板为例，我们将原站点复制一份，并将端口修改为除80、443以外的其他端口，因为国内的云服务平台会监测80和443端口，如图所示：<br><img src="https://img-blog.csdnimg.cn/63f2eb757c5746c2a47d9a425cb34a9f.png" alt="在这里插入图片描述"></p>
+<blockquote>
+<p>提示：在新建网站时，如果只希望用服务器ip的不同端口创建网站，可以在添加域名时第一行随便写个域名，第二行写上服务器的ip地址，并在后面加上:端口号，例如：</p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yuming.com:81</span><br><span class="line">xx.xx.xx.xx:81</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>这样，复制的新网站就创建好了，访问<code>xx.xx.xx.xx:81</code>即可访问到原来的网站</p>
+<h1 id="二、创建frp映射"><a href="#二、创建frp映射" class="headerlink" title="二、创建frp映射"></a>二、创建frp映射</h1><h2 id="1-创建frp隧道"><a href="#1-创建frp隧道" class="headerlink" title="1.创建frp隧道"></a>1.创建frp隧道</h2><p>这里推荐一个免费的frp映射网站：<a target="_blank" rel="noopener" href="https://frp.liuliwanjia.com/?page=login">liulifrp</a><br>注册新账号并登录，选择左侧新建隧道<br><img src="https://img-blog.csdnimg.cn/42fd9c511f794897b7480c3593208a01.png" alt="在这里插入图片描述"><br>填写名称，选择HTTP协议，填写域名和端口号，最后点击完成创建<br><img src="https://img-blog.csdnimg.cn/7836eb9823224b3eb676521701b874a7.png" alt="在这里插入图片描述"></p>
+<h2 id="2-获取配置文件"><a href="#2-获取配置文件" class="headerlink" title="2.获取配置文件"></a>2.获取配置文件</h2><p>点击左侧的配置文件，将框内的所有文本复制备份，这就是frp程序的配置文件<br><img src="https://img-blog.csdnimg.cn/3e570f7c5e234d2586c2b3d285c5fc9d.png" alt="在这里插入图片描述"><br>此外，记住server_addr的值，这个ip地址在后面域名解析的时候会用到</p>
+<h2 id="3-配置域名解析"><a href="#3-配置域名解析" class="headerlink" title="3.配置域名解析"></a>3.配置域名解析</h2><p>这里以阿里云申请的域名为例，登录阿里云平台搜索域名配置，点击解析<br><img src="https://img-blog.csdnimg.cn/4c27f663e46d4a4ab52730def9a8d823.png" alt="在这里插入图片描述"><br>按照下图方式，修改或重新添加解析记录，记录值即为刚才配置文件中的server_addr的IP地址<br><img src="https://img-blog.csdnimg.cn/548f6bc5bda24c1fb2351b739439970c.png" alt="在这里插入图片描述"></p>
+<h2 id="4-配置frpc主程序"><a href="#4-配置frpc主程序" class="headerlink" title="4.配置frpc主程序"></a>4.配置frpc主程序</h2><p>相关程序可以在<a target="_blank" rel="noopener" href="https://frp.liuliwanjia.com/?page=login">liulifrp</a>面板左侧的程序下载中下载对应的程序，将第二步复制的配置文件替换frpc.ini文件中，运行即可<br>相关教程可以在 <a target="_blank" rel="noopener" href="https://frpblog.liuliwanjia.com/index.php/category/liulifrp/">链接</a> 中找到</p>
+<hr>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上为作者总结的国内主机frp免备案教程，如有问题欢迎在评论区留言<br>有时间可以来博主的小站留个言： <a target="_blank" rel="noopener" href="http://kokomi0728.top/">KOKOMI_DISCUZ</a></p>
 
     </div>
 
@@ -328,15 +347,21 @@
   </div>
 </div>
 
+          <div class="post-tags">
+              <a href="/tags/frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" rel="tag"># frp内网穿透</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2022/08/05/windows%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/" rel="prev" title="windows切换版本">
+                  <i class="fa fa-chevron-left"></i> windows切换版本
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/08/05/windows%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/" rel="next" title="windows切换版本">
-                  windows切换版本 <i class="fa fa-chevron-right"></i>
+                <a href="/2022/08/05/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BFAria2%E9%85%8D%E7%BD%AE/" rel="next" title="宝塔面板Aria2配置">
+                  宝塔面板Aria2配置 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
