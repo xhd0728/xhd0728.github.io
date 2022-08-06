@@ -29,27 +29,6 @@
       </tags>
   </entry>
   <entry>
-    <title>windows切换版本</title>
-    <url>/2022/08/05/windows%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</url>
-    <content><![CDATA[<hr>
-<p>本文提供win10&#x2F;win11系统切换专业工作站版本的方法以及windows个版本激活系统的工具</p>
-<span id="more"></span>
-
-<h1 id="一、切换版本"><a href="#一、切换版本" class="headerlink" title="一、切换版本"></a>一、切换版本</h1><p>首先使用管理员权限打开cmd命令提示符<br>以win10为例，可以通过按<code>win+s</code>打开搜索窗口，输入cmd，点击以管理员权限打开<br><img src="https://img-blog.csdnimg.cn/5527c6376adf491eae98a3de54dd1f1f.png" alt="在这里插入图片描述"><br>在cmd窗口中依次输入以下命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">slmgr /ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J</span><br><span class="line"></span><br><span class="line">slmgr /skms zh.us.to</span><br><span class="line"></span><br><span class="line">slmgr /ato</span><br><span class="line"></span><br><span class="line">slmgr /xpr</span><br></pre></td></tr></table></figure>
-
-<p>每次输入一行命令后等待几秒，弹窗提示不用管<br>打开系统设置-&gt;关于，看到版本已经切换为专业工作站版<br><img src="https://img-blog.csdnimg.cn/0097ef281a144260a0efbe0eef9adfe7.png" alt="在这里插入图片描述"></p>
-<h1 id="二、激活系统"><a href="#二、激活系统" class="headerlink" title="二、激活系统"></a>二、激活系统</h1><p>如果提示系统未激活，可以使用HEUKMS等软件进行激活，这里推荐一个好用的软件<code>HWIDGen</code><br>激活时选择数字激活，切记运行前关闭所有安全软件<br><img src="https://img-blog.csdnimg.cn/aa2c779e14034710956c7f9e4837b0ac.png" alt="在这里插入图片描述"><br>如遇激活失败，尝试切换KMS38激活</p>
-<p>激活完成，本文到此结束<br>附上激活软件下载链接：<a href="https://wwd.lanzouw.com/iVS5n08xwd0h">蓝奏云</a> 密码：2g5i</p>
-]]></content>
-      <categories>
-        <category>系统相关</category>
-      </categories>
-      <tags>
-        <tag>windows激活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/08/05/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -70,25 +49,24 @@
 ]]></content>
   </entry>
   <entry>
-    <title>常用软件</title>
-    <url>/2022/08/06/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</url>
-    <content><![CDATA[<p>本文主要介绍计算机科学与技术专业常用软件，包含作者推荐的好用软件，避免走弯路</p>
+    <title>windows切换版本</title>
+    <url>/2022/08/05/windows%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</url>
+    <content><![CDATA[<hr>
+<p>本文提供win10&#x2F;win11系统切换专业工作站版本的方法以及windows个版本激活系统的工具</p>
 <span id="more"></span>
-<h1 id="一、系统软件"><a href="#一、系统软件" class="headerlink" title="一、系统软件"></a>一、系统软件</h1><h2 id="1-压缩软件"><a href="#1-压缩软件" class="headerlink" title="1. 压缩软件"></a>1. 压缩软件</h2><h3 id="1-1-bandizip"><a href="#1-1-bandizip" class="headerlink" title="1.1 bandizip"></a>1.1 bandizip</h3><p>bandizip是作者正在使用的软件，UI界面和解压缩速度都和优秀，支持大部分常见格式，支持预览压缩包内容，支持像压缩包添加和删除文件</p>
-<h3 id="1-2-7-zip"><a href="#1-2-7-zip" class="headerlink" title="1.2 7-zip"></a>1.2 7-zip</h3><p>7-zip是一款比较轻量级的解压缩软件，同样支持大部分常见格式，速度快，安装时间极短，无广告，缺点是UI界面略丑</p>
-<h2 id="2-安全软件"><a href="#2-安全软件" class="headerlink" title="2. 安全软件"></a>2. 安全软件</h2><h3 id="2-1-写在前面"><a href="#2-1-写在前面" class="headerlink" title="2.1 写在前面"></a>2.1 写在前面</h3><p>作者并不推荐在windows电脑上安装所谓的安全卫士等软件，这些软件会占用电脑的内存，影响电脑的使用速度。然而，如果你是小白用户，这些安全软件会有很大帮助，包括但不限于清理垃圾，修复网络，扫描病毒等等。下面写一些常用安全软件的注意事项</p>
-<h3 id="2-2-联想电脑管家"><a href="#2-2-联想电脑管家" class="headerlink" title="2.2 联想电脑管家"></a>2.2 联想电脑管家</h3><p>如果你使用的是联想电脑，可以尝试使用联想电脑管家，能够比较清晰的看到电脑的保修日期等信息。旧的联想电脑可以使用联想电脑管家的安装驱动功能，切记不要使用官网推荐的联想驱动管家，会出问题。使用时注意打开设置选项，将自动更新和个性化等功能关闭。<br>此外，电脑的锁屏壁纸默认被联想电脑管家接管，可以在设置中进行关闭。</p>
-<h3 id="2-3-360安全卫士"><a href="#2-3-360安全卫士" class="headerlink" title="2.3 360安全卫士"></a>2.3 360安全卫士</h3><p>360并不是所谓的流氓软件，因为他提供了强大的杀毒功能和系统修复功能，高中时教室的电脑插U盘总会中毒，只有360可以恢复被病毒隐藏的文件（其他方法较麻烦，对小白不推荐），自带的网络急救箱也十分好用。记得使用时将设置中的自动更新和个性化推荐关闭。</p>
-<h3 id="2-4-火绒安全"><a href="#2-4-火绒安全" class="headerlink" title="2.4 火绒安全"></a>2.4 火绒安全</h3><p>火绒是近两年比较热门的轻量级杀毒软件，但实际上杀毒能力较弱，各方面不敌360，但是占用内存较小，强迫症同学可安装</p>
-<h3 id="2-5-写在后面"><a href="#2-5-写在后面" class="headerlink" title="2.5 写在后面"></a>2.5 写在后面</h3><p>正常的电脑不会有广告弹窗，而且通过安全软件的方式拦截弹窗本就是下下策。如果遇到弹窗软件，肯定能够在相关软件的设置中关闭弹窗。<br>请大家尽量在软件对应的官网下载软件，而且安装软件的时候要注意有没有勾选捆绑安装。如果你是破解软件的爱好者，或者经常下载破解游戏或者作弊器，那么还是建议安装一个安全软件，可以帮助你及时发现捆绑软件的安装。</p>
-<h1 id="二、办公软件"><a href="#二、办公软件" class="headerlink" title="二、办公软件"></a>二、办公软件</h1><h2 id="1-文档类"><a href="#1-文档类" class="headerlink" title="1. 文档类"></a>1. 文档类</h2><h3 id="1-1-Microsoft-Office"><a href="#1-1-Microsoft-Office" class="headerlink" title="1.1 Microsoft Office"></a>1.1 Microsoft Office</h3><p>简称MSOffice，是微软家的办公套件，作者正在使用的软件。如果你是windows系统，那么极其推荐使用MSOffice。常见的核心套件为Word，Excel和PowerPoint，拥有强大的功能和优异的性能。除此以外，还会用到一些其他软件，如Visio（流程图），Project（工程项目管理）等。<br>现在购买新电脑一般会送windows家庭版激活和Office家庭版的激活，记住在windows激活的一天内一定要激活Office，不然免费的正版激活就无了。如果你想安装免费专业版的Office，可以使用Office Tools软件，能够一键部署和激活Office套件，作者正在用2019专业版的Office套件</p>
-<h3 id="1-2-WPS-Office"><a href="#1-2-WPS-Office" class="headerlink" title="1.2 WPS Office"></a>1.2 WPS Office</h3><p>金山文档出版的Office办公套件，对新手小白友好，有很多模板提供选择，但大部分收费。性能较MSOffice稍弱，并</p>
+
+<h1 id="一、切换版本"><a href="#一、切换版本" class="headerlink" title="一、切换版本"></a>一、切换版本</h1><p>首先使用管理员权限打开cmd命令提示符<br>以win10为例，可以通过按<code>win+s</code>打开搜索窗口，输入cmd，点击以管理员权限打开<br><img src="https://img-blog.csdnimg.cn/5527c6376adf491eae98a3de54dd1f1f.png" alt="在这里插入图片描述"><br>在cmd窗口中依次输入以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">slmgr /ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J</span><br><span class="line"></span><br><span class="line">slmgr /skms zh.us.to</span><br><span class="line"></span><br><span class="line">slmgr /ato</span><br><span class="line"></span><br><span class="line">slmgr /xpr</span><br></pre></td></tr></table></figure>
+
+<p>每次输入一行命令后等待几秒，弹窗提示不用管<br>打开系统设置-&gt;关于，看到版本已经切换为专业工作站版<br><img src="https://img-blog.csdnimg.cn/0097ef281a144260a0efbe0eef9adfe7.png" alt="在这里插入图片描述"></p>
+<h1 id="二、激活系统"><a href="#二、激活系统" class="headerlink" title="二、激活系统"></a>二、激活系统</h1><p>如果提示系统未激活，可以使用HEUKMS等软件进行激活，这里推荐一个好用的软件<code>HWIDGen</code><br>激活时选择数字激活，切记运行前关闭所有安全软件<br><img src="https://img-blog.csdnimg.cn/aa2c779e14034710956c7f9e4837b0ac.png" alt="在这里插入图片描述"><br>如遇激活失败，尝试切换KMS38激活</p>
+<p>激活完成，本文到此结束<br>附上激活软件下载链接：<a href="https://wwd.lanzouw.com/iVS5n08xwd0h">蓝奏云</a> 密码：2g5i</p>
 ]]></content>
       <categories>
-        <category>软件相关</category>
+        <category>系统相关</category>
       </categories>
       <tags>
-        <tag>软件</tag>
+        <tag>windows激活</tag>
       </tags>
   </entry>
   <entry>
@@ -158,6 +136,28 @@
       </categories>
       <tags>
         <tag>aria2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用软件</title>
+    <url>/2022/08/06/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<p>本文主要介绍计算机科学与技术专业常用软件，包含作者推荐的好用软件，避免走弯路</p>
+<span id="more"></span>
+<h1 id="一、系统软件"><a href="#一、系统软件" class="headerlink" title="一、系统软件"></a>一、系统软件</h1><h2 id="1-压缩软件"><a href="#1-压缩软件" class="headerlink" title="1. 压缩软件"></a>1. 压缩软件</h2><h3 id="1-1-bandizip"><a href="#1-1-bandizip" class="headerlink" title="1.1 bandizip"></a>1.1 bandizip</h3><p>bandizip是作者正在使用的软件，UI界面和解压缩速度都和优秀，支持大部分常见格式，支持预览压缩包内容，支持像压缩包添加和删除文件</p>
+<h3 id="1-2-7-zip"><a href="#1-2-7-zip" class="headerlink" title="1.2 7-zip"></a>1.2 7-zip</h3><p>7-zip是一款比较轻量级的解压缩软件，同样支持大部分常见格式，速度快，安装时间极短，无广告，缺点是UI界面略丑</p>
+<h2 id="2-安全软件"><a href="#2-安全软件" class="headerlink" title="2. 安全软件"></a>2. 安全软件</h2><h3 id="2-1-写在前面"><a href="#2-1-写在前面" class="headerlink" title="2.1 写在前面"></a>2.1 写在前面</h3><p>作者并不推荐在windows电脑上安装所谓的安全卫士等软件，这些软件会占用电脑的内存，影响电脑的使用速度。然而，如果你是小白用户，这些安全软件会有很大帮助，包括但不限于清理垃圾，修复网络，扫描病毒等等。下面写一些常用安全软件的注意事项</p>
+<h3 id="2-2-联想电脑管家"><a href="#2-2-联想电脑管家" class="headerlink" title="2.2 联想电脑管家"></a>2.2 联想电脑管家</h3><p>如果你使用的是联想电脑，可以尝试使用联想电脑管家，能够比较清晰的看到电脑的保修日期等信息。旧的联想电脑可以使用联想电脑管家的安装驱动功能，切记不要使用官网推荐的联想驱动管家，会出问题。使用时注意打开设置选项，将自动更新和个性化等功能关闭。<br>此外，电脑的锁屏壁纸默认被联想电脑管家接管，可以在设置中进行关闭。</p>
+<h3 id="2-3-360安全卫士"><a href="#2-3-360安全卫士" class="headerlink" title="2.3 360安全卫士"></a>2.3 360安全卫士</h3><p>360并不是所谓的流氓软件，因为他提供了强大的杀毒功能和系统修复功能，高中时教室的电脑插U盘总会中毒，只有360可以恢复被病毒隐藏的文件（其他方法较麻烦，对小白不推荐），自带的网络急救箱也十分好用。记得使用时将设置中的自动更新和个性化推荐关闭。</p>
+<h3 id="2-4-火绒安全"><a href="#2-4-火绒安全" class="headerlink" title="2.4 火绒安全"></a>2.4 火绒安全</h3><p>火绒是近两年比较热门的轻量级杀毒软件，但实际上杀毒能力较弱，各方面不敌360，但是占用内存较小，强迫症同学可安装</p>
+<h3 id="2-5-写在后面"><a href="#2-5-写在后面" class="headerlink" title="2.5 写在后面"></a>2.5 写在后面</h3><p>正常的电脑不会有广告弹窗，而且通过安全软件的方式拦截弹窗本就是下下策。如果遇到弹窗软件，肯定能够在相关软件的设置中关闭弹窗。<br>请大家尽量在软件对应的官网下载软件，而且安装软件的时候要注意有没有勾选捆绑安装。如果你是破解软件的爱好者，或者经常下载破解游戏或者作弊器，那么还是建议安装一个安全软件，可以帮助你及时发现捆绑软件的安装。</p>
+<h1 id="二、办公软件"><a href="#二、办公软件" class="headerlink" title="二、办公软件"></a>二、办公软件</h1><h2 id="1-文档类"><a href="#1-文档类" class="headerlink" title="1. 文档类"></a>1. 文档类</h2><h3 id="1-1-Microsoft-Office"><a href="#1-1-Microsoft-Office" class="headerlink" title="1.1 Microsoft Office"></a>1.1 Microsoft Office</h3><p>简称MSOffice，是微软家的办公套件，作者正在使用的软件。如果你是windows系统，那么极其推荐使用MSOffice。常见的核心套件为Word，Excel和PowerPoint，拥有强大的功能和优异的性能。除此以外，还会用到一些其他软件，如Visio（流程图），Project（工程项目管理）等。<br>现在购买新电脑一般会送windows家庭版激活和Office家庭版的激活，记住在windows激活的一天内一定要激活Office，不然免费的正版激活就无了。如果你想安装免费专业版的Office，可以使用Office Tools软件，能够一键部署和激活Office套件，作者正在用2019专业版的Office套件</p>
+<h3 id="1-2-WPS-Office"><a href="#1-2-WPS-Office" class="headerlink" title="1.2 WPS Office"></a>1.2 WPS Office</h3><p>金山文档出版的Office办公套件，对新手小白友好，有很多模板提供选择，但大部分收费。性能较MSOffice稍弱，并</p>
+]]></content>
+      <categories>
+        <category>软件相关</category>
+      </categories>
+      <tags>
+        <tag>软件</tag>
       </tags>
   </entry>
 </search>
