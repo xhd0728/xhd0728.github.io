@@ -29,27 +29,6 @@
       </tags>
   </entry>
   <entry>
-    <title>windows切换版本</title>
-    <url>/2022/08/05/windows%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</url>
-    <content><![CDATA[<hr>
-<p>本文提供win10&#x2F;win11系统切换专业工作站版本的方法以及windows个版本激活系统的工具</p>
-<span id="more"></span>
-
-<h1 id="一、切换版本"><a href="#一、切换版本" class="headerlink" title="一、切换版本"></a>一、切换版本</h1><p>首先使用管理员权限打开cmd命令提示符<br>以win10为例，可以通过按<code>win+s</code>打开搜索窗口，输入cmd，点击以管理员权限打开<br><img src="https://img-blog.csdnimg.cn/5527c6376adf491eae98a3de54dd1f1f.png" alt="在这里插入图片描述"><br>在cmd窗口中依次输入以下命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">slmgr /ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J</span><br><span class="line"></span><br><span class="line">slmgr /skms zh.us.to</span><br><span class="line"></span><br><span class="line">slmgr /ato</span><br><span class="line"></span><br><span class="line">slmgr /xpr</span><br></pre></td></tr></table></figure>
-
-<p>每次输入一行命令后等待几秒，弹窗提示不用管<br>打开系统设置-&gt;关于，看到版本已经切换为专业工作站版<br><img src="https://img-blog.csdnimg.cn/0097ef281a144260a0efbe0eef9adfe7.png" alt="在这里插入图片描述"></p>
-<h1 id="二、激活系统"><a href="#二、激活系统" class="headerlink" title="二、激活系统"></a>二、激活系统</h1><p>如果提示系统未激活，可以使用HEUKMS等软件进行激活，这里推荐一个好用的软件<code>HWIDGen</code><br>激活时选择数字激活，切记运行前关闭所有安全软件<br><img src="https://img-blog.csdnimg.cn/aa2c779e14034710956c7f9e4837b0ac.png" alt="在这里插入图片描述"><br>如遇激活失败，尝试切换KMS38激活</p>
-<p>激活完成，本文到此结束<br>附上激活软件下载链接：<a href="https://wwd.lanzouw.com/iVS5n08xwd0h">蓝奏云</a> 密码：2g5i</p>
-]]></content>
-      <categories>
-        <category>系统相关</category>
-      </categories>
-      <tags>
-        <tag>windows激活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2022/08/05/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -139,26 +118,24 @@
       </tags>
   </entry>
   <entry>
-    <title>查看小分</title>
-    <url>/2022/08/06/%E6%9F%A5%E7%9C%8B%E5%B0%8F%E5%88%86/</url>
+    <title>windows切换版本</title>
+    <url>/2022/08/05/windows%E5%88%87%E6%8D%A2%E7%89%88%E6%9C%AC/</url>
     <content><![CDATA[<hr>
-<p>本文主要讲述哈工程查询成绩小分的方法</p>
+<p>本文提供win10&#x2F;win11系统切换专业工作站版本的方法以及windows个版本激活系统的工具</p>
 <span id="more"></span>
 
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>目前win10和win11已经成为主流，然而随着我们使用习惯的改变，我们逐渐使用第三方浏览器甚至是系统自带的Edge浏览器，但是哈尔滨工程大学的成绩查询网站建设较早，当使用IE浏览器是才能查看小分，即各部分平时成绩等，而edge等浏览器点击按钮无反应，本文主要讲述解决此问题的方法</p>
-<hr>
-<h1 id="一、直接使用IE浏览器"><a href="#一、直接使用IE浏览器" class="headerlink" title="一、直接使用IE浏览器"></a>一、直接使用IE浏览器</h1><p>win10及以下版本的系统，可以直接使用系统自带的IE浏览器，即可完美解决问题</p>
-<hr>
-<h1 id="二、安装浏览器插件"><a href="#二、安装浏览器插件" class="headerlink" title="二、安装浏览器插件"></a>二、安装浏览器插件</h1><p>该方法Edge浏览器和Chrome浏览器通用。首先我们打开Edge浏览器，点击右上角三个点，选择扩展<br><img src="https://img-blog.csdnimg.cn/8d4f1d09619a43c69cd550bfa8d76c3f.png" alt="在这里插入图片描述"><br>选择管理扩展，然后点击获取Microsoft Edge扩展<br><img src="https://img-blog.csdnimg.cn/32002f99711448448bfdf57fabee576f.png" alt="在这里插入图片描述"><br>在扩展商店页面输入Heuer并搜索<br><img src="https://img-blog.csdnimg.cn/48c34dd0c2274ea6ad63762c6746d333.png" alt="在这里插入图片描述"><br>点击获取，安装插件<br>进入学生个人中心 <a href="https://edusys.wvpn.hrbeu.edu.cn/jsxsd/framework/xsMain.jsp">传送门</a><br>直接进入成绩查询页面，点击分数<br><img src="https://img-blog.csdnimg.cn/5cbc0666422e41c997b238549847dd3b.png" alt="在这里插入图片描述"><br>弹出窗口，显示小分<br><img src="https://img-blog.csdnimg.cn/20efde9d777d4a92805c8bc4301e9355.png" alt="在这里插入图片描述"></p>
-<h1 id="三、利用F12开发者工具"><a href="#三、利用F12开发者工具" class="headerlink" title="三、利用F12开发者工具"></a>三、利用F12开发者工具</h1><p>在成绩页面按下F12，打开开发者工具<br>点击选择元素，然后点击你的成绩<br><img src="https://img-blog.csdnimg.cn/3c2f014dd4c4476dba04f25a7adb381d.png" alt="在这里插入图片描述"><br>注意到右面红框的位置，右键点击选择编辑属性，复制两个单引号之间的部分<br><img src="https://img-blog.csdnimg.cn/bf19bc474ae747c680480521d0a5f77e.png" alt="在这里插入图片描述"><br>在浏览器地址栏粘贴复制的内容，并删除我选中的部分<br><img src="https://img-blog.csdnimg.cn/d565c93d0b0f48ff817cc4ef8a7ddb82.png" alt="在这里插入图片描述"><br>回车访问，即可看到小分<br><img src="https://img-blog.csdnimg.cn/7f3656e04a7f4485ba7d29ce0561a051.png" alt="在这里插入图片描述"></p>
-<hr>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上为作者总结的三种查看哈工程小分的方法</p>
+<h1 id="一、切换版本"><a href="#一、切换版本" class="headerlink" title="一、切换版本"></a>一、切换版本</h1><p>首先使用管理员权限打开cmd命令提示符<br>以win10为例，可以通过按<code>win+s</code>打开搜索窗口，输入cmd，点击以管理员权限打开<br><img src="https://img-blog.csdnimg.cn/5527c6376adf491eae98a3de54dd1f1f.png" alt="在这里插入图片描述"><br>在cmd窗口中依次输入以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">slmgr /ipk NRG8B-VKK3Q-CXVCJ-9G2XF-6Q84J</span><br><span class="line"></span><br><span class="line">slmgr /skms zh.us.to</span><br><span class="line"></span><br><span class="line">slmgr /ato</span><br><span class="line"></span><br><span class="line">slmgr /xpr</span><br></pre></td></tr></table></figure>
+
+<p>每次输入一行命令后等待几秒，弹窗提示不用管<br>打开系统设置-&gt;关于，看到版本已经切换为专业工作站版<br><img src="https://img-blog.csdnimg.cn/0097ef281a144260a0efbe0eef9adfe7.png" alt="在这里插入图片描述"></p>
+<h1 id="二、激活系统"><a href="#二、激活系统" class="headerlink" title="二、激活系统"></a>二、激活系统</h1><p>如果提示系统未激活，可以使用HEUKMS等软件进行激活，这里推荐一个好用的软件<code>HWIDGen</code><br>激活时选择数字激活，切记运行前关闭所有安全软件<br><img src="https://img-blog.csdnimg.cn/aa2c779e14034710956c7f9e4837b0ac.png" alt="在这里插入图片描述"><br>如遇激活失败，尝试切换KMS38激活</p>
+<p>激活完成，本文到此结束<br>附上激活软件下载链接：<a href="https://wwd.lanzouw.com/iVS5n08xwd0h">蓝奏云</a> 密码：2g5i</p>
 ]]></content>
       <categories>
-        <category>学校相关</category>
+        <category>系统相关</category>
       </categories>
       <tags>
-        <tag>查看成绩小分</tag>
+        <tag>windows激活</tag>
       </tags>
   </entry>
   <entry>
@@ -258,6 +235,59 @@
       </categories>
       <tags>
         <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>查看小分</title>
+    <url>/2022/08/06/%E6%9F%A5%E7%9C%8B%E5%B0%8F%E5%88%86/</url>
+    <content><![CDATA[<hr>
+<p>本文主要讲述哈工程查询成绩小分的方法</p>
+<span id="more"></span>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>目前win10和win11已经成为主流，然而随着我们使用习惯的改变，我们逐渐使用第三方浏览器甚至是系统自带的Edge浏览器，但是哈尔滨工程大学的成绩查询网站建设较早，当使用IE浏览器是才能查看小分，即各部分平时成绩等，而edge等浏览器点击按钮无反应，本文主要讲述解决此问题的方法</p>
+<hr>
+<h1 id="一、直接使用IE浏览器"><a href="#一、直接使用IE浏览器" class="headerlink" title="一、直接使用IE浏览器"></a>一、直接使用IE浏览器</h1><p>win10及以下版本的系统，可以直接使用系统自带的IE浏览器，即可完美解决问题</p>
+<hr>
+<h1 id="二、安装浏览器插件"><a href="#二、安装浏览器插件" class="headerlink" title="二、安装浏览器插件"></a>二、安装浏览器插件</h1><p>该方法Edge浏览器和Chrome浏览器通用。首先我们打开Edge浏览器，点击右上角三个点，选择扩展<br><img src="https://img-blog.csdnimg.cn/8d4f1d09619a43c69cd550bfa8d76c3f.png" alt="在这里插入图片描述"><br>选择管理扩展，然后点击获取Microsoft Edge扩展<br><img src="https://img-blog.csdnimg.cn/32002f99711448448bfdf57fabee576f.png" alt="在这里插入图片描述"><br>在扩展商店页面输入Heuer并搜索<br><img src="https://img-blog.csdnimg.cn/48c34dd0c2274ea6ad63762c6746d333.png" alt="在这里插入图片描述"><br>点击获取，安装插件<br>进入学生个人中心 <a href="https://edusys.wvpn.hrbeu.edu.cn/jsxsd/framework/xsMain.jsp">传送门</a><br>直接进入成绩查询页面，点击分数<br><img src="https://img-blog.csdnimg.cn/5cbc0666422e41c997b238549847dd3b.png" alt="在这里插入图片描述"><br>弹出窗口，显示小分<br><img src="https://img-blog.csdnimg.cn/20efde9d777d4a92805c8bc4301e9355.png" alt="在这里插入图片描述"></p>
+<h1 id="三、利用F12开发者工具"><a href="#三、利用F12开发者工具" class="headerlink" title="三、利用F12开发者工具"></a>三、利用F12开发者工具</h1><p>在成绩页面按下F12，打开开发者工具<br>点击选择元素，然后点击你的成绩<br><img src="https://img-blog.csdnimg.cn/3c2f014dd4c4476dba04f25a7adb381d.png" alt="在这里插入图片描述"><br>注意到右面红框的位置，右键点击选择编辑属性，复制两个单引号之间的部分<br><img src="https://img-blog.csdnimg.cn/bf19bc474ae747c680480521d0a5f77e.png" alt="在这里插入图片描述"><br>在浏览器地址栏粘贴复制的内容，并删除我选中的部分<br><img src="https://img-blog.csdnimg.cn/d565c93d0b0f48ff817cc4ef8a7ddb82.png" alt="在这里插入图片描述"><br>回车访问，即可看到小分<br><img src="https://img-blog.csdnimg.cn/7f3656e04a7f4485ba7d29ce0561a051.png" alt="在这里插入图片描述"></p>
+<hr>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上为作者总结的三种查看哈工程小分的方法</p>
+]]></content>
+      <categories>
+        <category>学校相关</category>
+      </categories>
+      <tags>
+        <tag>查看成绩小分</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网页打开缓慢</title>
+    <url>/2022/08/07/%E7%BD%91%E9%A1%B5%E6%89%93%E5%BC%80%E7%BC%93%E6%85%A2/</url>
+    <content><![CDATA[<p>本文主要讲述如何解决网速很快但是打开网页很慢的解决办法</p>
+<span id="more"></span>
+
+<hr>
+<h1 id="一、重置网络设置"><a href="#一、重置网络设置" class="headerlink" title="一、重置网络设置"></a>一、重置网络设置</h1><p>这是最简单粗暴的方式，以win10为例，打开设置，选择网络和Internet设置<br><img src="https://img-blog.csdnimg.cn/09162ef719684a11a0b2201ae8293457.png" alt="在这里插入图片描述"><br>点击网络重置</p>
+<p><img src="https://img-blog.csdnimg.cn/9a0f1ab376f14b78854b55f03ba2352e.png" alt="在这里插入图片描述"></p>
+<p>点击立即重置<br>此方法不会影响电脑中存储的文件信息，但是会还原初始化网卡的网络配置</p>
+<hr>
+<h1 id="二、更改DNS"><a href="#二、更改DNS" class="headerlink" title="二、更改DNS"></a>二、更改DNS</h1><p>如果你输入网址打开网页很慢，但是输入ip地址访问网站很快，这是dns解析过慢导致的，可以尝试更改dns服务器的地址</p>
+<blockquote>
+<p>你可以通过访问下面的网址测试访问速度<br><a href="http://106.13.0.241/">http://106.13.0.241</a><br><a href="http://kokomi0728.top/">http://kokomi0728.top</a></p>
+</blockquote>
+<p>这里推荐一款免费软件：DNS Jumper</p>
+<p>启动程序，选择网卡，点击最快DNS<br><img src="https://img-blog.csdnimg.cn/9027a0fa4e65493281dac22ca0ff3daa.png" alt="在这里插入图片描述"><br>点击开始DNS测试，等待测试结束后，点击应用DNS服务器<br><img src="https://img-blog.csdnimg.cn/ed4624c9592c43c09870b41b9de4f98b.png" alt="在这里插入图片描述"><br>此时本地DNS服务器已更改为所选的DNS服务器，如无效果可尝试清除DNS缓存</p>
+<p>打开cmd，输入以下命令</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ipconfig /flushdns</span><br></pre></td></tr></table></figure>
+<p>回车确认，清除dns缓存成功</p>
+<hr>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>本文讲述了解决网速很快但是打开网页很慢的两种解决办法，希望对读者有所帮助<br>欢迎到作者的个人博客访问，我会将常用的计算机知识分享到博客上：<a href="https://xhd0728.github.io/">KOKOMI_BOLG</a></p>
+]]></content>
+      <categories>
+        <category>网站相关</category>
+      </categories>
+      <tags>
+        <tag>网速</tag>
       </tags>
   </entry>
 </search>
