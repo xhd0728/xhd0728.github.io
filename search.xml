@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2022 MCM/ICM F</title>
+    <url>/2022/02/22/2022-MCM-ICM-F/</url>
+    <content><![CDATA[<p>2022年美赛F题论文，未获奖（Successful Participate）</p>
+<span id="more"></span>
+<p><img src="https://img-blog.csdnimg.cn/6d5e66cd3125491aa57fd7bfd787fbc1.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/645b4acacdef4c478697e059f754a543.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/28b98a2401c64e9e8cd7e0322eefb87e.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/f662cc88561146f0ac09be0401136dff.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/9443a96abb4142388d4fa65967a810ff.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/eb02455647624989bb6fec8647bf1797.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/32ab7b9b2b114563aae9b35503a38eed.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/ce6e4ff1e6c34cf49b55cdfee52dd348.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/b1d0dfb3fc7346a1954ca06b7c1d3769.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/820d8106b8c84d42a5874392a216b2fc.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/b5b9db23aac14b7a8de4ad0a2fc6bb44.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/e467c05f41eb4d1bacc7522214869489.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/e94983e063c94d33885bc139d2aa54e8.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/8bd874bea4244943a388c3b02dc74033.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/5feb3e982f6d4f7c8e8755e616849d3a.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/163b523e33154e0c9699ad6375128850.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/bf8386459ca34bd98ecdeae549c5374f.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/9a1b41e44dc2481ea64f79287ec80e14.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/440bc7053b89414a8ffd608b5629debe.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/c4950cc9aa3c4908ba672e876451988c.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/361e84d6860d40428398708a85dfc511.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/598098aa273e4f50870941a0a249e23d.png" alt="请添加图片描述"></p>
+]]></content>
+      <categories>
+        <category>竞赛相关</category>
+      </categories>
+      <tags>
+        <tag>数学建模</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>frp免备案创建网站域名映射</title>
     <url>/2022/08/05/frp%E5%85%8D%E5%A4%87%E6%A1%88%E5%88%9B%E5%BB%BA%E7%BD%91%E7%AB%99%E5%9F%9F%E5%90%8D%E6%98%A0%E5%B0%84/</url>
     <content><![CDATA[<hr>
@@ -27,26 +41,6 @@
       <tags>
         <tag>frp内网穿透</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2022/08/05/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<span id="more"></span>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
   <entry>
     <title>宝塔面板Aria2配置</title>
@@ -116,6 +110,26 @@
       <tags>
         <tag>aria2</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2022/08/05/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>windows切换版本</title>
