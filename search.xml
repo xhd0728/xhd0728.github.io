@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>2021 APMCM</title>
+    <url>/2022/08/08/2021-APMCM/</url>
+    <content><![CDATA[<p>2021亚太地区数学建模B题，未获奖，感谢指点</p>
+<span id="more"></span>
+
+<p><img src="https://img-blog.csdnimg.cn/b5673b35bd974a82a0c78c48b1c2e3bf.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/1990b116e760412c8247dc1c796101e8.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/558a71b087c2492eb498c4f85d5344c6.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/d69c30745f264fb38e831c9058916b13.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/7467bafdbe99448bbae73f61c47ae59e.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/303d7f7a94b146bd961da0a7e5dda6d0.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/49a16f48f7b24d3dbc3069add0dfc5cf.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/3f93333911a746a7961a60905d253bcd.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/a916d32f82dc46e38b5e5c6cca5af2b4.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/4ad2e99db385454f9eb4641f1193cada.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/105395efbf6c4588ab4bf13331d3b744.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/d64abaa9167748e493d7d46fdbaf72a9.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/1fb3eae48b424b029d797c08db51182b.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/83ac3f2ea9d143858e6a94275dfcfa67.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/bd06225a8b2744fb90be7f73f14a5d0b.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/82fc5316f5b24fc4b1d74f8916eead40.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/493e4f002a1d4e8685e4cc4999d0dfc8.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/984b8b6f15ce4954aaf4004d6e0a4798.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/0a1de1f3a7884e529aba57adcff12e99.png" alt="请添加图片描述"><br><img src="https://img-blog.csdnimg.cn/c1ce1f167ddb40dd9f7cc72fba7d6594.png" alt="请添加图片描述"></p>
+]]></content>
+      <categories>
+        <category>竞赛相关</category>
+      </categories>
+      <tags>
+        <tag>数学建模</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2022 MCM/ICM F</title>
     <url>/2022/02/22/2022-MCM-ICM-F/</url>
     <content><![CDATA[<p>2022年美赛F题论文，未获奖（Successful Participate）</p>
@@ -153,6 +168,29 @@
       </tags>
   </entry>
   <entry>
+    <title>查看小分</title>
+    <url>/2022/08/06/%E6%9F%A5%E7%9C%8B%E5%B0%8F%E5%88%86/</url>
+    <content><![CDATA[<hr>
+<p>本文主要讲述哈工程查询成绩小分的方法</p>
+<span id="more"></span>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>目前win10和win11已经成为主流，然而随着我们使用习惯的改变，我们逐渐使用第三方浏览器甚至是系统自带的Edge浏览器，但是哈尔滨工程大学的成绩查询网站建设较早，当使用IE浏览器是才能查看小分，即各部分平时成绩等，而edge等浏览器点击按钮无反应，本文主要讲述解决此问题的方法</p>
+<hr>
+<h1 id="一、直接使用IE浏览器"><a href="#一、直接使用IE浏览器" class="headerlink" title="一、直接使用IE浏览器"></a>一、直接使用IE浏览器</h1><p>win10及以下版本的系统，可以直接使用系统自带的IE浏览器，即可完美解决问题</p>
+<hr>
+<h1 id="二、安装浏览器插件"><a href="#二、安装浏览器插件" class="headerlink" title="二、安装浏览器插件"></a>二、安装浏览器插件</h1><p>该方法Edge浏览器和Chrome浏览器通用。首先我们打开Edge浏览器，点击右上角三个点，选择扩展<br><img src="https://img-blog.csdnimg.cn/8d4f1d09619a43c69cd550bfa8d76c3f.png" alt="在这里插入图片描述"><br>选择管理扩展，然后点击获取Microsoft Edge扩展<br><img src="https://img-blog.csdnimg.cn/32002f99711448448bfdf57fabee576f.png" alt="在这里插入图片描述"><br>在扩展商店页面输入Heuer并搜索<br><img src="https://img-blog.csdnimg.cn/48c34dd0c2274ea6ad63762c6746d333.png" alt="在这里插入图片描述"><br>点击获取，安装插件<br>进入学生个人中心 <a href="https://edusys.wvpn.hrbeu.edu.cn/jsxsd/framework/xsMain.jsp">传送门</a><br>直接进入成绩查询页面，点击分数<br><img src="https://img-blog.csdnimg.cn/5cbc0666422e41c997b238549847dd3b.png" alt="在这里插入图片描述"><br>弹出窗口，显示小分<br><img src="https://img-blog.csdnimg.cn/20efde9d777d4a92805c8bc4301e9355.png" alt="在这里插入图片描述"></p>
+<h1 id="三、利用F12开发者工具"><a href="#三、利用F12开发者工具" class="headerlink" title="三、利用F12开发者工具"></a>三、利用F12开发者工具</h1><p>在成绩页面按下F12，打开开发者工具<br>点击选择元素，然后点击你的成绩<br><img src="https://img-blog.csdnimg.cn/3c2f014dd4c4476dba04f25a7adb381d.png" alt="在这里插入图片描述"><br>注意到右面红框的位置，右键点击选择编辑属性，复制两个单引号之间的部分<br><img src="https://img-blog.csdnimg.cn/bf19bc474ae747c680480521d0a5f77e.png" alt="在这里插入图片描述"><br>在浏览器地址栏粘贴复制的内容，并删除我选中的部分<br><img src="https://img-blog.csdnimg.cn/d565c93d0b0f48ff817cc4ef8a7ddb82.png" alt="在这里插入图片描述"><br>回车访问，即可看到小分<br><img src="https://img-blog.csdnimg.cn/7f3656e04a7f4485ba7d29ce0561a051.png" alt="在这里插入图片描述"></p>
+<hr>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上为作者总结的三种查看哈工程小分的方法</p>
+]]></content>
+      <categories>
+        <category>学校相关</category>
+      </categories>
+      <tags>
+        <tag>查看成绩小分</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>优质软件推荐（持续更新）</title>
     <url>/2022/08/06/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/</url>
     <content><![CDATA[<p>本文主要介绍计算机科学与技术专业常用软件，包含作者推荐的好用软件，避免走弯路。</p>
@@ -249,29 +287,6 @@
       </categories>
       <tags>
         <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>查看小分</title>
-    <url>/2022/08/06/%E6%9F%A5%E7%9C%8B%E5%B0%8F%E5%88%86/</url>
-    <content><![CDATA[<hr>
-<p>本文主要讲述哈工程查询成绩小分的方法</p>
-<span id="more"></span>
-
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>目前win10和win11已经成为主流，然而随着我们使用习惯的改变，我们逐渐使用第三方浏览器甚至是系统自带的Edge浏览器，但是哈尔滨工程大学的成绩查询网站建设较早，当使用IE浏览器是才能查看小分，即各部分平时成绩等，而edge等浏览器点击按钮无反应，本文主要讲述解决此问题的方法</p>
-<hr>
-<h1 id="一、直接使用IE浏览器"><a href="#一、直接使用IE浏览器" class="headerlink" title="一、直接使用IE浏览器"></a>一、直接使用IE浏览器</h1><p>win10及以下版本的系统，可以直接使用系统自带的IE浏览器，即可完美解决问题</p>
-<hr>
-<h1 id="二、安装浏览器插件"><a href="#二、安装浏览器插件" class="headerlink" title="二、安装浏览器插件"></a>二、安装浏览器插件</h1><p>该方法Edge浏览器和Chrome浏览器通用。首先我们打开Edge浏览器，点击右上角三个点，选择扩展<br><img src="https://img-blog.csdnimg.cn/8d4f1d09619a43c69cd550bfa8d76c3f.png" alt="在这里插入图片描述"><br>选择管理扩展，然后点击获取Microsoft Edge扩展<br><img src="https://img-blog.csdnimg.cn/32002f99711448448bfdf57fabee576f.png" alt="在这里插入图片描述"><br>在扩展商店页面输入Heuer并搜索<br><img src="https://img-blog.csdnimg.cn/48c34dd0c2274ea6ad63762c6746d333.png" alt="在这里插入图片描述"><br>点击获取，安装插件<br>进入学生个人中心 <a href="https://edusys.wvpn.hrbeu.edu.cn/jsxsd/framework/xsMain.jsp">传送门</a><br>直接进入成绩查询页面，点击分数<br><img src="https://img-blog.csdnimg.cn/5cbc0666422e41c997b238549847dd3b.png" alt="在这里插入图片描述"><br>弹出窗口，显示小分<br><img src="https://img-blog.csdnimg.cn/20efde9d777d4a92805c8bc4301e9355.png" alt="在这里插入图片描述"></p>
-<h1 id="三、利用F12开发者工具"><a href="#三、利用F12开发者工具" class="headerlink" title="三、利用F12开发者工具"></a>三、利用F12开发者工具</h1><p>在成绩页面按下F12，打开开发者工具<br>点击选择元素，然后点击你的成绩<br><img src="https://img-blog.csdnimg.cn/3c2f014dd4c4476dba04f25a7adb381d.png" alt="在这里插入图片描述"><br>注意到右面红框的位置，右键点击选择编辑属性，复制两个单引号之间的部分<br><img src="https://img-blog.csdnimg.cn/bf19bc474ae747c680480521d0a5f77e.png" alt="在这里插入图片描述"><br>在浏览器地址栏粘贴复制的内容，并删除我选中的部分<br><img src="https://img-blog.csdnimg.cn/d565c93d0b0f48ff817cc4ef8a7ddb82.png" alt="在这里插入图片描述"><br>回车访问，即可看到小分<br><img src="https://img-blog.csdnimg.cn/7f3656e04a7f4485ba7d29ce0561a051.png" alt="在这里插入图片描述"></p>
-<hr>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上为作者总结的三种查看哈工程小分的方法</p>
-]]></content>
-      <categories>
-        <category>学校相关</category>
-      </categories>
-      <tags>
-        <tag>查看成绩小分</tag>
       </tags>
   </entry>
   <entry>
