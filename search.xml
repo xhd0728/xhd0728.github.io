@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>2021 APMCM</title>
-    <url>/2022/08/08/2021-APMCM/</url>
+    <url>/2021/11/29/2021-APMCM/</url>
     <content><![CDATA[<p>2021亚太地区数学建模B题，未获奖，感谢指点</p>
 <span id="more"></span>
 
@@ -96,98 +96,6 @@
       </categories>
       <tags>
         <tag>windows激活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>宝塔面板Aria2配置</title>
-    <url>/2022/08/05/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BFAria2%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<hr>
-<p>作者使用的是<code>CentOS 8.5.2111 x86_64</code>系统，以下操作均使用此版本为例，不同的Linux发行版操作大同小异</p>
-<span id="more"></span>
-
-<hr>
-<h1 id="一、安装宝塔面板"><a href="#一、安装宝塔面板" class="headerlink" title="一、安装宝塔面板"></a>一、安装宝塔面板</h1><p>在终端使用ssh连接你的远程Linux服务器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh username@xxx.xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
-
-<p>如果你更改过默认端口<code>80</code>，那么使用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh username@xxx.xxx.xxx.xxx -p port</span><br></pre></td></tr></table></figure>
-
-<p>port是你设置的端口号 </p>
-<p>然后输入密码(密码默认不可见，直接输入并回车即可)</p>
-<p>进入官网链接 <a href="https://www.bt.cn/new/download.html">宝塔面板下载</a> 拉到最下面，选择对应的命令，在终端输入</p>
-<p>比如我输入centos的命令</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh ed8484bec</span><br></pre></td></tr></table></figure>
-
-<p>这里可能会提示无root权限，建议使用</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo su root</span><br></pre></td></tr></table></figure>
-
-<p>切换为root用户，即可解决问题</p>
-<p>一路回车，即安装完成，在完成界面会显示外网访问地址以及账号密码，记得保存</p>
-<p>输入 <code>bt</code> ，即可打开宝塔面板命令行，可以对账号密码等进行操作<br><img src="https://img-blog.csdnimg.cn/dba7720ee6d242f0a0c14df504eb7598.png" alt="宝塔面板命令行"></p>
-<hr>
-<h1 id="二、配置宝塔面板"><a href="#二、配置宝塔面板" class="headerlink" title="二、配置宝塔面板"></a>二、配置宝塔面板</h1><p>在上一步宝塔面板脚本执行完毕时，会显示外网访问地址和账号密码，在浏览器中直接打开该网址即可访问宝塔面板。如无法访问，可能是你的云服务器有安全组功能，在云服务器的管理页面中添加放行<code>8888</code>端口即可正常访问。</p>
-<p>进入面板后，会弹出推荐安装套件提示信息，根据自己需求安装即可。<br>若不小心关闭此页面，也可以右面在左侧软件商店安装。<br><img src="https://img-blog.csdnimg.cn/1224f9b242ed45e5ab07567185aa0f93.png" alt="推荐安装套件提示"><br>至此，宝塔面板安装完成，如需更深入配置，可以在面板设置中自行探索，推荐 <a href="https://blog.csdn.net/JunyouYH/article/details/120734856">JunYouYH</a> 的帖子。</p>
-<hr>
-<h1 id="三、安装Aria2服务"><a href="#三、安装Aria2服务" class="headerlink" title="三、安装Aria2服务"></a>三、安装Aria2服务</h1><p>用putty或宝塔或终端等其他方式远程连接服务器后，用<code>wget</code>命令直接下载这个脚本</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -N git.io/aria2.sh &amp;&amp; <span class="built_in">chmod</span> +x aria2.sh</span><br></pre></td></tr></table></figure>
-
-<p>如果无法连接，可以去github自行下载此脚本 <a href="https://github.com/P3TERX/aria2.sh">Github链接</a> </p>
-<p>然后可以使用宝塔面板便捷的文件管理功能上传脚本文件<br><img src="https://img-blog.csdnimg.cn/21426cd5a95e4957adb0fef1b3d7f613.png" alt="宝塔面板文件管理功能"><br>然后运行脚本即可出现安装界面</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">./aria2.sh</span><br></pre></td></tr></table></figure>
-
-<p>安装完成后显示如下界面<br><img src="https://img-blog.csdnimg.cn/70eb9214aa0f47999a578c37d04c5d2a.png" alt="Aria2安装完成界面"><br>记住RPC密钥，一会配置Aria2NG面板的时候需要用到</p>
-<p>至此，Aria2服务安装成功</p>
-<h1 id="四、安装AriaNg面板"><a href="#四、安装AriaNg面板" class="headerlink" title="四、安装AriaNg面板"></a>四、安装AriaNg面板</h1><p>在宝塔面板选择网站-&gt;添加站点</p>
-<p>输入你的ip地址和根目录，也可以用他自动生成的根目录</p>
-<p>在宝塔面板的文件管理中定位到这个目录</p>
-<p>可以通过远程下载或者本地下载后上传到这个文件夹中</p>
-<p>AriaNg面板 <a href="https://github.com/mayswind/AriaNg/releases">Github链接</a> 下载第二个.zip压缩包<br><img src="https://img-blog.csdnimg.cn/080799108b324661b40826aff955f7f5.png" alt="AriaNG面板下载"><br>将原来的index.html删除，然后直接将AriaNg.zip解压到当前目录</p>
-<p>如果你的云服务器有安全组管理，记得在云服务器的安全组管理中添加放行<code>6800</code>端口</p>
-<p>此时，在浏览器中直接输入你的云服务器的ip地址，即可打开AriaNg界面</p>
-<p>至此，AriaNg面板安装完成</p>
-<h1 id="五、配置AriaNg面板"><a href="#五、配置AriaNg面板" class="headerlink" title="五、配置AriaNg面板"></a>五、配置AriaNg面板</h1><p>此时打开AriaNg界面，提示认证失败<br><img src="https://img-blog.csdnimg.cn/5ebe8c4d56c746bd9dd1176682b77c42.png" alt="AriaNg面板提示认证失败"><br>点击左边的AriaNg设置<br><img src="https://img-blog.csdnimg.cn/cecfe95dba8f42d39eb70a9ca5f80eef.png" alt="AriaNg设置"><br>将安装Aria2服务时提供的RPC密钥填入对应位置，刷新界面</p>
-<p>如果你忘记了RPC密钥，重新运行Aria2安装脚本，选择查看配置即可</p>
-<p>刷新网页，显示已连接</p>
-<p>至此，AriaNg面板配置完成<br><img src="https://img-blog.csdnimg.cn/9c18b98c503143c09b40480598b579f2.png" alt="安装完成"></p>
-<hr>
-<h1 id="多页面操作"><a href="#多页面操作" class="headerlink" title="多页面操作"></a>多页面操作</h1><p>如果你只有一个ip地址但是想部署多个网页，直接在宝塔面板的网站添加站点会显示错误，可以输入两行：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">www.baidu.com:端口号 可以随意输入</span><br><span class="line">xxx.xxx.xxx.xxx:端口号 端口号不能与之前的重复</span><br></pre></td></tr></table></figure>
-
-<p>然后点击网站名，删除第一行的域名即可</p>
-<p>在浏览器中直接输入<code>xxx.xxx.xxx.xxx:端口号</code> 就能访问对应的网页</p>
-<p>如果你的云服务器有安全组管理，记得在云服务器的安全组管理中添加放行对应的端口</p>
-<hr>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上为宝塔面板和Aria2服务的全部配置方法，有需要的读者可以自行收藏</p>
-<p>学习链接：<br><a href="https://vantageso.com/aria2-ariang-centos-all-in-one-install-and-setting/">@南瓜酥叔叔的博客</a><br><a href="https://blog.csdn.net/JunyouYH/article/details/120734856">@JunYouYH的博客</a></p>
-]]></content>
-      <categories>
-        <category>网站相关</category>
-      </categories>
-      <tags>
-        <tag>aria2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>查看小分</title>
-    <url>/2022/08/06/%E6%9F%A5%E7%9C%8B%E5%B0%8F%E5%88%86/</url>
-    <content><![CDATA[<hr>
-<p>本文主要讲述哈工程查询成绩小分的方法</p>
-<span id="more"></span>
-
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>目前win10和win11已经成为主流，然而随着我们使用习惯的改变，我们逐渐使用第三方浏览器甚至是系统自带的Edge浏览器，但是哈尔滨工程大学的成绩查询网站建设较早，当使用IE浏览器是才能查看小分，即各部分平时成绩等，而edge等浏览器点击按钮无反应，本文主要讲述解决此问题的方法</p>
-<hr>
-<h1 id="一、直接使用IE浏览器"><a href="#一、直接使用IE浏览器" class="headerlink" title="一、直接使用IE浏览器"></a>一、直接使用IE浏览器</h1><p>win10及以下版本的系统，可以直接使用系统自带的IE浏览器，即可完美解决问题</p>
-<hr>
-<h1 id="二、安装浏览器插件"><a href="#二、安装浏览器插件" class="headerlink" title="二、安装浏览器插件"></a>二、安装浏览器插件</h1><p>该方法Edge浏览器和Chrome浏览器通用。首先我们打开Edge浏览器，点击右上角三个点，选择扩展<br><img src="https://img-blog.csdnimg.cn/8d4f1d09619a43c69cd550bfa8d76c3f.png" alt="在这里插入图片描述"><br>选择管理扩展，然后点击获取Microsoft Edge扩展<br><img src="https://img-blog.csdnimg.cn/32002f99711448448bfdf57fabee576f.png" alt="在这里插入图片描述"><br>在扩展商店页面输入Heuer并搜索<br><img src="https://img-blog.csdnimg.cn/48c34dd0c2274ea6ad63762c6746d333.png" alt="在这里插入图片描述"><br>点击获取，安装插件<br>进入学生个人中心 <a href="https://edusys.wvpn.hrbeu.edu.cn/jsxsd/framework/xsMain.jsp">传送门</a><br>直接进入成绩查询页面，点击分数<br><img src="https://img-blog.csdnimg.cn/5cbc0666422e41c997b238549847dd3b.png" alt="在这里插入图片描述"><br>弹出窗口，显示小分<br><img src="https://img-blog.csdnimg.cn/20efde9d777d4a92805c8bc4301e9355.png" alt="在这里插入图片描述"></p>
-<h1 id="三、利用F12开发者工具"><a href="#三、利用F12开发者工具" class="headerlink" title="三、利用F12开发者工具"></a>三、利用F12开发者工具</h1><p>在成绩页面按下F12，打开开发者工具<br>点击选择元素，然后点击你的成绩<br><img src="https://img-blog.csdnimg.cn/3c2f014dd4c4476dba04f25a7adb381d.png" alt="在这里插入图片描述"><br>注意到右面红框的位置，右键点击选择编辑属性，复制两个单引号之间的部分<br><img src="https://img-blog.csdnimg.cn/bf19bc474ae747c680480521d0a5f77e.png" alt="在这里插入图片描述"><br>在浏览器地址栏粘贴复制的内容，并删除我选中的部分<br><img src="https://img-blog.csdnimg.cn/d565c93d0b0f48ff817cc4ef8a7ddb82.png" alt="在这里插入图片描述"><br>回车访问，即可看到小分<br><img src="https://img-blog.csdnimg.cn/7f3656e04a7f4485ba7d29ce0561a051.png" alt="在这里插入图片描述"></p>
-<hr>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上为作者总结的三种查看哈工程小分的方法</p>
-]]></content>
-      <categories>
-        <category>学校相关</category>
-      </categories>
-      <tags>
-        <tag>查看成绩小分</tag>
       </tags>
   </entry>
   <entry>
@@ -287,6 +195,119 @@
       </categories>
       <tags>
         <tag>软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>宝塔面板Aria2配置</title>
+    <url>/2022/08/05/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BFAria2%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<hr>
+<p>作者使用的是<code>CentOS 8.5.2111 x86_64</code>系统，以下操作均使用此版本为例，不同的Linux发行版操作大同小异</p>
+<span id="more"></span>
+
+<hr>
+<h1 id="一、安装宝塔面板"><a href="#一、安装宝塔面板" class="headerlink" title="一、安装宝塔面板"></a>一、安装宝塔面板</h1><p>在终端使用ssh连接你的远程Linux服务器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh username@xxx.xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
+
+<p>如果你更改过默认端口<code>80</code>，那么使用</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh username@xxx.xxx.xxx.xxx -p port</span><br></pre></td></tr></table></figure>
+
+<p>port是你设置的端口号 </p>
+<p>然后输入密码(密码默认不可见，直接输入并回车即可)</p>
+<p>进入官网链接 <a href="https://www.bt.cn/new/download.html">宝塔面板下载</a> 拉到最下面，选择对应的命令，在终端输入</p>
+<p>比如我输入centos的命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh ed8484bec</span><br></pre></td></tr></table></figure>
+
+<p>这里可能会提示无root权限，建议使用</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo su root</span><br></pre></td></tr></table></figure>
+
+<p>切换为root用户，即可解决问题</p>
+<p>一路回车，即安装完成，在完成界面会显示外网访问地址以及账号密码，记得保存</p>
+<p>输入 <code>bt</code> ，即可打开宝塔面板命令行，可以对账号密码等进行操作<br><img src="https://img-blog.csdnimg.cn/dba7720ee6d242f0a0c14df504eb7598.png" alt="宝塔面板命令行"></p>
+<hr>
+<h1 id="二、配置宝塔面板"><a href="#二、配置宝塔面板" class="headerlink" title="二、配置宝塔面板"></a>二、配置宝塔面板</h1><p>在上一步宝塔面板脚本执行完毕时，会显示外网访问地址和账号密码，在浏览器中直接打开该网址即可访问宝塔面板。如无法访问，可能是你的云服务器有安全组功能，在云服务器的管理页面中添加放行<code>8888</code>端口即可正常访问。</p>
+<p>进入面板后，会弹出推荐安装套件提示信息，根据自己需求安装即可。<br>若不小心关闭此页面，也可以右面在左侧软件商店安装。<br><img src="https://img-blog.csdnimg.cn/1224f9b242ed45e5ab07567185aa0f93.png" alt="推荐安装套件提示"><br>至此，宝塔面板安装完成，如需更深入配置，可以在面板设置中自行探索，推荐 <a href="https://blog.csdn.net/JunyouYH/article/details/120734856">JunYouYH</a> 的帖子。</p>
+<hr>
+<h1 id="三、安装Aria2服务"><a href="#三、安装Aria2服务" class="headerlink" title="三、安装Aria2服务"></a>三、安装Aria2服务</h1><p>用putty或宝塔或终端等其他方式远程连接服务器后，用<code>wget</code>命令直接下载这个脚本</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -N git.io/aria2.sh &amp;&amp; <span class="built_in">chmod</span> +x aria2.sh</span><br></pre></td></tr></table></figure>
+
+<p>如果无法连接，可以去github自行下载此脚本 <a href="https://github.com/P3TERX/aria2.sh">Github链接</a> </p>
+<p>然后可以使用宝塔面板便捷的文件管理功能上传脚本文件<br><img src="https://img-blog.csdnimg.cn/21426cd5a95e4957adb0fef1b3d7f613.png" alt="宝塔面板文件管理功能"><br>然后运行脚本即可出现安装界面</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">./aria2.sh</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后显示如下界面<br><img src="https://img-blog.csdnimg.cn/70eb9214aa0f47999a578c37d04c5d2a.png" alt="Aria2安装完成界面"><br>记住RPC密钥，一会配置Aria2NG面板的时候需要用到</p>
+<p>至此，Aria2服务安装成功</p>
+<h1 id="四、安装AriaNg面板"><a href="#四、安装AriaNg面板" class="headerlink" title="四、安装AriaNg面板"></a>四、安装AriaNg面板</h1><p>在宝塔面板选择网站-&gt;添加站点</p>
+<p>输入你的ip地址和根目录，也可以用他自动生成的根目录</p>
+<p>在宝塔面板的文件管理中定位到这个目录</p>
+<p>可以通过远程下载或者本地下载后上传到这个文件夹中</p>
+<p>AriaNg面板 <a href="https://github.com/mayswind/AriaNg/releases">Github链接</a> 下载第二个.zip压缩包<br><img src="https://img-blog.csdnimg.cn/080799108b324661b40826aff955f7f5.png" alt="AriaNG面板下载"><br>将原来的index.html删除，然后直接将AriaNg.zip解压到当前目录</p>
+<p>如果你的云服务器有安全组管理，记得在云服务器的安全组管理中添加放行<code>6800</code>端口</p>
+<p>此时，在浏览器中直接输入你的云服务器的ip地址，即可打开AriaNg界面</p>
+<p>至此，AriaNg面板安装完成</p>
+<h1 id="五、配置AriaNg面板"><a href="#五、配置AriaNg面板" class="headerlink" title="五、配置AriaNg面板"></a>五、配置AriaNg面板</h1><p>此时打开AriaNg界面，提示认证失败<br><img src="https://img-blog.csdnimg.cn/5ebe8c4d56c746bd9dd1176682b77c42.png" alt="AriaNg面板提示认证失败"><br>点击左边的AriaNg设置<br><img src="https://img-blog.csdnimg.cn/cecfe95dba8f42d39eb70a9ca5f80eef.png" alt="AriaNg设置"><br>将安装Aria2服务时提供的RPC密钥填入对应位置，刷新界面</p>
+<p>如果你忘记了RPC密钥，重新运行Aria2安装脚本，选择查看配置即可</p>
+<p>刷新网页，显示已连接</p>
+<p>至此，AriaNg面板配置完成<br><img src="https://img-blog.csdnimg.cn/9c18b98c503143c09b40480598b579f2.png" alt="安装完成"></p>
+<hr>
+<h1 id="多页面操作"><a href="#多页面操作" class="headerlink" title="多页面操作"></a>多页面操作</h1><p>如果你只有一个ip地址但是想部署多个网页，直接在宝塔面板的网站添加站点会显示错误，可以输入两行：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">www.baidu.com:端口号 可以随意输入</span><br><span class="line">xxx.xxx.xxx.xxx:端口号 端口号不能与之前的重复</span><br></pre></td></tr></table></figure>
+
+<p>然后点击网站名，删除第一行的域名即可</p>
+<p>在浏览器中直接输入<code>xxx.xxx.xxx.xxx:端口号</code> 就能访问对应的网页</p>
+<p>如果你的云服务器有安全组管理，记得在云服务器的安全组管理中添加放行对应的端口</p>
+<hr>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上为宝塔面板和Aria2服务的全部配置方法，有需要的读者可以自行收藏</p>
+<p>学习链接：<br><a href="https://vantageso.com/aria2-ariang-centos-all-in-one-install-and-setting/">@南瓜酥叔叔的博客</a><br><a href="https://blog.csdn.net/JunyouYH/article/details/120734856">@JunYouYH的博客</a></p>
+]]></content>
+      <categories>
+        <category>网站相关</category>
+      </categories>
+      <tags>
+        <tag>aria2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>查看小分</title>
+    <url>/2022/08/06/%E6%9F%A5%E7%9C%8B%E5%B0%8F%E5%88%86/</url>
+    <content><![CDATA[<hr>
+<p>本文主要讲述哈工程查询成绩小分的方法</p>
+<span id="more"></span>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>目前win10和win11已经成为主流，然而随着我们使用习惯的改变，我们逐渐使用第三方浏览器甚至是系统自带的Edge浏览器，但是哈尔滨工程大学的成绩查询网站建设较早，当使用IE浏览器是才能查看小分，即各部分平时成绩等，而edge等浏览器点击按钮无反应，本文主要讲述解决此问题的方法</p>
+<hr>
+<h1 id="一、直接使用IE浏览器"><a href="#一、直接使用IE浏览器" class="headerlink" title="一、直接使用IE浏览器"></a>一、直接使用IE浏览器</h1><p>win10及以下版本的系统，可以直接使用系统自带的IE浏览器，即可完美解决问题</p>
+<hr>
+<h1 id="二、安装浏览器插件"><a href="#二、安装浏览器插件" class="headerlink" title="二、安装浏览器插件"></a>二、安装浏览器插件</h1><p>该方法Edge浏览器和Chrome浏览器通用。首先我们打开Edge浏览器，点击右上角三个点，选择扩展<br><img src="https://img-blog.csdnimg.cn/8d4f1d09619a43c69cd550bfa8d76c3f.png" alt="在这里插入图片描述"><br>选择管理扩展，然后点击获取Microsoft Edge扩展<br><img src="https://img-blog.csdnimg.cn/32002f99711448448bfdf57fabee576f.png" alt="在这里插入图片描述"><br>在扩展商店页面输入Heuer并搜索<br><img src="https://img-blog.csdnimg.cn/48c34dd0c2274ea6ad63762c6746d333.png" alt="在这里插入图片描述"><br>点击获取，安装插件<br>进入学生个人中心 <a href="https://edusys.wvpn.hrbeu.edu.cn/jsxsd/framework/xsMain.jsp">传送门</a><br>直接进入成绩查询页面，点击分数<br><img src="https://img-blog.csdnimg.cn/5cbc0666422e41c997b238549847dd3b.png" alt="在这里插入图片描述"><br>弹出窗口，显示小分<br><img src="https://img-blog.csdnimg.cn/20efde9d777d4a92805c8bc4301e9355.png" alt="在这里插入图片描述"></p>
+<h1 id="三、利用F12开发者工具"><a href="#三、利用F12开发者工具" class="headerlink" title="三、利用F12开发者工具"></a>三、利用F12开发者工具</h1><p>在成绩页面按下F12，打开开发者工具<br>点击选择元素，然后点击你的成绩<br><img src="https://img-blog.csdnimg.cn/3c2f014dd4c4476dba04f25a7adb381d.png" alt="在这里插入图片描述"><br>注意到右面红框的位置，右键点击选择编辑属性，复制两个单引号之间的部分<br><img src="https://img-blog.csdnimg.cn/bf19bc474ae747c680480521d0a5f77e.png" alt="在这里插入图片描述"><br>在浏览器地址栏粘贴复制的内容，并删除我选中的部分<br><img src="https://img-blog.csdnimg.cn/d565c93d0b0f48ff817cc4ef8a7ddb82.png" alt="在这里插入图片描述"><br>回车访问，即可看到小分<br><img src="https://img-blog.csdnimg.cn/7f3656e04a7f4485ba7d29ce0561a051.png" alt="在这里插入图片描述"></p>
+<hr>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上为作者总结的三种查看哈工程小分的方法</p>
+]]></content>
+      <categories>
+        <category>学校相关</category>
+      </categories>
+      <tags>
+        <tag>查看成绩小分</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>神州网信政府版win10系统下载及激活</title>
+    <url>/2022/08/11/%E7%A5%9E%E5%B7%9E%E7%BD%91%E4%BF%A1%E6%94%BF%E5%BA%9C%E7%89%88win10%E7%B3%BB%E7%BB%9F%E6%BF%80%E6%B4%BB/</url>
+    <content><![CDATA[<p>本文主要讲述神州网信政府版win10系统下载及激活教程</p>
+<span id="more"></span>
+<h1 id="1-系统下载"><a href="#1-系统下载" class="headerlink" title="1. 系统下载"></a>1. 系统下载</h1><p>官方下载地址： <a href="http://42.159.104.29:8000/s/rZPSP3W3DDF8bfw">传送门</a><br>下载密码：cmgeshare<br>系统安装文件为常见的iso格式，使用PE系统安装即可，或使用虚拟机安装体验。</p>
+<h1 id="2-系统激活"><a href="#2-系统激活" class="headerlink" title="2. 系统激活"></a>2. 系统激活</h1><p>系统安装后默认为非激活状态，如果是企业内部使用，可以使用自带的面板激活，如果是个人使用，本文提供了以下方式解决：</p>
+<ol>
+<li>开始图标右键，选择Windows PowerShell(管理员)</li>
+<li>依次输入以下指令，输入一条后等待弹窗，再继续输入<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">slmgr /ipk YYVX9-NTFWV-6MDM3-9PT4T-4M68B</span><br><span class="line"></span><br><span class="line">slmgr /skms kms.03k.org</span><br><span class="line"></span><br><span class="line">slmgr /ato</span><br></pre></td></tr></table></figure></li>
+<li>激活成功，可以在系统设置里查看激活状态，也可以继续在Windows PowerShell中输入：<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">slmgr /dlv</span><br></pre></td></tr></table></figure>
+来查看激活状态。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>系统相关</category>
+      </categories>
+      <tags>
+        <tag>系统激活</tag>
       </tags>
   </entry>
   <entry>
