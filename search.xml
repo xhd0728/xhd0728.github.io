@@ -456,4 +456,19 @@
         <tag>网速</tag>
       </tags>
   </entry>
+  <entry>
+    <title>python随手记</title>
+    <url>/2022/09/05/python%E9%9A%8F%E6%89%8B%E8%AE%B0/</url>
+    <content><![CDATA[<hr>
+<h1 id="1-时间格式化处理"><a href="#1-时间格式化处理" class="headerlink" title="1. 时间格式化处理"></a>1. 时间格式化处理</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime  </span><br><span class="line">  </span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:  </span><br><span class="line">    date = datetime.datetime.now()  </span><br><span class="line">    <span class="built_in">print</span>(date)  </span><br><span class="line">    date = date.strftime(<span class="string">&quot;%Y-%#m-%#d&quot;</span>)  </span><br><span class="line">    <span class="built_in">print</span>(date)</span><br></pre></td></tr></table></figure>
+<p>输出结果：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">2022-09-05 19:41:23.651110</span><br><span class="line">2022-9-5</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>编程相关</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
 </search>
