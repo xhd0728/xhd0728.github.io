@@ -26,7 +26,7 @@ Papers
 
 For more info
 ------
-I will show more information about my experience at [Haidong Xin's Blog](https://resume.kokomi0728.eu.org).
+I will show more information about my experience at [Haidong Xin's Blog](https://xinhaidong.cloudns.org/).
 
 <p><center>
   <div id="clustrmaps-widget" style="width:50%">
