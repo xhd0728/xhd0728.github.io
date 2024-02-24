@@ -20,9 +20,7 @@ Papers
 ------
 (*indicates equal contribution)
 
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+Xiaojun Ye, Junhao Chen, Xiang Li, **Haidong Xin**, Sheng Zhou, Jiajun Bu. MMAD: Multi-modal Movie Audio Description. LREC-COLING 2024. (Paper / [Code](https://github.com/Daria8976/MMAD))
 
 For more info
 ------
