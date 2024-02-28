@@ -26,7 +26,7 @@ I have published more than 100 papers at the top international AI conferences wi
 -->
 
 # 🔥 News
-- *2024.02.21*: &nbsp;🎉🎉 Ph.D Ye's paper is accepted by LREC-COLING 2024.
+- *2024.02.21*: &nbsp;🎉🎉 Ph.D Ye's paper is accepted by LREC-COLING 2024 (CCF-B).
 - *2023.09.27*: &nbsp;🎉🎉 Obtained the qualification for master's degree recommendation exemption.
 
 # 📝 Publications 
