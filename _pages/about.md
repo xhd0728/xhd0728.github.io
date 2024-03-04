@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a senior undergraduate student from the College of Computer Science and Technology of Harbin Engineering University. I am fortunate to be advised by Associate Professor [Chao Li](http://ss.zhizhen.com/s?sw=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E4%B8%8E%E6%8A%80%E6%9C%AF&strcompy=1612_-1&jxsearch=2&size=15&isort=1&x=0_3119&deepsw=%E6%9D%8E%E8%B6%85&version=v2). Currently, I am doing a research internship at [NEUIR](https://github.com/NEUIR). I will be pursuing a graduate degree at Northeastern University (Shenyang, China) in the fall of 2024, and being advised by Associate Professor [Zhenghao Liu](https://edwardzh.github.io/) from Tsinghua University.
+I am a senior undergraduate student from the College of Computer Science and Technology of Harbin Engineering University. I am fortunate to be advised by Associate Professor [Chao Li](http://ss.zhizhen.com/s?sw=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6%E4%B8%8E%E6%8A%80%E6%9C%AF&strcompy=1612_-1&jxsearch=2&size=15&isort=1&x=0_3119&deepsw=%E6%9D%8E%E8%B6%85&version=v2). Currently, I am doing a research internship at [NEUIR](https://neuir.github.io/). I will be pursuing a graduate degree at Northeastern University (Shenyang, China) in the fall of 2024, and being advised by Associate Professor [Zhenghao Liu](https://edwardzh.github.io/) from Tsinghua University.
 
 My research interests include Information Retrieval, Multi Modal, LLM Pretraining and Multi Agent.
 
