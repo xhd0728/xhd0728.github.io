@@ -7,7 +7,7 @@
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">LREC-COLING 2024</div><img src='images/paper/mmad-coling2024.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-<a>MMAD: Multi-modal Movie Audio Description</a> \\
+<a>MMAD: Multi-modal Movie Audio Description</a>
 
 Xiaojun Ye, Junhao Chen, Xiang Li, **Haidong Xin**, Sheng Zhou, Jiajun Bu
 

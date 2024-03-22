@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Haidong Xin"
-description              : "CS Master@NEUIR"
+description              : "CS Master in NEUIR, Northeastern University"
 repository               : "xhd0728/xhd0728.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Haidong Xin"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Northeastern University"
+  bio              : "辛海东"
   location         : "Shenyang, Liaoning, P.R.China"
   employer         :
   pubmed           : 
