@@ -1,4 +1,4 @@
-I am a senior undergraduate student from the College of Computer Science and Technology of [Harbin Engineering University (哈爾濱工程大學)](http://www.hrbeu.edu.cn/). Currently, I am doing a research internship at [NEUIR (東北大學信息檢索實驗室)](https://neuir.github.io/). I will be pursuing a graduate degree at [Northeastern University (東北大學)](https://neu.edu.cn/) in the fall of 2024, and being advised by Associate Professor [Zhenghao Liu (劉正皓)](https://edwardzh.github.io/) from Tsinghua University.
+I am a senior undergraduate student from the College of Computer Science and Technology of [Harbin Engineering University (哈爾濱工程大學)](http://www.hrbeu.edu.cn/). Currently, I am doing a research internship at [NEUIR (東北大學信息檢索實驗室)](https://neuir.github.io/). I will be pursuing a graduate degree at [Northeastern University (東北大學)](https://neu.edu.cn/) in the fall of 2024, and being advised by Associate Professor [Zhenghao Liu (劉正皓)](https://edwardzh.github.io/) from [Tsinghua University (清華大學)](https://www.tsinghua.edu.cn/).
 
 My research interests include Information Retrieval, Multi Modal, LLM Pretraining and Multi Agent.
 
