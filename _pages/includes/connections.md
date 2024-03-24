@@ -5,6 +5,7 @@
 - [Xiang Li](https://scholar.google.com/citations?user=_wyYvQsAAAAJ&hl=en), [Peking University](https://www.pku.edu.cn/), Shenzhen.
 - [Zhicheng Li](https://yao9e.cn), [University of Science and Technology of China](https://www.ustc.edu.cn/), Suzhou.
 - [Fang Wu](https://wfloveiu.github.io/), [Xiamen University](https://www.xmu.edu.cn/), Xiamen.
+- [Yinan Wu](https://elandwoo.github.io/), [Northeastern University at Qinhuangdao](https://www.neuq.edu.cn/), Qinhuangdao.
 - [Zihan Xu](https://codeforces.com/profile/YoungFrog), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn/), Shanghai.
 - [Yuhao Xue](https://xhyu61.github.io/), [Tongji University](https://www.tongji.edu.cn/), Shanghai.
 - [Chunhao Yang](https://codeforces.com/profile/Double-Happy), [Institute of Computing Technology, Chinese Academy of Sciences)](http://www.ict.ac.cn/), Beijing.
