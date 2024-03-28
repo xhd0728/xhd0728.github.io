@@ -16,3 +16,14 @@
 - This work has unlocked a whole new experience of watching movies for the visually impaired.
 </div>
 </div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2023</div><img src='images/paper/mcm-icm-2023.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# Puzzle game: Prediction and Classification of Wordle Solution Words
+
+**Haidong Xin**, [Fang Wu](https://wfloveiu.github.io/), Zhitong zhou, Dongping Liu #
+
+- This work conducted a detailed numerical analysis of the Wordle game, revealing statistical patterns within it.
+</div>
+</div>
