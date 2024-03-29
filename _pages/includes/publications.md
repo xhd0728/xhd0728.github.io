@@ -24,6 +24,8 @@
 
 **Haidong Xin**, [Fang Wu](https://wfloveiu.github.io/), Zhitong zhou, Dongping Liu #
 
+[![arXiv](https://img.shields.io/badge/arXiv-2403.19433-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2403.19433)
+
 - This work conducted a detailed numerical analysis of the Wordle game, revealing statistical patterns within it.
 </div>
 </div>
