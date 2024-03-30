@@ -1,4 +1,4 @@
-# ✈️ Projects
+# 🔨 Projects
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Corpus Intelligent Retrieval System</div><img src='images/projects/corpus_intelligent_retrieval_system.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
