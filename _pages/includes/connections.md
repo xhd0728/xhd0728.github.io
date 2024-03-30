@@ -1,6 +1,6 @@
 # 🤝 Connections
 
-- [Jiaqi Cai](https://cjq0911.github.io/), [Macau University of Science and Technology](https://www.must.edu.mo/), Macau.
+<!-- - [Jiaqi Cai](https://cjq0911.github.io/), [Macau University of Science and Technology](https://www.must.edu.mo/), Macau. -->
 - [Junhao Chen](https://yisuanwang.github.io/), [Tsinghua University](https://www.tsinghua.edu.cn/), Shenzhen.
 - [Han Hu](https://codeforces.com/profile/H-H), [Huawei Technologies Co., Ltd.](https://www.huawei.com/en/), Beijing.
 - [Honghao Jiang](https://beifengsama.github.io/), [Harbin Engineering University](http://www.hrbeu.edu.cn/), Harbin.
