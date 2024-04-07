@@ -9,7 +9,7 @@
 
 # MMAD: Multi-modal Movie Audio Description
 
-[Xiaojun Ye](https://scholar.google.com/citations?user=BKMYsm4AAAAJ&hl=en), [Junhao Chen](https://scholar.google.com/citations?hl=en&user=uVMnzPMAAAAJ), [Xiang Li](https://scholar.google.com/citations?user=_wyYvQsAAAAJ&hl=en), **Haidong Xin**, [Sheng Zhou #](https://scholar.google.com/citations?user=Ss76nMwAAAAJ&hl=en), [Jiajun Bu](https://scholar.google.com/citations?user=OgZP2okAAAAJ&hl=en)
+[Xiaojun Ye](https://scholar.google.com/citations?user=BKMYsm4AAAAJ&hl=en), [Junhao Chen](https://scholar.google.com/citations?hl=en&user=uVMnzPMAAAAJ), [Xiang Li](https://scholar.google.com/citations?user=_wyYvQsAAAAJ&hl=en), **Haidong Xin**, Chao Li, [Sheng Zhou #](https://scholar.google.com/citations?user=Ss76nMwAAAAJ&hl=en), [Jiajun Bu](https://scholar.google.com/citations?user=OgZP2okAAAAJ&hl=en)
 
 [**Project**](https://github.com/Daria8976/MMAD) \| [![](https://img.shields.io/github/stars/Daria8976/MMAD?style=social&label=Code+Stars)](https://github.com/Daria8976/MMAD)
 
