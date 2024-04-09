@@ -31,7 +31,7 @@
 
 # Ray Tracing With OpenGL
 
-**Haidong Xin**, Xianyu Zhang
+**Haidong Xin**, Xianyu Zhang, Guanlan Yue
 
 [**Project**](https://github.com/xhd0728/Ray_Tracing_With_OpenGL) \| [![](https://img.shields.io/github/stars/xhd0728/Ray_Tracing_With_OpenGL?style=social&label=Code+Stars)](https://github.com/xhd0728/Ray_Tracing_With_OpenGL)
 
