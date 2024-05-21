@@ -7,6 +7,6 @@ I graduated from [Harbin Engineering University](http://www.hrbeu.edu.cn/) with 
 ---
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_pv">Total page views: <span id="busuanzi_value_site_pv"></span></span> \| Last edit: 2024-05-21
+<span id="busuanzi_container_site_pv">Total page views: <span id="busuanzi_value_site_pv"></span></span> \| Last edit: 2024-05-21 \| [Status Website](https://status.kokomi0728.eu.org/status/all)
 
 ---
