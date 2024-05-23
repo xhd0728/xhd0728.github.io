@@ -1,6 +1,6 @@
 # 🤝 Connections
 
-- [Jiaqi Cai](https://cjq0911.github.io/), [Macau University of Science and Technology](https://www.must.edu.mo/), Macau.
+- [Jiaqi Cai](https://cjq0911.github.io/), [The State Key Laboratory of Lunar and Planetary Science (SKLPlanets)](https://www.must.edu.mo/en/ssi), [Macau University of Science and Technology](https://www.must.edu.mo/), Macau.
 - [Junhao Chen](https://yisuanwang.github.io/), [Shenzhen International Graduate School (SIGS)](https://www.sigs.tsinghua.edu.cn/), [Tsinghua University](https://www.tsinghua.edu.cn/), Shenzhen.
 - [Han Hu](https://codeforces.com/profile/H-H), [Huawei Technologies Co., Ltd.](https://www.huawei.com/en/), Beijing.
 - [Xiang Li](https://scholar.google.com/citations?user=_wyYvQsAAAAJ&hl=en), [School of Software & Microelectronics](https://www.ss.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/), Shenzhen.
