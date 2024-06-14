@@ -22,7 +22,7 @@
 
 # Puzzle game: Prediction and Classification of Wordle Solution Words
 
-**Haidong Xin**, [Fang Wu](https://wfloveiu.github.io/), [Zhitong zhou](https://scholar.google.com/citations?user=aG3jVDUAAAAJ&hl=en), [Shujuan Wang$^†$](https://homepage.hrbeu.edu.cn/web/wangshujuan?locale=zh_CN)
+**Haidong Xin**$^{\*†}$, [Fang Wu$^{\*}$](https://wfloveiu.github.io/), [Zhitong Zhou$^{\*}$](https://scholar.google.com/citations?user=aG3jVDUAAAAJ&hl=en)
 
 [**📃Paper**](https://arxiv.org/abs/2403.19433) \| [**📄PDF**](https://arxiv.org/pdf/2403.19433) \| [![arXiv](https://img.shields.io/badge/arXiv-2403.19433-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2403.19433)
 
