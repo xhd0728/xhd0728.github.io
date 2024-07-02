@@ -1,6 +1,5 @@
 # 🏆 Awards
 
-- *2024.06* 🥇The Excellent Graduation Thesis by Harbin Engineering University.
 - *2023.07* 🥈National Second Prize of Chinese Collegiate Computing Competition (4C 2023).
 - *2023.05* 🥈Honorable Mention of Mathematical Contest in Modeling (MCM 2023).
 - *2023.05* 🥈Second Prize of College International College Students' Innovation Competition (CICSIC 2023).
