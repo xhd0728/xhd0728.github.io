@@ -37,7 +37,7 @@ GEM
       faraday-net_http (>= 2.0, < 3.2)
     faraday-net_http (3.1.0)
       net-http
-    ffi (1.16.3-x64-mingw-ucrt)
+    ffi (1.17.0-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
     github-pages (231)
@@ -263,10 +263,9 @@ GEM
       tzinfo (>= 1.0.0)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.9.1-x64-mingw-ucrt)
+    unf_ext (0.0.9.1)
     unicode-display_width (1.8.0)
     uri (0.13.0)
-    wdm (0.1.1)
     webrick (1.8.1)
 
 PLATFORMS
@@ -278,7 +277,6 @@ DEPENDENCIES
   jekyll-feed
   jekyll-sitemap
   tzinfo-data
-  wdm (~> 0.1.0)
   webrick
 
 BUNDLED WITH

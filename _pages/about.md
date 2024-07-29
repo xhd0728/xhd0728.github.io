@@ -16,7 +16,7 @@ redirect_from:
 {% assign url_1 = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio_4vrZRk0AAAAJ.json" %}
 {% assign url_2 = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio_B88nSvIAAAAJ.json" %}
 
-<script src="//code.tidio.co/l76tzkrxw05ghjyhq4pnzorusrsutldg.js" async></script>
+<!-- <script src="//code.tidio.co/l76tzkrxw05ghjyhq4pnzorusrsutldg.js" async></script> -->
 
 <span class='anchor' id='about-me'></span>
 
