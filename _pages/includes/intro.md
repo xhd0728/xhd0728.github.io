@@ -8,6 +8,6 @@ I hold a B.S. degree in Computer Science from Harbin Engineering University, whe
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <script src="/assets/js/ip.js"></script>
-<span id="busuanzi_container_site_pv">Total page views: <span id="busuanzi_value_site_pv"></span></span> \| Last edit: 2024-11-07 \| IP: <span id='visitor-ip'></span> \| Address: <span id='visitor-address'></span>
+<span id="busuanzi_container_site_pv">Total page views: <span id="busuanzi_value_site_pv"></span></span> \| Last edit: 2025-01-20 \| IP: <span id='visitor-ip'></span> \| Address: <span id='visitor-address'></span>
 
 ---
