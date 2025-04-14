@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Haidong Xin"
-description              : "CS Master in NEUIR, Northeastern University"
+description              : "NEUIR & Qiyuan Lab"
 repository               : "xhd0728/xhd0728.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -24,11 +24,11 @@ author:
   name             : "Haidong Xin"
   avatar           : "images/android-chrome-512x512.png"
   bio              : "辛海东"
-  location         : "Shenyang, China"
+  location         : "Beijing, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=8VCnj3sAAAAJ"
-  email            : "i@xinhaidong.top"
+  email            : "hdxin2002@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Haidong-Xin"
   uri              :
   bitbucket        :
