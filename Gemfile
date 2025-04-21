@@ -17,6 +17,8 @@ gem "github-pages", group: :jekyll_plugins
 # gem "jekyll"
 gem 'tzinfo-data'
 gem 'webrick'
+gem "csv"
+gem "logger"
 
 # gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
