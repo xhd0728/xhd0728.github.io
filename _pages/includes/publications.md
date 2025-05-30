@@ -2,12 +2,25 @@
 
 > \* indicates equal contribution, and † indicates corresponding author.
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2025</div><img src='images/paper/consrec.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# ConsRec: Denoising Sequential Recommendation through User-Consistent Preference Modeling
+
+**Haidong Xin**$^{\*}$, [Qiushi Xiong$^{\*}$](https://scholar.google.com/citations?user=dFXhQlsAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shi Yu](https://scholar.google.com/citations?user=xcMVPTgAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Chenyan Xiong](https://scholar.google.com/citations?user=E9BaEBYAAAAJ)
+
+[**📃Paper**](https://arxiv.org/abs/2505.22130) \| [**📄PDF**](https://arxiv.org/pdf/2505.22130) \| [![](https://img.shields.io/github/stars/NEUIR/ConsRec?style=social&label=Code+Stars)](https://github.com/NEUIR/ConsRec)
+
+- This work achieves the denoising of user interaction sequences through consistent user preference modeling, thereby improving the performance of sequential recommendation systems.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">LREC-COLING 2024</div><img src='images/paper/mmad-coling2024.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # MMAD: Multi-modal Movie Audio Description
 
-[Xiaojun Ye](https://scholar.google.com/citations?user=BKMYsm4AAAAJ&hl=en), [Junhao Chen](https://scholar.google.com/citations?hl=en&user=uVMnzPMAAAAJ), [Xiang Li](https://scholar.google.com/citations?user=_wyYvQsAAAAJ&hl=en), **Haidong Xin**, Chao Li, [Sheng Zhou$^†$](https://scholar.google.com/citations?user=Ss76nMwAAAAJ&hl=en), [Jiajun Bu](https://scholar.google.com/citations?user=OgZP2okAAAAJ&hl=en)
+[Xiaojun Ye](https://scholar.google.com/citations?user=BKMYsm4AAAAJ), [Junhao Chen](https://scholar.google.com/citations?user=uVMnzPMAAAAJ), [Xiang Li](https://scholar.google.com/citations?user=_wyYvQsAAAAJ), **Haidong Xin**, Chao Li, [Sheng Zhou$^†$](https://scholar.google.com/citations?user=Ss76nMwAAAAJ), [Jiajun Bu](https://scholar.google.com/citations?user=OgZP2okAAAAJ)
 
 [**📃Paper**](https://aclanthology.org/2024.lrec-main.998/) \| [**📄PDF**](https://aclanthology.org/2024.lrec-main.998.pdf) \| [**🗂️Project Page**](https://daria8976.github.io/mmad-page/) \| [![](https://img.shields.io/github/stars/Daria8976/MMAD?style=social&label=Code+Stars)](https://github.com/Daria8976/MMAD)
 

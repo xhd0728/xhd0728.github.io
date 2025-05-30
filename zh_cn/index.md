@@ -9,7 +9,7 @@ author_profile: true
 
 我目前在[东北大学](https://neu.edu.cn/)攻读计算机科学硕士学位，研究方向为信息检索和大语言模型。
 
-我的研究兴趣涵盖自然语言处理（NLP）、信息检索、大语言模型（LLM）、检索增强生成（RAG）、推荐系统（Recsys）以及多模态领域。目前，我的工作包括推荐系统的数据去噪、合成数据生成以及大语言模型的指令微调。
+我的研究兴趣涵盖自然语言处理（NLP）、信息检索、大语言模型（LLM）、检索增强生成（RAG）、推荐系统（Recsys）以及多模态领域。目前，我的工作包括多智能体、检索增强生成系统优化以及大语言模型的指令微调。
 
 我拥有哈尔滨工程大学计算机科学与技术学士学位，本科期间由助理研究员[李超](https://mohub.net/help/MoHub/UserServiceCases/Cases1.html#%E6%95%99%E5%B8%88%E4%BB%8B%E7%BB%8D)指导。我还在[东北大学信息检索实验室](https://neuir.github.io/)进行研究实习，导师是[刘正皓](https://edwardzh.github.io/)副教授（来自[清华大学](https://www.tsinghua.edu.cn)），同时也在[启元实验室](https://qiyuanzp.zhiye.com/)和[清华大学自然语言处理与社会人文计算实验室](https://nlp.csai.tsinghua.edu.cn/)实习，分别由[闫宇坤](https://scholar.google.com/citations?hl=en&user=B88nSvIAAAAJ&view_op=list_works)（来自[清华大学](https://www.tsinghua.edu.cn)）和[熊辰炎](https://www.cs.cmu.edu/~cx/)副教授（来自[卡内基梅隆大学](https://www.cmu.edu/)）指导。 
 
@@ -17,7 +17,7 @@ author_profile: true
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- <script src="/assets/js/ip.js"></script> -->
-<span id="busuanzi_container_site_pv">总页面浏览量: <span id="busuanzi_value_site_pv"></span></span> \| 上次编辑时间: 2025-04-14 \| 联系方式: [*hdxin2002@gmail.com*](mailto://hdxin2002@gmail.com)
+<span id="busuanzi_container_site_pv">总页面浏览量: <span id="busuanzi_value_site_pv"></span></span> \| 上次编辑时间: 2025-05-30 \| 联系方式: [*hdxin2002@gmail.com*](mailto://hdxin2002@gmail.com)
 
 ---
 
@@ -32,6 +32,19 @@ author_profile: true
 # 📝 发表成果 
 
 > \* 表示同等贡献，† 表示通讯作者。
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2025</div><img src='images/paper/consrec.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# ConsRec: Denoising Sequential Recommendation through User-Consistent Preference Modeling
+
+**Haidong Xin**$^{\*}$, [Qiushi Xiong$^{\*}$](https://scholar.google.com/citations?user=dFXhQlsAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shi Yu](https://scholar.google.com/citations?user=xcMVPTgAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Chenyan Xiong](https://scholar.google.com/citations?user=E9BaEBYAAAAJ)
+
+[**📃Paper**](https://arxiv.org/abs/2505.22130) \| [**📄PDF**](https://arxiv.org/pdf/2505.22130) \| [![](https://img.shields.io/github/stars/NEUIR/ConsRec?style=social&label=Code+Stars)](https://github.com/NEUIR/ConsRec)
+
+- 这项工作实现了通过一致性用户偏好建模对用户交互序列去噪，从而提升序列推荐系统的性能。
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">LREC-COLING 2024</div><img src='images/paper/mmad-coling2024.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
