@@ -2,6 +2,30 @@
 
 > \* indicates equal contribution, and † indicates corresponding author.
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WISA 2025</div><img src='images/paper/tasteplus.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# Adapting Language Models to Text Matching based Recommendation Systems
+
+**Haidong Xin**, [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Xiaohua Li](http://faculty.neu.edu.cn/lixiaohua/zh_CN/index.htm), [Minghe Yu](http://faculty.neu.edu.cn/yuminghe/zh_CN/index.htm), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ)
+
+- This work has significantly improved the performance of text matching in recommendation systems by incorporating language model pretraining.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><img src='images/paper/llmsparks.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts
+
+[Junhao Chen](https://scholar.google.com/citations?user=uVMnzPMAAAAJ), Jingbo Sun, [Xiang Li](https://scholar.google.com/citations?user=_wyYvQsAAAAJ), **Haidong Xin**, [Yuhao Xue](https://xhyu61.github.io), Yibin Xu, [Hao Zhao$^†$](https://scholar.google.com/citations?hl=zh-CN&user=ygQznUQAAAAJ)
+
+[**🗂️Project Page**](https://llmsparks.github.io)
+
+- This work introduces LLMsPark, a game theory-based platform for evaluating large language models' strategic behaviors and decision-making abilities in multi-agent environments, providing a novel criterion for assessing their intelligence.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2025</div><img src='images/paper/consrec.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -11,7 +35,7 @@
 
 [**📃Paper**](https://arxiv.org/abs/2505.22130) \| [**📄PDF**](https://arxiv.org/pdf/2505.22130) \| [![](https://img.shields.io/github/stars/NEUIR/ConsRec?style=social&label=Code+Stars)](https://github.com/NEUIR/ConsRec)
 
-- This work achieves the denoising of user interaction sequences through consistent user preference modeling, thereby improving the performance of sequential recommendation systems.
+- This work improves sequential recommendation systems by extracting personalized semantic shortcuts from user-item interaction histories, enhancing the capture of stable user preferences.
 </div>
 </div>
 
