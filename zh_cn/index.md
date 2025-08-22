@@ -33,6 +33,30 @@ author_profile: true
 
 > \* 表示同等贡献，† 表示通讯作者。
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WISA 2025</div><img src='images/paper/tasteplus.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# Adapting Language Models to Text Matching based Recommendation Systems
+
+**Haidong Xin**, [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Xiaohua Li](http://faculty.neu.edu.cn/lixiaohua/zh_CN/index.htm), [Minghe Yu](http://faculty.neu.edu.cn/yuminghe/zh_CN/index.htm), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ)
+
+- 本工作通过引入语言模型预训练显著提升了基于文本匹配的推荐系统的性能。
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><img src='images/paper/llmsparks.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts
+
+[Junhao Chen](https://scholar.google.com/citations?user=uVMnzPMAAAAJ), Jingbo Sun, [Xiang Li](https://scholar.google.com/citations?user=_wyYvQsAAAAJ), **Haidong Xin**, [Yuhao Xue](https://xhyu61.github.io), Yibin Xu, [Hao Zhao$^†$](https://scholar.google.com/citations?hl=zh-CN&user=ygQznUQAAAAJ)
+
+[**🗂️项目网站**](https://llmsparks.github.io)
+
+- 本工作提出了一个基于博弈论的评测基准，用于评估大语言模型在多智能体环境中的战略行为和决策能力，为智能评估提供了新标准。
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2025</div><img src='images/paper/consrec.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -40,7 +64,7 @@ author_profile: true
 
 **Haidong Xin**$^{\*}$, [Qiushi Xiong$^{\*}$](https://scholar.google.com/citations?user=dFXhQlsAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shi Yu](https://scholar.google.com/citations?user=xcMVPTgAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Chenyan Xiong](https://scholar.google.com/citations?user=E9BaEBYAAAAJ)
 
-[**📃Paper**](https://arxiv.org/abs/2505.22130) \| [**📄PDF**](https://arxiv.org/pdf/2505.22130) \| [![](https://img.shields.io/github/stars/NEUIR/ConsRec?style=social&label=Code+Stars)](https://github.com/NEUIR/ConsRec)
+[**📃论文**](https://arxiv.org/abs/2505.22130) \| [**📄PDF**](https://arxiv.org/pdf/2505.22130) \| [![](https://img.shields.io/github/stars/NEUIR/ConsRec?style=social&label=Code+Stars)](https://github.com/NEUIR/ConsRec)
 
 - 这项工作实现了通过一致性用户偏好建模对用户交互序列去噪，从而提升序列推荐系统的性能。
 </div>
