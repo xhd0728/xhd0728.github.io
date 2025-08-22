@@ -11,22 +11,22 @@ author_profile: true
 
 我的研究兴趣涵盖自然语言处理（NLP）、信息检索、大语言模型（LLM）、检索增强生成（RAG）、推荐系统（Recsys）以及多模态领域。目前，我的工作包括多智能体、检索增强生成系统优化以及大语言模型的指令微调。
 
-我拥有哈尔滨工程大学计算机科学与技术学士学位，本科期间由助理研究员[李超](https://mohub.net/help/MoHub/UserServiceCases/Cases1.html#%E6%95%99%E5%B8%88%E4%BB%8B%E7%BB%8D)指导。我还在[东北大学信息检索实验室](https://neuir.github.io/)进行研究实习，导师是[刘正皓](https://edwardzh.github.io/)副教授（来自[清华大学](https://www.tsinghua.edu.cn)），同时也在[启元实验室](https://qiyuanzp.zhiye.com/)和[清华大学自然语言处理与社会人文计算实验室](https://nlp.csai.tsinghua.edu.cn/)实习，分别由[闫宇坤](https://scholar.google.com/citations?hl=en&user=B88nSvIAAAAJ&view_op=list_works)（来自[清华大学](https://www.tsinghua.edu.cn)）和[熊辰炎](https://www.cs.cmu.edu/~cx/)副教授（来自[卡内基梅隆大学](https://www.cmu.edu/)）指导。 
+我拥有哈尔滨工程大学计算机科学与技术学士学位，本科期间由助理研究员[李超](https://mohub.net/help/MoHub/UserServiceCases/Cases1.html#%E6%95%99%E5%B8%88%E4%BB%8B%E7%BB%8D)指导。我还在[东北大学信息检索实验室](https://neuir.github.io/)进行研究实习，由[刘正皓](https://edwardzh.github.io/)副教授指导，同时也在[启元实验室](https://qiyuanzp.zhiye.com/)、[面壁智能](https://www.openbmb.cn/)和[清华大学自然语言处理与社会人文计算实验室](https://nlp.csai.tsinghua.edu.cn/)实习，由[闫宇坤](https://scholar.google.com/citations?hl=en&user=B88nSvIAAAAJ&view_op=list_works)老师指导。 
 
 ---
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <!-- <script src="/assets/js/ip.js"></script> -->
-<span id="busuanzi_container_site_pv">总页面浏览量: <span id="busuanzi_value_site_pv"></span></span> \| 上次编辑时间: 2025-05-30 \| 联系方式: [*hdxin2002@gmail.com*](mailto://hdxin2002@gmail.com)
+<span id="busuanzi_container_site_pv">总页面浏览量: <span id="busuanzi_value_site_pv"></span></span> \| 上次编辑时间: 2025-08-23 \| 联系方式: [*hdxin2002@gmail.com*](mailto://hdxin2002@gmail.com)
 
 ---
 
 # 🔥 新闻
 
-- *2024.10*：&nbsp;🕯 深切哀悼我的朋友徐子涵于2024年10月10日在上海离世。
+- *2025.08*: &nbsp;🎉 我们的论文TASTE$^+$被WISA 2025录用!
+- *2025.08*: &nbsp;🎉 我们的论文LLMsPark被EMNLP 2025 (CCF-B类会议)录用!
 - *2024.04*：&nbsp;🎉 我们发布了一个GitHub代码库 [heu-icicles](https://github.com/HEUOpenResource/heu-icicles) [![](https://img.shields.io/github/stars/HEUOpenResource/heu-icicles?style=social&label=Code+Stars)](https://github.com/HEUOpenResource/heu-icicles)，欢迎提出问题和提交拉取请求！
-- *2024.02*：&nbsp;🎉 我们的论文被2024年语言资源与评价会议-国际计算语言学大会（LREC-COLING 2024，CCF-B类会议）录用！
-- *2023.10*：&nbsp;🎉 我们发布了MMAD，这是一个能为电影生成全面音频描述以帮助视障人士的模型！
+- *2024.02*：&nbsp;🎉 我们的论文MMAD被LREC-COLING 2024（CCF-B类会议）录用！
 - *2023.05*：&nbsp;🎉 我们在2023年数学建模竞赛（MCM/ICM）上提出了一个用于预测Wordle游戏结果的模型！
 
 # 📝 发表成果 
