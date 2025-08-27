@@ -23,9 +23,10 @@ author_profile: true
 
 # 🔥 新闻
 
+- *2025.08*: &nbsp;🎉 我们发布了 [UltraRAG 2.0](https://github.com/OpenBMB/UltraRAG) [![](https://img.shields.io/github/stars/OpenBMB/UltraRAG?style=social&label=Code+Stars)](https://github.com/OpenBMB/UltraRAG)，这是一个开源、低代码的复杂 RAG 系统构建框架！
 - *2025.08*: &nbsp;🎉 我们的论文TASTE$^+$被WISA 2025录用!
 - *2025.08*: &nbsp;🎉 我们的论文LLMsPark被EMNLP 2025 (CCF-B类会议)录用!
-- *2024.04*：&nbsp;🎉 我们发布了一个GitHub代码库 [heu-icicles](https://github.com/HEUOpenResource/heu-icicles) [![](https://img.shields.io/github/stars/HEUOpenResource/heu-icicles?style=social&label=Code+Stars)](https://github.com/HEUOpenResource/heu-icicles)，欢迎提出问题和提交拉取请求！
+- *2024.04*：&nbsp;🎉 我们发布了一个GitHub代码库 [heu-icicles](https://github.com/HEUOpenResource/heu-icicles) [![](https://img.shields.io/github/stars/HEUOpenResource/heu-icicles?style=social&label=Code+Stars)](https://github.com/HEUOpenResource/heu-icicles)，诚挚欢迎你的贡献！
 - *2024.02*：&nbsp;🎉 我们的论文MMAD被LREC-COLING 2024（CCF-B类会议）录用！
 - *2023.05*：&nbsp;🎉 我们在2023年数学建模竞赛（MCM/ICM）上提出了一个用于预测Wordle游戏结果的模型！
 
