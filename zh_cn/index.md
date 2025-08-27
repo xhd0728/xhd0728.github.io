@@ -187,3 +187,9 @@ author_profile: true
 - [薛宇浩](https://xhyu61.github.io/), [电子与信息工程学院](https://see.tongji.edu.cn/), [同济大学](https://www.tongji.edu.cn/), 上海.
 - [杨春昊](https://douhappy.github.io/), [计算技术研究所](http://www.ict.ac.cn/), [中国科学院大学](https://www.ucas.ac.cn/), 北京.
 - [叶笑君](https://scholar.google.com/citations?user=BKMYsm4AAAAJ&hl=en), [计算机科学与技术学院](http://www.cs.zju.edu.cn/csen/), [浙江大学](https://www.zju.edu.cn/), 杭州.
+
+<p><center>
+  <div id="clustrmaps-widget" style="width:50%">
+    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=e5X58khjwTA1_lrYnMyFF8oCJypotuYdVcB30wne0dM&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+  </div>
+</center></p>
