@@ -2,6 +2,19 @@
 
 > \* indicates equal contribution, and † indicates corresponding author.
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI Open 2025</div><img src='images/paper/survey.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# Knowledge Intensive Agents
+
+[Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Pengcheng Huang](https://scholar.google.com/citations?user=VA9mUOsAAAAJ), [Zhipeng Xu](https://scholar.google.com/citations?user=PGS_UbsAAAAJ), [Xinze Li](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Shuliang Liu](https://scholar.google.com/citations?user=oMszRQQAAAAJ), [Chunyi Peng](https://scholar.google.com/citations?user=dZfkLg4AAAAJ), **Haidong Xin**, [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Xu Han](https://scholar.google.com/citations?user=rz4rOSMAAAAJ), [Zhiyuan Liu](https://scholar.google.com/citations?user=dT0v5u0AAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ)
+
+[**📄PDF**](https://papers.ssrn.com/sol3/Delivery.cfm/81afde5f-fbd1-4635-b582-7ac104b3322a-MECA.pdf?abstractid=5459034&mirid=1)
+
+- This work provides a comprehensive overview of Retrieval-Augmented Generation from an agentic perspective, categorizing knowledge-intensive agents into acquisition and utilization roles, and highlighting future directions for joint optimization in multi-agent RAG systems.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WISA 2025</div><img src='images/paper/tasteplus.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
