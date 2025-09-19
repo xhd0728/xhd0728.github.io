@@ -11,12 +11,12 @@
           {% for link in site.data.navigation.main %}
           <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-          <li class="masthead__menu-item">
+          <!-- <li class="masthead__menu-item">
             <a href="{% if page.url contains 'zh_cn' %}{{ domain }}/{% else %}{{ domain }}/zh_cn{% endif %}"
               target="_self">
               {% if page.url contains 'zh_cn' %}English{% else %}简体中文{% endif %}
             </a>
-          </li>
+          </li> -->
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
