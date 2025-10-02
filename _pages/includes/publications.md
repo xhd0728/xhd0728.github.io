@@ -1,6 +1,6 @@
 # 📝 Publications 
 
-> \* indicates equal contribution, and † indicates corresponding author.
+> \* indicates **equal contribution**, and † indicates **corresponding author**.
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI Open 2025</div><img src='images/paper/survey.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
