@@ -1,28 +1,28 @@
 # main links links
 main:
-  - title: "About Me"
-    url: "/#about-me"
+- title: "About Me"
+  url: "/#about-me"
 
-  - title: "News"
-    url: "/#-news"
+- title: "News"
+  url: "/#-news"
 
-  - title: "Publications"
-    url: "/#-publications"
+- title: "Publications"
+  url: "/#-publications"
 
-  - title: "Awards"
-    url: "/#-awards"
+- title: "Awards"
+  url: "/#-awards"
 
-  - title: "Projects"
-    url: "/#-projects"
+# - title: "Projects"
+#   url: "/#-projects"
 
-  - title: "Educations"
-    url: "/#-educations"
+- title: "Educations"
+  url: "/#-educations"
 
-  - title: "Invited Talks"
-    url: "/#-invited-talks"
+- title: "Invited Talks"
+  url: "/#-invited-talks"
 
-  - title: "Internships"
-    url: "/#-internships"
+- title: "Internships"
+  url: "/#-internships"
 
-  - title: "Travelling"
-    url: "https://www.travellings.cn/plain.html"
+- title: "Travelling"
+  url: "https://www.travellings.cn/plain.html"
