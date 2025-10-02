@@ -9,6 +9,8 @@
 
 **Haidong Xin**, [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Xiaohua Li](http://faculty.neu.edu.cn/lixiaohua/zh_CN/index.htm), [Minghe Yu](http://faculty.neu.edu.cn/yuminghe/zh_CN/index.htm), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ)
 
+[![](https://img.shields.io/github/stars/NEUIR/TASTE-plus?style=social&label=Code+Stars)](https://github.com/NEUIR/TASTE-plus)
+
 - This work has significantly improved the performance of text matching in recommendation systems by incorporating language model pretraining.
 </div>
 </div>
@@ -20,7 +22,7 @@
 
 [Junhao Chen](https://scholar.google.com/citations?user=uVMnzPMAAAAJ), Jingbo Sun, [Xiang Li](https://scholar.google.com/citations?user=_wyYvQsAAAAJ), **Haidong Xin**, [Yuhao Xue](https://xhyu61.github.io), Yibin Xu, [Hao Zhao$^†$](https://scholar.google.com/citations?hl=zh-CN&user=ygQznUQAAAAJ)
 
-[**🗂️Project Page**](https://llmsparks.github.io)
+[**📄PDF**](https://arxiv.org/pdf/2509.16610) [**🗂️Project Page**](https://llmsparks.github.io)
 
 - This work introduces LLMsPark, a game theory-based platform for evaluating large language models' strategic behaviors and decision-making abilities in multi-agent environments, providing a novel criterion for assessing their intelligence.
 </div>
@@ -33,7 +35,7 @@
 
 **Haidong Xin**$^{\*}$, [Qiushi Xiong$^{\*}$](https://scholar.google.com/citations?user=dFXhQlsAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shi Yu](https://scholar.google.com/citations?user=xcMVPTgAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Chenyan Xiong](https://scholar.google.com/citations?user=E9BaEBYAAAAJ)
 
-[**📃Paper**](https://arxiv.org/abs/2505.22130) \| [**📄PDF**](https://arxiv.org/pdf/2505.22130) \| [![](https://img.shields.io/github/stars/NEUIR/ConsRec?style=social&label=Code+Stars)](https://github.com/NEUIR/ConsRec)
+[**📄PDF**](https://arxiv.org/pdf/2505.22130) \| [![](https://img.shields.io/github/stars/NEUIR/ConsRec?style=social&label=Code+Stars)](https://github.com/NEUIR/ConsRec)
 
 - This work improves sequential recommendation systems by extracting personalized semantic shortcuts from user-item interaction histories, enhancing the capture of stable user preferences.
 </div>
@@ -46,7 +48,7 @@
 
 [Xiaojun Ye](https://scholar.google.com/citations?user=BKMYsm4AAAAJ), [Junhao Chen](https://scholar.google.com/citations?user=uVMnzPMAAAAJ), [Xiang Li](https://scholar.google.com/citations?user=_wyYvQsAAAAJ), **Haidong Xin**, Chao Li, [Sheng Zhou$^†$](https://scholar.google.com/citations?user=Ss76nMwAAAAJ), [Jiajun Bu](https://scholar.google.com/citations?user=OgZP2okAAAAJ)
 
-[**📃Paper**](https://aclanthology.org/2024.lrec-main.998/) \| [**📄PDF**](https://aclanthology.org/2024.lrec-main.998.pdf) \| [**🗂️Project Page**](https://daria8976.github.io/mmad-page/) \| [![](https://img.shields.io/github/stars/Daria8976/MMAD?style=social&label=Code+Stars)](https://github.com/Daria8976/MMAD)
+[**📄PDF**](https://aclanthology.org/2024.lrec-main.998.pdf) \| [**🗂️Project Page**](https://daria8976.github.io/mmad-page/) \| [![](https://img.shields.io/github/stars/Daria8976/MMAD?style=social&label=Code+Stars)](https://github.com/Daria8976/MMAD)
 
 - This work has unlocked a whole new experience of watching movies for the visually impaired.
 </div>
@@ -59,7 +61,7 @@
 
 **Haidong Xin**$^{\*†}$, [Fang Wu$^{\*}$](https://wfloveiu.github.io/), [Zhitong Zhou$^{\*}$](https://scholar.google.com/citations?user=aG3jVDUAAAAJ&hl=en)
 
-[**📃Paper**](https://arxiv.org/abs/2403.19433) \| [**📄PDF**](https://arxiv.org/pdf/2403.19433) \| [![arXiv](https://img.shields.io/badge/arXiv-2403.19433-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2403.19433)
+[**📄PDF**](https://arxiv.org/pdf/2403.19433) \| [![arXiv](https://img.shields.io/badge/arXiv-2403.19433-b31b1b.svg?style=flat-square)](https://arxiv.org/abs/2403.19433)
 
 - This work conducted a detailed numerical analysis of the Wordle game, revealing statistical patterns within it.
 </div>
