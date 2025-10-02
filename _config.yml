@@ -7,7 +7,7 @@
 
 # Site Settings
 title: "Haidong Xin"
-description: "NEUIR & Qiyuan Lab"
+description: "Master student at Northeastern University. Researching in NLP, IR, RAG, RecSys, and Multi-agent Systems."
 repository: "xhd0728/xhd0728.github.io"
 google_scholar_stats_use_cdn: true
 
@@ -24,7 +24,7 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 author:
   name: "Haidong Xin"
   avatar: "images/android-chrome-512x512.png"
-  bio: "辛海东"
+  bio: "Northeastern University"
   location: "Beijing, China"
   employer:
   pubmed:
@@ -44,7 +44,7 @@ author:
   instagram:
   impactstory: # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm:
-  linkedin: # "haidongxin"
+  linkedin: "haidongxin"
   dblp: "https://dblp.org/pid/372/7441.html"
   orcid: "https://orcid.org/0009-0003-9484-3251"
   pinterest:
