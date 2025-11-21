@@ -4,13 +4,13 @@
 
 ---
 
-> <strong><span style="color:red">🔥 We sincerely invite you to use and contribute to our new project, <a href="https://openbmb.github.io/UltraRAG/index_en.html" style="color:inherit; text-decoration:underline;">UltraRAG 2.0</a>!</span></strong>
+> <strong><span style="color:red">🔥 We sincerely invite you to use and contribute to our new project, <a href="https://openbmb.github.io/UltraRAG/index_en.html" style="color:inherit; text-decoration:underline;">UltraRAG v2</a>!</span></strong>
 >
 > <strong><span style="color:red">🔥 Your feedback, ideas, and participation are warmly welcome!</span></strong>
 
 ---
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_pv">Total Page Views: <span id="busuanzi_value_site_pv"></span></span> \| Last Edit: 2025-10-03 \| Contact: [*hdxin2002@gmail.com*](mailto://hdxin2002@gmail.com)
+<span id="busuanzi_container_site_pv">Total Page Views: <span id="busuanzi_value_site_pv"></span></span> \| Last Edit: 2025-11-21 \| Contact: [*hdxin2002@gmail.com*](mailto://hdxin2002@gmail.com)
 
 ---

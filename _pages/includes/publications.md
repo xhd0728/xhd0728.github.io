@@ -10,7 +10,7 @@
 [Zhenghao Liu](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Pengcheng Huang](https://scholar.google.com/citations?user=VA9mUOsAAAAJ), [Zhipeng Xu](https://scholar.google.com/citations?user=PGS_UbsAAAAJ), [Xinze Li](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Shuliang Liu](https://scholar.google.com/citations?user=oMszRQQAAAAJ), [Chunyi Peng](https://scholar.google.com/citations?user=dZfkLg4AAAAJ), **Haidong Xin**, [Yukun Yan$^†$](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Xu Han](https://scholar.google.com/citations?user=rz4rOSMAAAAJ), [Zhiyuan Liu$^†$](https://scholar.google.com/citations?user=dT0v5u0AAAAJ), [Maosong Sun$^†$](https://scholar.google.com/citations?user=zIgT0HMAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ)
 
 <div align="left">
-<a href="https://ssrn.com/abstract=5459034"><img src="https://img.shields.io/badge/SSRN-5459034-b31b1b.svg?style=flat-square" alt="SSRN"></a>
+<a href="https://ssrn.com/abstract=5459034"><img src="https://img.shields.io/badge/SSRN-5459034-b31b1b" alt="SSRN"></a>
 </div>
 
 - This work provides a comprehensive overview of Retrieval-Augmented Generation from an agentic perspective, categorizing knowledge-intensive agents into acquisition and utilization roles, and highlighting future directions for joint optimization in multi-agent RAG systems.
@@ -42,7 +42,7 @@
 
 <div align="left">
 <a href="https://llmsparks.github.io"><img src="https://img.shields.io/static/v1?label=Homepage&message=LLMsPark&color=blue&logo=github-pages"></a>
-<a href="https://arxiv.org/abs/2509.16610"><img src="https://img.shields.io/badge/arXiv-2509.16610-b31b1b.svg?style=flat-square" alt="arXiv"></a>
+<a href="https://arxiv.org/abs/2509.16610"><img src="https://img.shields.io/badge/arXiv-2509.16610-b31b1b" alt="arXiv"></a>
 </div>
 
 - This work introduces LLMsPark, a game theory-based platform for evaluating large language models' strategic behaviors and decision-making abilities in multi-agent environments, providing a novel criterion for assessing their intelligence.
@@ -57,7 +57,7 @@
 **Haidong Xin**$^{\*}$, [Qiushi Xiong$^{\*}$](https://scholar.google.com/citations?user=dFXhQlsAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shi Yu](https://scholar.google.com/citations?user=xcMVPTgAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Chenyan Xiong](https://scholar.google.com/citations?user=E9BaEBYAAAAJ)
 
 <div align="left">
-<a href="https://arxiv.org/abs/2505.22130"><img src="https://img.shields.io/badge/arXiv-2505.22130-b31b1b.svg?style=flat-square" alt="arXiv"></a>
+<a href="https://arxiv.org/abs/2505.22130"><img src="https://img.shields.io/badge/arXiv-2505.22130-b31b1b" alt="arXiv"></a>
 <a href="https://github.com/NEUIR/ConsRec"><img src="https://img.shields.io/github/stars/NEUIR/ConsRec?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
@@ -90,7 +90,7 @@
 **Haidong Xin**$^{\*}$, [Fang Wu$^{\*}$](https://wfloveiu.github.io/), [Zhitong Zhou$^{\*}$](https://scholar.google.com/citations?user=aG3jVDUAAAAJ&hl=en)
 
 <div align="left">
-<a href="https://arxiv.org/abs/2403.19433"><img src="https://img.shields.io/badge/arXiv-2403.19433-b31b1b.svg?style=flat-square" alt="arXiv"></a>
+<a href="https://arxiv.org/abs/2403.19433"><img src="https://img.shields.io/badge/arXiv-2403.19433-b31b1b" alt="arXiv"></a>
 </div>
 
 - This work conducted a detailed numerical analysis of the Wordle game, revealing statistical patterns within it.
