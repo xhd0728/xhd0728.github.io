@@ -2,7 +2,24 @@
 
 > \* indicates **equal contribution**, and † indicates **corresponding author**.
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI Open 2025</div><img src='images/paper/survey.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD 2026</div><img src='images/paper/lisrec.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation
+
+**Haidong Xin**, [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shi Yu](https://scholar.google.com/citations?user=xcMVPTgAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zulong Chen](https://scholar.google.com/citations?user=nUVmSqUAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Chenyan Xiong](https://scholar.google.com/citations?user=E9BaEBYAAAAJ)
+
+  
+<div align="left">
+<a href="https://arxiv.org/abs/2505.22130"><img src="https://img.shields.io/badge/arXiv-2505.22130-b31b1b" alt="arXiv"></a>
+<a href="https://github.com/NEUIR/LISRec"><img src="https://img.shields.io/github/stars/NEUIR/LISRec?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
+</div>
+
+This work improves sequential recommendation systems by extracting personalized semantic shortcuts from user-item interaction histories, enhancing the capture of stable user preferences.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI Open 2026 Submission</div><img src='images/paper/survey.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Knowledge Intensive Agents
@@ -14,7 +31,7 @@
 <a href="https://ssrn.com/abstract=5459034"><img src="https://img.shields.io/badge/SSRN-5459034-b31b1b" alt="SSRN"></a>
 </div>
 
-- **🔍 Summary:** This work provides a comprehensive overview of Retrieval-Augmented Generation from an agentic perspective, categorizing knowledge-intensive agents into acquisition and utilization roles, and highlighting future directions for joint optimization in multi-agent RAG systems.
+This work provides a comprehensive overview of Retrieval-Augmented Generation from an agentic perspective, categorizing knowledge-intensive agents into acquisition and utilization roles, and highlighting future directions for joint optimization in multi-agent RAG systems.
 </div>
 </div>
 
@@ -31,7 +48,7 @@
 <a href="https://github.com/NEUIR/TASTE-plus"><img src="https://img.shields.io/github/stars/NEUIR/TASTE-plus?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
-- **🔍 Summary:** This work has significantly improved the performance of text matching in recommendation systems by incorporating language model pretraining.
+This work has significantly improved the performance of text matching in recommendation systems by incorporating language model pretraining.
 </div>
 </div>
 
@@ -48,24 +65,7 @@
 <a href="https://arxiv.org/abs/2509.16610"><img src="https://img.shields.io/badge/arXiv-2509.16610-b31b1b" alt="arXiv"></a>
 </div>
 
-- **🔍 Summary:** This work introduces LLMsPark, a game theory-based platform for evaluating large language models' strategic behaviors and decision-making abilities in multi-agent environments, providing a novel criterion for assessing their intelligence.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2025</div><img src='images/paper/consrec.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-# ConsRec: Denoising Sequential Recommendation through User-Consistent Preference Modeling
-
-**Haidong Xin**$^{\*}$, [Qiushi Xiong$^{\*}$](https://scholar.google.com/citations?user=dFXhQlsAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shi Yu](https://scholar.google.com/citations?user=xcMVPTgAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Chenyan Xiong](https://scholar.google.com/citations?user=E9BaEBYAAAAJ)
-
-  
-<div align="left">
-<a href="https://arxiv.org/abs/2505.22130"><img src="https://img.shields.io/badge/arXiv-2505.22130-b31b1b" alt="arXiv"></a>
-<a href="https://github.com/NEUIR/ConsRec"><img src="https://img.shields.io/github/stars/NEUIR/ConsRec?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
-</div>
-
-- **🔍 Summary:** This work improves sequential recommendation systems by extracting personalized semantic shortcuts from user-item interaction histories, enhancing the capture of stable user preferences.
+This work introduces LLMsPark, a game theory-based platform for evaluating large language models' strategic behaviors and decision-making abilities in multi-agent environments, providing a novel criterion for assessing their intelligence.
 </div>
 </div>
 
@@ -83,7 +83,7 @@
 <a href="https://aclanthology.org/2024.lrec-main.998.pdf">[📄 Paper]</a>
 </div>
 
-- **🔍 Summary:** This work has unlocked a whole new experience of watching movies for the visually impaired.
+This work has unlocked a whole new experience of watching movies for the visually impaired.
 </div>
 </div>
 
@@ -92,13 +92,13 @@
 
 # Puzzle Game: Prediction and Classification of Wordle Solution Words
 
-**Haidong Xin**$^{\*}$, [Fang Wu$^{\*}$](https://wfloveiu.github.io/), [Zhitong Zhou$^{\*}$](https://scholar.google.com/citations?user=aG3jVDUAAAAJ&hl=en)
+**Haidong Xin**$^{\*†}$, [Fang Wu$^{\*}$](https://wfloveiu.github.io/), [Zhitong Zhou$^{\*}$](https://scholar.google.com/citations?user=aG3jVDUAAAAJ&hl=en)
 
   
 <div align="left">
 <a href="https://arxiv.org/abs/2403.19433"><img src="https://img.shields.io/badge/arXiv-2403.19433-b31b1b" alt="arXiv"></a>
 </div>
 
-- **🔍 Summary:** This work conducted a detailed numerical analysis of the Wordle game, revealing statistical patterns within it.
+This work conducted a detailed numerical analysis of the Wordle game, revealing statistical patterns within it.
 </div>
 </div>
