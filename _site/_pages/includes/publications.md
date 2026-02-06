@@ -36,7 +36,7 @@ This work improves sequential recommendation systems by extracting personalized 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI Open 2026 Submission</div><img src='images/paper/survey.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI Open</div><img src='images/paper/survey.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Knowledge Intensive Agents
@@ -45,7 +45,7 @@ This work improves sequential recommendation systems by extracting personalized 
 
   
 <div align="left">
-<a href="https://ssrn.com/abstract=5459034"><img src="https://img.shields.io/badge/SSRN-5459034-b31b1b?logo=arxiv&logoColor=white" alt="SSRN"></a>
+<a href="https://doi.org/10.1016/j.aiopen.2026.02.002"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.aiopen.2026.02.002-blue?logo=doi&logoColor=white" alt="DOI"></a>
 </div>
 
 This work provides a comprehensive overview of Retrieval-Augmented Generation from an agentic perspective, categorizing knowledge-intensive agents into acquisition and utilization roles, and highlighting future directions for joint optimization in multi-agent RAG systems.
@@ -74,7 +74,7 @@ This work has significantly improved the performance of text matching in recomme
 
 # LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts
 
-[Junhao Chen](https://scholar.google.com/citations?user=uVMnzPMAAAAJ), Jingbo Sun, [Xiang Li](https://scholar.google.com/citations?user=_wyYvQsAAAAJ), **Haidong Xin**, [Yuhao Xue](https://xhyu61.github.io), Yibin Xu, [Hao Zhao$^†$](https://scholar.google.com/citations?hl=zh-CN&user=ygQznUQAAAAJ)
+[Junhao Chen](https://scholar.google.com/citations?user=uVMnzPMAAAAJ), [Jingbo Sun](https://scholar.google.com/citations?user=DowEKzcAAAAJ), [Xiang Li](https://scholar.google.com/citations?user=_wyYvQsAAAAJ), **Haidong Xin**, [Yuhao Xue](https://xhyu61.github.io), Yibin Xu, [Hao Zhao$^†$](https://scholar.google.com/citations?user=ygQznUQAAAAJ)
 
   
 <div align="left">

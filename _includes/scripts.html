@@ -1,4 +1,46 @@
 <script src="assets/js/main.min.js"></script>
 
+<!-- Back to top button -->
+<button id="back-to-top" title="Back to top" aria-label="Back to top">&#8679;</button>
+<script>
+(function() {
+  // Back to top
+  var btn = document.getElementById('back-to-top');
+  if (btn) {
+    var scrollThreshold = 300;
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > scrollThreshold) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    });
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // Scroll fade-in for key elements (no DOM restructuring)
+  var fadeTargets = document.querySelectorAll(
+    '.page__content > h1, .page__content > ul, .page__content > .paper-box, .page__content > blockquote, .page__content > hr'
+  );
+  fadeTargets.forEach(function(el) {
+    el.classList.add('fade-in-section');
+  });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, { threshold: 0.05 });
+
+  document.querySelectorAll('.fade-in-section').forEach(function(el) {
+    observer.observe(el);
+  });
+})();
+</script>
+
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}

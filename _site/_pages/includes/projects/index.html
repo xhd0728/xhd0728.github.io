@@ -19,14 +19,22 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="Haidong Xin">
-<meta property="og:title" content="Haidong Xin">
+<meta property="og:title" content="Haidong Xin - Homepage">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://localhost:4000/images/android-chrome-512x512.png">
+<meta property="og:description" content="Master student at Northeastern University. Researching in NLP, IR, RAG, RecSys, and Multi-agent Systems.">
+<meta name="description" content="Master student at Northeastern University. Researching in NLP, IR, RAG, RecSys, and Multi-agent Systems.">
+<meta name="author" content="Haidong Xin">
 
 
   <link rel="canonical" href="http://localhost:4000/_pages/includes/projects/">
   <meta property="og:url" content="http://localhost:4000/_pages/includes/projects/">
 
 
-
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Haidong Xin - Homepage">
+<meta name="twitter:description" content="Master student at Northeastern University. Researching in NLP, IR, RAG, RecSys, and Multi-agent Systems.">
+<meta name="twitter:image" content="http://localhost:4000/images/android-chrome-512x512.png">
 
 
 
@@ -42,6 +50,13 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Preconnect to external resources for faster loading -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://img.shields.io" crossorigin>
+<link rel="dns-prefetch" href="https://scholar.google.com">
+<link rel="dns-prefetch" href="https://busuanzi.ibruce.info">
+
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
@@ -50,9 +65,7 @@
 <link rel="stylesheet" href="assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
-<head>
-  <base target="_blank">
-</head>
+<base target="_blank">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -64,16 +77,171 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="assets/css/academicons.css"/>
 
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true,
+      tags: 'all'
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
     }
-  });
+  };
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<style>
+  /* ===== Back to top button ===== */
+  #back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 44px;
+    height: 44px;
+    background-color: #494e52;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    align-items: center;
+    justify-content: center;
+  }
+  #back-to-top.visible {
+    display: flex;
+    opacity: 0.85;
+    transform: translateY(0);
+  }
+  #back-to-top:hover {
+    background-color: #1a1d20;
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+
+  /* ===== Section headings ===== */
+  .page__content > h1 {
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.6em;
+  }
+
+  /* Reduce gap between publications note and paper list */
+  .page__content blockquote + .paper-box {
+    padding-top: 0.5em;
+  }
+
+  /* ===== Blockquote / Announcement ===== */
+  .page__content blockquote {
+    background: linear-gradient(135deg, #fff8f0, #fff3e8);
+    border-left: 4px solid #ff6b35;
+    border-radius: 0 8px 8px 0;
+    padding: 1em 1.2em;
+    margin: 1em 0;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.08);
+  }
+
+  /* ===== News / Awards / Educations / Internships / Talks list styling ===== */
+  .page__content > ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .page__content > ul > li {
+    position: relative;
+    padding: 0.55em 0.8em 0.55em 1.2em;
+    margin-bottom: 0.35em;
+    border-left: 3px solid #dde4ea;
+    border-radius: 0 6px 6px 0;
+    background: linear-gradient(90deg, #f8fafb 0%, transparent 100%);
+    transition: border-color 0.25s ease, background 0.25s ease;
+  }
+  .page__content > ul > li:hover {
+    border-left-color: #52adc8;
+    background: linear-gradient(90deg, #eef6fa 0%, transparent 100%);
+  }
+
+  /* ===== Sidebar profile enhancements ===== */
+  .author__avatar img {
+    transition: box-shadow 0.3s ease;
+  }
+  .author__avatar img:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+  }
+  .author__name {
+    letter-spacing: 0.02em;
+  }
+  .author__urls-wrapper .social-icons a {
+    transition: color 0.2s ease;
+  }
+  .author__urls-wrapper .social-icons a:hover {
+    color: #52adc8 !important;
+  }
+  .author__urls_sm a {
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+  }
+  .author__urls_sm a:hover {
+    color: #52adc8 !important;
+    transform: translateY(-1px);
+  }
+
+  /* ===== Footer info bar (page views, contact) ===== */
+  .page__content > p > span#busuanzi_container_site_pv,
+  .page__content > p:has(#busuanzi_container_site_pv) {
+    display: block;
+    text-align: center;
+    font-size: 0.85em;
+    color: #888;
+    letter-spacing: 0.02em;
+  }
+
+  /* ===== Links ===== */
+  .page__content a:not(.btn):hover {
+    text-decoration: underline;
+    text-decoration-color: #52adc8;
+  }
+
+  /* ===== Selection ===== */
+  ::selection {
+    background: #52adc8;
+    color: #fff;
+  }
+
+  /* ===== Scroll fade-in animation ===== */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== Horizontal rules ===== */
+  .page__content hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #dde4ea 20%, #dde4ea 80%, transparent);
+    margin: 1.5em 0;
+  }
+</style>
 
 <!-- end custom head snippets -->
 
@@ -137,7 +305,7 @@
 
   <div class="author__content">
     <h3 class="author__name">Haidong Xin</h3>
-    <p class="author__bio">Northeastern University</p>
+    <p class="author__bio">NEUIR & TsinghuaNLP</p>
   </div>
 
   <div class="author__urls-wrapper">
@@ -307,6 +475,48 @@
     </div>
 
     <script src="assets/js/main.min.js"></script>
+
+<!-- Back to top button -->
+<button id="back-to-top" title="Back to top" aria-label="Back to top">&#8679;</button>
+<script>
+(function() {
+  // Back to top
+  var btn = document.getElementById('back-to-top');
+  if (btn) {
+    var scrollThreshold = 300;
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > scrollThreshold) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    });
+    btn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // Scroll fade-in for key elements (no DOM restructuring)
+  var fadeTargets = document.querySelectorAll(
+    '.page__content > h1, .page__content > ul, .page__content > .paper-box, .page__content > blockquote, .page__content > hr'
+  );
+  fadeTargets.forEach(function(el) {
+    el.classList.add('fade-in-section');
+  });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, { threshold: 0.05 });
+
+  document.querySelectorAll('.fade-in-section').forEach(function(el) {
+    observer.observe(el);
+  });
+})();
+</script>
 
 
 

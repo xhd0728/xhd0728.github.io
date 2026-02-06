@@ -31,16 +31,22 @@
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ site.title }}">
+<meta property="og:title" content="{{ site.title }} - Homepage">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ site.url | default: '' }}/images/android-chrome-512x512.png">
+<meta property="og:description" content="{{ seo_description }}">
+<meta name="description" content="{{ seo_description }}">
+<meta name="author" content="{{ site.author.name }}">
 
 {% if seo_url %}
   <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
 
-{% if page.excerpt %}
-  <meta property="og:description" content="{{ seo_description }}">
-{% endif %}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ site.title }} - Homepage">
+<meta name="twitter:description" content="{{ seo_description }}">
+<meta name="twitter:image" content="{{ site.url | default: '' }}/images/android-chrome-512x512.png">
 
 {% if site.twitter.username %}
   <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">

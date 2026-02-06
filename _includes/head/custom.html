@@ -9,15 +9,170 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="assets/css/academicons.css"/>
 
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true,
+      tags: 'all'
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
     }
-  });
+  };
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<style>
+  /* ===== Back to top button ===== */
+  #back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 44px;
+    height: 44px;
+    background-color: #494e52;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    align-items: center;
+    justify-content: center;
+  }
+  #back-to-top.visible {
+    display: flex;
+    opacity: 0.85;
+    transform: translateY(0);
+  }
+  #back-to-top:hover {
+    background-color: #1a1d20;
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+
+  /* ===== Section headings ===== */
+  .page__content > h1 {
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.6em;
+  }
+
+  /* Reduce gap between publications note and paper list */
+  .page__content blockquote + .paper-box {
+    padding-top: 0.5em;
+  }
+
+  /* ===== Blockquote / Announcement ===== */
+  .page__content blockquote {
+    background: linear-gradient(135deg, #fff8f0, #fff3e8);
+    border-left: 4px solid #ff6b35;
+    border-radius: 0 8px 8px 0;
+    padding: 1em 1.2em;
+    margin: 1em 0;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.08);
+  }
+
+  /* ===== News / Awards / Educations / Internships / Talks list styling ===== */
+  .page__content > ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .page__content > ul > li {
+    position: relative;
+    padding: 0.55em 0.8em 0.55em 1.2em;
+    margin-bottom: 0.35em;
+    border-left: 3px solid #dde4ea;
+    border-radius: 0 6px 6px 0;
+    background: linear-gradient(90deg, #f8fafb 0%, transparent 100%);
+    transition: border-color 0.25s ease, background 0.25s ease;
+  }
+  .page__content > ul > li:hover {
+    border-left-color: #52adc8;
+    background: linear-gradient(90deg, #eef6fa 0%, transparent 100%);
+  }
+
+  /* ===== Sidebar profile enhancements ===== */
+  .author__avatar img {
+    transition: box-shadow 0.3s ease;
+  }
+  .author__avatar img:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+  }
+  .author__name {
+    letter-spacing: 0.02em;
+  }
+  .author__urls-wrapper .social-icons a {
+    transition: color 0.2s ease;
+  }
+  .author__urls-wrapper .social-icons a:hover {
+    color: #52adc8 !important;
+  }
+  .author__urls_sm a {
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+  }
+  .author__urls_sm a:hover {
+    color: #52adc8 !important;
+    transform: translateY(-1px);
+  }
+
+  /* ===== Footer info bar (page views, contact) ===== */
+  .page__content > p > span#busuanzi_container_site_pv,
+  .page__content > p:has(#busuanzi_container_site_pv) {
+    display: block;
+    text-align: center;
+    font-size: 0.85em;
+    color: #888;
+    letter-spacing: 0.02em;
+  }
+
+  /* ===== Links ===== */
+  .page__content a:not(.btn):hover {
+    text-decoration: underline;
+    text-decoration-color: #52adc8;
+  }
+
+  /* ===== Selection ===== */
+  ::selection {
+    background: #52adc8;
+    color: #fff;
+  }
+
+  /* ===== Scroll fade-in animation ===== */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== Horizontal rules ===== */
+  .page__content hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #dde4ea 20%, #dde4ea 80%, transparent);
+    margin: 1.5em 0;
+  }
+</style>
 
 <!-- end custom head snippets -->

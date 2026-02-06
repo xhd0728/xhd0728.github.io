@@ -46,9 +46,24 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
-    
+    border-bottom: none;
+    padding: 1.5em 0;
+    margin-bottom: 0.5em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        background-color: rgba(#f5f8fa, 0.7);
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid #f0f0f0;
+        border-radius: 0;
+        &:hover {
+            border-radius: 10px;
+        }
+    }
 
     .paper-box-image{
         justify-content: center;
@@ -57,14 +72,27 @@
         order: 2;
         img {
             max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             object-fit: cover;
+            border-radius: 6px;
+            transition: box-shadow 0.3s ease;
         }
+    }
+
+    &:hover .paper-box-image img {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     }
     
     .paper-box-text{
         max-width: 100%;
         order: 1;
+
+        h1 {
+            font-size: 1.05em;
+            margin-top: 0.3em;
+            border-bottom: none !important;
+            padding-bottom: 0 !important;
+        }
     }
     
     @include breakpoint($medium) {
@@ -98,12 +126,15 @@ h1:before, .anchor:before {
 }
 
 .badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0.25em 0.8em;
     position: absolute;
     margin-top: .5em;
     margin-left: -.5em;
     color: white;
-    background-color: #00369f;
-    font-size: .8em;
+    background: linear-gradient(135deg, #00369f, #1a5bbf);
+    font-size: .75em;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 2px 6px rgba(0, 54, 159, 0.25);
 }
