@@ -7,39 +7,23 @@
    ========================================================================== */
 
 .breadcrumbs {
-  @include container;
-  @include clearfix;
-  margin-top: 0;
-  margin-bottom: 0;
+  max-width: $x-large;
+  margin: 0 auto;
   padding-left: 2em;
   padding-right: 2em;
   font-family: $sans-serif;
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.30s;
-          animation-delay: 0.30s;
+  animation: intro 0.3s both;
+  animation-delay: 0.30s;
 
-  @include breakpoint($large) {
+  @media (min-width: $large) {
     padding-left: 1em;
     padding-right: 1em;
-  }
-
-  @include breakpoint($x-large) {
-    max-width: $x-large;
   }
 
   ol {
     padding: 0;
     list-style: none;
     font-size: $type-size-6;
-
-    @include breakpoint($large) {
-      @include span(10 of 12 last);
-    }
-
-    @include breakpoint($x-large) {
-      @include prefix(0.5 of 12);
-    }
   }
 
   li {
@@ -57,8 +41,7 @@
    ========================================================================== */
 
 .pagination {
-  @include full();
-  @include clearfix();
+  width: 100%;
   margin-top: 1em;
   padding-top: 1em;
 
@@ -421,11 +404,10 @@
     font-weight: normal;
   }
 
-  /* hide sub sub links on small screens*/
   li > ul li {
     display: none;
 
-    @include breakpoint($medium) {
+    @media (min-width: $medium) {
       display: block;
     }
   }

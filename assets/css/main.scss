@@ -2,18 +2,15 @@
 ---
 
 /*
- *    Minimal Mistakes Jekyll Theme
+ *    Minimal Mistakes Jekyll Theme (Modernized)
  *
  *  - Michael Rose
  *  - mademistakes.com
- *  - https://twitter.com/mmistakes
  *
 */
 
-@import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
-@import "vendor/susy/susy";
 
 @import "reset";
 @import "base";
@@ -37,8 +34,11 @@
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
-@import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+html {
+    scroll-behavior: smooth;
+}
 
 .paper-box {
     display: flex;
@@ -51,10 +51,10 @@
     margin-bottom: 0.6em;
     border-radius: 10px;
     border: 1px solid #edf0f7;
-    background: #ffffff;
-    transition: background-color 0.3s ease,
-                box-shadow 0.3s ease,
-                border-color 0.3s ease;
+    background: #fff;
+    transition: background-color 0.25s ease,
+                box-shadow 0.25s ease,
+                border-color 0.25s ease;
 
     &:hover {
         background-color: #fafcff;
@@ -67,7 +67,7 @@
         border-radius: 10px;
     }
 
-    .paper-box-image{
+    .paper-box-image {
         justify-content: center;
         display: flex;
         width: 100%;
@@ -86,8 +86,8 @@
         transform: scale(1.015);
         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10);
     }
-    
-    .paper-box-text{
+
+    .paper-box-text {
         max-width: 100%;
         order: 1;
 
@@ -106,34 +106,31 @@
             font-size: 0.95em;
         }
     }
-    
-    @include breakpoint($medium) {
-        .paper-box-image{
+
+    @media (min-width: $medium) {
+        .paper-box-image {
             justify-content: left;
             min-width: 200px;
             max-width: 40%;
             order: 1;
         }
-        
-        .paper-box-text{
+
+        .paper-box-text {
             justify-content: left;
             padding-left: 2em;
             max-width: 60%;
             order: 2;
         }
-
     }
-
-
 }
 
-$scroll_offset : 2em;
-h1:before, .anchor:before { 
-    content: ''; 
-    display: block; 
-    position: relative; 
-    width: 0; 
-    height: $scroll_offset; 
+$scroll_offset: 2em;
+h1:before, .anchor:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: $scroll_offset;
     margin-top: -$scroll_offset;
 }
 
@@ -143,7 +140,7 @@ h1:before, .anchor:before {
     margin-top: .5em;
     margin-left: -.5em;
     color: white;
-    background: linear-gradient(135deg, #1a3a8a, #2d6fd6);
+    background: linear-gradient(135deg, #1e3f6f, #2b5797);
     font-size: .72em;
     font-weight: 600;
     letter-spacing: 0.05em;
@@ -152,4 +149,12 @@ h1:before, .anchor:before {
     box-shadow: 0 2px 8px rgba(0, 54, 159, 0.28);
     transition: box-shadow 0.3s ease;
     z-index: 2;
+}
+
+/* Responsive video embeds (replaces FitVids plugin) */
+iframe[src*="youtube"],
+iframe[src*="vimeo"] {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
 }

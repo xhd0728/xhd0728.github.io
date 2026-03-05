@@ -15,9 +15,7 @@ $indent-var                 : 0.5em;
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
 $sans-serif                 : "Trebuchet MS", Helvetica, sans-serif;
-// $sans-serif                 : Georgia, serif, sans-serif;
 
-// $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
@@ -68,7 +66,6 @@ $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
 $info-color                 : #224b8d;
-// $info-color                 : #52adc8;
 
 /* brands */
 $behance-color              : #1769FF;
@@ -105,15 +102,6 @@ $masthead-link-color-hover  : mix(#000, $primary-color, 25%);
    Breakpoints
    ========================================================================== */
 
-@include breakpoint-set("to ems", true);
-/*
-$small                      : 400px;
-$medium                     : 500px;
-$medium-wide                : 550px;
-$large                      : 1200px;
-$x-large                    : 1800px;
-*/
-
 $small                      : 600px !default;
 $medium                     : 768px !default;
 $medium-wide                : 900px !default;
@@ -121,29 +109,12 @@ $large                      : 925px !default;
 $x-large                    : 1280px !default;
 
 /*
-   Grid
+   Grid (Susy removed — using CSS Grid now)
    ========================================================================== */
 
 $right-sidebar-width-narrow : 0px;
 $right-sidebar-width        : 0px;
 $right-sidebar-width-wide   : 0px;
-
-$susy: (
-  columns: 12,
-  column-width: 120px,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: after,
-  container: $large,
-  global-box-sizing: border-box,
-  // debug: (
-  //   image: show,
-  //   color: blue,
-  //   output: overlay,
-  //   toggle: top right,
-  // ),
-);
 
 
 /*

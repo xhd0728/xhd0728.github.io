@@ -2,7 +2,7 @@
 
 > \* indicates **equal contribution**, and † indicates **corresponding author**.
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='images/paper/metamem.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='images/paper/metamem.webp' alt="MetaMem paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization
@@ -19,7 +19,7 @@ This work proposes MetaMem, a meta-memory framework that evolves meta-memory thr
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='images/paper/pager.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation
@@ -36,7 +36,7 @@ This work enhances RAG systems by constructing structured cognitive outlines to 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD 2026</div><img src='images/paper/lisrec.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD 2026</div><img src='images/paper/lisrec.webp' alt="LISRec paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation
@@ -53,7 +53,7 @@ This work improves sequential recommendation systems by extracting personalized 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI Open</div><img src='images/paper/survey.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI Open</div><img src='images/paper/survey.webp' alt="Knowledge Intensive Agents survey figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Knowledge Intensive Agents
@@ -69,7 +69,7 @@ This work provides a comprehensive overview of Retrieval-Augmented Generation fr
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WISA 2025</div><img src='images/paper/tasteplus.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WISA 2025</div><img src='images/paper/tasteplus.webp' alt="TASTE+ paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Adapting Language Models to Text Matching based Recommendation Systems
@@ -86,7 +86,7 @@ This work has significantly improved the performance of text matching in recomme
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><img src='images/paper/llmsparks.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><img src='images/paper/llmsparks.webp' alt="LLMsPark paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts
@@ -103,7 +103,7 @@ This work introduces LLMsPark, a game theory-based platform for evaluating large
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">COLING 2024</div><img src='images/paper/mmad-coling2024.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">COLING 2024</div><img src='images/paper/mmad-coling2024.webp' alt="MMAD paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # MMAD: Multi-modal Movie Audio Description
@@ -113,15 +113,15 @@ This work introduces LLMsPark, a game theory-based platform for evaluating large
   
 <div align="left">
 <a href="https://daria8976.github.io/mmad-page/"><img src="https://img.shields.io/static/v1?label=Homepage&message=MMAD&color=blue&logo=github-pages"></a>
+<a href="https://aclanthology.org/2024.lrec-main.998.pdf"><img src="https://img.shields.io/badge/Paper-COLING%202024-2b5797?logo=doi&logoColor=white" alt="Paper"></a>
 <a href="https://github.com/Daria8976/MMAD"><img src="https://img.shields.io/github/stars/Daria8976/MMAD?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
-<a href="https://aclanthology.org/2024.lrec-main.998.pdf">[📄 Paper]</a>
 </div>
 
 This work has unlocked a whole new experience of watching movies for the visually impaired.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MCM/ICM 2023</div><img src='images/paper/mcm-icm-2023.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MCM/ICM 2023</div><img src='images/paper/mcm-icm-2023.webp' alt="MCM/ICM paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Puzzle Game: Prediction and Classification of Wordle Solution Words

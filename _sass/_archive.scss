@@ -5,15 +5,6 @@
 .archive {
   margin-bottom: 2em;
 
-  @include breakpoint($medium) {
-    @include span(12 of 12);
-  }
-
-  @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-  }
-
   a {
     text-decoration: underline;
 
@@ -90,15 +81,15 @@
    ========================================================================== */
 
 .list__item {
-  @include breakpoint($medium) {
+  @media (min-width: $medium) {
     padding-right: $right-sidebar-width-narrow;
   }
 
-  @include breakpoint($large) {
+  @media (min-width: $large) {
     padding-right: $right-sidebar-width;
   }
 
-  @include breakpoint($x-large) {
+  @media (min-width: $x-large) {
     padding-right: $right-sidebar-width-wide;
   }
 
@@ -128,17 +119,18 @@
     display: none;
   }
 
-  @include breakpoint($small) {
-    @include gallery(5 of 10);
+  @media (min-width: $small) {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+
     .archive__item-teaser {
       max-height: 200px;
     }
   }
 
-  @include breakpoint($medium) {
-    margin-left: 0; /* reset before mixin does its thing*/
-    margin-right: 0; /* reset before mixin does its thing*/
-    @include gallery(2.5 of 10);
+  @media (min-width: $medium) {
+    width: 25%;
 
     .archive__item-teaser {
       max-height: 120px;
@@ -157,18 +149,20 @@
    ========================================================================== */
 
 .feature__wrapper {
-  @include clearfix();
   margin-bottom: 2em;
   border-bottom: 1px solid $border-color;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 .feature__item {
   margin-bottom: 2em;
   font-size: 1.25rem;
 
-  @include breakpoint($small) {
+  @media (min-width: $small) {
     margin-bottom: 0;
-    @include gallery(4 of 12);
+    width: calc(33.333% - 1em);
 
     .feature__item-teaser {
       max-height: 200px;
@@ -177,68 +171,74 @@
   }
 
   &--left {
-    @include full();
+    width: 100%;
     font-size: 1.25rem;
 
     .archive__item-teaser {
       margin-bottom: 2em;
     }
 
-    @include breakpoint($small) {
+    @media (min-width: $small) {
+      display: flex;
+      gap: 1em;
+
       .archive__item-teaser {
-        @include span(5 of 12);
+        width: 41.66%;
+        flex-shrink: 0;
       }
 
       .archive__item-body {
-        @include span(7 of 12 last);
-        @include prefix(0.5 of 12);
-        @include suffix(1 of 12);
+        flex: 1;
+        padding-left: 4%;
       }
     }
   }
 
   &--right {
-    @include full();
+    width: 100%;
     font-size: 1.25rem;
 
     .archive__item-teaser {
       margin-bottom: 2em;
     }
 
-    @include breakpoint($small) {
+    @media (min-width: $small) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 1em;
       text-align: right;
 
       .archive__item-teaser {
-        @include span(5 of 12 rtl);
+        width: 41.66%;
+        flex-shrink: 0;
       }
 
       .archive__item-body {
-        @include span(7 of 12 last rtl);
-        @include prefix(0.5 of 12);
-        @include suffix(1 of 12);
+        flex: 1;
+        padding-right: 4%;
       }
     }
   }
 
   &--center {
-    @include full();
+    width: 100%;
     font-size: 1.25rem;
 
     .archive__item-teaser {
       margin-bottom: 2em;
     }
 
-    @include breakpoint($small) {
+    @media (min-width: $small) {
       text-align: center;
 
       .archive__item-teaser {
         margin: 0 auto;
-        width: span(5 of 12);
+        width: 41.66%;
       }
 
       .archive__item-body {
         margin: 0 auto;
-        width: span(7 of 12);
+        width: 58.33%;
       }
     }
   }

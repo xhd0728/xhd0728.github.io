@@ -66,6 +66,7 @@
 
 <meta http-equiv="cleartype" content="on">
 <base target="_blank">
+
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -78,18 +79,44 @@
 <link rel="stylesheet" href="assets/css/academicons.css"/>
 
 <script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$','$'], ['\\(','\\)']],
-      processEscapes: true,
-      tags: 'all'
-    },
-    options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  (function () {
+    function containsMathSyntax(text) {
+      if (!text) return false;
+      return /\\\(|\\\[|\\begin\{|\\frac|\\sum|\\int|\$\$[^$]+\$\$|\$[^$\n]+\$/.test(text);
     }
-  };
+
+    function loadMathJax() {
+      if (document.getElementById('MathJax-script')) return;
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true,
+          tags: 'all'
+        },
+        options: {
+          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+        }
+      };
+
+      var script = document.createElement('script');
+      script.id = 'MathJax-script';
+      script.async = true;
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      document.head.appendChild(script);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var content = document.querySelector('.page__content');
+      if (!content || !containsMathSyntax(content.textContent || '')) return;
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadMathJax, { timeout: 2000 });
+      } else {
+        window.setTimeout(loadMathJax, 400);
+      }
+    });
+  })();
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <style>
   /* ===== Design System Variables ===== */
@@ -373,7 +400,7 @@
   }
 
   /* =========================================================
-     ANIMATIONS
+     ANIMATIONS (JS fallback for browsers without scroll-driven)
      ========================================================= */
   @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(18px); }
@@ -381,32 +408,13 @@
   }
   .fade-in-section {
     opacity: 0;
-    transform: translateY(18px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transform: translate3d(0, 14px, 0);
+    transition: opacity 0.38s ease-out, transform 0.38s ease-out;
   }
   .fade-in-section.is-visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
-  /* Staggered reveal for list items */
-  .page__content > ul.is-visible > li {
-    opacity: 0;
-    transform: translateY(10px);
-    animation: fadeInUp 0.35s ease forwards;
-  }
-  .page__content > ul.is-visible > li:nth-child(1)  { animation-delay: 0.03s; }
-  .page__content > ul.is-visible > li:nth-child(2)  { animation-delay: 0.06s; }
-  .page__content > ul.is-visible > li:nth-child(3)  { animation-delay: 0.09s; }
-  .page__content > ul.is-visible > li:nth-child(4)  { animation-delay: 0.12s; }
-  .page__content > ul.is-visible > li:nth-child(5)  { animation-delay: 0.15s; }
-  .page__content > ul.is-visible > li:nth-child(6)  { animation-delay: 0.18s; }
-  .page__content > ul.is-visible > li:nth-child(7)  { animation-delay: 0.21s; }
-  .page__content > ul.is-visible > li:nth-child(8)  { animation-delay: 0.24s; }
-  .page__content > ul.is-visible > li:nth-child(9)  { animation-delay: 0.27s; }
-  .page__content > ul.is-visible > li:nth-child(10) { animation-delay: 0.30s; }
-  .page__content > ul.is-visible > li:nth-child(11) { animation-delay: 0.33s; }
-  .page__content > ul.is-visible > li:nth-child(12) { animation-delay: 0.36s; }
-  .page__content > ul.is-visible > li:nth-child(13) { animation-delay: 0.39s; }
 
   /* =========================================================
      HORIZONTAL RULES
@@ -426,6 +434,8 @@
     padding: 1.4em 1em !important;
     border-radius: 10px !important;
     background: #fff;
+    content-visibility: auto;
+    contain-intrinsic-size: 320px;
   }
   .paper-box:not(:last-child) {
     border-bottom: 1px solid #edf0f7 !important;
@@ -491,6 +501,24 @@
       display: block;
     }
   }
+
+  /* =========================================================
+     ACCESSIBILITY
+     ========================================================= */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--c-primary);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
 </style>
 
 <!-- end custom head snippets -->
@@ -550,7 +578,7 @@
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
 
   <div class="author__avatar">
-    <img src="images/android-chrome-512x512.png" class="author__avatar" alt="Haidong Xin">
+    <img src="images/android-chrome-512x512.png" class="author__avatar" alt="Haidong Xin" fetchpriority="high">
   </div>
 
   <div class="author__content">
@@ -678,7 +706,7 @@
   <p>* indicates <strong>equal contribution</strong>, and † indicates <strong>corresponding author</strong>.</p>
 </blockquote>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ArXiv 2026</div><img src="images/paper/metamem.jpg" alt="sym" width="100%" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ArXiv 2026</div><img src="images/paper/metamem.webp" alt="MetaMem paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="metamem-evolving-meta-memory-for-knowledge-utilization-through-self-reflective-symbolic-optimization">MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization</h1>
@@ -694,7 +722,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ArXiv 2026</div><img src="images/paper/pager.png" alt="sym" width="100%" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ArXiv 2026</div><img src="images/paper/pager.webp" alt="PAGER paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="structured-knowledge-representation-through-contextual-pages-for-retrieval-augmented-generation">Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation</h1>
@@ -710,7 +738,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">KDD 2026</div><img src="images/paper/lisrec.jpg" alt="sym" width="100%" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">KDD 2026</div><img src="images/paper/lisrec.webp" alt="LISRec paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="lisrec-modeling-user-preferences-with-learned-item-shortcuts-for-sequential-recommendation">LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation</h1>
@@ -726,7 +754,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">AI Open</div><img src="images/paper/survey.jpg" alt="sym" width="100%" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">AI Open</div><img src="images/paper/survey.webp" alt="Knowledge Intensive Agents survey figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="knowledge-intensive-agents">Knowledge Intensive Agents</h1>
@@ -741,7 +769,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">WISA 2025</div><img src="images/paper/tasteplus.jpg" alt="sym" width="100%" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">WISA 2025</div><img src="images/paper/tasteplus.webp" alt="TASTE+ paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="adapting-language-models-to-text-matching-based-recommendation-systems">Adapting Language Models to Text Matching based Recommendation Systems</h1>
@@ -757,7 +785,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">EMNLP 2025</div><img src="images/paper/llmsparks.png" alt="sym" width="100%" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">EMNLP 2025</div><img src="images/paper/llmsparks.webp" alt="LLMsPark paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="llmspark-a-benchmark-for-evaluating-large-language-models-in-strategic-gaming-contexts">LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts</h1>
@@ -773,7 +801,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">COLING 2024</div><img src="images/paper/mmad-coling2024.png" alt="sym" width="100%" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">COLING 2024</div><img src="images/paper/mmad-coling2024.webp" alt="MMAD paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="mmad-multi-modal-movie-audio-description">MMAD: Multi-modal Movie Audio Description</h1>
@@ -782,15 +810,15 @@
 
     <div align="left">
 <a href="https://daria8976.github.io/mmad-page/"><img src="https://img.shields.io/static/v1?label=Homepage&amp;message=MMAD&amp;color=blue&amp;logo=github-pages" /></a>
+<a href="https://aclanthology.org/2024.lrec-main.998.pdf"><img src="https://img.shields.io/badge/Paper-COLING%202024-2b5797?logo=doi&amp;logoColor=white" alt="Paper" /></a>
 <a href="https://github.com/Daria8976/MMAD"><img src="https://img.shields.io/github/stars/Daria8976/MMAD?label=stars&amp;logo=github&amp;color=brightgreen" alt="GitHub Repo Stars" /></a>
-<a href="https://aclanthology.org/2024.lrec-main.998.pdf">[📄 Paper]</a>
 </div>
 
     <p>This work has unlocked a whole new experience of watching movies for the visually impaired.</p>
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">MCM/ICM 2023</div><img src="images/paper/mcm-icm-2023.png" alt="sym" width="100%" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">MCM/ICM 2023</div><img src="images/paper/mcm-icm-2023.webp" alt="MCM/ICM paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="puzzle-game-prediction-and-classification-of-wordle-solution-words">Puzzle Game: Prediction and Classification of Wordle Solution Words</h1>
@@ -810,47 +838,147 @@
       </article>
     </div>
 
-    <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/main.js" defer></script>
 
 <!-- Back to top button -->
 <button id="back-to-top" title="Back to top" aria-label="Back to top">&#8679;</button>
+
+<!-- Lightbox dialog styles -->
+<style>
+  @keyframes lightboxDialogIn {
+    from { opacity: 0; transform: scale(0.96); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  @keyframes lightboxDialogOut {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.96); }
+  }
+  @keyframes lightboxImageIn {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  @keyframes lightboxImageOut {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.96); }
+  }
+  @keyframes lightboxBackdropIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes lightboxBackdropOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+  .lightbox-dialog {
+    border: none;
+    background: transparent;
+    padding: 0;
+    max-width: 92vw;
+    max-height: 92vh;
+    overflow: visible;
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  .lightbox-dialog[open] {
+    opacity: 1;
+    transform: scale(1);
+    animation: lightboxDialogIn 0.22s ease both;
+  }
+  .lightbox-dialog.is-closing {
+    animation: lightboxDialogOut 0.22s ease both;
+  }
+  .lightbox-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    opacity: 0;
+  }
+  .lightbox-dialog[open]::backdrop {
+    opacity: 1;
+    animation: lightboxBackdropIn 0.22s ease both;
+  }
+  .lightbox-dialog.is-closing::backdrop {
+    animation: lightboxBackdropOut 0.22s ease both;
+  }
+  .lightbox-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+  }
+  .lightbox-img {
+    display: block;
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+  .lightbox-dialog[open] .lightbox-img {
+    animation: lightboxImageIn 0.22s ease both;
+  }
+  .lightbox-dialog.is-closing .lightbox-img {
+    animation: lightboxImageOut 0.22s ease both;
+  }
+  .lightbox-close {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    opacity: 0.8;
+    transition: opacity 0.2s, transform 0.2s ease;
+    z-index: 10;
+  }
+  .lightbox-close:hover {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+</style>
+
 <script>
 (function() {
-  // Back to top
   var btn = document.getElementById('back-to-top');
   if (btn) {
-    var scrollThreshold = 300;
+    var ticking = false;
     window.addEventListener('scroll', function() {
-      if (window.scrollY > scrollThreshold) {
-        btn.classList.add('visible');
-      } else {
-        btn.classList.remove('visible');
-      }
-    });
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function() {
+        btn.classList.toggle('visible', window.scrollY > 300);
+        ticking = false;
+      });
+    }, { passive: true });
     btn.addEventListener('click', function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 
-  // Scroll fade-in for key elements (no DOM restructuring)
   var fadeTargets = document.querySelectorAll(
     '.page__content > h1, .page__content > ul, .page__content > .paper-box, .page__content > blockquote, .page__content > hr'
   );
-  fadeTargets.forEach(function(el) {
-    el.classList.add('fade-in-section');
-  });
-
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
+  if (fadeTargets.length && 'IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries, obs) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
         entry.target.classList.add('is-visible');
-      }
+        entry.target.style.willChange = 'auto';
+        obs.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.01,
+      rootMargin: '0px 0px -8% 0px'
     });
-  }, { threshold: 0.05 });
 
-  document.querySelectorAll('.fade-in-section').forEach(function(el) {
-    observer.observe(el);
-  });
+    fadeTargets.forEach(function(el) {
+      el.classList.add('fade-in-section');
+      el.style.willChange = 'opacity, transform';
+      observer.observe(el);
+    });
+  }
 })();
 </script>
 

@@ -1,44 +1,144 @@
-<script src="assets/js/main.min.js"></script>
+<script src="assets/js/main.js" defer></script>
 
 <!-- Back to top button -->
 <button id="back-to-top" title="Back to top" aria-label="Back to top">&#8679;</button>
+
+<!-- Lightbox dialog styles -->
+<style>
+  @keyframes lightboxDialogIn {
+    from { opacity: 0; transform: scale(0.96); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  @keyframes lightboxDialogOut {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.96); }
+  }
+  @keyframes lightboxImageIn {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  @keyframes lightboxImageOut {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.96); }
+  }
+  @keyframes lightboxBackdropIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes lightboxBackdropOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
+
+  .lightbox-dialog {
+    border: none;
+    background: transparent;
+    padding: 0;
+    max-width: 92vw;
+    max-height: 92vh;
+    overflow: visible;
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  .lightbox-dialog[open] {
+    opacity: 1;
+    transform: scale(1);
+    animation: lightboxDialogIn 0.22s ease both;
+  }
+  .lightbox-dialog.is-closing {
+    animation: lightboxDialogOut 0.22s ease both;
+  }
+  .lightbox-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    opacity: 0;
+  }
+  .lightbox-dialog[open]::backdrop {
+    opacity: 1;
+    animation: lightboxBackdropIn 0.22s ease both;
+  }
+  .lightbox-dialog.is-closing::backdrop {
+    animation: lightboxBackdropOut 0.22s ease both;
+  }
+  .lightbox-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+  }
+  .lightbox-img {
+    display: block;
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+  .lightbox-dialog[open] .lightbox-img {
+    animation: lightboxImageIn 0.22s ease both;
+  }
+  .lightbox-dialog.is-closing .lightbox-img {
+    animation: lightboxImageOut 0.22s ease both;
+  }
+  .lightbox-close {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+    opacity: 0.8;
+    transition: opacity 0.2s, transform 0.2s ease;
+    z-index: 10;
+  }
+  .lightbox-close:hover {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+</style>
+
 <script>
 (function() {
-  // Back to top
   var btn = document.getElementById('back-to-top');
   if (btn) {
-    var scrollThreshold = 300;
+    var ticking = false;
     window.addEventListener('scroll', function() {
-      if (window.scrollY > scrollThreshold) {
-        btn.classList.add('visible');
-      } else {
-        btn.classList.remove('visible');
-      }
-    });
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function() {
+        btn.classList.toggle('visible', window.scrollY > 300);
+        ticking = false;
+      });
+    }, { passive: true });
     btn.addEventListener('click', function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 
-  // Scroll fade-in for key elements (no DOM restructuring)
   var fadeTargets = document.querySelectorAll(
     '.page__content > h1, .page__content > ul, .page__content > .paper-box, .page__content > blockquote, .page__content > hr'
   );
-  fadeTargets.forEach(function(el) {
-    el.classList.add('fade-in-section');
-  });
-
-  var observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
+  if (fadeTargets.length && 'IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries, obs) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
         entry.target.classList.add('is-visible');
-      }
+        entry.target.style.willChange = 'auto';
+        obs.unobserve(entry.target);
+      });
+    }, {
+      threshold: 0.01,
+      rootMargin: '0px 0px -8% 0px'
     });
-  }, { threshold: 0.05 });
 
-  document.querySelectorAll('.fade-in-section').forEach(function(el) {
-    observer.observe(el);
-  });
+    fadeTargets.forEach(function(el) {
+      el.classList.add('fade-in-section');
+      el.style.willChange = 'opacity, transform';
+      observer.observe(el);
+    });
+  }
 })();
 </script>
 

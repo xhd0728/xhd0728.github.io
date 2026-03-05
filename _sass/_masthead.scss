@@ -5,23 +5,17 @@
 .masthead {
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: #fff;
   border-bottom: 1px solid $border-color;
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  animation: intro 0.3s both;
+  animation-delay: 0.15s;
   z-index: 20;
 
   &__inner-wrap {
-    @include container;
-    @include clearfix;
+    max-width: $x-large;
+    margin: 0 auto;
     padding: .5em;
     font-family: $sans-serif-narrow;
-
-    @include breakpoint($x-large) {
-      max-width: $x-large;
-    }
 
     nav {
       z-index: 10;
@@ -44,7 +38,7 @@
 }
 
 .masthead__menu-home-item {
-  @include breakpoint($medium) {
+  @media (min-width: $medium) {
     display: block !important;
   }
   display: none !important;
@@ -60,5 +54,3 @@
     font-weight: 700;
   }
 }
-
-
