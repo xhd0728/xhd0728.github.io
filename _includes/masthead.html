@@ -7,9 +7,15 @@
         </button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a
-              href="#about-me">Homepage</a></li>
+              href="#about-me" target="_self">Homepage</a></li>
           {% for link in site.data.navigation.main %}
-          <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+          {% assign is_external = link.url contains '://' %}
+          <li class="masthead__menu-item">
+            <a
+              href="{% if is_external %}{{ link.url }}{% else %}{{ domain }}{{ link.url }}{% endif %}"
+              {% if is_external %}target="_blank" rel="noopener noreferrer"{% else %}target="_self"{% endif %}
+            >{{ link.title }}</a>
+          </li>
           {% endfor %}
           <!-- <li class="masthead__menu-item">
             <a href="{% if page.url contains 'zh_cn' %}{{ domain }}/{% else %}{{ domain }}/zh_cn{% endif %}"

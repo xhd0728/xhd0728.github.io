@@ -21,6 +21,44 @@
       return Math.ceil(el.getBoundingClientRect().width);
     }
 
+    function normalizePath(pathname) {
+      return pathname.replace(/index\.html$/, '').replace(/\/+$/, '') || '/';
+    }
+
+    function initSamePageAnchorNav() {
+      var currentPath = normalizePath(window.location.pathname);
+      var links = nav.querySelectorAll('a[href*="#"]');
+
+      links.forEach(function (link) {
+        var href = link.getAttribute('href');
+        if (!href) return;
+
+        var url;
+        try {
+          url = new URL(href, window.location.href);
+        } catch (e) {
+          return;
+        }
+
+        if (!url.hash) return;
+        if (url.origin !== window.location.origin) return;
+        if (normalizePath(url.pathname) !== currentPath) return;
+
+        var targetId = decodeURIComponent(url.hash.slice(1));
+        var target = document.getElementById(targetId);
+        if (!target) return;
+
+        link.setAttribute('target', '_self');
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          window.history.replaceState(null, '', '#' + targetId);
+          hiddenList.classList.add('hidden');
+          btn.classList.remove('close');
+        });
+      });
+    }
+
     function updateNav() {
       var availableSpace = btn.classList.contains('hidden')
         ? width(nav)
@@ -63,6 +101,13 @@
       btn.classList.toggle('close');
     });
 
+    hiddenList.addEventListener('click', function (e) {
+      if (e.target && e.target.closest('a')) {
+        hiddenList.classList.add('hidden');
+        btn.classList.remove('close');
+      }
+    });
+
     document.addEventListener('click', function (e) {
       if (!nav.contains(e.target)) {
         hiddenList.classList.add('hidden');
@@ -70,6 +115,7 @@
       }
     });
 
+    initSamePageAnchorNav();
     updateNav();
   }
 
