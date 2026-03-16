@@ -1,62 +1,67 @@
 <!-- begin SEO -->
-{% if site.url %}
-  {% assign seo_url = site.url %}
+{% assign seo_title_raw = page.seo_title | default: page.title | default: site.title %}
+{% assign seo_title = seo_title_raw | strip_html | strip_newlines | replace: "  ", " " | strip | escape_once %}
+{% if page.seo_title %}
+  {% assign document_title = seo_title %}
+{% elsif page.title and page.title != "" and page.title != site.title %}
+  {% assign document_title = seo_title | append: " | " | append: site.title %}
+{% else %}
+  {% assign document_title = site.title %}
 {% endif %}
-{% assign seo_url = seo_url | default: site.github.url %}
-
-{% if site.url %}
-  {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
-{% endif %}
-
-<title>{{ site.title }} - Homepage</title>
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
-  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
+  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | replace: "  ", " " | strip | escape_once %}
 {% endif %}
 
-{% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
-{% if seo_author %}
-  {% if seo_author.twitter %}
-    {% assign seo_author_twitter = seo_author.twitter %}
-  {% else %}
-    {% if site.data.authors and site.data.authors[seo_author] %}
-      {% assign seo_author_twitter = site.data.authors[seo_author].twitter  %}
-    {% else %}
-      {% assign seo_author_twitter = seo_author  %}
-    {% endif %}
-  {% endif %}
-  {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
+{% assign seo_image = page.image | default: site.image | default: site.author.avatar %}
+{% if seo_image %}
+  {% assign seo_image_url = seo_image | absolute_url %}
 {% endif %}
 
-<meta property="og:locale" content="en">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ site.title }} - Homepage">
-<meta property="og:type" content="website">
-<meta property="og:image" content="{{ site.url | default: '' }}/images/android-chrome-512x512.png">
-<meta property="og:description" content="{{ seo_description }}">
+{% assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
+{% assign robots_content = page.robots | default: site.robots | default: "index,follow" %}
+{% assign og_type = page.og_type | default: "website" %}
+
+<title>{{ document_title }}</title>
+
 <meta name="description" content="{{ seo_description }}">
 <meta name="author" content="{{ site.author.name }}">
+<meta name="robots" content="{{ robots_content }}">
 
-{% if seo_url %}
-  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
-  <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
+<link rel="canonical" href="{{ canonical_url }}">
+
+<meta property="og:locale" content="{{ site.locale | default: 'en_US' }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ document_title }}">
+<meta property="og:type" content="{{ og_type }}">
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="og:description" content="{{ seo_description }}">
+{% if seo_image_url %}
+<meta property="og:image" content="{{ seo_image_url }}">
+<meta property="og:image:secure_url" content="{{ seo_image_url }}">
+<meta property="og:image:alt" content="{{ site.author.name }} profile image">
 {% endif %}
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="{{ site.title }} - Homepage">
+<meta name="twitter:title" content="{{ document_title }}">
 <meta name="twitter:description" content="{{ seo_description }}">
-<meta name="twitter:image" content="{{ site.url | default: '' }}/images/android-chrome-512x512.png">
+{% if seo_image_url %}
+<meta name="twitter:image" content="{{ seo_image_url }}">
+<meta name="twitter:image:alt" content="{{ site.author.name }} profile image">
+{% endif %}
 
 {% if site.twitter.username %}
   <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
-  <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
-  <meta name="twitter:description" content="{{ seo_description }}">
-  <meta name="twitter:url" content="{{ canonical_url }}">
+{% endif %}
+{% if site.author.twitter %}
+  <meta name="twitter:creator" content="@{{ site.author.twitter | replace: "@", "" }}">
+{% endif %}
 
-  {% if seo_author_twitter %}
-    <meta name="twitter:creator" content="@{{ seo_author_twitter }}">
-  {% endif %}
+{% if site.social and site.social.links %}
+  {% for social_link in site.social.links %}
+<link rel="me" href="{{ social_link }}">
+  {% endfor %}
 {% endif %}
 
 {% if site.facebook %}
@@ -70,12 +75,41 @@
 {% endif %}
 
 {% if site.google_site_verification %}
-  <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
 {% endif %}
 {% if site.bing_site_verification %}
   <meta name="msvalidate.01" content="{{ site.bing_site_verification }}">
 {% endif %}
 {% if site.baidu_site_verification %}
-  <meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}" />
+  <meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}">
 {% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {% if page.url == "/" %}"ProfilePage"{% else %}"WebPage"{% endif %},
+  "name": {{ document_title | jsonify }},
+  "description": {{ seo_description | jsonify }},
+  "url": {{ canonical_url | jsonify }}{% if seo_image_url %},
+  "image": {{ seo_image_url | jsonify }}{% endif %}{% if page.url == "/" %},
+  "mainEntity": {
+    "@type": "Person",
+    "@id": {{ site.url | append: "/#person" | jsonify }},
+    "name": {{ site.author.name | default: site.title | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "description": {{ site.description | jsonify }}{% if site.author.avatar %},
+    "image": {{ site.author.avatar | absolute_url | jsonify }}{% endif %}{% if site.author.email %},
+    "email": {{ "mailto:" | append: site.author.email | jsonify }}{% endif %}{% if site.author.location %},
+    "homeLocation": {
+      "@type": "Place",
+      "name": {{ site.author.location | jsonify }}
+    }{% endif %}{% if site.social and site.social.links %},
+    "sameAs": [
+      {% for social_link in site.social.links %}
+      {{ social_link | jsonify }}{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]{% endif %}
+  }{% endif %}
+}
+</script>
 <!-- end SEO -->

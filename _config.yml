@@ -8,8 +8,23 @@
 # Site Settings
 title: "Haidong Xin"
 description: "Master student at Northeastern University. Researching in NLP, IR, RAG, RecSys, and Multi-agent Systems."
+url: "https://xhd0728.github.io"
+baseurl: ""
+lang: "en"
+locale: "en_US"
+image: "/images/android-chrome-512x512.png"
+robots: "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
 repository: "xhd0728/xhd0728.github.io"
 google_scholar_stats_use_cdn: true
+social:
+  name: "Haidong Xin"
+  links:
+    - "https://scholar.google.com/citations?user=8VCnj3sAAAAJ"
+    - "https://github.com/xhd0728"
+    - "https://www.linkedin.com/in/haidongxin"
+    - "https://dblp.org/pid/372/7441.html"
+    - "https://orcid.org/0009-0003-9484-3251"
+    - "https://www.researchgate.net/profile/Haidong-Xin"
 
 # google analytics
 google_analytics_id: "G-1T3J0B0NS3"
@@ -67,6 +82,7 @@ include:
 exclude:
 - docs
 - google_scholar_crawler
+- _pages/includes
 - "*.sublime-project"
 - "*.sublime-workspace"
 - .asset-cache
@@ -124,6 +140,13 @@ defaults:
   values:
     layout: default
     author_profile: true
+- scope:
+    path: "_pages/includes"
+    type: pages
+  values:
+    published: false
+    sitemap: false
+    robots: "noindex, nofollow"
 
 # Sass/SCSS
 sass:

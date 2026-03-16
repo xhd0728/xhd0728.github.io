@@ -78,7 +78,8 @@ This work provides a comprehensive overview of Retrieval-Augmented Generation fr
 
   
 <div align="left">
-<a href="https://huggingface.co/xhd0728/TASTE-plus-beauty"><img src="https://img.shields.io/badge/HuggingFace-TASTE+-blue?logo=huggingface"></a>
+<a href="https://huggingface.co/collections/xhd0728/taste-plus"><img src="https://img.shields.io/badge/HuggingFace-TASTE+-blue?logo=huggingface"></a>
+<a href="https://doi.org/10.1007/978-981-95-6426-2_52"><img src="https://img.shields.io/badge/DOI-10.1007%2F978--981--95--6426--2_52-blue?logo=doi&logoColor=white" alt="DOI"></a>
 <a href="https://github.com/NEUIR/TASTE-plus"><img src="https://img.shields.io/github/stars/NEUIR/TASTE-plus?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
@@ -113,7 +114,7 @@ This work introduces LLMsPark, a game theory-based platform for evaluating large
   
 <div align="left">
 <a href="https://daria8976.github.io/mmad-page/"><img src="https://img.shields.io/static/v1?label=Homepage&message=MMAD&color=blue&logo=github-pages"></a>
-<a href="https://aclanthology.org/2024.lrec-main.998.pdf"><img src="https://img.shields.io/badge/Paper-COLING%202024-2b5797?logo=doi&logoColor=white" alt="Paper"></a>
+<a href="https://aclanthology.org/2024.lrec-main.998.pdf"><img src="https://img.shields.io/static/v1?label=ACL%20Anthology&message=COLING%202024&color=2b5797&logo=bookstack&logoColor=white" alt="ACL Anthology"></a>
 <a href="https://github.com/Daria8976/MMAD"><img src="https://img.shields.io/github/stars/Daria8976/MMAD?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
