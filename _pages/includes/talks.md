@@ -1,3 +1,5 @@
+<span class='anchor' id='media-mentions'></span>
+
 # 💬 Media Mentions
 
 - *2026.01*, [【TsinghuaNLP】成果 \| UltraRAG 3.0：拒绝“盲盒”开发，让每一行推理逻辑都清晰可见](https://mp.weixin.qq.com/s/ouKWMPluQ7TpCYM5wWKpbg)

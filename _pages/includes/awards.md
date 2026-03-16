@@ -1,3 +1,5 @@
+<span class='anchor' id='awards'></span>
+
 # 🏆 Awards
 
 - *2025.11* 🥇First Prize of Excellent Student Scholarship.

@@ -1,3 +1,5 @@
+<span class='anchor' id='educations'></span>
+
 # 📖 Educations
 
 - *2024.09 - now*, M.S. [School of Computer Science and Engineering](http://www.cse.neu.edu.cn/), [Northeastern University](https://neu.edu.cn/)

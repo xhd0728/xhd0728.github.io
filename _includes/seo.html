@@ -22,6 +22,8 @@
 {% assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
 {% assign robots_content = page.robots | default: site.robots | default: "index,follow" %}
 {% assign og_type = page.og_type | default: "website" %}
+{% assign seo_locale = page.locale | default: site.locale | default: "en_US" %}
+{% assign jsonld_type = page.schema_type | default: "WebPage" %}
 
 <title>{{ document_title }}</title>
 
@@ -31,7 +33,7 @@
 
 <link rel="canonical" href="{{ canonical_url }}">
 
-<meta property="og:locale" content="{{ site.locale | default: 'en_US' }}">
+<meta property="og:locale" content="{{ seo_locale }}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:title" content="{{ document_title }}">
 <meta property="og:type" content="{{ og_type }}">
@@ -64,6 +66,12 @@
   {% endfor %}
 {% endif %}
 
+{% if page.url == "/" or page.url == "/zh_cn/" %}
+<link rel="alternate" hreflang="en" href="{{ "/" | absolute_url }}">
+<link rel="alternate" hreflang="zh-CN" href="{{ "/zh_cn/" | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ "/" | absolute_url }}">
+{% endif %}
+
 {% if site.facebook %}
   {% if site.facebook.publisher %}
     <meta property="article:publisher" content="{{ site.facebook.publisher }}">
@@ -87,11 +95,11 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": {% if page.url == "/" %}"ProfilePage"{% else %}"WebPage"{% endif %},
+  "@type": {{ jsonld_type | jsonify }},
   "name": {{ document_title | jsonify }},
   "description": {{ seo_description | jsonify }},
   "url": {{ canonical_url | jsonify }}{% if seo_image_url %},
-  "image": {{ seo_image_url | jsonify }}{% endif %}{% if page.url == "/" %},
+  "image": {{ seo_image_url | jsonify }}{% endif %}{% if jsonld_type == "ProfilePage" %},
   "mainEntity": {
     "@type": "Person",
     "@id": {{ site.url | append: "/#person" | jsonify }},

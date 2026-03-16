@@ -4,25 +4,25 @@ main:
   url: "/#about-me"
 
 - title: "News"
-  url: "/#-news"
+  url: "/#news"
 
 - title: "Publications"
-  url: "/#-publications"
+  url: "/#publications"
 
 - title: "Awards"
-  url: "/#-awards"
+  url: "/#awards"
 
 # - title: "Projects"
 #   url: "/#-projects"
 
 - title: "Educations"
-  url: "/#-educations"
+  url: "/#educations"
 
 - title: "Media Mentions"
-  url: "/#-media-mentions"
+  url: "/#media-mentions"
 
 - title: "Internships"
-  url: "/#-internships"
+  url: "/#internships"
 
 - title: "Travelling"
   url: "https://www.travellings.cn/plain.html"

@@ -1,15 +1,31 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
+      {% assign is_zh = false %}
+      {% if page.lang == "zh-CN" or page.url contains "/zh_cn/" %}
+        {% assign is_zh = true %}
+      {% endif %}
+      {% if is_zh %}
+        {% assign nav_links = site.data.navigation_zh.main %}
+        {% assign home_label = "主页" %}
+        {% assign home_url = "/zh_cn/#about-me" %}
+      {% else %}
+        {% assign nav_links = site.data.navigation.main %}
+        {% assign home_label = "Homepage" %}
+        {% assign home_url = "/#about-me" %}
+      {% endif %}
       <nav id="site-nav" class="greedy-nav">
         <button>
           <div class="navicon"></div>
         </button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a
-              href="#about-me" target="_self">Homepage</a></li>
-          {% for link in site.data.navigation.main %}
-          {% assign is_external = link.url contains '://' %}
+              href="{{ home_url }}" target="_self">{{ home_label }}</a></li>
+          {% for link in nav_links %}
+          {% assign is_external = false %}
+          {% if link.url contains 'https://' or link.url contains 'http://' %}
+            {% assign is_external = true %}
+          {% endif %}
           <li class="masthead__menu-item">
             <a
               href="{% if is_external %}{{ link.url }}{% else %}{{ domain }}{{ link.url }}{% endif %}"
@@ -17,13 +33,11 @@
             >{{ link.title }}</a>
           </li>
           {% endfor %}
-          <!-- <li class="masthead__menu-item">
-            <a href="{% if page.url contains 'zh_cn' %}{{ domain }}/{% else %}{{ domain }}/zh_cn{% endif %}"
-              target="_self">
-              {% if page.url contains 'zh_cn' %}English{% else %}简体中文{% endif %}
-            </a>
-          </li> -->
         </ul>
+        <div class="masthead__lang-switch" aria-label="{% if is_zh %}语言切换{% else %}Language switcher{% endif %}">
+          <a class="lang-option{% unless is_zh %} is-active{% endunless %}" href="/" hreflang="en" lang="en" target="_self">English</a>
+          <a class="lang-option{% if is_zh %} is-active{% endif %}" href="/zh_cn/" hreflang="zh-CN" lang="zh-CN" target="_self">简体中文</a>
+        </div>
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>

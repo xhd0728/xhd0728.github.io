@@ -1,0 +1,25 @@
+# main links links
+main:
+- title: "关于我"
+  url: "/zh_cn/#about-me"
+
+- title: "新闻"
+  url: "/zh_cn/#news"
+
+- title: "论文"
+  url: "/zh_cn/#publications"
+
+- title: "奖项"
+  url: "/zh_cn/#awards"
+
+- title: "教育经历"
+  url: "/zh_cn/#educations"
+
+- title: "媒体报道"
+  url: "/zh_cn/#media-mentions"
+
+- title: "实习经历"
+  url: "/zh_cn/#internships"
+
+- title: "开往"
+  url: "https://www.travellings.cn/plain.html"

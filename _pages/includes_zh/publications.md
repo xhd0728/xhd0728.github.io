@@ -1,8 +1,8 @@
 <span class='anchor' id='publications'></span>
 
-# 📝 Publications 
+# 📝 论文发表
 
-> \* indicates **equal contribution**, and † indicates **corresponding author**.
+> \* 表示共同一作，† 表示通讯作者。
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='images/paper/metamem.webp' alt="MetaMem paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -17,7 +17,7 @@
 <a href="https://github.com/OpenBMB/MetaMem"><img src="https://img.shields.io/github/stars/OpenBMB/MetaMem?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
-This work proposes MetaMem, a meta-memory framework that evolves meta-memory through self-reflective symbolic optimization, enabling knowledge utilization in long-horizon human-LLM interactions.
+该工作提出了 MetaMem，一种通过自反思符号优化持续演化元记忆的框架，用于提升长期人机交互中的知识利用能力。
 </div>
 </div>
 
@@ -34,7 +34,7 @@ This work proposes MetaMem, a meta-memory framework that evolves meta-memory thr
 <a href="https://github.com/OpenBMB/PAGER"><img src="https://img.shields.io/github/stars/OpenBMB/PAGER?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
-This work enhances RAG systems by constructing structured cognitive outlines to guide iterative retrieval, effectively organizing multi-dimensional knowledge into coherent pages for more accurate answer generation.
+该工作通过构建结构化认知提纲来指导迭代式检索，从而增强 RAG 系统对多维知识的组织能力，提升答案生成的准确性。
 </div>
 </div>
 
@@ -51,7 +51,7 @@ This work enhances RAG systems by constructing structured cognitive outlines to 
 <a href="https://github.com/NEUIR/LISRec"><img src="https://img.shields.io/github/stars/NEUIR/LISRec?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
-This work improves sequential recommendation systems by extracting personalized semantic shortcuts from user-item interaction histories, enhancing the capture of stable user preferences.
+该工作通过从用户交互历史中学习个性化语义捷径，更好地建模稳定偏好，从而提升序列推荐系统的效果。
 </div>
 </div>
 
@@ -67,7 +67,7 @@ This work improves sequential recommendation systems by extracting personalized 
 <a href="https://doi.org/10.1016/j.aiopen.2026.02.002"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.aiopen.2026.02.002-blue?logo=doi&logoColor=white" alt="DOI"></a>
 </div>
 
-This work provides a comprehensive overview of Retrieval-Augmented Generation from an agentic perspective, categorizing knowledge-intensive agents into acquisition and utilization roles, and highlighting future directions for joint optimization in multi-agent RAG systems.
+该工作从智能体视角系统梳理了 Retrieval-Augmented Generation，提出知识密集型智能体的获取与利用分类框架，并讨论了多智能体 RAG 的联合优化方向。
 </div>
 </div>
 
@@ -85,7 +85,7 @@ This work provides a comprehensive overview of Retrieval-Augmented Generation fr
 <a href="https://github.com/NEUIR/TASTE-plus"><img src="https://img.shields.io/github/stars/NEUIR/TASTE-plus?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
-This work has significantly improved the performance of text matching in recommendation systems by incorporating language model pretraining.
+该工作通过引入语言模型预训练能力，显著提升了推荐系统中文本匹配任务的性能。
 </div>
 </div>
 
@@ -102,7 +102,7 @@ This work has significantly improved the performance of text matching in recomme
 <a href="https://arxiv.org/abs/2509.16610"><img src="https://img.shields.io/badge/arXiv-2509.16610-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
 </div>
 
-This work introduces LLMsPark, a game theory-based platform for evaluating large language models' strategic behaviors and decision-making abilities in multi-agent environments, providing a novel criterion for assessing their intelligence.
+该工作提出了 LLMsPark，一个面向策略博弈场景的大语言模型评测基准，用于系统衡量模型在多智能体环境中的策略行为与决策能力。
 </div>
 </div>
 
@@ -120,7 +120,7 @@ This work introduces LLMsPark, a game theory-based platform for evaluating large
 <a href="https://github.com/Daria8976/MMAD"><img src="https://img.shields.io/github/stars/Daria8976/MMAD?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
-This work has unlocked a whole new experience of watching movies for the visually impaired.
+该工作为视障群体带来了全新的观影辅助体验，拓展了电影音频描述的多模态能力边界。
 </div>
 </div>
 
@@ -136,6 +136,6 @@ This work has unlocked a whole new experience of watching movies for the visuall
 <a href="https://arxiv.org/abs/2403.19433"><img src="https://img.shields.io/badge/arXiv-2403.19433-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
 </div>
 
-This work conducted a detailed numerical analysis of the Wordle game, revealing statistical patterns within it.
+该工作对 Wordle 游戏进行了细致的数值分析，并揭示了其中蕴含的统计规律。
 </div>
 </div>

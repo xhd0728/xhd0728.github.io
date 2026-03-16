@@ -83,6 +83,7 @@ exclude:
 - docs
 - google_scholar_crawler
 - _pages/includes
+- _pages/includes_zh
 - "*.sublime-project"
 - "*.sublime-workspace"
 - .asset-cache
@@ -142,6 +143,13 @@ defaults:
     author_profile: true
 - scope:
     path: "_pages/includes"
+    type: pages
+  values:
+    published: false
+    sitemap: false
+    robots: "noindex, nofollow"
+- scope:
+    path: "_pages/includes_zh"
     type: pages
   values:
     published: false

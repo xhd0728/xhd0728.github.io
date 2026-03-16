@@ -1,3 +1,5 @@
+<span class='anchor' id='news'></span>
+
 # 🔥 News
 
 - *2026.02*: &nbsp;🎉 Our Paper *Knowledge Intensive Agents* is accepted by AI Open (IF=14.8)!

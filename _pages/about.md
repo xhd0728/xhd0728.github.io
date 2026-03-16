@@ -3,8 +3,11 @@ permalink: /
 title: "Haidong Xin"
 seo_title: "Haidong Xin | NLP, IR, RAG, and Recommender Systems"
 description: "Haidong Xin is a master's student at Northeastern University working on NLP, information retrieval, RAG, recommender systems, and multi-agent systems."
+sidebar_description: "Master student at Northeastern University. Researching in NLP, IR, RAG, RecSys, and Multi-agent Systems."
 image: "/images/android-chrome-512x512.png"
 schema_type: "ProfilePage"
+lang: "en"
+locale: "en_US"
 excerpt: ""
 author_profile: true
 redirect_from: 
