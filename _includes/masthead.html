@@ -43,24 +43,52 @@
           </li>
           {% endfor %}
         </ul>
-        <div class="masthead__lang-menu" aria-label="Language menu">
-          <label class="lang-menu__field">
+        <div class="masthead__lang-menu" aria-label="Language menu" data-lang-menu>
+          <button
+            class="lang-menu__trigger"
+            type="button"
+            aria-label="Language selector"
+            aria-expanded="false"
+            aria-controls="lang-menu-panel"
+          >
             <span class="lang-menu__icon" aria-hidden="true">L</span>
-            <select
-              class="lang-menu__select"
-              aria-label="Language selector"
-              onchange="if (this.value) window.location.href = this.value;"
-            >
-              {% for language in languages %}
-              <option
-                value="{{ language.path }}"
-                lang="{{ language.lang }}"
-                {% if language.key == current_lang_key %}selected{% endif %}
-              >{{ language.label }}</option>
-              {% endfor %}
-            </select>
+            <span
+              class="lang-menu__current"
+              lang="{{ current_language.lang }}"
+            >{{ current_language.label }}</span>
             <span class="lang-menu__caret" aria-hidden="true"></span>
-          </label>
+          </button>
+          <div
+            class="lang-menu__panel"
+            id="lang-menu-panel"
+            aria-label="Language options"
+            hidden
+          >
+            {% for language in languages %}
+              {% assign language_button_label = language.button_label | default: language.label %}
+              {% if language.key == current_lang_key %}
+              <span
+                class="lang-menu__option is-current"
+                lang="{{ language.lang }}"
+                aria-current="page"
+              >
+                <span class="lang-menu__option-chip">{{ language_button_label }}</span>
+                <span class="lang-menu__option-label">{{ language.label }}</span>
+                <span class="lang-menu__option-check" aria-hidden="true"></span>
+              </span>
+              {% else %}
+              <a
+                class="lang-menu__option"
+                href="{{ language.path | relative_url }}"
+                lang="{{ language.lang }}"
+                target="_self"
+              >
+                <span class="lang-menu__option-chip">{{ language_button_label }}</span>
+                <span class="lang-menu__option-label">{{ language.label }}</span>
+              </a>
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
         <ul class="hidden-links hidden"></ul>
       </nav>

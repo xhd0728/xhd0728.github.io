@@ -61,7 +61,7 @@
     }
 
     function updateNav() {
-      var langToggle = langMenu ? langMenu.querySelector('.lang-menu__field') : null;
+      var langToggle = langMenu ? langMenu.querySelector('.lang-menu__trigger') : null;
       var langMenuWidth = langMenu
         ? Math.max(width(langMenu), langToggle ? width(langToggle) : 0) + 18
         : 0;
@@ -122,6 +122,151 @@
 
     initSamePageAnchorNav();
     updateNav();
+  }
+
+  /* ------------------------------------------------------------------
+     Language dropdown
+     ------------------------------------------------------------------ */
+  function initLanguageMenu() {
+    var menu = document.querySelector('[data-lang-menu]');
+    if (!menu) return;
+
+    var trigger = menu.querySelector('.lang-menu__trigger');
+    var panel = menu.querySelector('.lang-menu__panel');
+    if (!trigger || !panel) return;
+
+    var closeTimer = null;
+
+    function getItems() {
+      return Array.prototype.slice.call(panel.querySelectorAll('.lang-menu__option[href]'));
+    }
+
+    function isOpen() {
+      return menu.classList.contains('is-open');
+    }
+
+    function focusItem(position) {
+      var items = getItems();
+      if (!items.length) return;
+
+      if (position === 'last') {
+        items[items.length - 1].focus();
+        return;
+      }
+
+      items[0].focus();
+    }
+
+    function openMenu(focusTarget) {
+      if (closeTimer) {
+        window.clearTimeout(closeTimer);
+        closeTimer = null;
+      }
+
+      panel.hidden = false;
+      trigger.setAttribute('aria-expanded', 'true');
+
+      window.requestAnimationFrame(function () {
+        menu.classList.add('is-open');
+        if (focusTarget) {
+          focusItem(focusTarget);
+        }
+      });
+    }
+
+    function closeMenu(returnFocus) {
+      if (!isOpen() && panel.hidden) return;
+
+      menu.classList.remove('is-open');
+      trigger.setAttribute('aria-expanded', 'false');
+
+      if (closeTimer) {
+        window.clearTimeout(closeTimer);
+      }
+
+      closeTimer = window.setTimeout(function () {
+        if (!menu.classList.contains('is-open')) {
+          panel.hidden = true;
+        }
+        closeTimer = null;
+      }, 220);
+
+      if (returnFocus) {
+        trigger.focus();
+      }
+    }
+
+    function moveFocus(step) {
+      var items = getItems();
+      if (!items.length) return;
+
+      if (!isOpen()) {
+        openMenu(step > 0 ? 'first' : 'last');
+        return;
+      }
+
+      var currentIndex = items.indexOf(document.activeElement);
+      var nextIndex = currentIndex === -1
+        ? (step > 0 ? 0 : items.length - 1)
+        : (currentIndex + step + items.length) % items.length;
+
+      items[nextIndex].focus();
+    }
+
+    trigger.addEventListener('click', function () {
+      if (isOpen()) {
+        closeMenu(false);
+      } else {
+        openMenu();
+      }
+    });
+
+    trigger.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        moveFocus(1);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        moveFocus(-1);
+      } else if (e.key === 'Escape') {
+        closeMenu(false);
+      }
+    });
+
+    panel.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        moveFocus(1);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        moveFocus(-1);
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        focusItem('first');
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        focusItem('last');
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        closeMenu(true);
+      }
+    });
+
+    panel.addEventListener('click', function (e) {
+      if (e.target && e.target.closest('a')) {
+        closeMenu(false);
+      }
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!menu.contains(e.target)) {
+        closeMenu(false);
+      }
+    });
+
+    window.addEventListener('resize', function () {
+      closeMenu(false);
+    });
   }
 
   /* ------------------------------------------------------------------
@@ -267,6 +412,7 @@
 
   function initPage() {
     initGreedyNav();
+    initLanguageMenu();
     initAuthorDropdown();
     initStickySidebar();
     initLightbox();

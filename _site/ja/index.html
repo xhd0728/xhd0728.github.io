@@ -177,7 +177,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css?v=0605466a5f1d79c8669ea614fa24226e034754a1">
+<link rel="stylesheet" href="/assets/css/main.css?v=8150e396a6d11040e6a067aa6624cf6325137ee2">
 
 <meta http-equiv="cleartype" content="on">
 <base href="/" target="_blank">
@@ -191,7 +191,7 @@
 <meta name="msapplication-TileImage" content="/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="/images/browserconfig.xml?v=M44lzPylqQ">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="/assets/css/academicons.css?v=0605466a5f1d79c8669ea614fa24226e034754a1"/>
+<link rel="stylesheet" href="/assets/css/academicons.css?v=8150e396a6d11040e6a067aa6624cf6325137ee2"/>
 
 <script>
   (function () {
@@ -246,9 +246,9 @@
     --c-border: #e8ecf4;
     --ease: cubic-bezier(0.25, 0.8, 0.25, 1);
     --page-gutter: clamp(0.75rem, 2.8vw, 1rem);
-    --nav-side-reserve: clamp(7.2rem, 31vw, 8.5rem);
+    --nav-side-reserve: clamp(8.4rem, 33vw, 10rem);
     --lang-toggle-offset: clamp(2.7rem, 10vw, 3.4rem);
-    --lang-label-max: clamp(3.6rem, 16vw, 7.5rem);
+    --lang-trigger-width: clamp(7.4rem, 22vw, 8.9rem);
   }
 
   /* ===== Back-to-top button ===== */
@@ -526,82 +526,164 @@
     transform: translateY(-50%);
     z-index: 12;
   }
-  .masthead__lang-menu .lang-menu__field {
+  .masthead__lang-menu .lang-menu__trigger {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    gap: clamp(0.28rem, 1vw, 0.48rem);
-    padding: clamp(0.3rem, 1vw, 0.42rem) clamp(0.48rem, 1.8vw, 0.72rem);
+    gap: clamp(0.38rem, 1vw, 0.56rem);
+    width: var(--lang-trigger-width);
+    min-height: 2.15rem;
+    padding: clamp(0.32rem, 1vw, 0.42rem) clamp(0.58rem, 1.8vw, 0.76rem);
     border: 1px solid rgba(43, 87, 151, 0.16);
-    border-radius: 999px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 248, 252, 0.98));
+    border-radius: 1rem;
+    background:
+      radial-gradient(circle at top left, rgba(74, 143, 217, 0.16), transparent 48%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(243, 247, 252, 0.98));
     color: var(--c-primary-dark);
-    box-shadow: 0 4px 16px rgba(43, 87, 151, 0.08);
+    box-shadow:
+      0 10px 28px rgba(43, 87, 151, 0.11),
+      inset 0 1px 0 rgba(255, 255, 255, 0.72);
     cursor: pointer;
     font: inherit;
     line-height: 1;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    text-align: left;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease, background 0.2s ease;
   }
-  .masthead__lang-menu .lang-menu__field:hover,
-  .masthead__lang-menu .lang-menu__field:focus-within {
+  .masthead__lang-menu .lang-menu__trigger:hover,
+  .masthead__lang-menu .lang-menu__trigger:focus-visible,
+  .masthead__lang-menu.is-open .lang-menu__trigger {
     border-color: rgba(43, 87, 151, 0.32);
-    box-shadow: 0 6px 18px rgba(43, 87, 151, 0.14);
+    box-shadow:
+      0 14px 30px rgba(43, 87, 151, 0.16),
+      inset 0 1px 0 rgba(255, 255, 255, 0.82);
     transform: translateY(-1px);
+  }
+  .masthead__lang-menu.is-open .lang-menu__trigger {
+    background:
+      radial-gradient(circle at top left, rgba(74, 143, 217, 0.22), transparent 48%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.99), rgba(239, 245, 251, 0.99));
   }
   .masthead__lang-menu .lang-menu__icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: clamp(1.05rem, 3.3vw, 1.28rem);
-    height: clamp(1.05rem, 3.3vw, 1.28rem);
-    border-radius: 50%;
+    width: clamp(1.2rem, 3.3vw, 1.42rem);
+    height: clamp(1.2rem, 3.3vw, 1.42rem);
+    border-radius: 0.55rem;
     background: linear-gradient(135deg, var(--c-primary), var(--c-accent));
     color: #fff;
-    font-size: clamp(0.5rem, 1.6vw, 0.6rem);
+    box-shadow: 0 6px 14px rgba(43, 87, 151, 0.18);
+    font-size: clamp(0.52rem, 1.6vw, 0.62rem);
     font-weight: 700;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.08em;
     flex-shrink: 0;
   }
-  .masthead__lang-menu .lang-menu__select {
-    min-width: 0;
-    max-width: var(--lang-label-max);
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    color: var(--c-primary-dark);
-    font: inherit;
-    font-size: clamp(0.7rem, 2.3vw, 0.8rem);
-    font-weight: 700;
-    line-height: 1;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    cursor: pointer;
-  }
-  .masthead__lang-menu .lang-menu__select:focus {
-    outline: none;
-  }
-  .masthead__lang-menu .lang-menu__select option {
-    color: var(--c-text);
-  }
-  .masthead__lang-menu .lang-menu__select::-ms-expand {
-    display: none;
-  }
-  .masthead__lang-menu .lang-menu__select {
+  .masthead__lang-menu .lang-menu__current {
     min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--c-primary-dark);
+    font-size: clamp(0.72rem, 2.1vw, 0.84rem);
+    font-weight: 700;
+    letter-spacing: 0.01em;
   }
   .masthead__lang-menu .lang-menu__caret {
-    width: 0.42rem;
-    height: 0.42rem;
+    width: 0.48rem;
+    height: 0.48rem;
     border-right: 2px solid currentColor;
     border-bottom: 2px solid currentColor;
     transform: rotate(45deg) translateY(-1px);
     transition: transform 0.2s ease;
     flex-shrink: 0;
     pointer-events: none;
+  }
+  .masthead__lang-menu.is-open .lang-menu__caret {
+    transform: rotate(-135deg) translateY(-1px);
+  }
+  .masthead__lang-menu .lang-menu__panel {
+    position: absolute;
+    top: calc(100% + 0.55rem);
+    right: 0;
+    width: max-content;
+    min-width: max(100%, 12rem);
+    max-width: calc(100vw - (var(--page-gutter) * 2));
+    padding: 0.4rem;
+    border: 1px solid rgba(43, 87, 151, 0.14);
+    border-radius: 1.05rem;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow:
+      0 20px 44px rgba(20, 40, 80, 0.18),
+      0 6px 18px rgba(43, 87, 151, 0.08);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    opacity: 0;
+    transform: translateY(-8px) scale(0.97);
+    transform-origin: top right;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .masthead__lang-menu.is-open .lang-menu__panel {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+  .masthead__lang-menu .lang-menu__option {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.65rem;
+    width: 100%;
+    padding: 0.55rem 0.68rem;
+    border: 1px solid transparent;
+    border-radius: 0.82rem;
+    background: transparent;
+    color: var(--c-text);
+    text-decoration: none;
+    transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.18s ease;
+  }
+  .masthead__lang-menu .lang-menu__option:hover,
+  .masthead__lang-menu .lang-menu__option:focus-visible {
+    background: linear-gradient(135deg, rgba(43, 87, 151, 0.08), rgba(61, 142, 185, 0.12));
+    border-color: rgba(43, 87, 151, 0.16);
+    color: var(--c-primary-dark);
+    transform: translateX(2px);
+  }
+  .masthead__lang-menu .lang-menu__option.is-current {
+    background: linear-gradient(135deg, rgba(43, 87, 151, 0.1), rgba(61, 142, 185, 0.12));
+    border-color: rgba(43, 87, 151, 0.16);
+    color: var(--c-primary-dark);
+    cursor: default;
+  }
+  .masthead__lang-menu .lang-menu__option-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.3rem;
+    height: 1.62rem;
+    padding: 0 0.42rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(43, 87, 151, 0.13), rgba(61, 142, 185, 0.2));
+    color: var(--c-primary-dark);
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .masthead__lang-menu .lang-menu__option-label {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.84rem;
+    font-weight: 600;
+  }
+  .masthead__lang-menu .lang-menu__option-check {
+    width: 0.38rem;
+    height: 0.72rem;
+    border-right: 2px solid var(--c-accent);
+    border-bottom: 2px solid var(--c-accent);
+    transform: rotate(40deg);
+    margin-right: 0.12rem;
   }
 
   /* Remove extra hr spacing before/after the info bar */
@@ -711,8 +793,12 @@
     .greedy-nav a {
       margin-inline: clamp(0.4rem, 1.6vw, 0.75rem);
     }
-    .masthead__lang-menu .lang-menu__field {
-      padding-inline: clamp(0.42rem, 1.7vw, 0.56rem);
+    .masthead__lang-menu .lang-menu__trigger {
+      width: clamp(6.8rem, 23vw, 8rem);
+      padding-inline: clamp(0.46rem, 1.7vw, 0.62rem);
+    }
+    .masthead__lang-menu .lang-menu__panel {
+      min-width: max(100%, 11rem);
     }
     .page__content > ul {
       padding-left: 18px;
@@ -751,8 +837,17 @@
       margin-inline: clamp(0.38rem, 1.4vw, 0.62rem);
       font-size: 0.95rem;
     }
-    .masthead__lang-menu .lang-menu__field {
-      padding-inline: clamp(0.38rem, 1.6vw, 0.5rem);
+    .masthead__lang-menu .lang-menu__trigger {
+      width: auto;
+      max-width: 7.4rem;
+      padding-inline: clamp(0.42rem, 1.6vw, 0.54rem);
+    }
+    .masthead__lang-menu .lang-menu__current {
+      max-width: 4.4rem;
+    }
+    .masthead__lang-menu .lang-menu__panel {
+      right: -0.1rem;
+      min-width: 11rem;
     }
   }
 
@@ -895,78 +990,159 @@
           </li>
           
         </ul>
-        <div class="masthead__lang-menu" aria-label="Language menu">
-          <label class="lang-menu__field">
+        <div class="masthead__lang-menu" aria-label="Language menu" data-lang-menu>
+          <button
+            class="lang-menu__trigger"
+            type="button"
+            aria-label="Language selector"
+            aria-expanded="false"
+            aria-controls="lang-menu-panel"
+          >
             <span class="lang-menu__icon" aria-hidden="true">L</span>
-            <select
-              class="lang-menu__select"
-              aria-label="Language selector"
-              onchange="if (this.value) window.location.href = this.value;"
-            >
-              
-              <option
-                value="/"
-                lang="en"
-                
-              >English</option>
-              
-              <option
-                value="/zh_cn/"
-                lang="zh-CN"
-                
-              >简体中文</option>
-              
-              <option
-                value="/zh_tw/"
-                lang="zh-TW"
-                
-              >繁體中文</option>
-              
-              <option
-                value="/fr/"
-                lang="fr"
-                
-              >Français</option>
-              
-              <option
-                value="/de/"
-                lang="de"
-                
-              >Deutsch</option>
-              
-              <option
-                value="/ja/"
-                lang="ja"
-                selected
-              >日本語</option>
-              
-              <option
-                value="/ru/"
-                lang="ru"
-                
-              >Русский</option>
-              
-              <option
-                value="/ko/"
-                lang="ko"
-                
-              >한국어</option>
-              
-              <option
-                value="/pt/"
-                lang="pt"
-                
-              >Português</option>
-              
-              <option
-                value="/es/"
-                lang="es"
-                
-              >Español</option>
-              
-            </select>
+            <span
+              class="lang-menu__current"
+              lang="ja"
+            >日本語</span>
             <span class="lang-menu__caret" aria-hidden="true"></span>
-          </label>
+          </button>
+          <div
+            class="lang-menu__panel"
+            id="lang-menu-panel"
+            aria-label="Language options"
+            hidden
+          >
+            
+              
+              
+              <a
+                class="lang-menu__option"
+                href="/"
+                lang="en"
+                target="_self"
+              >
+                <span class="lang-menu__option-chip">English</span>
+                <span class="lang-menu__option-label">English</span>
+              </a>
+              
+            
+              
+              
+              <a
+                class="lang-menu__option"
+                href="/zh_cn/"
+                lang="zh-CN"
+                target="_self"
+              >
+                <span class="lang-menu__option-chip">简中</span>
+                <span class="lang-menu__option-label">简体中文</span>
+              </a>
+              
+            
+              
+              
+              <a
+                class="lang-menu__option"
+                href="/zh_tw/"
+                lang="zh-TW"
+                target="_self"
+              >
+                <span class="lang-menu__option-chip">繁中</span>
+                <span class="lang-menu__option-label">繁體中文</span>
+              </a>
+              
+            
+              
+              
+              <a
+                class="lang-menu__option"
+                href="/fr/"
+                lang="fr"
+                target="_self"
+              >
+                <span class="lang-menu__option-chip">FR</span>
+                <span class="lang-menu__option-label">Français</span>
+              </a>
+              
+            
+              
+              
+              <a
+                class="lang-menu__option"
+                href="/de/"
+                lang="de"
+                target="_self"
+              >
+                <span class="lang-menu__option-chip">DE</span>
+                <span class="lang-menu__option-label">Deutsch</span>
+              </a>
+              
+            
+              
+              
+              <span
+                class="lang-menu__option is-current"
+                lang="ja"
+                aria-current="page"
+              >
+                <span class="lang-menu__option-chip">JA</span>
+                <span class="lang-menu__option-label">日本語</span>
+                <span class="lang-menu__option-check" aria-hidden="true"></span>
+              </span>
+              
+            
+              
+              
+              <a
+                class="lang-menu__option"
+                href="/ru/"
+                lang="ru"
+                target="_self"
+              >
+                <span class="lang-menu__option-chip">RU</span>
+                <span class="lang-menu__option-label">Русский</span>
+              </a>
+              
+            
+              
+              
+              <a
+                class="lang-menu__option"
+                href="/ko/"
+                lang="ko"
+                target="_self"
+              >
+                <span class="lang-menu__option-chip">KO</span>
+                <span class="lang-menu__option-label">한국어</span>
+              </a>
+              
+            
+              
+              
+              <a
+                class="lang-menu__option"
+                href="/pt/"
+                lang="pt"
+                target="_self"
+              >
+                <span class="lang-menu__option-chip">PT</span>
+                <span class="lang-menu__option-label">Português</span>
+              </a>
+              
+            
+              
+              
+              <a
+                class="lang-menu__option"
+                href="/es/"
+                lang="es"
+                target="_self"
+              >
+                <span class="lang-menu__option-chip">ES</span>
+                <span class="lang-menu__option-label">Español</span>
+              </a>
+              
+            
+          </div>
         </div>
         <ul class="hidden-links hidden"></ul>
       </nav>
@@ -1344,7 +1520,7 @@
       </article>
     </div>
 
-    <script src="/assets/js/main.js?v=0605466a5f1d79c8669ea614fa24226e034754a1" defer></script>
+    <script src="/assets/js/main.js?v=8150e396a6d11040e6a067aa6624cf6325137ee2" defer></script>
 
 <!-- Back to top button -->
 <button id="back-to-top" title="Back to top" aria-label="Back to top">&#8679;</button>
