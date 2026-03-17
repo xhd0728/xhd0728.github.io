@@ -1,0 +1,59 @@
+/* ==========================================================================
+   Self-hosted Apple-like fonts for cross-platform consistency
+   ========================================================================== */
+
+@font-face {
+  font-family: "Apple Site Sans";
+  src: url("../fonts/apple/apple-sans-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apple Site Sans";
+  src: url("../fonts/apple/apple-sans-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apple Site Sans SC";
+  src: url("../fonts/apple/apple-sans-zh-hans.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apple Site Sans TC";
+  src: url("../fonts/apple/apple-sans-zh-hant.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apple Site Sans JA";
+  src: url("../fonts/apple/apple-sans-ja.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apple Site Sans KO";
+  src: url("../fonts/apple/apple-sans-ko.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apple Site Sans AR";
+  src: url("../fonts/apple/apple-sans-ar.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
