@@ -14,13 +14,20 @@ $indent-var                 : 0.5em;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : "Trebuchet MS", Helvetica, sans-serif;
+$sans-serif                 : -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "PingFang SC", "PingFang TC", "Hiragino Sans", "Apple SD Gothic Neo", "SF Arabic", "Geeza Pro", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
+/* language-aware sans-serif fallbacks */
+$sans-serif-zh-hans         : -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$sans-serif-zh-hant         : -apple-system, BlinkMacSystemFont, "PingFang TC", "Hiragino Sans CNS", "Noto Sans CJK TC", "Microsoft JhengHei", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$sans-serif-ja              : -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans CJK JP", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$sans-serif-ko              : -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK KR", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$sans-serif-ar              : -apple-system, BlinkMacSystemFont, "SF Arabic", "Geeza Pro", "Tahoma", "Noto Naskh Arabic", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
-$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif;
+$helvetica                  : -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
 /* serif typefaces */
 $georgia                    : Georgia, serif;

@@ -21,6 +21,29 @@ body {
   }
 }
 
+/* Prefer script-specific stacks to avoid thin glyph fallback in multilingual pages */
+html:lang(zh-CN) body,
+html:lang(zh-Hans) body {
+  font-family: $sans-serif-zh-hans;
+}
+
+html:lang(zh-TW) body,
+html:lang(zh-Hant) body {
+  font-family: $sans-serif-zh-hant;
+}
+
+html:lang(ja) body {
+  font-family: $sans-serif-ja;
+}
+
+html:lang(ko) body {
+  font-family: $sans-serif-ko;
+}
+
+html:lang(ar) body {
+  font-family: $sans-serif-ar;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 0.5em;
   line-height: 1.2;
