@@ -7,6 +7,7 @@
       {% if current_language == nil %}
       {% assign current_language = languages | first %}
       {% endif %}
+      {% assign current_language_button_label = current_language.button_label | default: current_language.label %}
       {% assign nav_locale = page.nav_locale | default: current_language.nav_locale | default: "en" %}
       {% assign home_label = current_language.home_label | default: "Homepage" %}
       {% assign home_url = current_language.path | append: "#about-me" %}
@@ -51,7 +52,7 @@
             aria-expanded="false"
             aria-controls="lang-menu-panel"
           >
-            <span class="lang-menu__icon" aria-hidden="true">L</span>
+            <span class="lang-menu__icon" aria-hidden="true">{{ current_language_button_label }}</span>
             <span
               class="lang-menu__current"
               lang="{{ current_language.lang }}"

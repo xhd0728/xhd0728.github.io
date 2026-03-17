@@ -177,7 +177,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css?v=8150e396a6d11040e6a067aa6624cf6325137ee2">
+<link rel="stylesheet" href="/assets/css/main.css?v=69c5122f8a9af31b1d19c0449da7c38055199304">
 
 <meta http-equiv="cleartype" content="on">
 <base href="/" target="_blank">
@@ -191,7 +191,7 @@
 <meta name="msapplication-TileImage" content="/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="/images/browserconfig.xml?v=M44lzPylqQ">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="/assets/css/academicons.css?v=8150e396a6d11040e6a067aa6624cf6325137ee2"/>
+<link rel="stylesheet" href="/assets/css/academicons.css?v=69c5122f8a9af31b1d19c0449da7c38055199304"/>
 
 <script>
   (function () {
@@ -246,9 +246,10 @@
     --c-border: #e8ecf4;
     --ease: cubic-bezier(0.25, 0.8, 0.25, 1);
     --page-gutter: clamp(0.75rem, 2.8vw, 1rem);
-    --nav-side-reserve: clamp(8.4rem, 33vw, 10rem);
-    --lang-toggle-offset: clamp(2.7rem, 10vw, 3.4rem);
-    --lang-trigger-width: clamp(7.4rem, 22vw, 8.9rem);
+    --nav-toggle-width: clamp(2.7rem, 10vw, 2.9rem);
+    --nav-side-reserve: calc(var(--nav-toggle-width) + 0.45rem);
+    --lang-toggle-offset: calc(var(--nav-toggle-width) + 0.55rem);
+    --lang-trigger-width: clamp(6.8rem, 20vw, 8.1rem);
   }
 
   /* ===== Back-to-top button ===== */
@@ -504,7 +505,7 @@
   .greedy-nav > .greedy-nav__toggle {
     position: absolute;
     right: 0;
-    width: clamp(2.7rem, 10vw, 2.9rem);
+    width: var(--nav-toggle-width);
     height: 100%;
   }
   .greedy-nav .visible-links {
@@ -520,19 +521,20 @@
   }
   .masthead__lang-menu {
     position: absolute;
-    top: 50%;
+    top: 0;
+    bottom: 0;
     right: var(--lang-toggle-offset);
-    display: block;
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
     z-index: 12;
   }
   .masthead__lang-menu .lang-menu__trigger {
     display: inline-flex;
     align-items: center;
-    gap: clamp(0.38rem, 1vw, 0.56rem);
+    gap: clamp(0.32rem, 0.9vw, 0.5rem);
     width: var(--lang-trigger-width);
-    min-height: 2.15rem;
-    padding: clamp(0.32rem, 1vw, 0.42rem) clamp(0.58rem, 1.8vw, 0.76rem);
+    min-height: 1.96rem;
+    padding: clamp(0.26rem, 0.9vw, 0.36rem) clamp(0.5rem, 1.5vw, 0.66rem);
     border: 1px solid rgba(43, 87, 151, 0.16);
     border-radius: 1rem;
     background:
@@ -566,30 +568,32 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: clamp(1.2rem, 3.3vw, 1.42rem);
-    height: clamp(1.2rem, 3.3vw, 1.42rem);
-    border-radius: 0.55rem;
+    min-width: 1.62rem;
+    height: clamp(1.06rem, 3vw, 1.24rem);
+    padding: 0 0.34rem;
+    border-radius: 999px;
     background: linear-gradient(135deg, var(--c-primary), var(--c-accent));
     color: #fff;
     box-shadow: 0 6px 14px rgba(43, 87, 151, 0.18);
-    font-size: clamp(0.52rem, 1.6vw, 0.62rem);
+    font-size: clamp(0.54rem, 1.35vw, 0.62rem);
     font-weight: 700;
     letter-spacing: 0.08em;
     flex-shrink: 0;
   }
   .masthead__lang-menu .lang-menu__current {
+    flex: 0 1 auto;
     min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     color: var(--c-primary-dark);
-    font-size: clamp(0.72rem, 2.1vw, 0.84rem);
+    font-size: clamp(0.67rem, 1.9vw, 0.77rem);
     font-weight: 700;
     letter-spacing: 0.01em;
   }
   .masthead__lang-menu .lang-menu__caret {
-    width: 0.48rem;
-    height: 0.48rem;
+    width: 0.42rem;
+    height: 0.42rem;
     border-right: 2px solid currentColor;
     border-bottom: 2px solid currentColor;
     transform: rotate(45deg) translateY(-1px);
@@ -607,7 +611,7 @@
     width: max-content;
     min-width: max(100%, 12rem);
     max-width: calc(100vw - (var(--page-gutter) * 2));
-    padding: 0.4rem;
+    padding: 0.32rem;
     border: 1px solid rgba(43, 87, 151, 0.14);
     border-radius: 1.05rem;
     background: rgba(255, 255, 255, 0.92);
@@ -629,13 +633,15 @@
   }
   .masthead__lang-menu .lang-menu__option {
     display: grid;
-    grid-template-columns: auto minmax(0, 1fr) auto;
+    grid-template-columns: auto minmax(0, 1fr);
     align-items: center;
-    gap: 0.65rem;
+    gap: 0.56rem;
     width: 100%;
-    padding: 0.55rem 0.68rem;
+    margin: 0;
+    padding: 0.44rem 0.56rem;
     border: 1px solid transparent;
-    border-radius: 0.82rem;
+    border-radius: 0.72rem;
+    box-sizing: border-box;
     background: transparent;
     color: var(--c-text);
     text-decoration: none;
@@ -649,8 +655,9 @@
     transform: translateX(2px);
   }
   .masthead__lang-menu .lang-menu__option.is-current {
-    background: linear-gradient(135deg, rgba(43, 87, 151, 0.1), rgba(61, 142, 185, 0.12));
-    border-color: rgba(43, 87, 151, 0.16);
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    background: rgba(43, 87, 151, 0.07);
+    border-color: transparent;
     color: var(--c-primary-dark);
     cursor: default;
   }
@@ -658,13 +665,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 2.3rem;
-    height: 1.62rem;
-    padding: 0 0.42rem;
+    min-width: 1.95rem;
+    height: 1.34rem;
+    padding: 0 0.34rem;
     border-radius: 999px;
     background: linear-gradient(135deg, rgba(43, 87, 151, 0.13), rgba(61, 142, 185, 0.2));
     color: var(--c-primary-dark);
-    font-size: 0.66rem;
+    font-size: 0.58rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -674,12 +681,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-size: 0.84rem;
+    font-size: 0.78rem;
     font-weight: 600;
   }
+  .masthead__lang-menu .lang-menu__option.is-current .lang-menu__option-chip {
+    background: rgba(43, 87, 151, 0.12);
+  }
   .masthead__lang-menu .lang-menu__option-check {
-    width: 0.38rem;
-    height: 0.72rem;
+    width: 0.33rem;
+    height: 0.62rem;
     border-right: 2px solid var(--c-accent);
     border-bottom: 2px solid var(--c-accent);
     transform: rotate(40deg);
@@ -794,11 +804,11 @@
       margin-inline: clamp(0.4rem, 1.6vw, 0.75rem);
     }
     .masthead__lang-menu .lang-menu__trigger {
-      width: clamp(6.8rem, 23vw, 8rem);
-      padding-inline: clamp(0.46rem, 1.7vw, 0.62rem);
+      width: clamp(6.2rem, 21vw, 7.3rem);
+      padding-inline: clamp(0.42rem, 1.5vw, 0.56rem);
     }
     .masthead__lang-menu .lang-menu__panel {
-      min-width: max(100%, 11rem);
+      min-width: max(100%, 10.2rem);
     }
     .page__content > ul {
       padding-left: 18px;
@@ -839,15 +849,15 @@
     }
     .masthead__lang-menu .lang-menu__trigger {
       width: auto;
-      max-width: 7.4rem;
-      padding-inline: clamp(0.42rem, 1.6vw, 0.54rem);
+      max-width: 6.7rem;
+      padding-inline: clamp(0.38rem, 1.4vw, 0.5rem);
     }
     .masthead__lang-menu .lang-menu__current {
-      max-width: 4.4rem;
+      max-width: 3.8rem;
     }
     .masthead__lang-menu .lang-menu__panel {
-      right: -0.1rem;
-      min-width: 11rem;
+      right: 0;
+      min-width: 10rem;
     }
   }
 
@@ -882,6 +892,7 @@
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
+      
       
       
       
@@ -998,7 +1009,7 @@
             aria-expanded="false"
             aria-controls="lang-menu-panel"
           >
-            <span class="lang-menu__icon" aria-hidden="true">L</span>
+            <span class="lang-menu__icon" aria-hidden="true">PT</span>
             <span
               class="lang-menu__current"
               lang="pt"
@@ -1020,7 +1031,7 @@
                 lang="en"
                 target="_self"
               >
-                <span class="lang-menu__option-chip">English</span>
+                <span class="lang-menu__option-chip">EN</span>
                 <span class="lang-menu__option-label">English</span>
               </a>
               
@@ -1520,7 +1531,7 @@
       </article>
     </div>
 
-    <script src="/assets/js/main.js?v=8150e396a6d11040e6a067aa6624cf6325137ee2" defer></script>
+    <script src="/assets/js/main.js?v=69c5122f8a9af31b1d19c0449da7c38055199304" defer></script>
 
 <!-- Back to top button -->
 <button id="back-to-top" title="Back to top" aria-label="Back to top">&#8679;</button>

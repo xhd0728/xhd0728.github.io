@@ -1,7 +1,7 @@
 main:
 - key: "en"
   label: "English"
-  button_label: "English"
+  button_label: "EN"
   path: "/"
   lang: "en"
   hreflang: "en"

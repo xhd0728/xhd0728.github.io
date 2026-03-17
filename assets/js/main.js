@@ -78,12 +78,11 @@
           btn.classList.remove('hidden');
         }
       } else {
-        if (breaks.length > 0 && availableSpace > breaks[breaks.length - 1]) {
+        while (breaks.length > 0 && availableSpace > breaks[breaks.length - 1]) {
           var firstHiddenItem = hiddenList.firstElementChild;
-          if (firstHiddenItem) {
-            visibleList.append(firstHiddenItem);
-            breaks.pop();
-          }
+          if (!firstHiddenItem) break;
+          visibleList.append(firstHiddenItem);
+          breaks.pop();
         }
         if (breaks.length < 1) {
           btn.classList.add('hidden');
