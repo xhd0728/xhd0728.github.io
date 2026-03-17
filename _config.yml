@@ -84,6 +84,14 @@ exclude:
 - google_scholar_crawler
 - _pages/includes
 - _pages/includes_zh
+- _pages/includes_zh_tw
+- _pages/includes_fr
+- _pages/includes_de
+- _pages/includes_ja
+- _pages/includes_ru
+- _pages/includes_ko
+- _pages/includes_pt
+- _pages/includes_es
 - "*.sublime-project"
 - "*.sublime-workspace"
 - .asset-cache
@@ -150,6 +158,62 @@ defaults:
     robots: "noindex, nofollow"
 - scope:
     path: "_pages/includes_zh"
+    type: pages
+  values:
+    published: false
+    sitemap: false
+    robots: "noindex, nofollow"
+- scope:
+    path: "_pages/includes_zh_tw"
+    type: pages
+  values:
+    published: false
+    sitemap: false
+    robots: "noindex, nofollow"
+- scope:
+    path: "_pages/includes_fr"
+    type: pages
+  values:
+    published: false
+    sitemap: false
+    robots: "noindex, nofollow"
+- scope:
+    path: "_pages/includes_de"
+    type: pages
+  values:
+    published: false
+    sitemap: false
+    robots: "noindex, nofollow"
+- scope:
+    path: "_pages/includes_ja"
+    type: pages
+  values:
+    published: false
+    sitemap: false
+    robots: "noindex, nofollow"
+- scope:
+    path: "_pages/includes_ru"
+    type: pages
+  values:
+    published: false
+    sitemap: false
+    robots: "noindex, nofollow"
+- scope:
+    path: "_pages/includes_ko"
+    type: pages
+  values:
+    published: false
+    sitemap: false
+    robots: "noindex, nofollow"
+- scope:
+    path: "_pages/includes_pt"
+    type: pages
+  values:
+    published: false
+    sitemap: false
+    robots: "noindex, nofollow"
+- scope:
+    path: "_pages/includes_es"
     type: pages
   values:
     published: false

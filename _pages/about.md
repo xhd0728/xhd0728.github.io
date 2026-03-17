@@ -8,6 +8,8 @@ image: "/images/android-chrome-512x512.png"
 schema_type: "ProfilePage"
 lang: "en"
 locale: "en_US"
+lang_key: "en"
+nav_locale: "en"
 excerpt: ""
 author_profile: true
 redirect_from: 

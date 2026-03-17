@@ -1,0 +1,25 @@
+# main links links
+main:
+- title: "Обо мне"
+  url: "/ru/#about-me"
+
+- title: "Новости"
+  url: "/ru/#news"
+
+- title: "Публикации"
+  url: "/ru/#publications"
+
+- title: "Награды"
+  url: "/ru/#awards"
+
+- title: "Образование"
+  url: "/ru/#educations"
+
+- title: "СМИ"
+  url: "/ru/#media-mentions"
+
+- title: "Стажировки"
+  url: "/ru/#internships"
+
+- title: "Путешествия"
+  url: "https://www.travellings.cn/plain.html"

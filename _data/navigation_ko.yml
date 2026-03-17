@@ -1,0 +1,25 @@
+# main links links
+main:
+- title: "소개"
+  url: "/ko/#about-me"
+
+- title: "뉴스"
+  url: "/ko/#news"
+
+- title: "논문"
+  url: "/ko/#publications"
+
+- title: "수상"
+  url: "/ko/#awards"
+
+- title: "학력"
+  url: "/ko/#educations"
+
+- title: "미디어"
+  url: "/ko/#media-mentions"
+
+- title: "인턴십"
+  url: "/ko/#internships"
+
+- title: "여행"
+  url: "https://www.travellings.cn/plain.html"

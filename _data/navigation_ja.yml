@@ -1,0 +1,25 @@
+# main links links
+main:
+- title: "自己紹介"
+  url: "/ja/#about-me"
+
+- title: "ニュース"
+  url: "/ja/#news"
+
+- title: "論文"
+  url: "/ja/#publications"
+
+- title: "受賞"
+  url: "/ja/#awards"
+
+- title: "学歴"
+  url: "/ja/#educations"
+
+- title: "メディア掲載"
+  url: "/ja/#media-mentions"
+
+- title: "インターン"
+  url: "/ja/#internships"
+
+- title: "旅行"
+  url: "https://www.travellings.cn/plain.html"

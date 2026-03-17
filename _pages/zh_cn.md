@@ -8,6 +8,8 @@ image: "/images/android-chrome-512x512.png"
 schema_type: "ProfilePage"
 lang: "zh-CN"
 locale: "zh_CN"
+lang_key: "zh_cn"
+nav_locale: "zh_cn"
 excerpt: ""
 author_profile: true
 ---

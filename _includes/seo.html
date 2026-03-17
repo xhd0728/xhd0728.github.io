@@ -66,9 +66,12 @@
   {% endfor %}
 {% endif %}
 
-{% if page.url == "/" or page.url == "/zh_cn/" %}
-<link rel="alternate" hreflang="en" href="{{ "/" | absolute_url }}">
-<link rel="alternate" hreflang="zh-CN" href="{{ "/zh_cn/" | absolute_url }}">
+{% if page.lang_key %}
+  {% for language in site.data.languages.main %}
+    {% unless language.indexable == false %}
+<link rel="alternate" hreflang="{{ language.hreflang | default: language.lang }}" href="{{ language.path | absolute_url }}">
+    {% endunless %}
+  {% endfor %}
 <link rel="alternate" hreflang="x-default" href="{{ "/" | absolute_url }}">
 {% endif %}
 

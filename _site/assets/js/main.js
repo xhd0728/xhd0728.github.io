@@ -11,9 +11,10 @@
     var nav = document.querySelector('.greedy-nav');
     if (!nav) return;
 
-    var btn = nav.querySelector('button');
+    var btn = nav.querySelector('.greedy-nav__toggle');
     var visibleList = nav.querySelector('.visible-links');
     var hiddenList = nav.querySelector('.hidden-links');
+    var langMenu = nav.querySelector('.masthead__lang-menu');
     if (!btn || !visibleList || !hiddenList) return;
     var breaks = [];
 
@@ -60,9 +61,13 @@
     }
 
     function updateNav() {
+      var langToggle = langMenu ? langMenu.querySelector('.lang-menu__field') : null;
+      var langMenuWidth = langMenu
+        ? Math.max(width(langMenu), langToggle ? width(langToggle) : 0) + 18
+        : 0;
       var availableSpace = btn.classList.contains('hidden')
-        ? width(nav)
-        : width(nav) - width(btn) - 30;
+        ? width(nav) - langMenuWidth
+        : width(nav) - width(btn) - langMenuWidth - 30;
 
       if (width(visibleList) > availableSpace) {
         var lastVisibleItem = visibleList.lastElementChild;
@@ -234,13 +239,19 @@
     });
   }
 
-  /* ------------------------------------------------------------------
-     Init on DOMContentLoaded
-     ------------------------------------------------------------------ */
-  document.addEventListener('DOMContentLoaded', function () {
+  function initPage() {
     initGreedyNav();
     initAuthorDropdown();
     initStickySidebar();
     initLightbox();
-  });
+  }
+
+  /* ------------------------------------------------------------------
+     Init when DOM is ready
+     ------------------------------------------------------------------ */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPage, { once: true });
+  } else {
+    initPage();
+  }
 })();

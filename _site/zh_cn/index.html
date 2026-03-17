@@ -68,8 +68,47 @@
 
 
 
+  
+    
 <link rel="alternate" hreflang="en" href="http://localhost:4000/">
+    
+  
+    
 <link rel="alternate" hreflang="zh-CN" href="http://localhost:4000/zh_cn/">
+    
+  
+    
+<link rel="alternate" hreflang="zh-TW" href="http://localhost:4000/zh_tw/">
+    
+  
+    
+<link rel="alternate" hreflang="fr" href="http://localhost:4000/fr/">
+    
+  
+    
+<link rel="alternate" hreflang="de" href="http://localhost:4000/de/">
+    
+  
+    
+<link rel="alternate" hreflang="ja" href="http://localhost:4000/ja/">
+    
+  
+    
+<link rel="alternate" hreflang="ru" href="http://localhost:4000/ru/">
+    
+  
+    
+<link rel="alternate" hreflang="ko" href="http://localhost:4000/ko/">
+    
+  
+    
+<link rel="alternate" hreflang="pt-PT" href="http://localhost:4000/pt/">
+    
+  
+    
+<link rel="alternate" hreflang="es" href="http://localhost:4000/es/">
+    
+  
 <link rel="alternate" hreflang="x-default" href="http://localhost:4000/">
 
 
@@ -449,49 +488,113 @@
   /* =========================================================
      LANGUAGE SWITCHER
      ========================================================= */
+  .masthead__menu {
+    position: relative;
+  }
   .greedy-nav {
-    display: flex;
-    align-items: center;
+    min-height: 2.8rem;
+    padding-right: 8.2rem;
+  }
+  .greedy-nav > .greedy-nav__toggle {
+    position: absolute;
+    right: 0;
+    height: 100%;
   }
   .greedy-nav .visible-links {
-    flex: 1 1 auto;
-    width: auto;
-  }
-  .masthead__lang-switch {
     display: inline-flex;
     align-items: center;
-    gap: 0.15rem;
-    margin-left: auto;
-    margin-right: 2.9rem;
-    padding: 0.16rem;
+    flex-wrap: nowrap;
+    width: auto;
+    max-width: 100%;
+  }
+  .greedy-nav .visible-links li {
+    display: block;
+    flex: 0 0 auto;
+  }
+  .masthead__lang-menu {
+    position: absolute;
+    top: 50%;
+    right: 2.95rem;
+    display: block;
+    transform: translateY(-50%);
+    z-index: 12;
+  }
+  .masthead__lang-menu .lang-menu__field {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.48rem;
+    padding: 0.42rem 0.72rem;
     border: 1px solid rgba(43, 87, 151, 0.16);
     border-radius: 999px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 248, 252, 0.98));
+    color: var(--c-primary-dark);
     box-shadow: 0 4px 16px rgba(43, 87, 151, 0.08);
-    flex-shrink: 0;
-  }
-  .masthead__lang-switch .lang-option {
-    margin: 0 !important;
-    padding: 0.34rem 0.72rem !important;
-    border-radius: 999px;
-    color: var(--c-text-muted) !important;
-    font-size: 0.82rem;
-    font-weight: 600;
+    cursor: pointer;
+    font: inherit;
     line-height: 1;
-    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
   }
-  .masthead__lang-switch .lang-option::before {
-    display: none !important;
-  }
-  .masthead__lang-switch .lang-option:hover {
-    color: var(--c-primary-dark) !important;
-    background: rgba(43, 87, 151, 0.08);
+  .masthead__lang-menu .lang-menu__field:hover,
+  .masthead__lang-menu .lang-menu__field:focus-within {
+    border-color: rgba(43, 87, 151, 0.32);
+    box-shadow: 0 6px 18px rgba(43, 87, 151, 0.14);
     transform: translateY(-1px);
   }
-  .masthead__lang-switch .lang-option.is-active {
-    color: #fff !important;
+  .masthead__lang-menu .lang-menu__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.28rem;
+    height: 1.28rem;
+    border-radius: 50%;
     background: linear-gradient(135deg, var(--c-primary), var(--c-accent));
-    box-shadow: 0 4px 10px rgba(43, 87, 151, 0.22);
+    color: #fff;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    flex-shrink: 0;
+  }
+  .masthead__lang-menu .lang-menu__select {
+    min-width: 0;
+    max-width: 7.5rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--c-primary-dark);
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  }
+  .masthead__lang-menu .lang-menu__select:focus {
+    outline: none;
+  }
+  .masthead__lang-menu .lang-menu__select option {
+    color: var(--c-text);
+  }
+  .masthead__lang-menu .lang-menu__select::-ms-expand {
+    display: none;
+  }
+  .masthead__lang-menu .lang-menu__select {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .masthead__lang-menu .lang-menu__caret {
+    width: 0.42rem;
+    height: 0.42rem;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(45deg) translateY(-1px);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+    pointer-events: none;
   }
 
   /* Remove extra hr spacing before/after the info bar */
@@ -595,14 +698,27 @@
      RESPONSIVE
      ========================================================= */
   @media (max-width: 768px) {
-    .masthead__lang-switch {
-      margin-right: 2.55rem;
-      gap: 0.1rem;
-      padding: 0.14rem;
+    .greedy-nav {
+      padding-right: 7.25rem;
     }
-    .masthead__lang-switch .lang-option {
-      padding: 0.3rem 0.58rem !important;
-      font-size: 0.76rem;
+    .greedy-nav .visible-links {
+      max-width: none;
+    }
+    .masthead__lang-menu {
+      right: 2.6rem;
+    }
+    .masthead__lang-menu .lang-menu__field {
+      padding: 0.34rem 0.58rem;
+      gap: 0.36rem;
+    }
+    .masthead__lang-menu .lang-menu__icon {
+      width: 1.12rem;
+      height: 1.12rem;
+      font-size: 0.54rem;
+    }
+    .masthead__lang-menu .lang-menu__select {
+      max-width: 4.6rem;
+      font-size: 0.74rem;
     }
     .page__content > ul {
       padding-left: 18px;
@@ -667,13 +783,23 @@
       
       
       
+      
+      
+      
+      
+      
+      
+      
+      
       <nav id="site-nav" class="greedy-nav">
-        <button>
+        <button class="greedy-nav__toggle" type="button" aria-label="Toggle menu">
           <div class="navicon"></div>
         </button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a
               href="/zh_cn/#about-me" target="_self">主页</a></li>
+          
+          
           
           
           
@@ -686,12 +812,16 @@
           
           
           
+          
+          
           <li class="masthead__menu-item">
             <a
               href="/zh_cn/#news"
               target="_self"
             >新闻</a>
           </li>
+          
+          
           
           
           
@@ -704,12 +834,16 @@
           
           
           
+          
+          
           <li class="masthead__menu-item">
             <a
               href="/zh_cn/#awards"
               target="_self"
             >奖项</a>
           </li>
+          
+          
           
           
           
@@ -722,12 +856,16 @@
           
           
           
+          
+          
           <li class="masthead__menu-item">
             <a
               href="/zh_cn/#media-mentions"
               target="_self"
             >媒体报道</a>
           </li>
+          
+          
           
           
           
@@ -740,6 +878,8 @@
           
           
           
+          
+          
           <li class="masthead__menu-item">
             <a
               href="https://www.travellings.cn/plain.html"
@@ -748,9 +888,78 @@
           </li>
           
         </ul>
-        <div class="masthead__lang-switch" aria-label="语言切换">
-          <a class="lang-option" href="/" hreflang="en" lang="en" target="_self">English</a>
-          <a class="lang-option is-active" href="/zh_cn/" hreflang="zh-CN" lang="zh-CN" target="_self">简体中文</a>
+        <div class="masthead__lang-menu" aria-label="Language menu">
+          <label class="lang-menu__field">
+            <span class="lang-menu__icon" aria-hidden="true">L</span>
+            <select
+              class="lang-menu__select"
+              aria-label="Language selector"
+              onchange="if (this.value) window.location.href = this.value;"
+            >
+              
+              <option
+                value="/"
+                lang="en"
+                
+              >English</option>
+              
+              <option
+                value="/zh_cn/"
+                lang="zh-CN"
+                selected
+              >简体中文</option>
+              
+              <option
+                value="/zh_tw/"
+                lang="zh-TW"
+                
+              >繁體中文</option>
+              
+              <option
+                value="/fr/"
+                lang="fr"
+                
+              >Français</option>
+              
+              <option
+                value="/de/"
+                lang="de"
+                
+              >Deutsch</option>
+              
+              <option
+                value="/ja/"
+                lang="ja"
+                
+              >日本語</option>
+              
+              <option
+                value="/ru/"
+                lang="ru"
+                
+              >Русский</option>
+              
+              <option
+                value="/ko/"
+                lang="ko"
+                
+              >한국어</option>
+              
+              <option
+                value="/pt/"
+                lang="pt"
+                
+              >Português</option>
+              
+              <option
+                value="/es/"
+                lang="es"
+                
+              >Español</option>
+              
+            </select>
+            <span class="lang-menu__caret" aria-hidden="true"></span>
+          </label>
         </div>
         <ul class="hidden-links hidden"></ul>
       </nav>
@@ -940,7 +1149,7 @@
   <p>* 表示共同一作，† 表示通讯作者。</p>
 </blockquote>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ArXiv 2026</div><img src="images/paper/metamem.webp" alt="MetaMem paper figure" width="100%" loading="lazy" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ArXiv 2026</div><img src="/images/paper/metamem.webp" alt="MetaMem paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="metamem-evolving-meta-memory-for-knowledge-utilization-through-self-reflective-symbolic-optimization">MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization</h1>
@@ -956,7 +1165,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ArXiv 2026</div><img src="images/paper/pager.webp" alt="PAGER paper figure" width="100%" loading="lazy" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">ArXiv 2026</div><img src="/images/paper/pager.webp" alt="PAGER paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="structured-knowledge-representation-through-contextual-pages-for-retrieval-augmented-generation">Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation</h1>
@@ -972,7 +1181,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">KDD 2026</div><img src="images/paper/lisrec.webp" alt="LISRec paper figure" width="100%" loading="lazy" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">KDD 2026</div><img src="/images/paper/lisrec.webp" alt="LISRec paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="lisrec-modeling-user-preferences-with-learned-item-shortcuts-for-sequential-recommendation">LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation</h1>
@@ -988,7 +1197,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">AI Open</div><img src="images/paper/survey.webp" alt="Knowledge Intensive Agents survey figure" width="100%" loading="lazy" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">AI Open</div><img src="/images/paper/survey.webp" alt="Knowledge Intensive Agents survey figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="knowledge-intensive-agents">Knowledge Intensive Agents</h1>
@@ -1003,7 +1212,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">WISA 2025</div><img src="images/paper/tasteplus.webp" alt="TASTE+ paper figure" width="100%" loading="lazy" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">WISA 2025</div><img src="/images/paper/tasteplus.webp" alt="TASTE+ paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="adapting-language-models-to-text-matching-based-recommendation-systems">Adapting Language Models to Text Matching based Recommendation Systems</h1>
@@ -1020,7 +1229,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">EMNLP 2025</div><img src="images/paper/llmsparks.webp" alt="LLMsPark paper figure" width="100%" loading="lazy" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">EMNLP 2025</div><img src="/images/paper/llmsparks.webp" alt="LLMsPark paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="llmspark-a-benchmark-for-evaluating-large-language-models-in-strategic-gaming-contexts">LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts</h1>
@@ -1036,7 +1245,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">COLING 2024</div><img src="images/paper/mmad-coling2024.webp" alt="MMAD paper figure" width="100%" loading="lazy" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">COLING 2024</div><img src="/images/paper/mmad-coling2024.webp" alt="MMAD paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="mmad-multi-modal-movie-audio-description">MMAD: Multi-modal Movie Audio Description</h1>
@@ -1053,7 +1262,7 @@
   </div>
 </div>
 
-<div class="paper-box"><div class="paper-box-image"><div><div class="badge">MCM/ICM 2023</div><img src="images/paper/mcm-icm-2023.webp" alt="MCM/ICM paper figure" width="100%" loading="lazy" /></div></div>
+<div class="paper-box"><div class="paper-box-image"><div><div class="badge">MCM/ICM 2023</div><img src="/images/paper/mcm-icm-2023.webp" alt="MCM/ICM paper figure" width="100%" loading="lazy" /></div></div>
 <div class="paper-box-text">
 
     <h1 id="puzzle-game-prediction-and-classification-of-wordle-solution-words">Puzzle Game: Prediction and Classification of Wordle Solution Words</h1>
@@ -1296,22 +1505,57 @@
 
 
 <script>
-    $(document).ready(function () {
-        
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/xhd0728/xhd0728.github.io@'
-        
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
-            var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
-            var citationEles = document.getElementsByClassName('show_paper_citations')
-            Array.prototype.forEach.call(citationEles, element => {
-                var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
-            });
+  (function () {
+    
+    var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/xhd0728/xhd0728.github.io@';
+    
+
+    function updateScholarStats(data) {
+      var totalCitation = data.citedby;
+      var totalCitationElement = document.getElementById('total_cit');
+      var citationEles = document.getElementsByClassName('show_paper_citations');
+
+      if (totalCitationElement) {
+        totalCitationElement.textContent = totalCitation;
+      }
+
+      Array.prototype.forEach.call(citationEles, function (element) {
+        var paperId = element.getAttribute('data');
+        var publication = data.publications && data.publications[paperId];
+        if (!publication) return;
+        element.textContent = '| Citations: ' + publication.num_citations;
+      });
+    }
+
+    function fetchScholarStats() {
+      var hasTotalCitationTarget = document.getElementById('total_cit');
+      var hasPerPaperCitationTarget = document.getElementsByClassName('show_paper_citations').length > 0;
+
+      if (!hasTotalCitationTarget && !hasPerPaperCitationTarget) {
+        return;
+      }
+
+      fetch(gsDataBaseUrl + 'google-scholar-stats/gs_data.json')
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error('Failed to fetch Google Scholar stats');
+          }
+          return response.json();
+        })
+        .then(updateScholarStats)
+        .catch(function () {
+          return null;
         });
-    })
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fetchScholarStats, { once: true });
+    } else {
+      fetchScholarStats();
+    }
+  })();
 </script>
+
 
 
   </body>

@@ -1,21 +1,25 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      {% assign is_zh = false %}
-      {% if page.lang == "zh-CN" or page.url contains "/zh_cn/" %}
-        {% assign is_zh = true %}
+      {% assign languages = site.data.languages.main %}
+      {% assign current_lang_key = page.lang_key | default: "en" %}
+      {% assign current_language = languages | where: "key", current_lang_key | first %}
+      {% if current_language == nil %}
+      {% assign current_language = languages | first %}
       {% endif %}
-      {% if is_zh %}
-        {% assign nav_links = site.data.navigation_zh.main %}
-        {% assign home_label = "主页" %}
-        {% assign home_url = "/zh_cn/#about-me" %}
-      {% else %}
-        {% assign nav_links = site.data.navigation.main %}
-        {% assign home_label = "Homepage" %}
-        {% assign home_url = "/#about-me" %}
+      {% assign nav_locale = page.nav_locale | default: current_language.nav_locale | default: "en" %}
+      {% assign home_label = current_language.home_label | default: "Homepage" %}
+      {% assign home_url = current_language.path | append: "#about-me" %}
+      {% assign nav_data_key = "navigation" %}
+      {% if nav_locale == "zh_cn" %}
+        {% assign nav_data_key = "navigation_zh" %}
+      {% elsif nav_locale != "en" %}
+        {% assign nav_data_key = "navigation_" | append: nav_locale %}
       {% endif %}
+      {% assign nav_data = site.data[nav_data_key] %}
+      {% assign nav_links = nav_data.main | default: site.data.navigation.main %}
       <nav id="site-nav" class="greedy-nav">
-        <button>
+        <button class="greedy-nav__toggle" type="button" aria-label="Toggle menu">
           <div class="navicon"></div>
         </button>
         <ul class="visible-links">
@@ -26,17 +30,37 @@
           {% if link.url contains 'https://' or link.url contains 'http://' %}
             {% assign is_external = true %}
           {% endif %}
+          {% assign localized_link_url = link.url %}
+          {% if is_external == false and link.url contains '#' %}
+            {% assign anchor_id = link.url | split: '#' | last %}
+            {% assign localized_link_url = current_language.path | append: '#' | append: anchor_id %}
+          {% endif %}
           <li class="masthead__menu-item">
             <a
-              href="{% if is_external %}{{ link.url }}{% else %}{{ domain }}{{ link.url }}{% endif %}"
+              href="{% if is_external %}{{ link.url }}{% else %}{{ domain }}{{ localized_link_url }}{% endif %}"
               {% if is_external %}target="_blank" rel="noopener noreferrer"{% else %}target="_self"{% endif %}
             >{{ link.title }}</a>
           </li>
           {% endfor %}
         </ul>
-        <div class="masthead__lang-switch" aria-label="{% if is_zh %}语言切换{% else %}Language switcher{% endif %}">
-          <a class="lang-option{% unless is_zh %} is-active{% endunless %}" href="/" hreflang="en" lang="en" target="_self">English</a>
-          <a class="lang-option{% if is_zh %} is-active{% endif %}" href="/zh_cn/" hreflang="zh-CN" lang="zh-CN" target="_self">简体中文</a>
+        <div class="masthead__lang-menu" aria-label="Language menu">
+          <label class="lang-menu__field">
+            <span class="lang-menu__icon" aria-hidden="true">L</span>
+            <select
+              class="lang-menu__select"
+              aria-label="Language selector"
+              onchange="if (this.value) window.location.href = this.value;"
+            >
+              {% for language in languages %}
+              <option
+                value="{{ language.path }}"
+                lang="{{ language.lang }}"
+                {% if language.key == current_lang_key %}selected{% endif %}
+              >{{ language.label }}</option>
+              {% endfor %}
+            </select>
+            <span class="lang-menu__caret" aria-hidden="true"></span>
+          </label>
         </div>
         <ul class="hidden-links hidden"></ul>
       </nav>

@@ -1,6 +1,6 @@
 # 🔨 Projects
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Corpus Intelligent Retrieval System</div><img src='images/projects/corpus_intelligent_retrieval_system.webp' alt="Corpus Intelligent Retrieval System" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Corpus Intelligent Retrieval System</div><img src='/images/projects/corpus_intelligent_retrieval_system.webp' alt="Corpus Intelligent Retrieval System" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Corpus Intelligent Retrieval System
@@ -13,7 +13,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Bird Sound Classification</div><img src='images/projects/bird_sound_classification.webp' alt="Bird Sound Classification System" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Bird Sound Classification</div><img src='/images/projects/bird_sound_classification.webp' alt="Bird Sound Classification System" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Bird Sound Classification System
@@ -26,7 +26,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Ray Tracing With OpenGL</div><img src='images/projects/ray_tracing_with_opengl.webp' alt="Ray Tracing With OpenGL" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Ray Tracing With OpenGL</div><img src='/images/projects/ray_tracing_with_opengl.webp' alt="Ray Tracing With OpenGL" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Ray Tracing With OpenGL

@@ -4,7 +4,7 @@
 
 > \* 表示共同一作，† 表示通讯作者。
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='images/paper/metamem.webp' alt="MetaMem paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/metamem.webp' alt="MetaMem paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization
@@ -21,7 +21,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation
@@ -38,7 +38,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD 2026</div><img src='images/paper/lisrec.webp' alt="LISRec paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD 2026</div><img src='/images/paper/lisrec.webp' alt="LISRec paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation
@@ -55,7 +55,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI Open</div><img src='images/paper/survey.webp' alt="Knowledge Intensive Agents survey figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI Open</div><img src='/images/paper/survey.webp' alt="Knowledge Intensive Agents survey figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Knowledge Intensive Agents
@@ -71,7 +71,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WISA 2025</div><img src='images/paper/tasteplus.webp' alt="TASTE+ paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WISA 2025</div><img src='/images/paper/tasteplus.webp' alt="TASTE+ paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Adapting Language Models to Text Matching based Recommendation Systems
@@ -89,7 +89,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><img src='images/paper/llmsparks.webp' alt="LLMsPark paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><img src='/images/paper/llmsparks.webp' alt="LLMsPark paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts
@@ -106,7 +106,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">COLING 2024</div><img src='images/paper/mmad-coling2024.webp' alt="MMAD paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">COLING 2024</div><img src='/images/paper/mmad-coling2024.webp' alt="MMAD paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # MMAD: Multi-modal Movie Audio Description
@@ -124,7 +124,7 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MCM/ICM 2023</div><img src='images/paper/mcm-icm-2023.webp' alt="MCM/ICM paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MCM/ICM 2023</div><img src='/images/paper/mcm-icm-2023.webp' alt="MCM/ICM paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # Puzzle Game: Prediction and Classification of Wordle Solution Words

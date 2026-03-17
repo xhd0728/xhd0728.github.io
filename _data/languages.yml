@@ -1,0 +1,100 @@
+main:
+- key: "en"
+  label: "English"
+  button_label: "English"
+  path: "/"
+  lang: "en"
+  hreflang: "en"
+  nav_locale: "en"
+  home_label: "Homepage"
+  indexable: true
+
+- key: "zh_cn"
+  label: "简体中文"
+  button_label: "简中"
+  path: "/zh_cn/"
+  lang: "zh-CN"
+  hreflang: "zh-CN"
+  nav_locale: "zh_cn"
+  home_label: "主页"
+  indexable: true
+
+- key: "zh_tw"
+  label: "繁體中文"
+  button_label: "繁中"
+  path: "/zh_tw/"
+  lang: "zh-TW"
+  hreflang: "zh-TW"
+  nav_locale: "zh_tw"
+  home_label: "主頁"
+  indexable: true
+
+- key: "fr"
+  label: "Français"
+  button_label: "FR"
+  path: "/fr/"
+  lang: "fr"
+  hreflang: "fr"
+  nav_locale: "fr"
+  home_label: "Accueil"
+  indexable: true
+
+- key: "de"
+  label: "Deutsch"
+  button_label: "DE"
+  path: "/de/"
+  lang: "de"
+  hreflang: "de"
+  nav_locale: "de"
+  home_label: "Start"
+  indexable: true
+
+- key: "ja"
+  label: "日本語"
+  button_label: "JA"
+  path: "/ja/"
+  lang: "ja"
+  hreflang: "ja"
+  nav_locale: "ja"
+  home_label: "ホーム"
+  indexable: true
+
+- key: "ru"
+  label: "Русский"
+  button_label: "RU"
+  path: "/ru/"
+  lang: "ru"
+  hreflang: "ru"
+  nav_locale: "ru"
+  home_label: "Главная"
+  indexable: true
+
+- key: "ko"
+  label: "한국어"
+  button_label: "KO"
+  path: "/ko/"
+  lang: "ko"
+  hreflang: "ko"
+  nav_locale: "ko"
+  home_label: "홈"
+  indexable: true
+
+- key: "pt"
+  label: "Português"
+  button_label: "PT"
+  path: "/pt/"
+  lang: "pt"
+  hreflang: "pt-PT"
+  nav_locale: "pt"
+  home_label: "Início"
+  indexable: true
+
+- key: "es"
+  label: "Español"
+  button_label: "ES"
+  path: "/es/"
+  lang: "es"
+  hreflang: "es"
+  nav_locale: "es"
+  home_label: "Inicio"
+  indexable: true

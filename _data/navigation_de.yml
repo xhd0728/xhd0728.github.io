@@ -1,0 +1,25 @@
+# main links links
+main:
+- title: "Über mich"
+  url: "/de/#about-me"
+
+- title: "Neuigkeiten"
+  url: "/de/#news"
+
+- title: "Publikationen"
+  url: "/de/#publications"
+
+- title: "Auszeichnungen"
+  url: "/de/#awards"
+
+- title: "Ausbildung"
+  url: "/de/#educations"
+
+- title: "Medien"
+  url: "/de/#media-mentions"
+
+- title: "Praktika"
+  url: "/de/#internships"
+
+- title: "Reisen"
+  url: "https://www.travellings.cn/plain.html"

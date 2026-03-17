@@ -1,0 +1,15 @@
+<span class='anchor' id='news'></span>
+
+# 🔥 뉴스
+
+- *2026.02*: &nbsp;🎉 저희 논문 *Knowledge Intensive Agents* 가 AI Open (IF=14.8) 에 채택되었습니다!
+- *2026.01*: &nbsp;🎉 [UltraRAG v3](https://github.com/OpenBMB/UltraRAG) [![](https://img.shields.io/github/stars/OpenBMB/UltraRAG?style=social&label=Code+Stars)](https://github.com/OpenBMB/UltraRAG) 가 [<span style="color:red;font-weight:bold">GitHub Trending Top 2</span>](https://trendshift.io/repositories/18747)에 올랐습니다!
+- *2026.01*: &nbsp;🎉 [UltraRAG v3](https://github.com/OpenBMB/UltraRAG/releases/tag/v0.3.0)를 공개하여 추론 로직의 모든 줄을 더 명확하게 볼 수 있게 했습니다!
+- *2025.11*: &nbsp;🎉 저희 논문 *LISRec* 이 KDD 2026 (CCF-A) 에 채택되었습니다!
+- *2025.11*: &nbsp;🎉 [UltraRAG v2.1](https://github.com/OpenBMB/UltraRAG/releases/tag/v0.2.1)을 공개했고, 멀티모달 지원과 더 통합된 평가 메커니즘을 추가했습니다!
+- *2025.08*: &nbsp;🎉 복잡한 RAG 시스템 구축을 위한 로우코드 프레임워크 [UltraRAG v2](https://github.com/OpenBMB/UltraRAG/releases/tag/v0.2.0)를 공개했습니다!
+- *2025.08*: &nbsp;🎉 저희 논문 *TASTE$^+$* 가 WISA 2025 에 채택되었고 <span style="color:red;font-weight:bold">구두 발표</span> 로 선정되었습니다!
+- *2025.08*: &nbsp;🎉 저희 논문 *LLMsPark* 가 EMNLP 2025 (CCF-B) 에 채택되었습니다!
+- *2024.04*: &nbsp;🎉 GitHub 저장소 [heu-icicles](https://github.com/HEUOpenResource/heu-icicles) [![](https://img.shields.io/github/stars/HEUOpenResource/heu-icicles?style=social&label=Code+Stars)](https://github.com/HEUOpenResource/heu-icicles)를 공개했으며, 함께 기여해 주시길 바랍니다!
+- *2024.02*: &nbsp;🎉 저희 논문 *MMAD* 가 COLING 2024 (CCF-B) 에 채택되었습니다!
+- *2023.05*: &nbsp;🎉 저희 논문이 MCM/ICM 2023 에서 Honorable Mention Award 를 수상했습니다!
