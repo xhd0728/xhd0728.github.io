@@ -4,7 +4,7 @@
 
 ---
 
-> <strong><span style="color:red">🔥 新しいプロジェクト <a href="https://openbmb.github.io/UltraRAG/index_en.html" style="color:inherit; text-decoration:underline;">UltraRAG v3</a> をぜひお試しいただき、開発にもご参加ください！</span></strong>
+> <strong><span style="color:red">🔥 新しいプロジェクト <a href="https://ultrarag.github.io/" style="color:inherit; text-decoration:underline;">UltraRAG v3</a> をぜひお試しいただき、開発にもご参加ください！</span></strong>
 >
 > <strong><span style="color:red">🔥 フィードバック、アイデア、貢献を心より歓迎します。</span></strong>
 

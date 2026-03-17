@@ -50,22 +50,22 @@ html {
     border-bottom: none;
     padding: 1.4em 1em;
     margin-bottom: 0.6em;
-    border-radius: 10px;
-    border: 1px solid #edf0f7;
+    border-radius: 8px;
+    border: 1px solid #E5E9EF;
     background: #fff;
     transition: background-color 0.25s ease,
                 box-shadow 0.25s ease,
                 border-color 0.25s ease;
 
     &:hover {
-        background-color: #fafcff;
-        box-shadow: 0 3px 14px rgba(43, 87, 151, 0.07);
-        border-color: #dce4f2;
+        background-color: #F5F7FA;
+        box-shadow: 0 2px 8px rgba(74, 110, 139, 0.08);
+        border-color: #B8C8D6;
     }
 
     &:not(:last-child) {
-        border-bottom: 1px solid #edf0f7;
-        border-radius: 10px;
+        border-bottom: 1px solid #E5E9EF;
+        border-radius: 8px;
     }
 
     .paper-box-image {
@@ -98,11 +98,11 @@ html {
             margin-top: 0.3em;
             border-bottom: none !important;
             padding-bottom: 0 !important;
-            color: #1a1a2e;
+            color: #2D3748;
         }
 
         p {
-            color: #4a5568;
+            color: #6B7C8A;
             line-height: 1.7;
             font-size: 0.95em;
         }
@@ -141,13 +141,13 @@ h1:before, .anchor:before {
     margin-top: .5em;
     margin-left: -.5em;
     color: white;
-    background: linear-gradient(135deg, #1e3f6f, #2b5797);
+    background: #3A5A73;
     font-size: .72em;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    border-radius: 0 5px 5px 0;
-    box-shadow: 0 2px 8px rgba(0, 54, 159, 0.28);
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 1px 4px rgba(58, 90, 115, 0.25);
     transition: box-shadow 0.3s ease;
     z-index: 2;
 }

@@ -14,20 +14,20 @@ $indent-var                 : 0.5em;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : "Apple Site Sans", "Apple Site Sans SC", "Apple Site Sans TC", "Apple Site Sans JA", "Apple Site Sans KO", "Apple Site Sans AR", -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Trebuchet MS", "Segoe UI", "Segoe UI Variable Text", "Helvetica Neue", Arial, sans-serif;
+$sans-serif                 : "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", "Segoe UI Variable Text", "Helvetica Neue", Arial, sans-serif;
 
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* language-aware sans-serif fallbacks */
-$sans-serif-zh-hans         : "Apple Site Sans SC", "Apple Site Sans", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-$sans-serif-zh-hant         : "Apple Site Sans TC", "Apple Site Sans", -apple-system, BlinkMacSystemFont, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei UI", "Microsoft JhengHei", "Noto Sans CJK TC", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-$sans-serif-ja              : "Apple Site Sans JA", "Apple Site Sans", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", "Meiryo", "Noto Sans CJK JP", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-$sans-serif-ko              : "Apple Site Sans KO", "Apple Site Sans", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK KR", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-$sans-serif-ar              : "Apple Site Sans AR", "Apple Site Sans", -apple-system, BlinkMacSystemFont, "SF Arabic", "Geeza Pro", "Tahoma", "Segoe UI", "Noto Naskh Arabic", "Helvetica Neue", Arial, sans-serif;
+$sans-serif-zh-hans         : "Inter", -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans CJK SC", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$sans-serif-zh-hant         : "Inter", -apple-system, BlinkMacSystemFont, "PingFang TC", "Hiragino Sans CNS", "Microsoft JhengHei UI", "Microsoft JhengHei", "Noto Sans CJK TC", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$sans-serif-ja              : "Inter", -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", "Meiryo", "Noto Sans CJK JP", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$sans-serif-ko              : "Inter", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans CJK KR", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$sans-serif-ar              : "Inter", -apple-system, BlinkMacSystemFont, "SF Arabic", "Geeza Pro", "Tahoma", "Segoe UI", "Noto Naskh Arabic", "Helvetica Neue", Arial, sans-serif;
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif;
-$helvetica                  : "Apple Site Sans", -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$helvetica                  : "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 
 /* serif typefaces */
 $georgia                    : Georgia, serif;
@@ -55,24 +55,24 @@ $type-size-8                : 0.625em;  // ~10px
    Colors
    ========================================================================== */
 
-$gray                       : #7a8288;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
-$lighter-gray               : mix(#fff, $gray, 90%);
+$gray                       : #6B7C8A;
+$dark-gray                  : #4A5565;
+$darker-gray                : #374151;
+$light-gray                 : #9CA3AF;
+$lighter-gray               : #F3F4F6;
 
 $body-color                 : #fff;
 $background-color           : #fff;
-$code-background-color      : #fafafa;
+$code-background-color      : #F7F8FA;
 $code-background-color-dark : $light-gray;
-$text-color                 : $dark-gray;
-$border-color               : $lighter-gray;
+$text-color                 : #374151;
+$border-color               : #E5E9EF;
 
-$primary-color              : #7a8288;
-$success-color              : #62c462;
-$warning-color              : #f89406;
-$danger-color               : #ee5f5b;
-$info-color                 : #224b8d;
+$primary-color              : #4A6E8B;
+$success-color              : #6B9080;
+$warning-color              : #C4A35A;
+$danger-color               : #C76B6B;
+$info-color                 : #5B82A8;
 
 /* brands */
 $behance-color              : #1769FF;
@@ -98,11 +98,11 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
-$link-color-hover           : mix(#000, $link-color, 25%);
-$link-color-visited         : mix(#fff, $link-color, 25%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$link-color                 : #5B82A8;
+$link-color-hover           : #3A5A73;
+$link-color-visited         : #7B9AB5;
+$masthead-link-color        : #4A5E6F;
+$masthead-link-color-hover  : #2D3748;
 
 
 /*
