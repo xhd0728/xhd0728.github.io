@@ -145,11 +145,10 @@
      ------------------------------------------------------------------ */
   function initStickySidebar() {
     var urls = document.querySelector('.author__urls');
-    var btn = document.querySelector('.author__urls-wrapper button');
     if (!urls) return;
 
     function update() {
-      var isDesktop = !btn || window.getComputedStyle(btn).display === 'none';
+      var isDesktop = window.matchMedia('(min-width: 925px)').matches;
       if (isDesktop) {
         urls.style.display = 'block';
       } else {

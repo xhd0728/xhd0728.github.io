@@ -67,6 +67,14 @@
   justify-content: flex-start;
   align-content: flex-start;
   align-items: center;
+
+  @media (max-width: ($large - 1px)) {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    column-gap: 0.85rem;
+    row-gap: 0.8rem;
+  }
 }
 
 .author__avatar {
@@ -104,6 +112,11 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @media (max-width: ($large - 1px)) {
+    min-width: 0;
+    padding-left: 0;
   }
 }
 
@@ -152,6 +165,14 @@
     display: block;
   }
 
+  @media (max-width: ($large - 1px)) {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    grid-column: 1 / -1;
+    cursor: default;
+  }
+
   button {
     margin-bottom: 0;
     width: 120px;
@@ -184,6 +205,10 @@
     border: 0;
     background: transparent;
     box-shadow: none;
+  }
+
+  @media (max-width: ($large - 1px)) {
+    display: none !important;
   }
 
   &:before {
@@ -253,5 +278,20 @@
   }
   @media (min-width: $large) {
     display: none;
+  }
+
+  @media (max-width: ($large - 1px)) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem 0.55rem;
+    width: 100%;
+    padding: 0;
+    font-size: 1.45em;
+    line-height: 1;
+
+    a {
+      margin: 0;
+    }
   }
 }
