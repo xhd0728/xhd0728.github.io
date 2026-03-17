@@ -29,14 +29,14 @@ main:
   home_label: "主頁"
   indexable: true
 
-- key: "fr"
-  label: "Français"
-  button_label: "FR"
-  path: "/fr/"
-  lang: "fr"
-  hreflang: "fr"
-  nav_locale: "fr"
-  home_label: "Accueil"
+- key: "ar"
+  label: "العربية"
+  button_label: "AR"
+  path: "/ar/"
+  lang: "ar"
+  hreflang: "ar"
+  nav_locale: "ar"
+  home_label: "الرئيسية"
   indexable: true
 
 - key: "de"
@@ -49,6 +49,26 @@ main:
   home_label: "Start"
   indexable: true
 
+- key: "es"
+  label: "Español"
+  button_label: "ES"
+  path: "/es/"
+  lang: "es"
+  hreflang: "es"
+  nav_locale: "es"
+  home_label: "Inicio"
+  indexable: true
+
+- key: "fr"
+  label: "Français"
+  button_label: "FR"
+  path: "/fr/"
+  lang: "fr"
+  hreflang: "fr"
+  nav_locale: "fr"
+  home_label: "Accueil"
+  indexable: true
+
 - key: "ja"
   label: "日本語"
   button_label: "JA"
@@ -57,16 +77,6 @@ main:
   hreflang: "ja"
   nav_locale: "ja"
   home_label: "ホーム"
-  indexable: true
-
-- key: "ru"
-  label: "Русский"
-  button_label: "RU"
-  path: "/ru/"
-  lang: "ru"
-  hreflang: "ru"
-  nav_locale: "ru"
-  home_label: "Главная"
   indexable: true
 
 - key: "ko"
@@ -89,12 +99,12 @@ main:
   home_label: "Início"
   indexable: true
 
-- key: "es"
-  label: "Español"
-  button_label: "ES"
-  path: "/es/"
-  lang: "es"
-  hreflang: "es"
-  nav_locale: "es"
-  home_label: "Inicio"
+- key: "ru"
+  label: "Русский"
+  button_label: "RU"
+  path: "/ru/"
+  lang: "ru"
+  hreflang: "ru"
+  nav_locale: "ru"
+  home_label: "Главная"
   indexable: true

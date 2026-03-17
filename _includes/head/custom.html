@@ -309,6 +309,59 @@
   }
 
   /* =========================================================
+     RTL CONTENT — Arabic page support
+     ========================================================= */
+  .page__content[dir="rtl"] {
+    text-align: right;
+  }
+  .page__content[dir="rtl"] > h1::after {
+    left: auto;
+    right: 0;
+  }
+  .page__content[dir="rtl"] blockquote {
+    border-left: none;
+    border-right: 3px solid var(--c-accent-warm);
+    border-radius: 8px 0 0 8px;
+  }
+  .page__content[dir="rtl"] > ul {
+    padding-left: 0;
+    padding-right: 22px;
+  }
+  .page__content[dir="rtl"] > ul::before {
+    left: auto;
+    right: 5px;
+  }
+  .page__content[dir="rtl"] > ul > li::before {
+    left: auto;
+    right: -20px;
+  }
+  .page__content[dir="rtl"] > ul > li:hover {
+    transform: translateX(-3px);
+  }
+  .page__content[dir="rtl"] > ul > li > em:first-child {
+    margin-right: 0;
+    margin-left: 0.25em;
+  }
+  .page__content[dir="rtl"] .page-info-bar i {
+    margin-right: 0;
+    margin-left: 0.15em;
+  }
+  .sidebar[dir="rtl"],
+  .sidebar[dir="rtl"] .author__content,
+  .sidebar[dir="rtl"] .author__urls,
+  .sidebar[dir="rtl"] .author__urls li,
+  .sidebar[dir="rtl"] .author__urls_sm {
+    text-align: right;
+  }
+  .sidebar[dir="rtl"] .profile_box {
+    direction: rtl;
+  }
+  .sidebar[dir="rtl"] .author__content {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+
+  /* =========================================================
      LANGUAGE SWITCHER
      ========================================================= */
   .masthead__menu {

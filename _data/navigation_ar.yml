@@ -1,0 +1,25 @@
+# main links links
+main:
+- title: "نبذة عني"
+  url: "/ar/#about-me"
+
+- title: "الأخبار"
+  url: "/ar/#news"
+
+- title: "المنشورات"
+  url: "/ar/#publications"
+
+- title: "الجوائز"
+  url: "/ar/#awards"
+
+- title: "التعليم"
+  url: "/ar/#educations"
+
+- title: "التغطية الإعلامية"
+  url: "/ar/#media-mentions"
+
+- title: "التدريب"
+  url: "/ar/#internships"
+
+- title: "السفر"
+  url: "https://www.travellings.cn/plain.html"

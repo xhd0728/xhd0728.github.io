@@ -84,7 +84,7 @@
     
   
     
-<link rel="alternate" hreflang="fr" href="http://localhost:4000/fr/">
+<link rel="alternate" hreflang="ar" href="http://localhost:4000/ar/">
     
   
     
@@ -92,11 +92,15 @@
     
   
     
-<link rel="alternate" hreflang="ja" href="http://localhost:4000/ja/">
+<link rel="alternate" hreflang="es" href="http://localhost:4000/es/">
     
   
     
-<link rel="alternate" hreflang="ru" href="http://localhost:4000/ru/">
+<link rel="alternate" hreflang="fr" href="http://localhost:4000/fr/">
+    
+  
+    
+<link rel="alternate" hreflang="ja" href="http://localhost:4000/ja/">
     
   
     
@@ -108,7 +112,7 @@
     
   
     
-<link rel="alternate" hreflang="es" href="http://localhost:4000/es/">
+<link rel="alternate" hreflang="ru" href="http://localhost:4000/ru/">
     
   
 <link rel="alternate" hreflang="x-default" href="http://localhost:4000/">
@@ -177,7 +181,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css?v=69c5122f8a9af31b1d19c0449da7c38055199304">
+<link rel="stylesheet" href="/assets/css/main.css?v=dd7866d2976416af01352f165074e013ccc5dff7">
 
 <meta http-equiv="cleartype" content="on">
 <base href="/" target="_blank">
@@ -191,7 +195,7 @@
 <meta name="msapplication-TileImage" content="/images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="/images/browserconfig.xml?v=M44lzPylqQ">
 <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="/assets/css/academicons.css?v=69c5122f8a9af31b1d19c0449da7c38055199304"/>
+<link rel="stylesheet" href="/assets/css/academicons.css?v=dd7866d2976416af01352f165074e013ccc5dff7"/>
 
 <script>
   (function () {
@@ -490,6 +494,59 @@
   .page-info-bar .info-sep {
     margin: 0 0.5em;
     color: #ccc;
+  }
+
+  /* =========================================================
+     RTL CONTENT — Arabic page support
+     ========================================================= */
+  .page__content[dir="rtl"] {
+    text-align: right;
+  }
+  .page__content[dir="rtl"] > h1::after {
+    left: auto;
+    right: 0;
+  }
+  .page__content[dir="rtl"] blockquote {
+    border-left: none;
+    border-right: 3px solid var(--c-accent-warm);
+    border-radius: 8px 0 0 8px;
+  }
+  .page__content[dir="rtl"] > ul {
+    padding-left: 0;
+    padding-right: 22px;
+  }
+  .page__content[dir="rtl"] > ul::before {
+    left: auto;
+    right: 5px;
+  }
+  .page__content[dir="rtl"] > ul > li::before {
+    left: auto;
+    right: -20px;
+  }
+  .page__content[dir="rtl"] > ul > li:hover {
+    transform: translateX(-3px);
+  }
+  .page__content[dir="rtl"] > ul > li > em:first-child {
+    margin-right: 0;
+    margin-left: 0.25em;
+  }
+  .page__content[dir="rtl"] .page-info-bar i {
+    margin-right: 0;
+    margin-left: 0.15em;
+  }
+  .sidebar[dir="rtl"],
+  .sidebar[dir="rtl"] .author__content,
+  .sidebar[dir="rtl"] .author__urls,
+  .sidebar[dir="rtl"] .author__urls li,
+  .sidebar[dir="rtl"] .author__urls_sm {
+    text-align: right;
+  }
+  .sidebar[dir="rtl"] .profile_box {
+    direction: rtl;
+  }
+  .sidebar[dir="rtl"] .author__content {
+    padding-left: 0;
+    padding-right: 10px;
   }
 
   /* =========================================================
@@ -1066,12 +1123,12 @@
               
               <a
                 class="lang-menu__option"
-                href="/fr/"
-                lang="fr"
+                href="/ar/"
+                lang="ar"
                 target="_self"
               >
-                <span class="lang-menu__option-chip">FR</span>
-                <span class="lang-menu__option-label">Français</span>
+                <span class="lang-menu__option-chip">AR</span>
+                <span class="lang-menu__option-label">العربية</span>
               </a>
               
             
@@ -1092,12 +1149,12 @@
               
               <a
                 class="lang-menu__option"
-                href="/ja/"
-                lang="ja"
+                href="/es/"
+                lang="es"
                 target="_self"
               >
-                <span class="lang-menu__option-chip">JA</span>
-                <span class="lang-menu__option-label">日本語</span>
+                <span class="lang-menu__option-chip">ES</span>
+                <span class="lang-menu__option-label">Español</span>
               </a>
               
             
@@ -1105,12 +1162,25 @@
               
               <a
                 class="lang-menu__option"
-                href="/ru/"
-                lang="ru"
+                href="/fr/"
+                lang="fr"
                 target="_self"
               >
-                <span class="lang-menu__option-chip">RU</span>
-                <span class="lang-menu__option-label">Русский</span>
+                <span class="lang-menu__option-chip">FR</span>
+                <span class="lang-menu__option-label">Français</span>
+              </a>
+              
+            
+              
+              
+              <a
+                class="lang-menu__option"
+                href="/ja/"
+                lang="ja"
+                target="_self"
+              >
+                <span class="lang-menu__option-chip">JA</span>
+                <span class="lang-menu__option-label">日本語</span>
               </a>
               
             
@@ -1144,12 +1214,12 @@
               
               <a
                 class="lang-menu__option"
-                href="/es/"
-                lang="es"
+                href="/ru/"
+                lang="ru"
                 target="_self"
               >
-                <span class="lang-menu__option-chip">ES</span>
-                <span class="lang-menu__option-label">Español</span>
+                <span class="lang-menu__option-chip">RU</span>
+                <span class="lang-menu__option-label">Русский</span>
               </a>
               
             
@@ -1287,6 +1357,7 @@
 
   
   </div>
+
 
     
       <article class="page" itemscope itemtype="https://schema.org/ProfilePage">
@@ -1531,7 +1602,7 @@
       </article>
     </div>
 
-    <script src="/assets/js/main.js?v=69c5122f8a9af31b1d19c0449da7c38055199304" defer></script>
+    <script src="/assets/js/main.js?v=dd7866d2976416af01352f165074e013ccc5dff7" defer></script>
 
 <!-- Back to top button -->
 <button id="back-to-top" title="Back to top" aria-label="Back to top">&#8679;</button>
