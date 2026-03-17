@@ -134,8 +134,13 @@
     btn.addEventListener('click', function () {
       var urls = document.querySelector('.author__urls');
       if (!urls) return;
-      var isHidden = urls.style.display === 'none' || !urls.style.display;
+      var isHidden = urls.hidden || urls.style.display === 'none' || !urls.style.display;
+      urls.hidden = !isHidden;
+      urls.setAttribute('aria-hidden', String(!isHidden));
       urls.style.display = isHidden ? 'block' : 'none';
+      urls.style.visibility = isHidden ? 'visible' : 'hidden';
+      urls.style.opacity = isHidden ? '1' : '0';
+      urls.style.pointerEvents = isHidden ? '' : 'none';
       btn.classList.toggle('open');
     });
   }
@@ -146,17 +151,39 @@
   function initStickySidebar() {
     var urls = document.querySelector('.author__urls');
     if (!urls) return;
+    var mediaQuery = window.matchMedia('(min-width: 925px)');
 
     function update() {
-      var isDesktop = window.matchMedia('(min-width: 925px)').matches;
+      var isDesktop = mediaQuery.matches;
       if (isDesktop) {
+        urls.hidden = false;
+        urls.setAttribute('aria-hidden', 'false');
         urls.style.display = 'block';
+        urls.style.visibility = 'visible';
+        urls.style.opacity = '1';
+        urls.style.pointerEvents = '';
+        urls.style.maxHeight = '';
+        urls.style.overflow = '';
       } else {
+        urls.hidden = true;
+        urls.setAttribute('aria-hidden', 'true');
         urls.style.display = 'none';
+        urls.style.visibility = 'hidden';
+        urls.style.opacity = '0';
+        urls.style.pointerEvents = 'none';
+        urls.style.maxHeight = '0';
+        urls.style.overflow = 'hidden';
       }
     }
 
     window.addEventListener('resize', update);
+    window.addEventListener('pageshow', update);
+    window.addEventListener('orientationchange', update);
+    if (typeof mediaQuery.addEventListener === 'function') {
+      mediaQuery.addEventListener('change', update);
+    } else if (typeof mediaQuery.addListener === 'function') {
+      mediaQuery.addListener(update);
+    }
     update();
   }
 

@@ -157,12 +157,12 @@
 
 .greedy-nav {
   position: relative;
-  min-width: 250px;
+  min-width: 0;
   background: $background-color;
 
   a {
     display: block;
-    margin: 0 1rem;
+    margin: 0 clamp(0.45rem, 1.8vw, 1rem);
     padding: 0.5rem 0;
     color: $masthead-link-color;
     text-decoration: none;
@@ -176,7 +176,7 @@
     position: absolute;
     height: 100%;
     right: 0;
-    padding: 0 0.5rem;
+    padding: 0 clamp(0.4rem, 1.6vw, 0.5rem);
     border: 0;
     outline: none;
     background-color: $primary-color;

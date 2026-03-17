@@ -14,7 +14,7 @@
   &__inner-wrap {
     max-width: $x-large;
     margin: 0 auto;
-    padding: .5em;
+    padding: clamp(0.45rem, 1.8vw, 0.75rem) var(--page-gutter);
     font-family: $sans-serif-narrow;
 
     nav {

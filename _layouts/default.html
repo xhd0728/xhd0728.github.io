@@ -4,9 +4,13 @@ layout: compress
 
 <!doctype html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}" class="no-js">
+  {% assign asset_version = site.github.build_revision %}
+  {% unless asset_version %}
+    {% capture asset_version %}{{ site.time | date: '%Y%m%d%H%M%S' }}{% endcapture %}
+  {% endunless %}
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+    {% include head.html asset_version=asset_version %}
+    {% include head/custom.html asset_version=asset_version %}
   </head>
 
   <body>
@@ -28,7 +32,7 @@ layout: compress
       </article>
     </div>
 
-    {% include scripts.html %}
+    {% include scripts.html asset_version=asset_version %}
 
   </body>
 </html>
