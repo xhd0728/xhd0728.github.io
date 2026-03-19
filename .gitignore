@@ -2,3 +2,9 @@ push.sh
 .DS_Store
 *.pyc
 .cursor/
+_site/
+.bundle/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/bundle/
