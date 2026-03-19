@@ -1,9 +1,9 @@
 ---
 permalink: /zh_tw/
 title: "Haidong Xin"
-seo_title: "Haidong Xin | 自然語言處理、資訊檢索、RAG 與推薦系統"
-description: "Haidong Xin 目前是東北大學計算機科學與技術碩士研究生，研究方向包括自然語言處理、資訊檢索、檢索增強生成、推薦系統與多智能體系統。"
-sidebar_description: "東北大學碩士研究生，研究方向包括 NLP、IR、RAG、推薦系統與多智能體系統。"
+seo_title: "Haidong Xin | NLP、資訊檢索、RAG、推薦系統與多智能體系統"
+description: "Haidong Xin 現為東北大學計算機科學碩士研究生，研究方向包括自然語言處理、資訊檢索、RAG、推薦系統與多智能體系統。"
+sidebar_description: "東北大學計算機科學碩士研究生，研究方向包括 NLP、IR、RAG、推薦系統與多智能體系統。"
 image: "/images/android-chrome-512x512.png"
 schema_type: "ProfilePage"
 lang: "zh-TW"

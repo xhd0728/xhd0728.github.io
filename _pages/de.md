@@ -1,9 +1,9 @@
 ---
 permalink: /de/
 title: "Haidong Xin"
-seo_title: "Haidong Xin | NLP, Information Retrieval, RAG und Empfehlungssysteme"
-description: "Haidong Xin ist Masterstudent an der Northeastern University und forscht zu NLP, Information Retrieval, RAG, Empfehlungssystemen und Multi-Agenten-Systemen."
-sidebar_description: "Masterstudent an der Northeastern University mit Forschung zu NLP, Information Retrieval, RAG, Empfehlungssystemen und Multi-Agenten-Systemen."
+seo_title: "Haidong Xin | NLP, Information Retrieval, RAG, Empfehlungssysteme und Multi-Agenten-Systeme"
+description: "Haidong Xin ist Masterstudent der Informatik an der Northeastern University und forscht zu NLP, Information Retrieval, RAG, Empfehlungssystemen und Multi-Agenten-Systemen."
+sidebar_description: "Masterstudent der Informatik an der Northeastern University mit Forschung zu NLP, Information Retrieval, RAG, Empfehlungssystemen und Multi-Agenten-Systemen."
 image: "/images/android-chrome-512x512.png"
 schema_type: "ProfilePage"
 lang: "de"

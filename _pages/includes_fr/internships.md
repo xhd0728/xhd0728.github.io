@@ -1,9 +1,9 @@
 <span class='anchor' id='internships'></span>
 
-# 💻 Stages
+# 💻 Recherche et stages
 
 - *2024.04 - présent*, [Qiyuan Lab (TsinghuaNLP)](https://qiyuanzp.zhiye.com/), Pékin.
-- *2024.10 - 2025.02*, [Language Technologies Institute (LTI)](https://www.lti.cs.cmu.edu/), [Carnegie Mellon University](https://www.lti.cs.cmu.edu/), en ligne.
+- *2024.10 - 2025.02*, [Language Technologies Institute (LTI)](https://www.lti.cs.cmu.edu/), [Carnegie Mellon University](https://www.lti.cs.cmu.edu/), à distance.
 - *2023.10 - présent*, [NEUIR Lab](https://neuir.github.io), [Northeastern University](https://neu.edu.cn/), Shenyang.
 - *2023.05 - 2023.06*, China Unicom Research Centre, Harbin.
 - *2023.07 - 2023.08*, [Workforce Development Program (WDP) of Oracle](https://education.oracle.com/workforce-development-program), Harbin.

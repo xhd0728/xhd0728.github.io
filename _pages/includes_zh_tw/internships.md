@@ -1,6 +1,6 @@
 <span class='anchor' id='internships'></span>
 
-# 💻 實習與科研經歷
+# 💻 科研與實習經歷
 
 - *2024.04 - 至今*，[Qiyuan Lab (TsinghuaNLP)](https://qiyuanzp.zhiye.com/)，北京。
 - *2024.10 - 2025.02*，[Language Technologies Institute (LTI)](https://www.lti.cs.cmu.edu/)，[Carnegie Mellon University](https://www.lti.cs.cmu.edu/)，遠端。

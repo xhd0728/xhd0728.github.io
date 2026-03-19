@@ -1,9 +1,9 @@
 ---
 permalink: /fr/
 title: "Haidong Xin"
-seo_title: "Haidong Xin | TAL, recherche d'information, RAG et systèmes de recommandation"
-description: "Haidong Xin est étudiant en master à Northeastern University et travaille sur le TAL, la recherche d'information, le RAG, les systèmes de recommandation et les systèmes multi-agents."
-sidebar_description: "Étudiant en master à Northeastern University, avec des recherches en TAL, recherche d'information, RAG, systèmes de recommandation et systèmes multi-agents."
+seo_title: "Haidong Xin | TAL, recherche d'information, RAG, systèmes de recommandation et systèmes multi-agents"
+description: "Haidong Xin est étudiant en master d'informatique à Northeastern University. Il travaille sur le TAL, la recherche d'information, le RAG, les systèmes de recommandation et les systèmes multi-agents."
+sidebar_description: "Étudiant en master d'informatique à Northeastern University, avec des recherches en TAL, recherche d'information, RAG, systèmes de recommandation et systèmes multi-agents."
 image: "/images/android-chrome-512x512.png"
 schema_type: "ProfilePage"
 lang: "fr"
