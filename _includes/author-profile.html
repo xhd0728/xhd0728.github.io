@@ -3,15 +3,16 @@
 {% endif %}
 {% assign profile_description = page.sidebar_description | default: page.description | default: site.description %}
 
-<div itemscope itemtype="http://schema.org/Person" class="profile_box">
+<div itemscope itemtype="https://schema.org/Person" class="profile_box">
+  {% if author.avatar %}<meta itemprop="image" content="{{ author.avatar | absolute_url }}">{% endif %}
 
   <div class="author__avatar">
-    <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}" fetchpriority="high">
+    <img src="{{ author.avatar | relative_url }}" class="author__avatar" alt="{{ author.name }}" fetchpriority="high">
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+    <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
+    {% if author.bio %}<p class="author__bio" itemprop="description">{{ author.bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">

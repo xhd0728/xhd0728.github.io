@@ -5,6 +5,7 @@ layout: compress
 <!doctype html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}" class="no-js">
   {% assign asset_version = site.github.build_revision %}
+  {% assign microdata_type = page.microdata_type | default: 'WebPage' %}
   {% unless asset_version %}
     {% capture asset_version %}{{ site.time | date: '%Y%m%d%H%M%S' }}{% endcapture %}
   {% endunless %}
@@ -21,7 +22,7 @@ layout: compress
     <div id="main" role="main">
       {% include sidebar.html %}
     
-      <article class="page" itemscope itemtype="https://schema.org/{{ page.schema_type | default: 'WebPage' }}">
+      <article class="page" itemscope itemtype="https://schema.org/{{ microdata_type }}">
         {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
         {% if page.description %}<meta itemprop="description" content="{{ page.description | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
         <div class="page__inner-wrap">

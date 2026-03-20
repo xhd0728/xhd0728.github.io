@@ -38,7 +38,7 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 # Site Author
 author:
   name: "Haidong Xin"
-  avatar: "images/android-chrome-512x512.png"
+  avatar: "/images/android-chrome-512x512.png"
   bio: "NEUIR & TsinghuaNLP"
   location: "Beijing, China"
   employer:
