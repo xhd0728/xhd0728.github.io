@@ -12,7 +12,7 @@
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i> Просмотры страницы: <span id="busuanzi_value_site_pv"></span></span>
 <span class="info-sep">·</span>
-<span><i class="fas fa-clock"></i> Последнее обновление: 2026-03-16</span>
+<span><i class="fas fa-clock"></i> Последнее обновление: 2026-03-22</span>
 <span class="info-sep">·</span>
 <span><i class="fas fa-envelope"></i> <a href="mailto:hdxin2002@gmail.com">hdxin2002@gmail.com</a></span>
 </div>
