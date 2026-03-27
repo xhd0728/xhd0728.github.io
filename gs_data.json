@@ -1,0 +1,49 @@
+{
+  "citedby": 31,
+  "profile_url": "https://scholar.google.com/citations?user=8VCnj3sAAAAJ&hl=en",
+  "publications": {
+    "0EnyYjriUFMC": {
+      "num_citations": 3,
+      "title": "LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation",
+      "year": 2026
+    },
+    "5nxA0vEk-isC": {
+      "num_citations": 0,
+      "title": "MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization",
+      "year": 2026
+    },
+    "8k81kl-MbHgC": {
+      "num_citations": 0,
+      "title": "Adapting Language Models to Text Matching Based Recommendation Systems",
+      "year": 2025
+    },
+    "UebtZRa9Y70C": {
+      "num_citations": 0,
+      "title": "Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation",
+      "year": 2026
+    },
+    "W7OEmFMy1HYC": {
+      "num_citations": 22,
+      "title": "MMAD: Multi-modal Movie Audio Description",
+      "year": 2024
+    },
+    "WF5omc3nYNoC": {
+      "num_citations": 3,
+      "title": "LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts",
+      "year": 2025
+    },
+    "hqOjcs7Dif8C": {
+      "num_citations": 2,
+      "title": "Knowledge Intensive Agents",
+      "year": 2026
+    },
+    "zYLM7Y9cAGgC": {
+      "num_citations": 1,
+      "title": "Puzzle Game: Prediction and Classification of Wordle Solution Words",
+      "year": 2023
+    }
+  },
+  "scholar_name": "Haidong Xin",
+  "source_backend": "scholarly",
+  "user_id": "8VCnj3sAAAAJ"
+}
