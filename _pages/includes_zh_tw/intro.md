@@ -4,15 +4,15 @@
 
 ---
 
-> <strong><span style="color:red">🔥 誠摯邀請你試用並參與共建我們的新專案 <a href="https://ultrarag.github.io/" style="color:inherit; text-decoration:underline;">UltraRAG v3</a>！</span></strong>
+> <strong><span style="color:red">🔥 EdgeClaw 2.0 已正式開源，這是一個基於 OpenClaw 構建的 <a href="https://github.com/OpenBMB/EdgeClaw" style="color:inherit; text-decoration:underline;">邊雲協同 AI Agent</a>。</span></strong>
 >
-> <strong><span style="color:red">🔥 歡迎提出回饋、想法，或直接參與貢獻，一起把它做得更好。</span></strong>
+> <strong><span style="color:red">🔥 UltraRAG 3.0 已正式開源，這是一個用於構建複雜且創新 RAG 流水線的 <a href="https://github.com/OpenBMB/UltraRAG" style="color:inherit; text-decoration:underline;">低程式碼 MCP 框架</a>。</span></strong>
 
 <div class="page-info-bar">
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i> 頁面訪問量：<span id="busuanzi_value_site_pv"></span></span>
 <span class="info-sep">·</span>
-<span><i class="fas fa-clock"></i> 最近更新：2026-03-22</span>
+<span><i class="fas fa-clock"></i> 最近更新：2026-04-04</span>
 <span class="info-sep">·</span>
 <span><i class="fas fa-envelope"></i> <a href="mailto:hdxin2002@gmail.com">hdxin2002@gmail.com</a></span>
 </div>

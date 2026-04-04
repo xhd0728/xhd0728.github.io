@@ -4,15 +4,15 @@
 
 ---
 
-> <strong><span style="color:red">🔥 새로운 프로젝트 <a href="https://ultrarag.github.io/" style="color:inherit; text-decoration:underline;">UltraRAG v3</a> 를 사용해 보시고 함께 기여해 주세요!</span></strong>
+> <strong><span style="color:red">🔥 EdgeClaw 2.0이 공식 오픈소스로 공개되었습니다. OpenClaw 기반의 <a href="https://github.com/OpenBMB/EdgeClaw" style="color:inherit; text-decoration:underline;">엣지-클라우드 협업형 AI 에이전트</a>입니다.</span></strong>
 >
-> <strong><span style="color:red">🔥 여러분의 피드백, 아이디어, 기여를 언제든 환영합니다.</span></strong>
+> <strong><span style="color:red">🔥 UltraRAG 3.0이 공식 오픈소스로 공개되었습니다. 복잡하고 혁신적인 RAG 파이프라인 구축을 위한 <a href="https://github.com/OpenBMB/UltraRAG" style="color:inherit; text-decoration:underline;">로우코드 MCP 프레임워크</a>입니다.</span></strong>
 
 <div class="page-info-bar">
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i> 페이지 조회수: <span id="busuanzi_value_site_pv"></span></span>
 <span class="info-sep">·</span>
-<span><i class="fas fa-clock"></i> 최근 업데이트: 2026-03-22</span>
+<span><i class="fas fa-clock"></i> 최근 업데이트: 2026-04-04</span>
 <span class="info-sep">·</span>
 <span><i class="fas fa-envelope"></i> <a href="mailto:hdxin2002@gmail.com">hdxin2002@gmail.com</a></span>
 </div>

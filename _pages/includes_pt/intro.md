@@ -4,15 +4,15 @@
 
 ---
 
-> <strong><span style="color:red">🔥 Convidamo-lo sinceramente a experimentar e a contribuir para o nosso novo projecto, <a href="https://ultrarag.github.io/" style="color:inherit; text-decoration:underline;">UltraRAG v3</a>!</span></strong>
+> <strong><span style="color:red">🔥 EdgeClaw 2.0 já é open source: um <a href="https://github.com/OpenBMB/EdgeClaw" style="color:inherit; text-decoration:underline;">agente de IA colaborativo edge-cloud</a> construído sobre o OpenClaw.</span></strong>
 >
-> <strong><span style="color:red">🔥 O seu feedback, as suas ideias e as suas contribuições são muito bem-vindos.</span></strong>
+> <strong><span style="color:red">🔥 UltraRAG 3.0 já é open source: um <a href="https://github.com/OpenBMB/UltraRAG" style="color:inherit; text-decoration:underline;">framework MCP low-code para construir pipelines RAG complexos e inovadores</a>.</span></strong>
 
 <div class="page-info-bar">
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i> Visualizações da página: <span id="busuanzi_value_site_pv"></span></span>
 <span class="info-sep">·</span>
-<span><i class="fas fa-clock"></i> Última actualização: 2026-03-22</span>
+<span><i class="fas fa-clock"></i> Última actualização: 2026-04-04</span>
 <span class="info-sep">·</span>
 <span><i class="fas fa-envelope"></i> <a href="mailto:hdxin2002@gmail.com">hdxin2002@gmail.com</a></span>
 </div>
