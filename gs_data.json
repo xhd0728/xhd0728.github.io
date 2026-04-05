@@ -1,5 +1,5 @@
 {
-  "citedby": 31,
+  "citedby": 32,
   "profile_url": "https://scholar.google.com/citations?user=8VCnj3sAAAAJ&hl=en",
   "publications": {
     "0EnyYjriUFMC": {
@@ -28,7 +28,7 @@
       "year": 2024
     },
     "WF5omc3nYNoC": {
-      "num_citations": 3,
+      "num_citations": 4,
       "title": "LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts",
       "year": 2025
     },
