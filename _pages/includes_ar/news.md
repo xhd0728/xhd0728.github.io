@@ -2,6 +2,7 @@
 
 # 🔥 الأخبار
 
+- *2026.04*: &nbsp;🎉 قُبلت ورقتنا *MetaMem* في ACL 2026 (CCF-A)!
 - *2026.04*: &nbsp;🎉 أطلقنا [EdgeClaw 2.0](https://github.com/OpenBMB/EdgeClaw) [![](https://img.shields.io/github/stars/OpenBMB/EdgeClaw?style=social&label=Code+Stars)](https://github.com/OpenBMB/EdgeClaw)، وهو وكيل ذكاء اصطناعي تعاوني بين الحافة والسحابة!
 - *2026.02*: &nbsp;🎉 قُبلت ورقتنا *Knowledge Intensive Agents* في AI Open (IF=14.8)!
 - *2026.01*: &nbsp;🎉 وصل [UltraRAG v3](https://github.com/OpenBMB/UltraRAG) [![](https://img.shields.io/github/stars/OpenBMB/UltraRAG?style=social&label=Code+Stars)](https://github.com/OpenBMB/UltraRAG) إلى [<span style="color:red;font-weight:bold">المركز الثاني في GitHub Trending</span>](https://trendshift.io/repositories/18747)!

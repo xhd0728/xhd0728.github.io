@@ -4,7 +4,7 @@
 
 > \* 는 **공동 제1저자**, † 는 **교신저자**를 의미합니다.
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/metamem.webp' alt="MetaMem paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026</div><img src='/images/paper/metamem.webp' alt="MetaMem paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization

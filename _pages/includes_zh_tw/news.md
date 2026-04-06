@@ -2,7 +2,8 @@
 
 # 🔥 新聞
 
-- *2026.04*: &nbsp;🎉 我們發布了 [EdgeClaw 2.0](https://github.com/OpenBMB/EdgeClaw) [![](https://img.shields.io/github/stars/OpenBMB/EdgeClaw?style=social&label=Code+Stars)](https://github.com/OpenBMB/EdgeClaw)，一個邊雲協同 AI Agent！
+- *2026.04*: &nbsp;🎉 我們的論文 *MetaMem* 被 ACL 2026（CCF-A）接收！
+- *2026.04*: &nbsp;🎉 我們發布了 [EdgeClaw 2.0](https://github.com/OpenBMB/EdgeClaw) [![](https://img.shields.io/github/stars/OpenBMB/EdgeClaw?style=social&label=Code+Stars)](https://github.com/OpenBMB/EdgeClaw)，一個端雲協同 AI 智能體！
 - *2026.02*: &nbsp;🎉 我們的論文 *Knowledge Intensive Agents* 被 AI Open（IF=14.8）接收！
 - *2026.01*: &nbsp;🎉 [UltraRAG v3](https://github.com/OpenBMB/UltraRAG) [![](https://img.shields.io/github/stars/OpenBMB/UltraRAG?style=social&label=Code+Stars)](https://github.com/OpenBMB/UltraRAG) 衝上了 [<span style="color:red;font-weight:bold">GitHub Trending 第 2 名</span>](https://trendshift.io/repositories/18747)！
 - *2026.01*: &nbsp;🎉 我們發布了 [UltraRAG v3](https://github.com/OpenBMB/UltraRAG/releases/tag/v0.3.0)，讓推理流程的每一步都清晰可見！

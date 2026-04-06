@@ -2,6 +2,7 @@
 
 # 🔥 Actualités
 
+- *2026.04*: &nbsp;🎉 Notre article *MetaMem* a été accepté à ACL 2026 (CCF-A) !
 - *2026.04*: &nbsp;🎉 Nous avons publié [EdgeClaw 2.0](https://github.com/OpenBMB/EdgeClaw) [![](https://img.shields.io/github/stars/OpenBMB/EdgeClaw?style=social&label=Code+Stars)](https://github.com/OpenBMB/EdgeClaw), un agent d'IA edge-cloud collaboratif !
 - *2026.02*: &nbsp;🎉 Notre article *Knowledge Intensive Agents* a été accepté par AI Open (IF=14.8) !
 - *2026.01*: &nbsp;🎉 [UltraRAG v3](https://github.com/OpenBMB/UltraRAG) [![](https://img.shields.io/github/stars/OpenBMB/UltraRAG?style=social&label=Code+Stars)](https://github.com/OpenBMB/UltraRAG) a atteint la [<span style="color:red;font-weight:bold">2e place dans GitHub Trending</span>](https://trendshift.io/repositories/18747) !

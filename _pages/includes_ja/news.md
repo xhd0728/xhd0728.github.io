@@ -2,6 +2,7 @@
 
 # 🔥 ニュース
 
+- *2026.04*: &nbsp;🎉 私たちの論文 *MetaMem* が ACL 2026（CCF-A）に採択されました！
 - *2026.04*: &nbsp;🎉 [EdgeClaw 2.0](https://github.com/OpenBMB/EdgeClaw) [![](https://img.shields.io/github/stars/OpenBMB/EdgeClaw?style=social&label=Code+Stars)](https://github.com/OpenBMB/EdgeClaw) を公開しました。OpenClaw を基盤とするエッジクラウド協調型 AI エージェントです！
 - *2026.02*: &nbsp;🎉 私たちの論文 *Knowledge Intensive Agents* が AI Open（IF=14.8）に採択されました！
 - *2026.01*: &nbsp;🎉 [UltraRAG v3](https://github.com/OpenBMB/UltraRAG) [![](https://img.shields.io/github/stars/OpenBMB/UltraRAG?style=social&label=Code+Stars)](https://github.com/OpenBMB/UltraRAG) が [<span style="color:red;font-weight:bold">GitHub Trending で 2 位</span>](https://trendshift.io/repositories/18747) に入りました！

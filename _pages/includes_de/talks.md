@@ -2,6 +2,7 @@
 
 # 💬 Medienberichte
 
+- *2026.03*, [【OpenBMB】EdgeClaw发布：安全高效端云协同智能体](https://mp.weixin.qq.com/s/H5c5cD8r5bEvIXTZZpgoSA)
 - *2026.01*, [【TsinghuaNLP】成果 \| UltraRAG 3.0：拒绝“盲盒”开发，让每一行推理逻辑都清晰可见](https://mp.weixin.qq.com/s/ouKWMPluQ7TpCYM5wWKpbg)
 - *2025.11*, [【TsinghuaNLP】成果 \| UltraRAG 2.1：强化知识接入与多模态支持，完善统一评估体系](https://mp.weixin.qq.com/s/BVw3X3AT6RHKccCSN9zJ9g)
 - *2025.08*, [【TsinghuaNLP】成果 \| UltraRAG 2.0：几十行代码实现高性能 RAG，让科研专注思想创新](https://mp.weixin.qq.com/s/NSQGSiQp5e47B4O9xnSffQ)

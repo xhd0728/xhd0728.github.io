@@ -2,6 +2,7 @@
 
 # 🔥 뉴스
 
+- *2026.04*: &nbsp;🎉 저희 논문 *MetaMem* 이 ACL 2026 (CCF-A) 에 채택되었습니다!
 - *2026.04*: &nbsp;🎉 [EdgeClaw 2.0](https://github.com/OpenBMB/EdgeClaw) [![](https://img.shields.io/github/stars/OpenBMB/EdgeClaw?style=social&label=Code+Stars)](https://github.com/OpenBMB/EdgeClaw)를 공개했습니다. OpenClaw 기반의 엣지-클라우드 협업형 AI 에이전트입니다!
 - *2026.02*: &nbsp;🎉 저희 논문 *Knowledge Intensive Agents* 가 AI Open (IF=14.8) 에 채택되었습니다!
 - *2026.01*: &nbsp;🎉 [UltraRAG v3](https://github.com/OpenBMB/UltraRAG) [![](https://img.shields.io/github/stars/OpenBMB/UltraRAG?style=social&label=Code+Stars)](https://github.com/OpenBMB/UltraRAG) 가 [<span style="color:red;font-weight:bold">GitHub Trending 2위</span>](https://trendshift.io/repositories/18747)에 올랐습니다!
