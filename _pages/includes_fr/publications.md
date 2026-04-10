@@ -11,7 +11,6 @@
 
 **Haidong Xin**$^{\*}$, [Xinze Li$^{\*}$](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Yukun Yan$^†$](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Cheng Yang](https://scholar.google.com/citations?user=OlLjVUcAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
 
-
 <div align="left">
 <a href="https://arxiv.org/abs/2602.11182"><img src="https://img.shields.io/badge/arXiv-2602.11182-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
 <a href="https://github.com/OpenBMB/MetaMem"><img src="https://img.shields.io/github/stars/OpenBMB/MetaMem?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
@@ -21,30 +20,12 @@ Ce travail présente MetaMem, un cadre de méta-mémoire qui fait évoluer la m�
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
-<div class='paper-box-text' markdown="1">
-
-# Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation
-
-[Xinze Li](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), **Haidong Xin**, [Yukun Yan$^†$](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zheni Zeng](https://scholar.google.com/citations?user=CM3VSeQAAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
-
-
-<div align="left">
-<a href="https://arxiv.org/abs/2601.09402"><img src="https://img.shields.io/badge/arXiv-2601.09402-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
-<a href="https://github.com/OpenBMB/PAGER"><img src="https://img.shields.io/github/stars/OpenBMB/PAGER?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
-</div>
-
-Ce travail améliore les systèmes RAG en construisant des plans cognitifs structurés pour guider la recherche itérative, organisant efficacement les connaissances multidimensionnelles en pages cohérentes pour générer des réponses plus précises.
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD 2026</div><img src='/images/paper/lisrec.webp' alt="LISRec paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation
 
 **Haidong Xin**, [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shi Yu](https://scholar.google.com/citations?user=xcMVPTgAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zulong Chen](https://scholar.google.com/citations?user=nUVmSqUAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Chenyan Xiong](https://scholar.google.com/citations?user=E9BaEBYAAAAJ)
-
 
 <div align="left">
 <a href="https://arxiv.org/abs/2505.22130"><img src="https://img.shields.io/badge/arXiv-2505.22130-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
@@ -121,6 +102,38 @@ Ce travail présente LLMsPark, une plateforme fondée sur la théorie des jeux p
 </div>
 
 Ce travail ouvre une toute nouvelle expérience de visionnage pour les personnes malvoyantes.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation
+
+[Xinze Li](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), **Haidong Xin**, [Yukun Yan$^†$](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zheni Zeng](https://scholar.google.com/citations?user=CM3VSeQAAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
+
+<div align="left">
+<a href="https://arxiv.org/abs/2601.09402"><img src="https://img.shields.io/badge/arXiv-2601.09402-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://github.com/OpenBMB/PAGER"><img src="https://img.shields.io/github/stars/OpenBMB/PAGER?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
+</div>
+
+Ce travail améliore les systèmes RAG en construisant des plans cognitifs structurés pour guider la recherche itérative, organisant efficacement les connaissances multidimensionnelles en pages cohérentes pour générer des réponses plus précises.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/cagmamba.webp' alt="CAGMamba paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis
+
+Minghai Jiao, Jing Xiao$^†$, Peng Xiao, Ende Zhang, Shuang Kan, Wenyan Jiang, Jinyao Li, Yixian Liu, **Haidong Xin**
+
+<div align="left">
+<a href="https://arxiv.org/abs/2604.03650"><img src="https://img.shields.io/badge/arXiv-2604.03650-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://github.com/User2024-xj/CAGMamba"><img src="https://img.shields.io/github/stars/User2024-xj/CAGMamba?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
+</div>
+
+Ce travail améliore l'analyse de sentiment multimodale en introduisant un cadre Mamba à portes sensible au contexte, capable de modéliser l'évolution des sentiments au niveau du dialogue et d'équilibrer de manière adaptative la fusion intermodale avec les informations propres à chaque modalité.
 </div>
 </div>
 

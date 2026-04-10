@@ -2,9 +2,9 @@
 permalink: /ja/
 title: "Haidong Xin"
 seo_title: "Haidong Xin | NLP、情報検索、RAG、推薦システム、マルチエージェントシステム"
-description: "Haidong Xin は Northeastern University のコンピュータサイエンス修士課程に在籍し、NLP、情報検索、RAG、推薦システム、マルチエージェントシステムを研究しています。"
-sidebar_description: "Northeastern University のコンピュータサイエンス修士課程学生。研究分野は NLP、IR、RAG、推薦システム、マルチエージェントシステムです。"
-image: "/images/android-chrome-512x512.png"
+description: "Haidong Xin は Northeastern University（中国・東北大学）のコンピュータサイエンス修士課程に在籍し、NLP、情報検索、RAG、推薦システム、マルチエージェントシステムを研究しています。"
+sidebar_description: "Northeastern University（中国・東北大学）のコンピュータサイエンス修士課程学生。研究分野は NLP、IR、RAG、推薦システム、マルチエージェントシステムです。"
+image: "/images/android-chrome-512x512.webp"
 schema_type: "ProfilePage"
 lang: "ja"
 locale: "ja_JP"

@@ -21,23 +21,6 @@ This work proposes MetaMem, a meta-memory framework that evolves meta-memory thr
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
-<div class='paper-box-text' markdown="1">
-
-# Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation
-
-[Xinze Li](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), **Haidong Xin**, [Yukun Yan$^†$](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zheni Zeng](https://scholar.google.com/citations?user=CM3VSeQAAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
-
-
-<div align="left">
-<a href="https://arxiv.org/abs/2601.09402"><img src="https://img.shields.io/badge/arXiv-2601.09402-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
-<a href="https://github.com/OpenBMB/PAGER"><img src="https://img.shields.io/github/stars/OpenBMB/PAGER?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
-</div>
-
-This work enhances RAG systems by constructing structured cognitive outlines to guide iterative retrieval, effectively organizing multi-dimensional knowledge into coherent pages for more accurate answer generation.
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD 2026</div><img src='/images/paper/lisrec.webp' alt="LISRec paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -121,6 +104,40 @@ This work introduces LLMsPark, a game theory-based platform for evaluating large
 </div>
 
 This work has unlocked a whole new experience of watching movies for the visually impaired.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation
+
+[Xinze Li](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), **Haidong Xin**, [Yukun Yan$^†$](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zheni Zeng](https://scholar.google.com/citations?user=CM3VSeQAAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
+
+
+<div align="left">
+<a href="https://arxiv.org/abs/2601.09402"><img src="https://img.shields.io/badge/arXiv-2601.09402-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://github.com/OpenBMB/PAGER"><img src="https://img.shields.io/github/stars/OpenBMB/PAGER?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
+</div>
+
+This work enhances RAG systems by constructing structured cognitive outlines to guide iterative retrieval, effectively organizing multi-dimensional knowledge into coherent pages for more accurate answer generation.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/cagmamba.webp' alt="CAGMamba paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis
+
+Minghai Jiao, Jing Xiao$^†$, Peng Xiao, Ende Zhang, Shuang Kan, Wenyan Jiang, Jinyao Li, Yixian Liu, **Haidong Xin**
+
+
+<div align="left">
+<a href="https://arxiv.org/abs/2604.03650"><img src="https://img.shields.io/badge/arXiv-2604.03650-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://github.com/User2024-xj/CAGMamba"><img src="https://img.shields.io/github/stars/User2024-xj/CAGMamba?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
+</div>
+
+This work improves multimodal sentiment analysis by introducing a context-aware gated Mamba framework that models dialogue-level sentiment evolution and adaptively balances cross-modal fusion with modality-specific information.
 </div>
 </div>
 

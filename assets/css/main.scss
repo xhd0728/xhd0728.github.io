@@ -152,48 +152,24 @@ h1:before, .anchor:before {
     z-index: 2;
 }
 
+.scholar-badge-inline {
+    white-space: nowrap;
+}
+
 .scholar-badge {
     display: inline-flex;
-    align-items: stretch;
-    margin-left: 0.3em;
-    border-radius: 999px;
-    overflow: hidden;
-    vertical-align: middle;
-    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.14);
+    align-items: center;
+    vertical-align: text-bottom;
     text-decoration: none !important;
-    transform: translateY(-0.05em);
+    transform: translateY(-0.04em);
 
     &:hover {
-        box-shadow: 0 3px 10px rgba(15, 23, 42, 0.18);
         text-decoration: none !important;
+        filter: brightness(0.98);
     }
 
-    .scholar-badge__label,
-    .scholar-badge__value {
-        display: inline-flex;
-        align-items: center;
-        font-size: 0.78em;
-        font-weight: 600;
-        line-height: 1;
-        padding: 0.46em 0.72em;
-        white-space: nowrap;
-    }
-
-    .scholar-badge__label {
-        gap: 0.38em;
-        background: #f6f6f6;
-        color: #334155;
-    }
-
-    .scholar-badge__label .ai {
-        font-size: 1.05em;
-    }
-
-    .scholar-badge__value {
-        justify-content: center;
-        min-width: 3ch;
-        background: #339af0;
-        color: #fff;
+    .scholar-badge__img {
+        display: block;
     }
 }
 

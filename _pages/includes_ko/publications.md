@@ -2,7 +2,7 @@
 
 # 📝 논문
 
-> \* 는 **공동 제1저자**, † 는 **교신저자**를 의미합니다.
+> \*는 **공동 제1저자**, †는 **교신저자**를 의미합니다.
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026</div><img src='/images/paper/metamem.webp' alt="MetaMem paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -10,7 +10,6 @@
 # MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization
 
 **Haidong Xin**$^{\*}$, [Xinze Li$^{\*}$](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Yukun Yan$^†$](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Cheng Yang](https://scholar.google.com/citations?user=OlLjVUcAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
-
 
 <div align="left">
 <a href="https://arxiv.org/abs/2602.11182"><img src="https://img.shields.io/badge/arXiv-2602.11182-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
@@ -21,30 +20,12 @@
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
-<div class='paper-box-text' markdown="1">
-
-# Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation
-
-[Xinze Li](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), **Haidong Xin**, [Yukun Yan$^†$](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zheni Zeng](https://scholar.google.com/citations?user=CM3VSeQAAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
-
-
-<div align="left">
-<a href="https://arxiv.org/abs/2601.09402"><img src="https://img.shields.io/badge/arXiv-2601.09402-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
-<a href="https://github.com/OpenBMB/PAGER"><img src="https://img.shields.io/github/stars/OpenBMB/PAGER?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
-</div>
-
-이 연구는 구조화된 인지 개요를 구축해 반복 검색을 안내함으로써 RAG 시스템을 강화하고, 다차원 지식을 일관된 페이지로 조직하여 더 정확한 답변 생성을 돕습니다.
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD 2026</div><img src='/images/paper/lisrec.webp' alt="LISRec paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
 # LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation
 
 **Haidong Xin**, [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shi Yu](https://scholar.google.com/citations?user=xcMVPTgAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zulong Chen](https://scholar.google.com/citations?user=nUVmSqUAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Chenyan Xiong](https://scholar.google.com/citations?user=E9BaEBYAAAAJ)
-
 
 <div align="left">
 <a href="https://arxiv.org/abs/2505.22130"><img src="https://img.shields.io/badge/arXiv-2505.22130-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
@@ -67,7 +48,7 @@
 <a href="https://doi.org/10.1016/j.aiopen.2026.02.002"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.aiopen.2026.02.002-blue?logo=doi&logoColor=white" alt="DOI"></a>
 </div>
 
-이 연구는 에이전트 관점에서 Retrieval-Augmented Generation 을 체계적으로 정리하고, 지식 집약형 에이전트를 획득과 활용 역할로 구분하며, 멀티에이전트 RAG 시스템의 공동 최적화 방향을 제시합니다.
+이 연구는 에이전트 관점에서 Retrieval-Augmented Generation을 체계적으로 정리하고, 지식 집약형 에이전트를 획득과 활용 역할로 구분하며, 멀티에이전트 RAG 시스템의 공동 최적화 방향을 제시합니다.
 </div>
 </div>
 
@@ -121,6 +102,38 @@
 </div>
 
 이 연구는 시각장애인을 위한 완전히 새로운 영화 감상 경험을 열어 주었습니다.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation
+
+[Xinze Li](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), **Haidong Xin**, [Yukun Yan$^†$](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zheni Zeng](https://scholar.google.com/citations?user=CM3VSeQAAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
+
+<div align="left">
+<a href="https://arxiv.org/abs/2601.09402"><img src="https://img.shields.io/badge/arXiv-2601.09402-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://github.com/OpenBMB/PAGER"><img src="https://img.shields.io/github/stars/OpenBMB/PAGER?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
+</div>
+
+이 연구는 구조화된 인지 개요를 구축해 반복 검색을 안내함으로써 RAG 시스템을 강화하고, 다차원 지식을 일관된 페이지로 조직하여 더 정확한 답변 생성을 돕습니다.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/cagmamba.webp' alt="CAGMamba paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis
+
+Minghai Jiao, Jing Xiao$^†$, Peng Xiao, Ende Zhang, Shuang Kan, Wenyan Jiang, Jinyao Li, Yixian Liu, **Haidong Xin**
+
+<div align="left">
+<a href="https://arxiv.org/abs/2604.03650"><img src="https://img.shields.io/badge/arXiv-2604.03650-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://github.com/User2024-xj/CAGMamba"><img src="https://img.shields.io/github/stars/User2024-xj/CAGMamba?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
+</div>
+
+본 연구는 대화 수준의 감성 변화를 모델링하고 교차 모달 융합과 모달 고유 정보 사이의 균형을 적응적으로 조절하는 문맥 인지형 게이트 Mamba 프레임워크를 도입하여 멀티모달 감성 분석을 향상시킵니다.
 </div>
 </div>
 

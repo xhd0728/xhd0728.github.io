@@ -10,8 +10,8 @@
 - *2025.11*: &nbsp;🎉 我们的论文 *LISRec* 被 KDD 2026（CCF-A）接收！
 - *2025.11*: &nbsp;🎉 我们发布了 [UltraRAG v2.1](https://github.com/OpenBMB/UltraRAG/releases/tag/v0.2.1)，带来了多模态支持和更统一的评测流程！
 - *2025.08*: &nbsp;🎉 我们发布了 [UltraRAG v2](https://github.com/OpenBMB/UltraRAG/releases/tag/v0.2.0)，这是一个用于构建复杂 RAG 系统的低代码框架！
-- *2025.08*: &nbsp;🎉 我们的论文 *TASTE$^+$* 被 WISA 2025 接收，并入选 <span style="color:red;font-weight:bold">口头报告</span>！
+- *2025.08*: &nbsp;🎉 我们的论文 *TASTE$^+$* 被 WISA 2025（CCF-C）接收，并入选 <span style="color:red;font-weight:bold">口头报告</span>！
 - *2025.08*: &nbsp;🎉 我们的论文 *LLMsPark* 被 EMNLP 2025（CCF-B）接收！
-- *2024.04*: &nbsp;🎉 我们发布了 [heu-icicles](https://github.com/HEUOpenResource/heu-icicles) [![](https://img.shields.io/github/stars/HEUOpenResource/heu-icicles?style=social&label=Code+Stars)](https://github.com/HEUOpenResource/heu-icicles)，这是一个哈工程课程指南与资源共享平台。
+- *2024.04*: &nbsp;🎉 我们发布了 [heu-icicles](https://github.com/HEUOpenResource/heu-icicles) [![](https://img.shields.io/github/stars/HEUOpenResource/heu-icicles?style=social&label=Code+Stars)](https://github.com/HEUOpenResource/heu-icicles)，这是一个哈尔滨工程大学课程指南与资源共享平台。
 - *2024.02*: &nbsp;🎉 我们的论文 *MMAD* 被 COLING 2024（CCF-B）接收！
-- *2023.05*: &nbsp;🎉 我们的论文在 MCM/ICM 2023 中获得 Honorable Mention 奖！
+- *2023.05*: &nbsp;🎉 我们的论文在 MCM/ICM 2023 中获得荣誉提名奖！

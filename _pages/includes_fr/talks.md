@@ -1,6 +1,6 @@
 <span class='anchor' id='media-mentions'></span>
 
-# 💬 Médias
+# 💬 Mentions médias
 
 - *2026.03*, [【OpenBMB】EdgeClaw发布：安全高效端云协同智能体](https://mp.weixin.qq.com/s/H5c5cD8r5bEvIXTZZpgoSA)
 - *2026.01*, [【TsinghuaNLP】成果 \| UltraRAG 3.0：拒绝“盲盒”开发，让每一行推理逻辑都清晰可见](https://mp.weixin.qq.com/s/ouKWMPluQ7TpCYM5wWKpbg)

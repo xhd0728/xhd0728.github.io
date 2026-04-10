@@ -11,30 +11,12 @@
 
 **Haidong Xin**$^{\*}$, [Xinze Li$^{\*}$](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Yukun Yan$^†$](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Cheng Yang](https://scholar.google.com/citations?user=OlLjVUcAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
 
-
 <div align="left">
 <a href="https://arxiv.org/abs/2602.11182"><img src="https://img.shields.io/badge/arXiv-2602.11182-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
 <a href="https://github.com/OpenBMB/MetaMem"><img src="https://img.shields.io/github/stars/OpenBMB/MetaMem?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
-该工作提出了 MetaMem，一种通过自反思符号优化持续演化元记忆的框架，用于提升长期人机交互中的知识利用能力。
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
-<div class='paper-box-text' markdown="1">
-
-# Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation
-
-[Xinze Li](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), **Haidong Xin**, [Yukun Yan$^†$](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zheni Zeng](https://scholar.google.com/citations?user=CM3VSeQAAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
-
-
-<div align="left">
-<a href="https://arxiv.org/abs/2601.09402"><img src="https://img.shields.io/badge/arXiv-2601.09402-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
-<a href="https://github.com/OpenBMB/PAGER"><img src="https://img.shields.io/github/stars/OpenBMB/PAGER?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
-</div>
-
-该工作通过构建结构化认知提纲来指导迭代式检索，从而增强 RAG 系统对多维知识的组织能力，提升答案生成的准确性。
+该工作提出了 MetaMem，一种通过自我反思式符号优化持续演化元记忆的框架，用于提升长期人机交互中的知识利用能力。
 </div>
 </div>
 
@@ -44,7 +26,6 @@
 # LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation
 
 **Haidong Xin**, [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shi Yu](https://scholar.google.com/citations?user=xcMVPTgAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zulong Chen](https://scholar.google.com/citations?user=nUVmSqUAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Chenyan Xiong](https://scholar.google.com/citations?user=E9BaEBYAAAAJ)
-
 
 <div align="left">
 <a href="https://arxiv.org/abs/2505.22130"><img src="https://img.shields.io/badge/arXiv-2505.22130-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
@@ -121,6 +102,38 @@
 </div>
 
 该工作为视障群体带来了全新的观影辅助体验，拓展了电影音频描述的多模态能力边界。
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation
+
+[Xinze Li](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Zhenghao Liu$^†$](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), **Haidong Xin**, [Yukun Yan$^†$](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zheni Zeng](https://scholar.google.com/citations?user=CM3VSeQAAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
+
+<div align="left">
+<a href="https://arxiv.org/abs/2601.09402"><img src="https://img.shields.io/badge/arXiv-2601.09402-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://github.com/OpenBMB/PAGER"><img src="https://img.shields.io/github/stars/OpenBMB/PAGER?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
+</div>
+
+该工作通过构建结构化认知提纲来指导迭代式检索，从而增强 RAG 系统对多维知识的组织能力，提升答案生成的准确性。
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/cagmamba.webp' alt="CAGMamba paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis
+
+Minghai Jiao, Jing Xiao$^†$, Peng Xiao, Ende Zhang, Shuang Kan, Wenyan Jiang, Jinyao Li, Yixian Liu, **Haidong Xin**
+
+<div align="left">
+<a href="https://arxiv.org/abs/2604.03650"><img src="https://img.shields.io/badge/arXiv-2604.03650-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://github.com/User2024-xj/CAGMamba"><img src="https://img.shields.io/github/stars/User2024-xj/CAGMamba?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
+</div>
+
+本工作提出一种上下文感知的门控 Mamba 框架，用于多模态情感分析，能够建模对话级情感演化，并在跨模态融合与模态特定信息之间进行自适应平衡。
 </div>
 </div>
 

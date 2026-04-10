@@ -12,7 +12,7 @@ url: "https://xinhaidong.top"
 baseurl: ""
 lang: "en"
 locale: "en_US"
-image: "/images/android-chrome-512x512.png"
+image: "/images/android-chrome-512x512.webp"
 robots: "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
 repository: "xhd0728/xhd0728.github.io"
 google_scholar_stats_use_cdn: true
@@ -38,7 +38,7 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 # Site Author
 author:
   name: "Haidong Xin"
-  avatar: "/images/android-chrome-512x512.png"
+  avatar: "/images/android-chrome-512x512.webp"
   bio: "NEUIR & TsinghuaNLP"
   location: "Beijing, China"
   employer:

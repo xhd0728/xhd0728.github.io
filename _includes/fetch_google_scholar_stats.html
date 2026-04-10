@@ -9,10 +9,18 @@
     function updateScholarStats(data) {
       var totalCitation = data.citedby;
       var totalCitationElement = document.getElementById('total_cit');
+      var totalCitationBadgeElement = document.getElementById('total_cit_badge');
       var citationEles = document.getElementsByClassName('show_paper_citations');
 
       if (totalCitationElement) {
         totalCitationElement.textContent = totalCitation;
+      }
+
+      if (totalCitationBadgeElement) {
+        var badgePrefix = totalCitationBadgeElement.getAttribute('data-badge-prefix') || '';
+        var badgeSuffix = totalCitationBadgeElement.getAttribute('data-badge-suffix') || '';
+        totalCitationBadgeElement.src = badgePrefix + encodeURIComponent(totalCitation) + badgeSuffix;
+        totalCitationBadgeElement.alt = 'Google Scholar citations: ' + totalCitation;
       }
 
       Array.prototype.forEach.call(citationEles, function (element) {
@@ -24,7 +32,7 @@
     }
 
     function fetchScholarStats() {
-      var hasTotalCitationTarget = document.getElementById('total_cit');
+      var hasTotalCitationTarget = document.getElementById('total_cit') || document.getElementById('total_cit_badge');
       var hasPerPaperCitationTarget = document.getElementsByClassName('show_paper_citations').length > 0;
 
       if (!hasTotalCitationTarget && !hasPerPaperCitationTarget) {

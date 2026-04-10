@@ -1,8 +1,1 @@
-{% assign scholar_url = include.url | default: site.author.googlescholar %}
-<a class="scholar-badge" href="{{ scholar_url }}" aria-label="Google Scholar citations">
-  <span class="scholar-badge__label">
-    <i class="ai ai-google-scholar" aria-hidden="true"></i>
-    <span>citations</span>
-  </span>
-  <span class="scholar-badge__value" id="total_cit" aria-live="polite">{{ include.fallback | default: "31" }}</span>
-</a>
+{%- assign scholar_url = include.url | default: site.author.googlescholar -%}{%- assign scholar_fallback = include.fallback | default: "31" -%}<span class="scholar-badge-inline">&nbsp;<a class="scholar-badge" href="{{ scholar_url }}" aria-label="Google Scholar citations"><img class="scholar-badge__img" id="total_cit_badge" src="https://img.shields.io/badge/citations-{{ scholar_fallback }}-9cf?logo=Google%20Scholar&labelColor=f6f6f6" alt="Google Scholar citations: {{ scholar_fallback }}" data-badge-prefix="https://img.shields.io/badge/citations-" data-badge-suffix="-9cf?logo=Google%20Scholar&labelColor=f6f6f6" decoding="async"></a></span>
