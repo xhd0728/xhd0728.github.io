@@ -36,6 +36,9 @@ jobs:
       - name: Generate Google Scholar stats
         env:
           SCHOLAR_USER_ID: 8VCnj3sAAAAJ
+          SCHOLAR_LANGUAGE: en
+          SCHOLAR_TIMEOUT: 30
+          SCHOLAR_RETRIES: 5
         run: |
           python citation/get_citation.py \
             --user-id "${SCHOLAR_USER_ID}" \

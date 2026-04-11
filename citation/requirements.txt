@@ -1,1 +1,2 @@
-scholarly==1.7.11
+beautifulsoup4==4.12.3
+requests==2.32.3

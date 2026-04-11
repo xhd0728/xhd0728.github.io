@@ -6,20 +6,44 @@ import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
-from urllib.parse import urlencode
+from urllib.parse import parse_qs, urlencode, urlparse
 
 BASE_URL = "https://scholar.google.com/citations"
 DIGIT_RE = re.compile(r"\d+")
+REQUEST_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+    ),
+    "Accept": (
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,"
+        "image/webp,image/apng,*/*;q=0.8"
+    ),
+    "Accept-Language": "en-US,en;q=0.9",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+}
+BLOCK_HINTS = (
+    "our systems have detected unusual traffic",
+    "not a robot",
+    "verify you're not a robot",
+    "please show you're not a robot",
+    "recaptcha",
+    "/sorry/",
+    "gs_captcha_ccl",
+    "g-recaptcha",
+)
 
 
 class ScholarFetchError(RuntimeError):
-    """Raised when Google Scholar stats cannot be fetched with scholarly."""
+    """Raised when Google Scholar stats cannot be fetched from the public profile."""
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Fetch Google Scholar citation stats for a public profile with scholarly."
+        description="Fetch Google Scholar citation stats from a public profile page."
     )
     parser.add_argument(
         "--user-id",
@@ -40,25 +64,25 @@ def parse_args() -> argparse.Namespace:
         "--pagesize",
         type=int,
         default=int(os.environ.get("SCHOLAR_PAGE_SIZE", "100")),
-        help="Virtual page size used to derive the scholarly publication limit.",
+        help="Google Scholar page size. Defaults to 100.",
     )
     parser.add_argument(
         "--max-pages",
         type=int,
         default=int(os.environ.get("SCHOLAR_MAX_PAGES", "5")),
-        help="Virtual page count used to derive the scholarly publication limit.",
+        help="Maximum number of profile pages to scan. Defaults to 5.",
     )
     parser.add_argument(
         "--timeout",
         type=int,
         default=int(os.environ.get("SCHOLAR_TIMEOUT", "20")),
-        help="Per-request timeout in seconds for scholarly. Defaults to 20.",
+        help="Per-request timeout in seconds. Defaults to 20.",
     )
     parser.add_argument(
         "--retries",
         type=int,
         default=int(os.environ.get("SCHOLAR_RETRIES", "3")),
-        help="Number of retries used by scholarly. Defaults to 3.",
+        help="Number of retries for each profile page. Defaults to 3.",
     )
     args = parser.parse_args()
     if not args.user_id:
@@ -76,6 +100,10 @@ def parse_args() -> argparse.Namespace:
 
 def build_profile_url(user_id: str, hl: str) -> str:
     return f"{BASE_URL}?{urlencode({'user': user_id, 'hl': hl})}"
+
+
+def build_page_url(user_id: str, hl: str, *, cstart: int = 0, pagesize: int = 100) -> str:
+    return f"{BASE_URL}?{urlencode({'user': user_id, 'hl': hl, 'cstart': cstart, 'pagesize': pagesize})}"
 
 
 def extract_first_int(text: str | None) -> int | None:
@@ -108,8 +136,111 @@ def build_payload(
         "scholar_name": scholar_name,
         "citedby": citedby,
         "publications": publications,
-        "source_backend": "scholarly",
+        "source_backend": "direct-html",
     }
+
+
+def is_blocked_response(html: str) -> bool:
+    lowered = html.lower()
+    return any(hint in lowered for hint in BLOCK_HINTS)
+
+
+def extract_publication_id(href: str | None) -> str | None:
+    if not href:
+        return None
+    params = parse_qs(urlparse(href).query)
+    values = params.get("citation_for_view")
+    if not values:
+        return None
+    return normalize_publication_id(values[0])
+
+
+def fetch_profile_page(
+    *,
+    session,
+    user_id: str,
+    hl: str,
+    cstart: int,
+    pagesize: int,
+    timeout: int,
+    retries: int,
+):
+    try:
+        import requests
+        from bs4 import BeautifulSoup
+    except ImportError as exc:
+        raise ScholarFetchError(
+            "Missing dependencies. Run `pip install -r citation/requirements.txt`."
+        ) from exc
+
+    url = build_page_url(user_id=user_id, hl=hl, cstart=cstart, pagesize=pagesize)
+    last_error: Exception | None = None
+
+    for attempt in range(1, retries + 1):
+        try:
+            response = session.get(url, timeout=timeout)
+            response.raise_for_status()
+        except requests.RequestException as exc:
+            last_error = exc
+        else:
+            html = response.text
+            if is_blocked_response(html):
+                last_error = ScholarFetchError(
+                    "Google Scholar returned an anti-bot page for the public profile."
+                )
+            else:
+                return BeautifulSoup(html, "html.parser")
+
+        if attempt < retries:
+            time.sleep(min(attempt, 3))
+
+    raise ScholarFetchError(
+        f"failed to fetch Google Scholar profile page at offset {cstart}: {last_error}"
+    )
+
+
+def parse_total_citations(soup) -> int | None:
+    fallback_value: int | None = None
+    for row in soup.select("#gsc_rsb_st tr"):
+        cells = [cell.get_text(" ", strip=True) for cell in row.select("td")]
+        if len(cells) >= 2 and fallback_value is None:
+            fallback_value = extract_first_int(cells[1])
+        if len(cells) >= 2 and cells[0].lower().startswith("citations"):
+            return extract_first_int(cells[1])
+    return fallback_value
+
+
+def parse_publications_on_page(soup) -> dict[str, dict[str, int | str]]:
+    publications: dict[str, dict[str, int | str]] = {}
+
+    for row in soup.select("tr.gsc_a_tr"):
+        title_link = row.select_one("a.gsc_a_at")
+        if title_link is None:
+            continue
+
+        publication_id = extract_publication_id(title_link.get("href"))
+        if not publication_id:
+            continue
+
+        title = title_link.get_text(" ", strip=True)
+        citations_element = row.select_one(".gsc_a_c a, .gsc_a_c span")
+        year_element = row.select_one(".gsc_a_y span, .gsc_a_y")
+
+        entry: dict[str, int | str] = {
+            "title": title,
+            "num_citations": extract_first_int(
+                citations_element.get_text(" ", strip=True) if citations_element else ""
+            )
+            or 0,
+        }
+
+        year = extract_first_int(year_element.get_text(" ", strip=True) if year_element else "")
+        if year is not None:
+            entry["year"] = year
+
+        publications[publication_id] = entry
+
+    return publications
 
 
 def collect_stats(
@@ -122,68 +253,59 @@ def collect_stats(
     retries: int,
 ) -> dict[str, object]:
     try:
-        from scholarly import scholarly as scholarly_client
+        import requests
     except ImportError as exc:
         raise ScholarFetchError(
-            "scholarly is not installed. Run `pip install -r citation/requirements.txt`."
+            "requests is not installed. Run `pip install -r citation/requirements.txt`."
         ) from exc
 
-    if hasattr(scholarly_client, "set_logger"):
-        scholarly_client.set_logger(False)
-    if hasattr(scholarly_client, "set_timeout"):
-        scholarly_client.set_timeout(timeout)
-    if hasattr(scholarly_client, "set_retries"):
-        scholarly_client.set_retries(retries)
-
-    publication_limit = pagesize * max_pages
-
-    try:
-        author = scholarly_client.search_author_id(
-            user_id,
-            filled=False,
-            sortby="citedby",
-            publication_limit=publication_limit,
-        )
-        author = scholarly_client.fill(
-            author,
-            sections=["basics", "indices", "publications"],
-            sortby="citedby",
-            publication_limit=publication_limit,
-        )
-    except Exception as exc:
-        raise ScholarFetchError(f"scholarly failed to fetch the profile: {exc}") from exc
-
-    citedby = extract_first_int(str(author.get("citedby")))
-    if citedby is None:
-        raise ScholarFetchError("scholarly returned an author object without total citations.")
+    session = requests.Session()
+    session.headers.update(REQUEST_HEADERS)
 
     publications: dict[str, dict[str, int | str]] = {}
-    for publication in author.get("publications", []):
-        publication_id = normalize_publication_id(
-            str(publication.get("author_pub_id") or publication.get("scholar_id") or "")
+    scholar_name: str | None = None
+    citedby: int | None = None
+
+    for page_index in range(max_pages):
+        soup = fetch_profile_page(
+            session=session,
+            user_id=user_id,
+            hl=hl,
+            cstart=page_index * pagesize,
+            pagesize=pagesize,
+            timeout=timeout,
+            retries=retries,
         )
-        if not publication_id:
-            continue
 
-        bib = publication.get("bib") or {}
-        title = str(bib.get("title") or publication.get("title") or publication_id).strip()
-        num_citations = extract_first_int(str(publication.get("num_citations"))) or 0
+        if page_index == 0:
+            name_element = soup.select_one("#gsc_prf_in")
+            scholar_name = name_element.get_text(" ", strip=True) if name_element else None
+            citedby = parse_total_citations(soup)
+            if scholar_name is None or citedby is None:
+                raise ScholarFetchError("Google Scholar profile page did not contain author stats.")
 
-        entry: dict[str, int | str] = {
-            "title": title,
-            "num_citations": num_citations,
-        }
+        page_publications = parse_publications_on_page(soup)
+        if not page_publications:
+            if page_index == 0:
+                raise ScholarFetchError("Google Scholar profile page did not contain publications.")
+            break
 
-        year = extract_first_int(str(bib.get("pub_year") or publication.get("year") or ""))
-        if year is not None:
-            entry["year"] = year
+        new_count = 0
+        for publication_id, publication in page_publications.items():
+            if publication_id not in publications:
+                new_count += 1
+            publications[publication_id] = publication
 
-        publications[publication_id] = entry
+        if len(page_publications) < pagesize or new_count == 0:
+            break
+
+    if citedby is None:
+        raise ScholarFetchError("Google Scholar profile page did not contain total citations.")
 
     return build_payload(
         user_id=user_id,
         hl=hl,
-        scholar_name=author.get("name"),
+        scholar_name=scholar_name,
         citedby=citedby,
         publications=publications,
     )
@@ -217,7 +339,7 @@ def main() -> int:
 
     print(
         f"Wrote Google Scholar stats for {args.user_id} "
-        f"(cited by {payload['citedby']}, backend=scholarly) to {destination}"
+        f"(cited by {payload['citedby']}, backend=direct-html) to {destination}"
     )
     return 0
 
