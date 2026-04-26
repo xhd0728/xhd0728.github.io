@@ -1,17 +1,12 @@
 {
-  "citedby": 35,
-  "citedby5y": 35,
+  "citedby": 39,
+  "citedby5y": 39,
   "hindex": 3,
   "hindex5y": 3,
   "i10index": 1,
   "i10index5y": 1,
   "profile_url": "https://scholar.google.com/citations?user=8VCnj3sAAAAJ&hl=en",
   "publications": {
-    "0EnyYjriUFMC": {
-      "num_citations": 3,
-      "title": "LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation",
-      "year": 2026
-    },
     "5nxA0vEk-isC": {
       "num_citations": 0,
       "title": "MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization",
@@ -22,23 +17,28 @@
       "title": "Adapting Language Models to Text Matching Based Recommendation Systems",
       "year": 2025
     },
+    "KlAtU1dfN6UC": {
+      "num_citations": 3,
+      "title": "LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation",
+      "year": 2026
+    },
     "MXK_kJrjxJIC": {
       "num_citations": 0,
       "title": "CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis",
       "year": 2026
     },
     "UebtZRa9Y70C": {
-      "num_citations": 0,
+      "num_citations": 1,
       "title": "Structured Knowledge Representation through Contextual Pages for Retrieval-Augmented Generation",
       "year": 2026
     },
     "W7OEmFMy1HYC": {
-      "num_citations": 23,
+      "num_citations": 25,
       "title": "MMAD: Multi-modal Movie Audio Description",
       "year": 2024
     },
     "WF5omc3nYNoC": {
-      "num_citations": 5,
+      "num_citations": 6,
       "title": "LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts",
       "year": 2025
     },
