@@ -29,6 +29,7 @@
 
 <div align="left">
 <a href="https://arxiv.org/abs/2505.22130"><img src="https://img.shields.io/badge/arXiv-2505.22130-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://doi.org/10.1145/3770854.3780337"><img src="https://img.shields.io/badge/DOI-10.1145%2F3770854.3780337-blue?logo=doi&logoColor=white" alt="DOI"></a>
 <a href="https://github.com/NEUIR/LISRec"><img src="https://img.shields.io/github/stars/NEUIR/LISRec?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
@@ -81,6 +82,7 @@
 <div align="left">
 <a href="https://llmsparks.github.io"><img src="https://img.shields.io/static/v1?label=Homepage&message=LLMsPark&color=blue&logo=github-pages"></a>
 <a href="https://arxiv.org/abs/2509.16610"><img src="https://img.shields.io/badge/arXiv-2509.16610-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://doi.org/10.18653/v1/2025.findings-emnlp.12"><img src="https://img.shields.io/badge/DOI-10.18653%2Fv1%2F2025.findings--emnlp.12-blue?logo=doi&logoColor=white" alt="DOI"></a>
 </div>
 
 この研究は、多エージェント環境における大規模言語モデルの戦略的行動と意思決定能力を評価するための、ゲーム理論ベースのベンチマーク LLMsPark を提案します。
@@ -105,6 +107,22 @@
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC 2026</div><img src='/images/paper/cagmamba.webp' alt="CAGMamba paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis
+
+Minghai Jiao, Jing Xiao$^†$, Peng Xiao, Ende Zhang, Shuang Kan, Wenyan Jiang, Jinyao Li, Yixian Liu, **Haidong Xin**
+
+<div align="left">
+<a href="https://arxiv.org/abs/2604.03650"><img src="https://img.shields.io/badge/arXiv-2604.03650-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://github.com/User2024-xj/CAGMamba"><img src="https://img.shields.io/github/stars/User2024-xj/CAGMamba?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
+</div>
+
+本研究は、対話レベルの感情の推移を捉え、クロスモーダル融合とモダリティ固有情報のバランスを適応的に調整する、コンテキスト認識型ゲート付き Mamba フレームワークを導入することで、マルチモーダル感情分析を改善します。
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -118,22 +136,6 @@
 </div>
 
 この研究は、構造化された認知アウトラインを構築して反復検索を導くことで RAG システムを強化し、多次元知識を一貫したページに整理して、より正確な回答生成を実現します。
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/cagmamba.webp' alt="CAGMamba paper figure" width="100%" loading="lazy"></div></div>
-<div class='paper-box-text' markdown="1">
-
-# CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis
-
-Minghai Jiao, Jing Xiao$^†$, Peng Xiao, Ende Zhang, Shuang Kan, Wenyan Jiang, Jinyao Li, Yixian Liu, **Haidong Xin**
-
-<div align="left">
-<a href="https://arxiv.org/abs/2604.03650"><img src="https://img.shields.io/badge/arXiv-2604.03650-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
-<a href="https://github.com/User2024-xj/CAGMamba"><img src="https://img.shields.io/github/stars/User2024-xj/CAGMamba?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
-</div>
-
-本研究は、対話レベルの感情の推移を捉え、クロスモーダル融合とモダリティ固有情報のバランスを適応的に調整する、コンテキスト認識型ゲート付き Mamba フレームワークを導入することで、マルチモーダル感情分析を改善します。
 </div>
 </div>
 

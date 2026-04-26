@@ -2,8 +2,8 @@
 permalink: /zh_cn/
 title: "Haidong Xin"
 seo_title: "Haidong Xin | NLP、信息检索、RAG、推荐系统与多智能体系统"
-description: "Haidong Xin 现为东北大学计算机科学硕士研究生，研究方向包括自然语言处理、信息检索、RAG、推荐系统与多智能体系统。"
-sidebar_description: "东北大学计算机科学硕士研究生，研究方向包括 NLP、IR、RAG、推荐系统与多智能体系统。"
+description: "Haidong Xin 现为 OpenBMB 与 TsinghuaNLP 算法工程师，研究方向包括自然语言处理、信息检索、RAG、推荐系统与多智能体系统。"
+sidebar_description: "OpenBMB 与 TsinghuaNLP 算法工程师，研究方向包括 NLP、IR、RAG、推荐系统与多智能体系统。"
 image: "/images/android-chrome-512x512.webp"
 schema_type: "ProfilePage"
 lang: "zh-CN"

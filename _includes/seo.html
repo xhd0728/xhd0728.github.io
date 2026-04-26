@@ -108,7 +108,17 @@
     "@id": {{ site.url | append: "/#person" | jsonify }},
     "name": {{ site.author.name | default: site.title | jsonify }},
     "url": {{ site.url | jsonify }},
-    "description": {{ site.description | jsonify }}{% if site.author.avatar %},
+    "description": {{ site.description | jsonify }}{% if site.author.job_title %},
+    "jobTitle": {{ site.author.job_title | jsonify }}{% endif %}{% if site.author.affiliations %},
+    "affiliation": [
+      {% for affiliation in site.author.affiliations %}
+      {
+        "@type": "Organization",
+        "name": {{ affiliation.name | jsonify }}{% if affiliation.url %},
+        "url": {{ affiliation.url | jsonify }}{% endif %}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]{% endif %}{% if site.author.avatar %},
     "image": {{ site.author.avatar | absolute_url | jsonify }}{% endif %}{% if site.author.email %},
     "email": {{ "mailto:" | append: site.author.email | jsonify }}{% endif %}{% if site.author.location %},
     "homeLocation": {

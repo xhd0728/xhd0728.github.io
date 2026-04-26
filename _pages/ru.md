@@ -2,8 +2,8 @@
 permalink: /ru/
 title: "Haidong Xin"
 seo_title: "Haidong Xin | NLP, информационный поиск, RAG, рекомендательные и мультиагентные системы"
-description: "Haidong Xin — магистрант по компьютерным наукам в Northeastern University. Он занимается NLP, информационным поиском, RAG, рекомендательными и мультиагентными системами."
-sidebar_description: "Магистрант по компьютерным наукам в Northeastern University; исследует NLP, информационный поиск, RAG, рекомендательные и мультиагентные системы."
+description: "Haidong Xin — инженер-алгоритмист в OpenBMB и TsinghuaNLP. Он работает над NLP, информационным поиском, RAG, рекомендательными и мультиагентными системами."
+sidebar_description: "Инженер-алгоритмист в OpenBMB и TsinghuaNLP; работает над NLP, информационным поиском, RAG, рекомендательными и мультиагентными системами."
 image: "/images/android-chrome-512x512.webp"
 schema_type: "ProfilePage"
 lang: "ru"

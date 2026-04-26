@@ -2,6 +2,7 @@
 
 # 🔥 新聞
 
+- *2026.04*: &nbsp;🎉 我們的論文 *CAGMamba* 被 ICIC 2026（CCF-C）接收，並入選 <span style="color:red;font-weight:bold">口頭報告</span>！
 - *2026.04*: &nbsp;🎉 我們的論文 *MetaMem* 被 ACL 2026（CCF-A）接收！
 - *2026.04*: &nbsp;🎉 我們發布了 [EdgeClaw 2.0](https://github.com/OpenBMB/EdgeClaw) [![](https://img.shields.io/github/stars/OpenBMB/EdgeClaw?style=social&label=Code+Stars)](https://github.com/OpenBMB/EdgeClaw)，一個端雲協同 AI 智能體！
 - *2026.02*: &nbsp;🎉 我們的論文 *Knowledge Intensive Agents* 被 AI Open（IF=14.8）接收！
@@ -14,4 +15,3 @@
 - *2025.08*: &nbsp;🎉 我們的論文 *LLMsPark* 被 EMNLP 2025（CCF-B）接收！
 - *2024.04*: &nbsp;🎉 我們發布了 [heu-icicles](https://github.com/HEUOpenResource/heu-icicles) [![](https://img.shields.io/github/stars/HEUOpenResource/heu-icicles?style=social&label=Code+Stars)](https://github.com/HEUOpenResource/heu-icicles)，這是一個哈爾濱工程大學課程指南與資源共享平台。
 - *2024.02*: &nbsp;🎉 我們的論文 *MMAD* 被 COLING 2024（CCF-B）接收！
-- *2023.05*: &nbsp;🎉 我們的論文在 MCM/ICM 2023 中獲得榮譽提名獎！

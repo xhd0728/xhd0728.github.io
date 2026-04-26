@@ -2,6 +2,7 @@
 
 # 🔥 新闻
 
+- *2026.04*: &nbsp;🎉 我们的论文 *CAGMamba* 被 ICIC 2026（CCF-C）接收，并入选 <span style="color:red;font-weight:bold">口头报告</span>！
 - *2026.04*: &nbsp;🎉 我们的论文 *MetaMem* 被 ACL 2026（CCF-A）接收！
 - *2026.04*: &nbsp;🎉 我们发布了 [EdgeClaw 2.0](https://github.com/OpenBMB/EdgeClaw) [![](https://img.shields.io/github/stars/OpenBMB/EdgeClaw?style=social&label=Code+Stars)](https://github.com/OpenBMB/EdgeClaw)，一个端云协同 AI 智能体！
 - *2026.02*: &nbsp;🎉 我们的论文 *Knowledge Intensive Agents* 被 AI Open（IF=14.8）接收！
@@ -14,4 +15,3 @@
 - *2025.08*: &nbsp;🎉 我们的论文 *LLMsPark* 被 EMNLP 2025（CCF-B）接收！
 - *2024.04*: &nbsp;🎉 我们发布了 [heu-icicles](https://github.com/HEUOpenResource/heu-icicles) [![](https://img.shields.io/github/stars/HEUOpenResource/heu-icicles?style=social&label=Code+Stars)](https://github.com/HEUOpenResource/heu-icicles)，这是一个哈尔滨工程大学课程指南与资源共享平台。
 - *2024.02*: &nbsp;🎉 我们的论文 *MMAD* 被 COLING 2024（CCF-B）接收！
-- *2023.05*: &nbsp;🎉 我们的论文在 MCM/ICM 2023 中获得荣誉提名奖！

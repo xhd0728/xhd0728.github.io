@@ -2,6 +2,7 @@
 
 # 🔥 Noticias
 
+- *2026.04*: &nbsp;🎉 Nuestro artículo *CAGMamba* fue aceptado en ICIC 2026 (CCF-C) y seleccionado para una <span style="color:red;font-weight:bold">presentación oral</span>!
 - *2026.04*: &nbsp;🎉 Nuestro artículo *MetaMem* fue aceptado en ACL 2026 (CCF-A)!
 - *2026.04*: &nbsp;🎉 Publicamos [EdgeClaw 2.0](https://github.com/OpenBMB/EdgeClaw) [![](https://img.shields.io/github/stars/OpenBMB/EdgeClaw?style=social&label=Code+Stars)](https://github.com/OpenBMB/EdgeClaw), un agente de IA colaborativo entre el borde y la nube!
 - *2026.02*: &nbsp;🎉 Nuestro artículo *Knowledge Intensive Agents* fue aceptado por AI Open (IF=14.8)!
@@ -14,4 +15,3 @@
 - *2025.08*: &nbsp;🎉 Nuestro artículo *LLMsPark* fue aceptado en EMNLP 2025 (CCF-B)!
 - *2024.04*: &nbsp;🎉 Publicamos [heu-icicles](https://github.com/HEUOpenResource/heu-icicles) [![](https://img.shields.io/github/stars/HEUOpenResource/heu-icicles?style=social&label=Code+Stars)](https://github.com/HEUOpenResource/heu-icicles), una plataforma de guías de cursos y compartición de recursos para HEU.
 - *2024.02*: &nbsp;🎉 Nuestro artículo *MMAD* fue aceptado en COLING 2024 (CCF-B)!
-- *2023.05*: &nbsp;🎉 Nuestro artículo recibió una Mención Honorífica en MCM/ICM 2023!

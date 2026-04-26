@@ -29,6 +29,7 @@ Este trabalho propõe o MetaMem, uma estrutura de meta-memória que evolui atrav
 
 <div align="left">
 <a href="https://arxiv.org/abs/2505.22130"><img src="https://img.shields.io/badge/arXiv-2505.22130-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://doi.org/10.1145/3770854.3780337"><img src="https://img.shields.io/badge/DOI-10.1145%2F3770854.3780337-blue?logo=doi&logoColor=white" alt="DOI"></a>
 <a href="https://github.com/NEUIR/LISRec"><img src="https://img.shields.io/github/stars/NEUIR/LISRec?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
@@ -81,6 +82,7 @@ Este trabalho melhorou significativamente o desempenho do text matching em siste
 <div align="left">
 <a href="https://llmsparks.github.io"><img src="https://img.shields.io/static/v1?label=Homepage&message=LLMsPark&color=blue&logo=github-pages"></a>
 <a href="https://arxiv.org/abs/2509.16610"><img src="https://img.shields.io/badge/arXiv-2509.16610-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://doi.org/10.18653/v1/2025.findings-emnlp.12"><img src="https://img.shields.io/badge/DOI-10.18653%2Fv1%2F2025.findings--emnlp.12-blue?logo=doi&logoColor=white" alt="DOI"></a>
 </div>
 
 Este trabalho apresenta o LLMsPark, uma plataforma baseada em teoria dos jogos para avaliar comportamentos estratégicos e capacidades de decisão de grandes modelos de linguagem em ambientes multiagente.
@@ -105,6 +107,22 @@ Este trabalho abriu uma experiência totalmente nova de ver filmes para pessoas 
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC 2026</div><img src='/images/paper/cagmamba.webp' alt="CAGMamba paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis
+
+Minghai Jiao, Jing Xiao$^†$, Peng Xiao, Ende Zhang, Shuang Kan, Wenyan Jiang, Jinyao Li, Yixian Liu, **Haidong Xin**
+
+<div align="left">
+<a href="https://arxiv.org/abs/2604.03650"><img src="https://img.shields.io/badge/arXiv-2604.03650-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://github.com/User2024-xj/CAGMamba"><img src="https://img.shields.io/github/stars/User2024-xj/CAGMamba?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
+</div>
+
+Este trabalho melhora a análise de sentimentos multimodal ao introduzir um framework Mamba com mecanismos de gating sensíveis ao contexto, capaz de modelar a evolução do sentimento ao nível do diálogo e de equilibrar adaptativamente a fusão multimodal com a informação específica de cada modalidade.
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -118,22 +136,6 @@ Este trabalho abriu uma experiência totalmente nova de ver filmes para pessoas 
 </div>
 
 Este trabalho reforça os sistemas RAG ao construir esquemas cognitivos estruturados para orientar a recuperação iterativa, organizando conhecimento multidimensional em páginas coerentes para gerar respostas mais precisas.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/cagmamba.webp' alt="CAGMamba paper figure" width="100%" loading="lazy"></div></div>
-<div class='paper-box-text' markdown="1">
-
-# CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis
-
-Minghai Jiao, Jing Xiao$^†$, Peng Xiao, Ende Zhang, Shuang Kan, Wenyan Jiang, Jinyao Li, Yixian Liu, **Haidong Xin**
-
-<div align="left">
-<a href="https://arxiv.org/abs/2604.03650"><img src="https://img.shields.io/badge/arXiv-2604.03650-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
-<a href="https://github.com/User2024-xj/CAGMamba"><img src="https://img.shields.io/github/stars/User2024-xj/CAGMamba?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
-</div>
-
-Este trabalho melhora a análise de sentimentos multimodal ao introduzir um framework Mamba com mecanismos de gating sensíveis ao contexto, capaz de modelar a evolução do sentimento ao nível do diálogo e de equilibrar adaptativamente a fusão multimodal com a informação específica de cada modalidade.
 </div>
 </div>
 

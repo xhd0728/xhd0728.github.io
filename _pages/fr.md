@@ -2,8 +2,8 @@
 permalink: /fr/
 title: "Haidong Xin"
 seo_title: "Haidong Xin | TAL, recherche d'information, RAG, systèmes de recommandation et systèmes multi-agents"
-description: "Haidong Xin est étudiant en master d'informatique à Northeastern University. Il travaille sur le TAL, la recherche d'information, le RAG, les systèmes de recommandation et les systèmes multi-agents."
-sidebar_description: "Étudiant en master d'informatique à Northeastern University, avec des recherches en TAL, recherche d'information, RAG, systèmes de recommandation et systèmes multi-agents."
+description: "Haidong Xin est ingénieur algorithmes chez OpenBMB et TsinghuaNLP. Il travaille sur le TAL, la recherche d'information, le RAG, les systèmes de recommandation et les systèmes multi-agents."
+sidebar_description: "Ingénieur algorithmes chez OpenBMB et TsinghuaNLP, avec des travaux en TAL, recherche d'information, RAG, systèmes de recommandation et systèmes multi-agents."
 image: "/images/android-chrome-512x512.webp"
 schema_type: "ProfilePage"
 lang: "fr"

@@ -29,6 +29,7 @@
 
 <div align="left">
 <a href="https://arxiv.org/abs/2505.22130"><img src="https://img.shields.io/badge/arXiv-2505.22130-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://doi.org/10.1145/3770854.3780337"><img src="https://img.shields.io/badge/DOI-10.1145%2F3770854.3780337-blue?logo=doi&logoColor=white" alt="DOI"></a>
 <a href="https://github.com/NEUIR/LISRec"><img src="https://img.shields.io/github/stars/NEUIR/LISRec?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
 </div>
 
@@ -81,6 +82,7 @@
 <div align="left">
 <a href="https://llmsparks.github.io"><img src="https://img.shields.io/static/v1?label=Homepage&message=LLMsPark&color=blue&logo=github-pages"></a>
 <a href="https://arxiv.org/abs/2509.16610"><img src="https://img.shields.io/badge/arXiv-2509.16610-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://doi.org/10.18653/v1/2025.findings-emnlp.12"><img src="https://img.shields.io/badge/DOI-10.18653%2Fv1%2F2025.findings--emnlp.12-blue?logo=doi&logoColor=white" alt="DOI"></a>
 </div>
 
 该工作提出了 LLMsPark，一个面向策略博弈场景的大语言模型评测基准，用于系统衡量模型在多智能体环境中的策略行为与决策能力。
@@ -105,6 +107,22 @@
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC 2026</div><img src='/images/paper/cagmamba.webp' alt="CAGMamba paper figure" width="100%" loading="lazy"></div></div>
+<div class='paper-box-text' markdown="1">
+
+# CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis
+
+Minghai Jiao, Jing Xiao$^†$, Peng Xiao, Ende Zhang, Shuang Kan, Wenyan Jiang, Jinyao Li, Yixian Liu, **Haidong Xin**
+
+<div align="left">
+<a href="https://arxiv.org/abs/2604.03650"><img src="https://img.shields.io/badge/arXiv-2604.03650-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+<a href="https://github.com/User2024-xj/CAGMamba"><img src="https://img.shields.io/github/stars/User2024-xj/CAGMamba?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
+</div>
+
+本工作提出一种上下文感知的门控 Mamba 框架，用于多模态情感分析，能够建模对话级情感演化，并在跨模态融合与模态特定信息之间进行自适应平衡。
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/pager.webp' alt="PAGER paper figure" width="100%" loading="lazy"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -118,22 +136,6 @@
 </div>
 
 该工作通过构建结构化认知提纲来指导迭代式检索，从而增强 RAG 系统对多维知识的组织能力，提升答案生成的准确性。
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ArXiv 2026</div><img src='/images/paper/cagmamba.webp' alt="CAGMamba paper figure" width="100%" loading="lazy"></div></div>
-<div class='paper-box-text' markdown="1">
-
-# CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis
-
-Minghai Jiao, Jing Xiao$^†$, Peng Xiao, Ende Zhang, Shuang Kan, Wenyan Jiang, Jinyao Li, Yixian Liu, **Haidong Xin**
-
-<div align="left">
-<a href="https://arxiv.org/abs/2604.03650"><img src="https://img.shields.io/badge/arXiv-2604.03650-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
-<a href="https://github.com/User2024-xj/CAGMamba"><img src="https://img.shields.io/github/stars/User2024-xj/CAGMamba?label=stars&logo=github&color=brightgreen" alt="GitHub Repo Stars"></a>
-</div>
-
-本工作提出一种上下文感知的门控 Mamba 框架，用于多模态情感分析，能够建模对话级情感演化，并在跨模态融合与模态特定信息之间进行自适应平衡。
 </div>
 </div>
 

@@ -2,8 +2,8 @@
 permalink: /ar/
 title: "Haidong Xin"
 seo_title: "Haidong Xin | معالجة اللغة الطبيعية، واسترجاع المعلومات، وRAG، وأنظمة التوصية، والأنظمة متعددة الوكلاء"
-description: "هايدونغ شين طالب ماجستير في علوم الحاسوب في Northeastern University، وتركز أبحاثه على معالجة اللغة الطبيعية، واسترجاع المعلومات، وRAG، وأنظمة التوصية، والأنظمة متعددة الوكلاء."
-sidebar_description: "طالب ماجستير في علوم الحاسوب في Northeastern University، ويعمل على NLP وIR وRAG وأنظمة التوصية والأنظمة متعددة الوكلاء."
+description: "هايدونغ شين مهندس خوارزميات في OpenBMB وTsinghuaNLP، وتركز أعماله على معالجة اللغة الطبيعية، واسترجاع المعلومات، وRAG، وأنظمة التوصية، والأنظمة متعددة الوكلاء."
+sidebar_description: "مهندس خوارزميات في OpenBMB وTsinghuaNLP، ويعمل على NLP وIR وRAG وأنظمة التوصية والأنظمة متعددة الوكلاء."
 image: "/images/android-chrome-512x512.webp"
 schema_type: "ProfilePage"
 lang: "ar"

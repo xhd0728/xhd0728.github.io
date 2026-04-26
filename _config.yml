@@ -7,7 +7,7 @@
 
 # Site Settings
 title: "Haidong Xin"
-description: "Master student at Northeastern University. Researching in NLP, IR, RAG, RecSys, and Multi-agent Systems."
+description: "Algorithm Engineer at OpenBMB and TsinghuaNLP. Researching in NLP, IR, RAG, RecSys, and Multi-agent Systems."
 url: "https://xinhaidong.top"
 baseurl: ""
 lang: "en"
@@ -39,7 +39,13 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 author:
   name: "Haidong Xin"
   avatar: "/images/android-chrome-512x512.webp"
-  bio: "NEUIR & TsinghuaNLP"
+  bio: "OpenBMB & TsinghuaNLP"
+  job_title: "Algorithm Engineer"
+  affiliations:
+    - name: "OpenBMB"
+      url: "https://github.com/OpenBMB"
+    - name: "TsinghuaNLP"
+      url: "https://nlp.csai.tsinghua.edu.cn/"
   location: "Beijing, China"
   employer:
   pubmed:

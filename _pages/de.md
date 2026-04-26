@@ -2,8 +2,8 @@
 permalink: /de/
 title: "Haidong Xin"
 seo_title: "Haidong Xin | NLP, Information Retrieval, RAG, Empfehlungssysteme und Multi-Agenten-Systeme"
-description: "Haidong Xin ist Masterstudent der Informatik an der Northeastern University und forscht zu NLP, Information Retrieval, RAG, Empfehlungssystemen und Multi-Agenten-Systemen."
-sidebar_description: "Masterstudent der Informatik an der Northeastern University mit Forschung zu NLP, Information Retrieval, RAG, Empfehlungssystemen und Multi-Agenten-Systemen."
+description: "Haidong Xin ist Algorithm Engineer bei OpenBMB und TsinghuaNLP und arbeitet an NLP, Information Retrieval, RAG, Empfehlungssystemen und Multi-Agenten-Systemen."
+sidebar_description: "Algorithm Engineer bei OpenBMB und TsinghuaNLP mit Arbeit an NLP, Information Retrieval, RAG, Empfehlungssystemen und Multi-Agenten-Systemen."
 image: "/images/android-chrome-512x512.webp"
 schema_type: "ProfilePage"
 lang: "de"
