@@ -1,6 +1,6 @@
 {
-  "citedby": 41,
-  "citedby5y": 41,
+  "citedby": 45,
+  "citedby5y": 45,
   "hindex": 3,
   "hindex5y": 3,
   "i10index": 1,
@@ -41,6 +41,11 @@
       "num_citations": 6,
       "title": "LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts",
       "year": 2025
+    },
+    "_kc_bZDykSQC": {
+      "num_citations": 4,
+      "title": "UltraRAG 3.0: No More “Blind-Box” Development-Every Line of Reasoning Made Explicit",
+      "year": 2026
     },
     "hqOjcs7Dif8C": {
       "num_citations": 2,
