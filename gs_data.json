@@ -1,6 +1,6 @@
 {
-  "citedby": 48,
-  "citedby5y": 48,
+  "citedby": 50,
+  "citedby5y": 50,
   "hindex": 3,
   "hindex5y": 3,
   "i10index": 1,
@@ -12,11 +12,6 @@
       "title": "PilotDeck: A WorkSpace-Centric Open-Source Agent Operating System",
       "year": 2026
     },
-    "5nxA0vEk-isC": {
-      "num_citations": 0,
-      "title": "MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization",
-      "year": 2026
-    },
     "8k81kl-MbHgC": {
       "num_citations": 0,
       "title": "Adapting Language Models to Text Matching Based Recommendation Systems",
@@ -25,6 +20,11 @@
     "KlAtU1dfN6UC": {
       "num_citations": 3,
       "title": "LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation",
+      "year": 2026
+    },
+    "M3ejUd6NZC8C": {
+      "num_citations": 2,
+      "title": "MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization",
       "year": 2026
     },
     "MXK_kJrjxJIC": {
