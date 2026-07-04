@@ -1,12 +1,17 @@
 {
-  "citedby": 56,
-  "citedby5y": 56,
-  "hindex": 3,
-  "hindex5y": 3,
+  "citedby": 59,
+  "citedby5y": 59,
+  "hindex": 4,
+  "hindex5y": 4,
   "i10index": 1,
   "i10index5y": 1,
   "profile_url": "https://scholar.google.com/citations?user=8VCnj3sAAAAJ&hl=en",
   "publications": {
+    "4DMP91E08xMC": {
+      "num_citations": 0,
+      "title": "Memory Shot for Long-Term Dialogue",
+      "year": 2026
+    },
     "8k81kl-MbHgC": {
       "num_citations": 0,
       "title": "Adapting Language Models to Text Matching Based Recommendation Systems",
@@ -15,11 +20,6 @@
     "KlAtU1dfN6UC": {
       "num_citations": 3,
       "title": "LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation",
-      "year": 2026
-    },
-    "M3ejUd6NZC8C": {
-      "num_citations": 2,
-      "title": "MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization",
       "year": 2026
     },
     "MXK_kJrjxJIC": {
@@ -42,19 +42,19 @@
       "title": "LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts",
       "year": 2025
     },
+    "Wp0gIr-vW9MC": {
+      "num_citations": 4,
+      "title": "Knowledge intensive agents",
+      "year": 2026
+    },
     "_kc_bZDykSQC": {
       "num_citations": 5,
       "title": "UltraRAG 3.0: No More \"Blind-Box\" Development-Every Line of Reasoning Made Explicit",
       "year": 2026
     },
-    "hqOjcs7Dif8C": {
-      "num_citations": 3,
-      "title": "Knowledge Intensive Agents",
-      "year": 2026
-    },
-    "qxL8FJ1GzNcC": {
-      "num_citations": 0,
-      "title": "Memory Shot for Long-Term Dialogue",
+    "aqlVkmm33-oC": {
+      "num_citations": 4,
+      "title": "MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization",
       "year": 2026
     },
     "zYLM7Y9cAGgC": {
