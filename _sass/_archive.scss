@@ -1,0 +1,247 @@
+@use "sass:color";
+
+/* ==========================================================================
+   ARCHIVE
+   ========================================================================== */
+
+.archive {
+  margin-bottom: 2em;
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+
+      img {
+        box-shadow: 0 0 10px rgba(#000, 0.25);
+      }
+    }
+  }
+}
+
+.archive__subtitle {
+  margin: 1.414em 0 0;
+  padding-bottom: 0.5em;
+  font-size: $type-size-5;
+  color: color.mix(#fff, $gray, 25%);
+  border-bottom: 1px solid $border-color;
+
+  + .list__item .archive__item-title {
+    margin-top: 0.5em;
+  }
+}
+
+.archive__item-title {
+  margin-bottom: 0.25em;
+  font-family: $sans-serif-narrow;
+
+  a + a {
+    opacity: 0.5;
+  }
+}
+
+/* remove border*/
+.page__content {
+
+  .archive__item-title {
+    margin-top: 1em;
+    border-bottom: none;
+  }
+}
+
+.archive__item-excerpt {
+  margin-top: 0;
+  font-size: $type-size-6;
+
+  & + p {
+    text-indent: 0;
+  }
+}
+
+.archive__item-teaser {
+  border-radius: $border-radius;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+.archive__item:hover {
+  .archive__item-teaser {
+    box-shadow: 0 0 10px rgba(#000, 0.25);
+  }
+
+  .archive__item-title {
+    text-decoration: underline;
+  }
+}
+
+
+/*
+   List view
+   ========================================================================== */
+
+.list__item {
+  @media (min-width: $medium) {
+    padding-right: $right-sidebar-width-narrow;
+  }
+
+  @media (min-width: $large) {
+    padding-right: $right-sidebar-width;
+  }
+
+  @media (min-width: $x-large) {
+    padding-right: $right-sidebar-width-wide;
+  }
+
+  .page__meta {
+    margin: 0 0 4px;
+  }
+}
+
+
+/*
+   Grid view
+   ========================================================================== */
+
+.grid__item {
+  margin-bottom: 2em;
+
+  .page__meta {
+    margin: 0 0 4px;
+  }
+
+  .archive__item-title {
+    margin-top: 0.5em;
+    font-size: $type-size-5;
+  }
+
+  .archive__item-excerpt {
+    display: none;
+  }
+
+  @media (min-width: $small) {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+
+    .archive__item-teaser {
+      max-height: 200px;
+    }
+  }
+
+  @media (min-width: $medium) {
+    width: 25%;
+
+    .archive__item-teaser {
+      max-height: 120px;
+    }
+
+    .archive__item-excerpt {
+      display: block;
+      font-size: $type-size-6;
+    }
+  }
+}
+
+
+/*
+   Features
+   ========================================================================== */
+
+.feature__wrapper {
+  margin-bottom: 2em;
+  border-bottom: 1px solid $border-color;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.feature__item {
+  margin-bottom: 2em;
+  font-size: 1.25rem;
+
+  @media (min-width: $small) {
+    margin-bottom: 0;
+    width: calc(33.333% - 1em);
+
+    .feature__item-teaser {
+      max-height: 200px;
+      overflow: hidden;
+    }
+  }
+
+  &--left {
+    width: 100%;
+    font-size: 1.25rem;
+
+    .archive__item-teaser {
+      margin-bottom: 2em;
+    }
+
+    @media (min-width: $small) {
+      display: flex;
+      gap: 1em;
+
+      .archive__item-teaser {
+        width: 41.66%;
+        flex-shrink: 0;
+      }
+
+      .archive__item-body {
+        flex: 1;
+        padding-left: 4%;
+      }
+    }
+  }
+
+  &--right {
+    width: 100%;
+    font-size: 1.25rem;
+
+    .archive__item-teaser {
+      margin-bottom: 2em;
+    }
+
+    @media (min-width: $small) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 1em;
+      text-align: right;
+
+      .archive__item-teaser {
+        width: 41.66%;
+        flex-shrink: 0;
+      }
+
+      .archive__item-body {
+        flex: 1;
+        padding-right: 4%;
+      }
+    }
+  }
+
+  &--center {
+    width: 100%;
+    font-size: 1.25rem;
+
+    .archive__item-teaser {
+      margin-bottom: 2em;
+    }
+
+    @media (min-width: $small) {
+      text-align: center;
+
+      .archive__item-teaser {
+        margin: 0 auto;
+        width: 41.66%;
+      }
+
+      .archive__item-body {
+        margin: 0 auto;
+        width: 58.33%;
+      }
+    }
+  }
+}

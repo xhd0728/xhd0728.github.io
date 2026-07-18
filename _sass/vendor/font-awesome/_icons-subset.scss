@@ -1,0 +1,19 @@
+/* Font Awesome icon subset.
+   Only the glyphs actually rendered by this site are kept here, replacing
+   the full ~1250-rule _icons.scss to cut a large amount of unused CSS.
+   If you add a new `fa-*` icon in a template/content, add its rule below
+   (look up the unicode in _variables.scss as `$fa-var-<name>`).
+
+   Currently used:
+     fas: clock, envelope, eye, graduation-cap, map-marker
+     fab: github, linkedin, researchgate
+*/
+
+.#{$fa-css-prefix}-clock:before { content: fa-content($fa-var-clock); }
+.#{$fa-css-prefix}-envelope:before { content: fa-content($fa-var-envelope); }
+.#{$fa-css-prefix}-eye:before { content: fa-content($fa-var-eye); }
+.#{$fa-css-prefix}-github:before { content: fa-content($fa-var-github); }
+.#{$fa-css-prefix}-graduation-cap:before { content: fa-content($fa-var-graduation-cap); }
+.#{$fa-css-prefix}-linkedin:before { content: fa-content($fa-var-linkedin); }
+.#{$fa-css-prefix}-map-marker:before { content: fa-content($fa-var-map-marker); }
+.#{$fa-css-prefix}-researchgate:before { content: fa-content($fa-var-researchgate); }

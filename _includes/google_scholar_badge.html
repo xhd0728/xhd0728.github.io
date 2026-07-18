@@ -1,0 +1,4 @@
+{%- assign scholar_url = include.url | default: site.author.googlescholar -%}
+{%- assign scholar_citations = site.data.google_scholar_stats.citedby | default: include.fallback | default: "unavailable" -%}
+{%- assign scholar_badge_src = "/images/google-scholar-citations.svg" | relative_url -%}
+<span class="scholar-badge-inline">&nbsp;<a class="scholar-badge" href="{{ scholar_url }}" aria-label="Google Scholar citations: {{ scholar_citations }}"><img class="scholar-badge__img" src="{{ scholar_badge_src }}?v={{ scholar_citations }}" alt="Google Scholar citations: {{ scholar_citations }}" decoding="async"></a></span>

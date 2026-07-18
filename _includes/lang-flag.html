@@ -1,0 +1,9 @@
+{%- assign flag_key = include.key -%}
+{%- case flag_key -%}
+{%- when "en" -%}
+<img class="lang-menu__flag" src="{{ '/images/flags/gb.svg' | relative_url }}" alt="" width="22" height="15" loading="lazy" decoding="async" aria-hidden="true">
+{%- when "zh_cn" -%}
+<img class="lang-menu__flag" src="{{ '/images/flags/cn.svg' | relative_url }}" alt="" width="22" height="15" loading="lazy" decoding="async" aria-hidden="true">
+{%- else -%}
+<span class="lang-menu__flag-text" aria-hidden="true">{{ include.fallback }}</span>
+{%- endcase -%}

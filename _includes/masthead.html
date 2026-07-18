@@ -1,0 +1,98 @@
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      {% assign languages = site.data.languages.main %}
+      {% assign current_lang_key = page.lang_key | default: "en" %}
+      {% assign current_language = languages | where: "key", current_lang_key | first %}
+      {% if current_language == nil %}
+      {% assign current_language = languages | first %}
+      {% endif %}
+      {% assign current_language_button_label = current_language.button_label | default: current_language.label %}
+      {% assign nav_locale = page.nav_locale | default: current_language.nav_locale | default: "en" %}
+      {% assign home_label = current_language.home_label | default: "Homepage" %}
+      {% assign home_url = current_language.path | append: "#about-me" %}
+      {% assign nav_data_key = "navigation" %}
+      {% if nav_locale == "zh_cn" %}
+        {% assign nav_data_key = "navigation_zh" %}
+      {% elsif nav_locale != "en" %}
+        {% assign nav_data_key = "navigation_" | append: nav_locale %}
+      {% endif %}
+      {% assign nav_data = site.data[nav_data_key] %}
+      {% assign nav_links = nav_data.main | default: site.data.navigation.main %}
+      <nav id="site-nav" class="greedy-nav">
+        <button class="greedy-nav__toggle" type="button" aria-label="Toggle menu">
+          <div class="navicon"></div>
+        </button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a
+              href="{{ home_url }}" target="_self">{{ home_label }}</a></li>
+          {% for link in nav_links %}
+          {% assign is_external = false %}
+          {% if link.url contains 'https://' or link.url contains 'http://' %}
+            {% assign is_external = true %}
+          {% endif %}
+          {% assign localized_link_url = link.url %}
+          {% if is_external == false and link.url contains '#' %}
+            {% assign anchor_id = link.url | split: '#' | last %}
+            {% assign localized_link_url = current_language.path | append: '#' | append: anchor_id %}
+          {% endif %}
+          <li class="masthead__menu-item">
+            <a
+              href="{% if is_external %}{{ link.url }}{% else %}{{ domain }}{{ localized_link_url }}{% endif %}"
+              {% if is_external %}target="_blank" rel="noopener noreferrer"{% else %}target="_self"{% endif %}
+            >{{ link.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="masthead__lang-menu" aria-label="Language menu" data-lang-menu>
+          <button
+            class="lang-menu__trigger"
+            type="button"
+            aria-label="Language selector"
+            aria-expanded="false"
+            aria-controls="lang-menu-panel"
+          >
+            <span class="lang-menu__icon" aria-hidden="true">{% include lang-flag.html key=current_lang_key fallback=current_language_button_label %}</span>
+            <span
+              class="lang-menu__current"
+              lang="{{ current_language.lang }}"
+            >{{ current_language.label }}</span>
+            <span class="lang-menu__caret" aria-hidden="true"></span>
+          </button>
+          <div
+            class="lang-menu__panel"
+            id="lang-menu-panel"
+            aria-label="Language options"
+            hidden
+          >
+            {% for language in languages %}
+              {% assign language_button_label = language.button_label | default: language.label %}
+              {% if language.key == current_lang_key %}
+              <span
+                class="lang-menu__option is-current"
+                lang="{{ language.lang }}"
+                aria-current="page"
+              >
+                <span class="lang-menu__option-chip">{% include lang-flag.html key=language.key fallback=language_button_label %}</span>
+                <span class="lang-menu__option-label">{{ language.label }}</span>
+                <span class="lang-menu__option-check" aria-hidden="true"></span>
+              </span>
+              {% else %}
+              <a
+                class="lang-menu__option"
+                href="{{ language.path | relative_url }}"
+                lang="{{ language.lang }}"
+                target="_self"
+              >
+                <span class="lang-menu__option-chip">{% include lang-flag.html key=language.key fallback=language_button_label %}</span>
+                <span class="lang-menu__option-label">{{ language.label }}</span>
+              </a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,149 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Site Settings
+title: "Haidong Xin"
+description: "Algorithm Engineer at OpenBMB and TsinghuaNLP. Researching in NLP, IR, RAG, RecSys, and Multi-agent Systems."
+url: "https://xinhaidong.top"
+baseurl: ""
+lang: "en"
+locale: "en_US"
+image: "/images/android-chrome-512x512.webp"
+robots: "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+repository: "xhd0728/xhd0728.github.io"
+social:
+  name: "Haidong Xin"
+  links:
+  - "https://scholar.google.com/citations?user=8VCnj3sAAAAJ"
+  - "https://github.com/xhd0728"
+  - "https://www.linkedin.com/in/haidongxin"
+  - "https://dblp.org/pid/372/7441.html"
+  - "https://orcid.org/0009-0003-9484-3251"
+  - "https://www.researchgate.net/profile/Haidong-Xin"
+
+# google analytics
+google_analytics_id: "G-1T3J0B0NS3"
+baidu_analytics_id: "2782274d65a78709efb9d2b2aad53ff8"
+
+# SEO Related
+google_site_verification: # get google_site_verification from https://search.google.com/search-console/about
+bing_site_verification: # get bing_site_verification from https://www.bing.com/webmasters/about
+baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
+
+# Site Author
+author:
+  name: "Haidong Xin"
+  given_name: "Haidong"
+  family_name: "Xin"
+  avatar: "/images/android-chrome-512x512.webp"
+  bio: "辛海东"
+  job_title: "Algorithm Engineer"
+  affiliations:
+  - name: "ModelBest"
+    url: "https://github.com/OpenBMB"
+  - name: "TsinghuaNLP"
+    url: "https://nlp.csai.tsinghua.edu.cn/"
+  location: "Beijing, China"
+  googlescholar: "https://scholar.google.com/citations?user=8VCnj3sAAAAJ"
+  email: "hdxin2002@gmail.com"
+  researchgate: "https://www.researchgate.net/profile/Haidong-Xin"
+  github: "xhd0728"
+  linkedin: "haidongxin"
+  dblp: "https://dblp.org/pid/372/7441.html"
+  orcid: "https://orcid.org/0009-0003-9484-3251"
+
+# Reading Files
+include:
+- _pages
+exclude:
+- citation
+- _pages/includes
+- _pages/includes_zh
+- "*.sublime-project"
+- "*.sublime-workspace"
+- .github
+- Gemfile
+- Gemfile.lock
+- LICENSE
+- README.md
+- node_modules
+- vendor
+keep_files:
+- .git
+- .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Defaults
+defaults:
+# _pages
+- scope:
+    path: ""
+    type: pages
+  values:
+    layout: default
+    author_profile: true
+- scope:
+    path: "_pages/includes"
+    type: pages
+  values:
+    published: false
+    sitemap: false
+    robots: "noindex, nofollow"
+- scope:
+    path: "_pages/includes_zh"
+    type: pages
+  values:
+    published: false
+    sitemap: false
+    robots: "noindex, nofollow"
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  load_paths:
+  - _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  # The minimal-mistakes theme still uses @import (Dart Sass keeps it through a
+  # long transition). Silence only that deprecation; all other warnings stay on.
+  silence_deprecations:
+  - import
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Plugins
+plugins:
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-redirect-from
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

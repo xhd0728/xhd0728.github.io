@@ -1,0 +1,85 @@
+name: Publish site for Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - Update Google Scholar stats
+    types:
+      - completed
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cloudflare-pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    env:
+      JEKYLL_ENV: production
+      DEPLOY_BRANCH: cloudflare-pages
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+          bundler-cache: true
+
+      - name: Fetch latest Google Scholar stats and badge
+        env:
+          STATS_URL: https://raw.githubusercontent.com/${{ github.repository }}/google-scholar-stats/gs_data.json
+        run: |
+          mkdir -p _data
+          curl --fail --silent --show-error --location \
+            --retry 3 --retry-all-errors \
+            "${STATS_URL}?run=${GITHUB_RUN_ID}" \
+            --output _data/google_scholar_stats.json
+
+          CITATIONS="$(ruby -rjson -e '
+            stats = JSON.parse(File.read(ARGV.fetch(0)))
+            citedby = stats["citedby"]
+            abort "Invalid Google Scholar citation count" unless citedby.is_a?(Integer) && citedby >= 0
+            print citedby
+          ' _data/google_scholar_stats.json)"
+
+          echo "Building site with ${CITATIONS} Google Scholar citations."
+          curl --fail --silent --show-error --location \
+            --retry 3 --retry-all-errors \
+            "https://img.shields.io/badge/citations-${CITATIONS}-9cf?logo=Google%20Scholar&labelColor=f6f6f6" \
+            --output images/google-scholar-citations.svg
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
+      - name: Publish built site to deploy branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          rm -rf /tmp/cloudflare-pages
+          mkdir -p /tmp/cloudflare-pages
+          rsync -a --delete _site/ /tmp/cloudflare-pages/
+          touch /tmp/cloudflare-pages/.nojekyll
+
+          cd /tmp/cloudflare-pages
+          git init -b "${DEPLOY_BRANCH}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          if git diff --cached --quiet; then
+            echo "No generated site changes to publish."
+            exit 0
+          fi
+          git commit -m "Deploy ${GITHUB_SHA}"
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push --force origin "HEAD:${DEPLOY_BRANCH}"

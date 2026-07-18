@@ -1,0 +1,61 @@
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/apple-touch-icon.webp' | relative_url }}">
+<link rel="icon" type="image/webp" sizes="32x32" href="{{ '/images/favicon-32x32.webp' | relative_url }}">
+<link rel="icon" type="image/webp" sizes="16x16" href="{{ '/images/favicon-16x16.webp' | relative_url }}">
+<link rel="icon" href="{{ '/images/favicon.ico' | relative_url }}" sizes="any">
+<link rel="manifest" href="{{ '/images/site.webmanifest' | relative_url }}">
+
+<meta name="application-name" content="{{ site.author.name | default: site.title }}">
+<meta name="apple-mobile-web-app-title" content="{{ site.author.name | default: site.title }}">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="{{ '/images/android-chrome-192x192.webp?v=M44lzPylqQ' | relative_url }}">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Load Inter without blocking render; system fonts show first, Inter swaps in. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="{{ '/assets/css/academicons.css' | relative_url }}?v={{ include.asset_version }}"/>
+
+<script>
+  (function () {
+    function containsMathSyntax(text) {
+      if (!text) return false;
+      return /\\\(|\\\[|\\begin\{|\\frac|\\sum|\\int|\$\$[^$]+\$\$|\$[^$\n]+\$/.test(text);
+    }
+
+    function loadMathJax() {
+      if (document.getElementById('MathJax-script')) return;
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true,
+          tags: 'all'
+        },
+        options: {
+          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+        }
+      };
+
+      var script = document.createElement('script');
+      script.id = 'MathJax-script';
+      script.async = true;
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      document.head.appendChild(script);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var content = document.querySelector('.page__content');
+      if (!content || !containsMathSyntax(content.textContent || '')) return;
+
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadMathJax, { timeout: 2000 });
+      } else {
+        window.setTimeout(loadMathJax, 400);
+      }
+    });
+  })();
+</script>
+
+<!-- end custom head snippets -->
