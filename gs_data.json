@@ -1,7 +1,7 @@
 {
   "citedby": 71,
   "citedby5y": 71,
-  "fetched_at": "2026-07-19T04:39:08Z",
+  "fetched_at": "2026-07-20T04:54:50Z",
   "hindex": 5,
   "hindex5y": 5,
   "i10index": 2,
@@ -21,11 +21,6 @@
     "KlAtU1dfN6UC": {
       "num_citations": 3,
       "title": "LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation",
-      "year": 2026
-    },
-    "MXK_kJrjxJIC": {
-      "num_citations": 0,
-      "title": "CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis",
       "year": 2026
     },
     "UebtZRa9Y70C": {
@@ -56,6 +51,11 @@
     "aqlVkmm33-oC": {
       "num_citations": 5,
       "title": "MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization",
+      "year": 2026
+    },
+    "mVmsd5A6BfQC": {
+      "num_citations": 0,
+      "title": "CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis",
       "year": 2026
     },
     "zYLM7Y9cAGgC": {
