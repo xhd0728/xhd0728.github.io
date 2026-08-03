@@ -1,7 +1,7 @@
 {
-  "citedby": 73,
-  "citedby5y": 73,
-  "fetched_at": "2026-08-02T04:42:18Z",
+  "citedby": 75,
+  "citedby5y": 75,
+  "fetched_at": "2026-08-03T04:50:39Z",
   "hindex": 5,
   "hindex5y": 5,
   "i10index": 2,
@@ -18,14 +18,14 @@
       "title": "Adapting Language Models to Text Matching Based Recommendation Systems",
       "year": 2025
     },
+    "9ZlFYXVOiuMC": {
+      "num_citations": 3,
+      "title": "SEEK: Steering LLM Reasoning for RAG via Internal Reasoning Sketches",
+      "year": 2026
+    },
     "KlAtU1dfN6UC": {
       "num_citations": 3,
       "title": "LISRec: Modeling User Preferences with Learned Item Shortcuts for Sequential Recommendation",
-      "year": 2026
-    },
-    "UebtZRa9Y70C": {
-      "num_citations": 2,
-      "title": "SEEK: Steering LLM Reasoning for RAG via Internal Reasoning Sketches",
       "year": 2026
     },
     "W7OEmFMy1HYC": {
@@ -39,7 +39,7 @@
       "year": 2025
     },
     "Wp0gIr-vW9MC": {
-      "num_citations": 6,
+      "num_citations": 7,
       "title": "Knowledge intensive agents",
       "year": 2026
     },
