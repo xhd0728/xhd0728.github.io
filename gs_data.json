@@ -1,7 +1,7 @@
 {
-  "citedby": 75,
-  "citedby5y": 75,
-  "fetched_at": "2026-08-07T04:03:55Z",
+  "citedby": 77,
+  "citedby5y": 77,
+  "fetched_at": "2026-08-08T03:01:07Z",
   "hindex": 5,
   "hindex5y": 5,
   "i10index": 2,
@@ -29,12 +29,12 @@
       "year": 2026
     },
     "W7OEmFMy1HYC": {
-      "num_citations": 35,
+      "num_citations": 36,
       "title": "MMAD: Multi-modal Movie Audio Description",
       "year": 2024
     },
     "WF5omc3nYNoC": {
-      "num_citations": 14,
+      "num_citations": 15,
       "title": "LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts",
       "year": 2025
     },
