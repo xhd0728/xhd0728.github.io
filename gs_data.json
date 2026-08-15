@@ -1,7 +1,7 @@
 {
-  "citedby": 77,
-  "citedby5y": 77,
-  "fetched_at": "2026-08-14T03:30:48Z",
+  "citedby": 78,
+  "citedby5y": 78,
+  "fetched_at": "2026-08-15T02:27:11Z",
   "hindex": 5,
   "hindex5y": 5,
   "i10index": 2,
@@ -29,7 +29,7 @@
       "year": 2026
     },
     "W7OEmFMy1HYC": {
-      "num_citations": 36,
+      "num_citations": 37,
       "title": "MMAD: Multi-modal Movie Audio Description",
       "year": 2024
     },
