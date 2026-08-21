@@ -1,7 +1,7 @@
 {
-  "citedby": 78,
-  "citedby5y": 78,
-  "fetched_at": "2026-08-19T02:32:32Z",
+  "citedby": 79,
+  "citedby5y": 79,
+  "fetched_at": "2026-08-21T02:37:08Z",
   "hindex": 5,
   "hindex5y": 5,
   "i10index": 2,
@@ -49,7 +49,7 @@
       "year": 2026
     },
     "aqlVkmm33-oC": {
-      "num_citations": 5,
+      "num_citations": 6,
       "title": "MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization",
       "year": 2026
     },
