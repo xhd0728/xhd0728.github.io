@@ -1,7 +1,7 @@
 {
-  "citedby": 79,
-  "citedby5y": 79,
-  "fetched_at": "2026-08-21T02:37:08Z",
+  "citedby": 80,
+  "citedby5y": 80,
+  "fetched_at": "2026-08-22T02:28:38Z",
   "hindex": 5,
   "hindex5y": 5,
   "i10index": 2,
@@ -9,7 +9,7 @@
   "profile_url": "https://scholar.google.com/citations?user=8VCnj3sAAAAJ&hl=en",
   "publications": {
     "4DMP91E08xMC": {
-      "num_citations": 0,
+      "num_citations": 1,
       "title": "Memory Shot for Long-Term Dialogue",
       "year": 2026
     },
