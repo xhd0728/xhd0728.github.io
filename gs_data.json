@@ -1,7 +1,7 @@
 {
-  "citedby": 80,
-  "citedby5y": 80,
-  "fetched_at": "2026-08-28T12:57:20Z",
+  "citedby": 81,
+  "citedby5y": 81,
+  "fetched_at": "2026-08-29T07:54:17Z",
   "hindex": 5,
   "hindex5y": 5,
   "i10index": 2,
@@ -44,7 +44,7 @@
       "year": 2026
     },
     "_kc_bZDykSQC": {
-      "num_citations": 6,
+      "num_citations": 7,
       "title": "UltraRAG 3.0: No More \"Blind-Box\" Development-Every Line of Reasoning Made Explicit",
       "year": 2026
     },
