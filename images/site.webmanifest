@@ -1,0 +1,24 @@
+{
+    "name": "Haidong Xin",
+    "short_name": "Haidong Xin",
+    "description": "Personal homepage of Haidong Xin, working on NLP, IR, RAG, recommender systems, and multi-agent systems.",
+    "lang": "en",
+    "id": "/",
+    "start_url": "/",
+    "scope": "/",
+    "icons": [
+       {
+          "src": "/images/android-chrome-192x192.webp",
+          "sizes": "192x192",
+          "type": "image/webp"
+       },
+       {
+        "src": "/images/android-chrome-512x512.webp",
+        "sizes": "512x512",
+        "type": "image/webp"
+        }
+    ],
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "display": "standalone"
+}
