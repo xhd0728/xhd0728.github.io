@@ -11,14 +11,16 @@ layout: compress
     {% include head/custom.html asset_version=asset_version %}
   </head>
 
-  <body{% if page.text_direction == "rtl" %} class="page--rtl"{% endif %}>
+  <body id="top"{% if page.text_direction == "rtl" %} class="page--rtl"{% endif %}>
+
+    <a class="skip-link" tabindex="0" href="{{ page.url | relative_url }}#main-content">{% if page.lang_key == 'zh_cn' %}跳至主要内容{% else %}Skip to main content{% endif %}</a>
 
     {% include masthead.html %}
 
-    <div id="main" role="main">
+    <main id="main"{% unless page.author_profile or layout.author_profile or page.sidebar %} class="main--full"{% endunless %}>
       {% include sidebar.html %}
     
-      <article class="page" itemscope itemtype="https://schema.org/{{ microdata_type }}">
+      <article id="main-content" class="page" tabindex="-1" itemscope itemtype="https://schema.org/{{ microdata_type }}">
         {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
         {% if page.description %}<meta itemprop="description" content="{{ page.description | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
         <div class="page__inner-wrap">
@@ -27,7 +29,7 @@ layout: compress
           </section>
         </div>
       </article>
-    </div>
+    </main>
 
     {% include scripts.html asset_version=asset_version %}
 

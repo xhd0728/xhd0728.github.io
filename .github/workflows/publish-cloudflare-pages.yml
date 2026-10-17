@@ -62,6 +62,9 @@ jobs:
       - name: Build Jekyll site
         run: bundle exec jekyll build
 
+      - name: Validate generated site
+        run: python3 scripts/check_site.py
+
       - name: Publish built site to deploy branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

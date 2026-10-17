@@ -1,6 +1,6 @@
-<span class='anchor' id='awards'></span>
+<div class='anchor' id='awards'></div>
 
-# 🏆 Awards
+## 🏆 Awards
 
 - *2025.11* 🥇 First-Class Excellent Student Scholarship.
 - *2024.11* 🥇 First-Class Excellent Student Scholarship.

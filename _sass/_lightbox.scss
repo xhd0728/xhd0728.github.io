@@ -1,0 +1,93 @@
+/* Native dialog enhancement; figure links remain usable without JavaScript. */
+@keyframes lightbox-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.lightbox-dialog {
+  margin: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  max-width: 92vw;
+  max-height: calc(100vh - 96px);
+  max-height: calc(100dvh - 96px);
+  overflow: visible;
+  overscroll-behavior: contain;
+}
+.lightbox-dialog[open] {
+  animation: lightbox-in 0.18s ease both;
+}
+.lightbox-dialog.is-closing {
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+.lightbox-dialog::backdrop {
+  background: rgba(12, 20, 28, 0.94);
+}
+.lightbox-img {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+  max-height: calc(100vh - 160px);
+  max-height: calc(100dvh - 160px);
+  object-fit: contain;
+  border-radius: 6px;
+}
+.lightbox-close {
+  position: fixed;
+  top: max(12px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  background: #253342;
+  color: #fff;
+  font: 28px/1 $sans-serif;
+  cursor: pointer;
+}
+.lightbox-caption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 20px;
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.lightbox-caption span {
+  flex: 1 1 200px;
+}
+.lightbox-caption a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.lightbox-dialog :focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+.lightbox-status {
+  padding: 12px;
+  background: #253342;
+  border-radius: 6px;
+}
+.lightbox-open {
+  overflow: hidden;
+  overscroll-behavior: none;
+}

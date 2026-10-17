@@ -1,6 +1,6 @@
-<span class='anchor' id='awards'></span>
+<div class='anchor' id='awards'></div>
 
-# 🏆 奖项荣誉
+## 🏆 奖项荣誉
 
 - *2025.11* 🥇 研究生优秀学生一等奖学金
 - *2024.11* 🥇 研究生优秀学生一等奖学金

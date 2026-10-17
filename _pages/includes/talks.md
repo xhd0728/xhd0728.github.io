@@ -1,7 +1,8 @@
-<span class='anchor' id='media-mentions'></span>
+<div class='anchor' id='media-mentions'></div>
 
-# 💬 Media Mentions
+## 💬 Media Mentions
 
+- *2026.10*, [【TsinghuaNLP】成果 \| PilotDeck 2.0 开源：一键上手，长难任务高效稳定交付](https://mp.weixin.qq.com/s/ab7lA2nP55XRlCvVrB_C5g)
 - *2026.07*, [【量子位】StaffDeck 正式开源：面向企业的数字员工构建与管理平台](https://mp.weixin.qq.com/s/FmU7STuJLbDdLr1SwRe2yw)
 - *2026.05*, [【TsinghuaNLP】成果 \| PilotDeck：一人，一桌面，有序管理一支 AI 智能体团队](https://mp.weixin.qq.com/s/2CmhobtUtN9H8M_ce3YCug)
 - *2026.04*, [【TsinghuaNLP】成果 \| MetaMem：赋予大模型自我进化的“元记忆”](https://mp.weixin.qq.com/s/y_BuAR0pqRjsNCW5j0pZZQ)

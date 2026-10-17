@@ -1,23 +1,43 @@
 {% if page.analytics != false %}
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+(function () {
+  // Local previews must not send visits to the production analytics accounts.
+  if (window.location.hostname !== {{ site.url | remove: 'https://' | remove: 'http://' | split: '/' | first | jsonify }}) return;
 
-  gtag('config', "{{ site.google_analytics_id }}");
+  function addScript(src) {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = src;
+    document.head.appendChild(script);
+  }
+
+  function loadAnalytics() {
+    {% if site.google_analytics_id %}
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', {{ site.google_analytics_id | jsonify }});
+    addScript('https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}');
+    {% endif %}
+    {% if site.baidu_analytics_id %}
+    window._hmt = window._hmt || [];
+    addScript('https://hm.baidu.com/hm.js?{{ site.baidu_analytics_id }}');
+    {% endif %}
+    if (document.getElementById('busuanzi_value_site_pv')) {
+      addScript('https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js');
+    }
+  }
+
+  function scheduleAnalytics() {
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadAnalytics, { timeout: 3000 });
+    } else {
+      window.setTimeout(loadAnalytics, 1500);
+    }
+  }
+
+  if (document.readyState === 'complete') scheduleAnalytics();
+  else window.addEventListener('load', scheduleAnalytics, { once: true });
+})();
 </script>
-
-<script>
-  var _hmt = _hmt || [];
-  (function () {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?{{ site.baidu_analytics_id }}";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-</script>
-
 {% endif %}

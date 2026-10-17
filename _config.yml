@@ -12,7 +12,9 @@ url: "https://xinhaidong.top"
 baseurl: ""
 lang: "en"
 locale: "en_US"
-image: "/images/android-chrome-512x512.webp"
+image: "/images/profile-social.jpg?v=20261017"
+image_type: "image/jpeg"
+avatar_version: "20261017"
 robots: "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
 repository: "xhd0728/xhd0728.github.io"
 social:
@@ -39,7 +41,7 @@ author:
   name: "Haidong Xin"
   given_name: "Haidong"
   family_name: "Xin"
-  avatar: "/images/android-chrome-512x512.webp"
+  avatar: "/images/android-chrome-512x512.webp?v=20261017"
   bio: "辛海东"
   job_title: "Algorithm Engineer"
   affiliations:
@@ -59,8 +61,10 @@ author:
 # Reading Files
 include:
 - _pages
+- _headers
 exclude:
 - citation
+- scripts
 - _pages/includes
 - _pages/includes_zh
 - "*.sublime-project"

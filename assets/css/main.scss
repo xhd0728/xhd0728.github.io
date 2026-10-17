@@ -12,6 +12,7 @@
 @import "variables";
 @import "mixins";
 @import "fonts";
+@import "academicons";
 
 @import "reset";
 @import "base";
@@ -20,16 +21,11 @@
 @import "animations";
 @import "tables";
 @import "buttons";
-@import "notices";
 @import "masthead";
 @import "navigation";
-@import "footer";
-@import "syntax";
 
-@import "forms";
 
 @import "page";
-@import "archive";
 @import "sidebar";
 
 @import "vendor/font-awesome/fontawesome";
@@ -90,7 +86,7 @@ html {
         max-width: 100%;
         order: 1;
 
-        h1 {
+        h3 {
             font-size: 1.12em;
             font-weight: 700;
             line-height: 1.35;
@@ -125,14 +121,9 @@ html {
     }
 }
 
-$scroll_offset: 2em;
-h1:before, .anchor:before {
-    content: '';
+.anchor {
     display: block;
-    position: relative;
-    width: 0;
-    height: $scroll_offset;
-    margin-top: -$scroll_offset;
+    scroll-margin-top: calc(var(--masthead-height, 68px) + 16px);
 }
 
 .badge {
@@ -183,4 +174,5 @@ iframe[src*="vimeo"] {
 
 // Custom overrides (migrated from the former inline <style> in
 // _includes/head/custom.html). Imported last so these rules win.
+@import "lightbox";
 @import "custom";

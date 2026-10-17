@@ -1,0 +1,33 @@
+/* Academicons 1.8.0 by James Walsh; Fonts: SIL OFL 1.1; CSS: MIT.
+ * The full source and character map remain in assets/css/academicons.css.
+ */
+@font-face {
+  font-family: "Academicons";
+  src: url("../fonts/site-academicons.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.ai {
+  display: inline-block;
+  font: normal normal normal 14px/1 "Academicons";
+  font-size: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ai-dblp::before {
+  content: "\e818";
+}
+.ai-impactstory::before {
+  content: "\e832";
+}
+.ai-orcid-square::before {
+  content: "\e841";
+}
+.ai-pubmed-square::before {
+  content: "\e853";
+}
+.ai-fw {
+  width: 1.28571429em;
+  text-align: center;
+}

@@ -34,6 +34,9 @@ jobs:
           JEKYLL_ENV: production
         run: bundle exec jekyll build
 
+      - name: Validate generated pages and local links
+        run: python3 scripts/check_site.py
+
   citation:
     name: Test citation updater
     runs-on: ubuntu-latest

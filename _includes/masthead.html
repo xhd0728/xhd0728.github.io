@@ -19,8 +19,8 @@
       {% endif %}
       {% assign nav_data = site.data[nav_data_key] %}
       {% assign nav_links = nav_data.main | default: site.data.navigation.main %}
-      <nav id="site-nav" class="greedy-nav">
-        <button class="greedy-nav__toggle" type="button" aria-label="Toggle menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="{% if current_lang_key == 'zh_cn' %}网站导航{% else %}Site navigation{% endif %}">
+        <button class="greedy-nav__toggle" type="button" aria-label="{% if current_lang_key == 'zh_cn' %}展开导航菜单{% else %}Toggle menu{% endif %}" aria-expanded="false" aria-controls="nav-overflow">
           <div class="navicon"></div>
         </button>
         <ul class="visible-links">
@@ -44,11 +44,11 @@
           </li>
           {% endfor %}
         </ul>
-        <div class="masthead__lang-menu" aria-label="Language menu" data-lang-menu>
+        <div class="masthead__lang-menu" role="group" aria-label="{% if current_lang_key == 'zh_cn' %}语言选择{% else %}Language selector{% endif %}" data-lang-menu>
           <button
             class="lang-menu__trigger"
             type="button"
-            aria-label="Language selector"
+            aria-label="{{ current_language.label }} — {% if current_lang_key == 'zh_cn' %}选择语言{% else %}Select language{% endif %}"
             aria-expanded="false"
             aria-controls="lang-menu-panel"
           >
@@ -62,7 +62,8 @@
           <div
             class="lang-menu__panel"
             id="lang-menu-panel"
-            aria-label="Language options"
+            role="group"
+            aria-label="{% if current_lang_key == 'zh_cn' %}可选语言{% else %}Available languages{% endif %}"
             hidden
           >
             {% for language in languages %}
@@ -82,6 +83,7 @@
                 class="lang-menu__option"
                 href="{{ language.path | relative_url }}"
                 lang="{{ language.lang }}"
+                hreflang="{{ language.hreflang | default: language.lang }}"
                 target="_self"
               >
                 <span class="lang-menu__option-chip">{% include lang-flag.html key=language.key fallback=language_button_label %}</span>
@@ -91,7 +93,7 @@
             {% endfor %}
           </div>
         </div>
-        <ul class="hidden-links hidden"></ul>
+        <ul class="hidden-links hidden" id="nav-overflow"></ul>
       </nav>
     </div>
   </div>

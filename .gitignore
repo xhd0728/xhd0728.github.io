@@ -8,4 +8,5 @@ _site/
 .jekyll-metadata
 .sass-cache/
 vendor/bundle/
+node_modules/
 _*_check/

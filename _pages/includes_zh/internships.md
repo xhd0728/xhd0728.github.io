@@ -1,6 +1,6 @@
-<span class='anchor' id='internships'></span>
+<div class='anchor' id='internships'></div>
 
-# 💻 科研与实习经历
+## 💻 科研与实习经历
 
 - *2024.06 - 至今*，[面壁智能](https://www.modelbest.cn/)，北京。
 - *2024.04 - 至今*，[启元实验室](https://qiyuanzp.zhiye.com/)，北京。

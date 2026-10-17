@@ -1,6 +1,6 @@
-<span class='anchor' id='internships'></span>
+<div class='anchor' id='internships'></div>
 
-# 💻 Research and Internships
+## 💻 Research and Internships
 
 - *2024.06 - present*, [ModelBest](https://www.modelbest.cn/), Beijing.
 - *2024.04 - present*, [Qiyuan Lab](https://qiyuanzp.zhiye.com/), Beijing.

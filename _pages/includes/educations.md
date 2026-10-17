@@ -1,6 +1,6 @@
-<span class='anchor' id='educations'></span>
+<div class='anchor' id='educations'></div>
 
-# 📖 Education
+## 📖 Education
 
 - *2024.09 - present*, M.S. in Computer Science, [School of Computer Science and Engineering](http://www.cse.neu.edu.cn/), [Northeastern University](https://neu.edu.cn/)
 - *2020.09 - 2024.06*, B.S. in Computer Science, [College of Computer Science and Technology](http://cstc.hrbeu.edu.cn/), [Harbin Engineering University](http://www.hrbeu.edu.cn/)

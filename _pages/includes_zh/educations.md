@@ -1,6 +1,6 @@
-<span class='anchor' id='educations'></span>
+<div class='anchor' id='educations'></div>
 
-# 📖 教育经历
+## 📖 教育经历
 
 - *2024.09 - 至今*，计算机科学硕士，[东北大学](https://neu.edu.cn/) [计算机科学与工程学院](http://www.cse.neu.edu.cn/)。
 - *2020.09 - 2024.06*，计算机科学与技术学士，[哈尔滨工程大学](http://www.hrbeu.edu.cn/) [计算机科学与技术学院](http://cstc.hrbeu.edu.cn/)。

@@ -7,15 +7,15 @@
     "start_url": "/",
     "scope": "/",
     "icons": [
-       {
-          "src": "/images/android-chrome-192x192.webp",
-          "sizes": "192x192",
-          "type": "image/webp"
-       },
-       {
-        "src": "/images/android-chrome-512x512.webp",
-        "sizes": "512x512",
-        "type": "image/webp"
+        {
+            "src": "/images/android-chrome-192x192.webp?v=20261017",
+            "sizes": "192x192",
+            "type": "image/webp"
+        },
+        {
+            "src": "/images/android-chrome-512x512.webp?v=20261017",
+            "sizes": "512x512",
+            "type": "image/webp"
         }
     ],
     "theme_color": "#FFFFFF",

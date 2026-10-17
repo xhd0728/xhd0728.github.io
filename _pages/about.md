@@ -4,7 +4,8 @@ title: "Haidong Xin"
 seo_title: "Haidong Xin | NLP, IR, RAG, Recommender Systems, and Multi-Agent Systems"
 description: "Haidong Xin is an algorithm engineer at OpenBMB and TsinghuaNLP, working on NLP, information retrieval, RAG, recommender systems, and multi-agent systems."
 sidebar_description: "Algorithm Engineer at ModelBest & TsinghuaNLP"
-image: "/images/android-chrome-512x512.webp"
+image: "/images/profile-social.jpg?v=20261017"
+last_modified_at: 2026-10-17
 schema_type: "ProfilePage"
 lang: "en"
 locale: "en_US"
@@ -17,7 +18,7 @@ redirect_from:
   - /about.html
 ---
 
-<span class='anchor' id='about-me'></span>
+<div class='anchor' id='about-me'></div>
 
 {% include_relative includes/intro.md %}
 
