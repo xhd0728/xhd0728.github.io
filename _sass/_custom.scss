@@ -656,26 +656,66 @@ body {
 
 /* Local badges keep publication links readable when external APIs are unavailable. */
 .page__content a.resource-badge {
+  --badge-fg: #315879;
+  --badge-bg: #f0f5fb;
+  --badge-label-bg: #e3edf7;
+  --badge-border: #ccdceb;
   display: inline-flex;
+  align-items: center;
+  min-height: 28px;
   max-width: 100%;
-  margin: 0.15em 0.15em 0.15em 0;
-  overflow: hidden;
-  border-radius: 3px;
-  color: #fff;
-  font: 11px/20px $sans-serif;
+  margin: 1px 4px 1px 0;
+  color: var(--badge-fg);
+  font: 12px/20px $sans-serif;
   text-decoration: none;
   vertical-align: middle;
+  white-space: nowrap;
 }
 .resource-badge span {
-  padding: 0 6px;
-  background: var(--c-primary-dark);
+  padding: 0 7px;
+  border: 1px solid var(--badge-border);
+  background: var(--badge-bg);
+  border-radius: 0 5px 5px 0;
 }
 .resource-badge span:first-child {
-  background: #425261;
+  border-right: 0;
+  border-radius: 5px 0 0 5px;
+  background: var(--badge-label-bg);
+  font-weight: 600;
+}
+.page__content a.resource-badge[href*="arxiv.org"] {
+  --badge-fg: #864651;
+  --badge-bg: #fbf2f3;
+  --badge-label-bg: #f6e6e9;
+  --badge-border: #e8cdd3;
+}
+.page__content a.resource-badge[href*="github.com"] {
+  --badge-fg: #465568;
+  --badge-bg: #f3f5f8;
+  --badge-label-bg: #e7ecf2;
+  --badge-border: #d4dce6;
+}
+.page__content a.resource-badge[href*="doi.org"],
+.page__content a.resource-badge[href*="aclanthology.org"] {
+  --badge-fg: #32645c;
+  --badge-bg: #f0f7f4;
+  --badge-label-bg: #e1eee8;
+  --badge-border: #c9dfd5;
+}
+.page__content a.resource-badge[href*="huggingface.co"] {
+  --badge-fg: #775e29;
+  --badge-bg: #fcf8ee;
+  --badge-label-bg: #f4ecd7;
+  --badge-border: #e5d8b7;
 }
 .page__content a.resource-badge:hover {
-  color: #fff;
-  filter: brightness(1.12);
+  color: var(--badge-fg);
+  filter: brightness(0.96);
+}
+.page__content a.resource-badge:focus-visible {
+  outline: 2px solid var(--badge-fg);
+  outline-offset: 2px;
+  border-radius: 5px;
 }
 #busuanzi_container_site_pv[style*="none"] + .info-sep {
   display: none;
@@ -744,10 +784,13 @@ body {
   max-width: 400px;
 }
 .paper-box .badge {
-  background: var(--c-primary-dark) !important;
-  box-shadow: 0 2px 6px rgba(58, 90, 115, 0.28);
-  font-size: 0.7em;
-  padding: 0.3em 0.8em;
+  background: #edf3f9;
+  border: 1px solid #cbd8e6;
+  color: #315879;
+  box-shadow: none;
+  font-size: 11px;
+  line-height: 18px;
+  padding: 1px 8px;
   border-radius: var(--radius-sm) 0 var(--radius-sm) 0;
   letter-spacing: 0.06em;
   z-index: 2;
@@ -985,10 +1028,9 @@ body { overflow-wrap: break-word; }
 .paper-image-link img { display: block; }
 .paper-box .badge { pointer-events: none; }
 .page__content a.paper-image-link:focus-visible { outline: 3px solid var(--c-primary); outline-offset: 4px; }
-.page__content a.resource-badge { font-size: 12px; line-height: 28px; margin: 3px 2px 3px 0; }
 @media (min-width: 925px) { .sidebar { top: calc(var(--masthead-height, 68px) + 16px); } }
 @media (min-width: 925px) and (max-height: 760px) { .sidebar { position: static; } }
-@media (pointer: coarse) { .page__content a.resource-badge { line-height: 36px; } }
+@media (pointer: coarse) { .page__content a.resource-badge { min-height: 36px; } }
 @media print {
   .masthead, #back-to-top, .skip-link { display: none !important; }
   .paper-box { content-visibility: visible; break-inside: avoid; box-shadow: none; }

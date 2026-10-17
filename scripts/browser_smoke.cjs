@@ -64,11 +64,13 @@ async function testEngine(name) {
           false,
         );
         assert.equal(
-          await page
-            .locator(".resource-badge")
-            .first()
-            .evaluate((e) => getComputedStyle(e).color),
-          "rgb(255, 255, 255)",
+          await page.locator(".resource-badge span").evaluateAll((els) =>
+            els.every((e) => {
+              const r = e.getBoundingClientRect();
+              return r.height > 0 && r.height <= 24;
+            }),
+          ),
+          true,
         );
         assert.equal(
           await page
