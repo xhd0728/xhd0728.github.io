@@ -2,7 +2,6 @@
 
 ## 🔥 近期动态
 
-- *2026.10*: &nbsp;📄 我们发布了预印本 [*Test-Time Memory Construction*](https://arxiv.org/abs/2610.13348)，并开放了在推理过程中按需构建记忆的 [代码](https://github.com/OpenBMB/T2Mem)。
 - *2026.07*: &nbsp;🎉 我们正式开源了 [StaffDeck](https://github.com/OpenBMB/StaffDeck)，一个面向企业的数字员工构建与管理平台！
 - *2026.05*: &nbsp;🎉 我们发布了 [PilotDeck](https://github.com/OpenBMB/PilotDeck)，一个以工作区为中心的开源智能体操作系统！
 - *2026.04*: &nbsp;🎉 我们的论文 [*MetaMem*](https://doi.org/10.18653/v1/2026.findings-acl.270) 被 ACL 2026（CCF-A）接收！

@@ -90,7 +90,7 @@ By bringing language-model pretraining into recommendation, TASTE+ substantially
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><a class="paper-image-link" tabindex="0" href="/images/paper/llmsparks.webp" aria-label="View full image: LLMsPark paper figure"><img src='/images/paper/llmsparks.webp' srcset="/images/thumbs/paper/llmsparks-400.webp 400w, /images/thumbs/paper/llmsparks-640.webp 640w, /images/thumbs/paper/llmsparks-800.webp 800w" sizes="(min-width: 1280px) 393px, (min-width: 925px) calc((100vw - 80px) / 3), (min-width: 768px) calc((100vw - 76px) * 0.4), (min-width: 430px) 400px, calc(100vw - 48px)" alt="LLMsPark paper figure" loading="lazy" width="820" height="426"></a></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2025</div><a class="paper-image-link" tabindex="0" href="/images/paper/llmsparks.webp?v=50653f817900" aria-label="View full image: LLMsPark player agent architecture"><img src='/images/paper/llmsparks.webp?v=50653f817900' srcset="/images/thumbs/paper/llmsparks-400.webp?v=50653f817900 400w, /images/thumbs/paper/llmsparks-640.webp?v=50653f817900 640w, /images/thumbs/paper/llmsparks-800.webp?v=50653f817900 800w" sizes="(min-width: 1280px) 393px, (min-width: 925px) calc((100vw - 80px) / 3), (min-width: 768px) calc((100vw - 76px) * 0.4), (min-width: 430px) 400px, calc(100vw - 48px)" alt="LLMsPark player agent architecture" loading="lazy" width="1930" height="1021"></a></div></div>
 <div class='paper-box-text' markdown="1">
 
 ### LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts

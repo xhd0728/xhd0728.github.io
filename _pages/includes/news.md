@@ -2,7 +2,6 @@
 
 ## 🔥 News
 
-- *2026.10*: &nbsp;📄 Our preprint [*Test-Time Memory Construction*](https://arxiv.org/abs/2610.13348) is now available, with [code](https://github.com/OpenBMB/T2Mem) for constructing query-specific memory during inference.
 - *2026.07*: &nbsp;🎉 We open-sourced [StaffDeck](https://github.com/OpenBMB/StaffDeck), an enterprise digital employee platform!
 - *2026.05*: &nbsp;🎉 We released [PilotDeck](https://github.com/OpenBMB/PilotDeck), a workspace-centric open-source agent operating system!
 - *2026.04*: &nbsp;🎉 Our paper [*MetaMem*](https://doi.org/10.18653/v1/2026.findings-acl.270) has been accepted at ACL 2026 (CCF-A)!
