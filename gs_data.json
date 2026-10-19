@@ -1,7 +1,7 @@
 {
-  "citedby": 91,
-  "citedby5y": 91,
-  "fetched_at": "2026-10-18T06:00:52Z",
+  "citedby": 93,
+  "citedby5y": 93,
+  "fetched_at": "2026-10-19T06:17:24Z",
   "hindex": 5,
   "hindex5y": 5,
   "i10index": 3,
@@ -9,7 +9,7 @@
   "profile_url": "https://scholar.google.com/citations?user=8VCnj3sAAAAJ&hl=en",
   "publications": {
     "4DMP91E08xMC": {
-      "num_citations": 1,
+      "num_citations": 2,
       "title": "Memory Shot for Long-Term Dialogue",
       "year": 2026
     },
@@ -49,7 +49,7 @@
       "year": 2026
     },
     "aqlVkmm33-oC": {
-      "num_citations": 10,
+      "num_citations": 11,
       "title": "MetaMem: Evolving Meta-Memory for Knowledge Utilization through Self-Reflective Symbolic Optimization",
       "year": 2026
     },
