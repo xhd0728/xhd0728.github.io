@@ -59,6 +59,9 @@ jobs:
             "https://img.shields.io/badge/citations-${CITATIONS}-9cf?logo=Google%20Scholar&labelColor=f6f6f6" \
             --output images/google-scholar-citations.svg
 
+      - name: Refresh GitHub star badges
+        run: python3 scripts/update_github_star_badges.py
+
       - name: Build Jekyll site
         run: bundle exec jekyll build
 

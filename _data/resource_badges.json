@@ -1,0 +1,252 @@
+{
+  "homepage-staffdeck": {
+    "label": "Homepage",
+    "message": "StaffDeck",
+    "color": "0078D4",
+    "logo": "githubpages",
+    "image": "/images/resource-badges/homepage-staffdeck.svg",
+    "width": 149,
+    "height": 20,
+    "version": "56a7021d1b4e"
+  },
+  "docs-staffdeck": {
+    "label": "Docs",
+    "message": "StaffDeck",
+    "color": "00796B",
+    "logo": "readthedocs",
+    "image": "/images/resource-badges/docs-staffdeck.svg",
+    "width": 117,
+    "height": 20,
+    "version": "a882b4c0b6af"
+  },
+  "homepage-pilotdeck": {
+    "label": "Homepage",
+    "message": "PilotDeck",
+    "color": "0078D4",
+    "logo": "githubpages",
+    "image": "/images/resource-badges/homepage-pilotdeck.svg",
+    "width": 147,
+    "height": 20,
+    "version": "51b044700919"
+  },
+  "demo-live": {
+    "label": "Demo",
+    "message": "Live",
+    "color": "2E7D32",
+    "logo": "googlechrome",
+    "image": "/images/resource-badges/demo-live.svg",
+    "width": 93,
+    "height": 20,
+    "version": "5c7e52d272e7"
+  },
+  "homepage-ultrarag": {
+    "label": "Homepage",
+    "message": "UltraRAG",
+    "color": "0078D4",
+    "logo": "githubpages",
+    "image": "/images/resource-badges/homepage-ultrarag.svg",
+    "width": 147,
+    "height": 20,
+    "version": "49d10dcfc872"
+  },
+  "docs-ultrarag": {
+    "label": "Docs",
+    "message": "UltraRAG",
+    "color": "00796B",
+    "logo": "readthedocs",
+    "image": "/images/resource-badges/docs-ultrarag.svg",
+    "width": 115,
+    "height": 20,
+    "version": "db310f5eeb84"
+  },
+  "arxiv-2610-13348": {
+    "label": "arXiv",
+    "message": "2610.13348",
+    "color": "B31B1B",
+    "logo": "arxiv",
+    "image": "/images/resource-badges/arxiv-2610-13348.svg",
+    "width": 133,
+    "height": 20,
+    "version": "2e077494c5de"
+  },
+  "arxiv-2602-11182": {
+    "label": "arXiv",
+    "message": "2602.11182",
+    "color": "B31B1B",
+    "logo": "arxiv",
+    "image": "/images/resource-badges/arxiv-2602-11182.svg",
+    "width": 133,
+    "height": 20,
+    "version": "da6b6fce80af"
+  },
+  "doi-10-18653-v1-2026-findings-acl-270": {
+    "label": "DOI",
+    "message": "10.18653/v1/2026.findings-acl.270",
+    "color": "B85C00",
+    "logo": "doi",
+    "image": "/images/resource-badges/doi-10-18653-v1-2026-findings-acl-270.svg",
+    "width": 255,
+    "height": 20,
+    "version": "f38b3e1902fd"
+  },
+  "arxiv-2505-22130": {
+    "label": "arXiv",
+    "message": "2505.22130",
+    "color": "B31B1B",
+    "logo": "arxiv",
+    "image": "/images/resource-badges/arxiv-2505-22130.svg",
+    "width": 133,
+    "height": 20,
+    "version": "aba4989dd0ba"
+  },
+  "doi-10-1145-3770854-3780337": {
+    "label": "DOI",
+    "message": "10.1145/3770854.3780337",
+    "color": "B85C00",
+    "logo": "doi",
+    "image": "/images/resource-badges/doi-10-1145-3770854-3780337.svg",
+    "width": 211,
+    "height": 20,
+    "version": "1a9989b129db"
+  },
+  "doi-10-1016-j-aiopen-2026-02-002": {
+    "label": "DOI",
+    "message": "10.1016/j.aiopen.2026.02.002",
+    "color": "B85C00",
+    "logo": "doi",
+    "image": "/images/resource-badges/doi-10-1016-j-aiopen-2026-02-002.svg",
+    "width": 229,
+    "height": 20,
+    "version": "482f2ac1fdd0"
+  },
+  "hugging-face-models": {
+    "label": "Hugging Face",
+    "message": "Models",
+    "color": "FFD21E",
+    "logo": "huggingface",
+    "image": "/images/resource-badges/hugging-face-models.svg",
+    "width": 151,
+    "height": 20,
+    "version": "4564e86df465"
+  },
+  "doi-10-1007-978-981-95-6426-2-52": {
+    "label": "DOI",
+    "message": "10.1007/978-981-95-6426-2_52",
+    "color": "B85C00",
+    "logo": "doi",
+    "image": "/images/resource-badges/doi-10-1007-978-981-95-6426-2-52.svg",
+    "width": 241,
+    "height": 20,
+    "version": "f8b7b72fa8a8"
+  },
+  "homepage-llmspark": {
+    "label": "Homepage",
+    "message": "LLMsPark",
+    "color": "0078D4",
+    "logo": "githubpages",
+    "image": "/images/resource-badges/homepage-llmspark.svg",
+    "width": 147,
+    "height": 20,
+    "version": "a4e01425ef01"
+  },
+  "arxiv-2509-16610": {
+    "label": "arXiv",
+    "message": "2509.16610",
+    "color": "B31B1B",
+    "logo": "arxiv",
+    "image": "/images/resource-badges/arxiv-2509-16610.svg",
+    "width": 133,
+    "height": 20,
+    "version": "48cd314daf12"
+  },
+  "doi-10-18653-v1-2025-findings-emnlp-12": {
+    "label": "DOI",
+    "message": "10.18653/v1/2025.findings-emnlp.12",
+    "color": "B85C00",
+    "logo": "doi",
+    "image": "/images/resource-badges/doi-10-18653-v1-2025-findings-emnlp-12.svg",
+    "width": 267,
+    "height": 20,
+    "version": "bae07a4c56bd"
+  },
+  "homepage-mmad": {
+    "label": "Homepage",
+    "message": "MMAD",
+    "color": "0078D4",
+    "logo": "githubpages",
+    "image": "/images/resource-badges/homepage-mmad.svg",
+    "width": 131,
+    "height": 20,
+    "version": "b1c8023e6e23"
+  },
+  "doi-10-63317-4s5pfq3wxzuq": {
+    "label": "DOI",
+    "message": "10.63317/4s5pfq3wxzuq",
+    "color": "B85C00",
+    "logo": "doi",
+    "image": "/images/resource-badges/doi-10-63317-4s5pfq3wxzuq.svg",
+    "width": 195,
+    "height": 20,
+    "version": "2921ba9fe80f"
+  },
+  "arxiv-2606-28338": {
+    "label": "arXiv",
+    "message": "2606.28338",
+    "color": "B31B1B",
+    "logo": "arxiv",
+    "image": "/images/resource-badges/arxiv-2606-28338.svg",
+    "width": 133,
+    "height": 20,
+    "version": "977bd24f57fc"
+  },
+  "hugging-face-dataset": {
+    "label": "Hugging Face",
+    "message": "Dataset",
+    "color": "FFD21E",
+    "logo": "huggingface",
+    "image": "/images/resource-badges/hugging-face-dataset.svg",
+    "width": 155,
+    "height": 20,
+    "version": "14d3b4055660"
+  },
+  "arxiv-2604-03650": {
+    "label": "arXiv",
+    "message": "2604.03650",
+    "color": "B31B1B",
+    "logo": "arxiv",
+    "image": "/images/resource-badges/arxiv-2604-03650.svg",
+    "width": 133,
+    "height": 20,
+    "version": "298562e397a5"
+  },
+  "doi-10-1007-978-981-92-3417-2-26": {
+    "label": "DOI",
+    "message": "10.1007/978-981-92-3417-2_26",
+    "color": "B85C00",
+    "logo": "doi",
+    "image": "/images/resource-badges/doi-10-1007-978-981-92-3417-2-26.svg",
+    "width": 241,
+    "height": 20,
+    "version": "5e1b17e1d1e0"
+  },
+  "arxiv-2601-09402": {
+    "label": "arXiv",
+    "message": "2601.09402",
+    "color": "B31B1B",
+    "logo": "arxiv",
+    "image": "/images/resource-badges/arxiv-2601-09402.svg",
+    "width": 133,
+    "height": 20,
+    "version": "961b2b915826"
+  },
+  "arxiv-2403-19433": {
+    "label": "arXiv",
+    "message": "2403.19433",
+    "color": "B31B1B",
+    "logo": "arxiv",
+    "image": "/images/resource-badges/arxiv-2403-19433.svg",
+    "width": 133,
+    "height": 20,
+    "version": "5db3964be504"
+  }
+}

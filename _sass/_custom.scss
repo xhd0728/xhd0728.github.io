@@ -654,68 +654,47 @@ body {
   vertical-align: middle;
 }
 
-/* Local badges keep publication links readable when external APIs are unavailable. */
+.page__content .github-star-badge {
+  display: inline-flex;
+  vertical-align: text-bottom;
+  white-space: nowrap;
+}
+.page__content .github-star-badge img {
+  display: block;
+  height: 20px;
+  width: auto;
+}
+.paper-box-text .github-star-badge {
+  align-items: center;
+  min-height: 28px;
+  margin: 1px 4px 1px 0;
+  vertical-align: middle;
+}
+
+/* Standard Shields.io badges are local assets, shared by both languages. */
 .page__content a.resource-badge {
-  --badge-fg: #315879;
-  --badge-bg: #f0f5fb;
-  --badge-label-bg: #e3edf7;
-  --badge-border: #ccdceb;
   display: inline-flex;
   align-items: center;
   min-height: 28px;
   max-width: 100%;
   margin: 1px 4px 1px 0;
-  color: var(--badge-fg);
-  font: 12px/20px $sans-serif;
   text-decoration: none;
   vertical-align: middle;
-  white-space: nowrap;
 }
-.resource-badge span {
-  padding: 0 7px;
-  border: 1px solid var(--badge-border);
-  background: var(--badge-bg);
-  border-radius: 0 5px 5px 0;
-}
-.resource-badge span:first-child {
-  border-right: 0;
-  border-radius: 5px 0 0 5px;
-  background: var(--badge-label-bg);
-  font-weight: 600;
-}
-.page__content a.resource-badge[href*="arxiv.org"] {
-  --badge-fg: #864651;
-  --badge-bg: #fbf2f3;
-  --badge-label-bg: #f6e6e9;
-  --badge-border: #e8cdd3;
-}
-.page__content a.resource-badge[href*="github.com"] {
-  --badge-fg: #465568;
-  --badge-bg: #f3f5f8;
-  --badge-label-bg: #e7ecf2;
-  --badge-border: #d4dce6;
-}
-.page__content a.resource-badge[href*="doi.org"],
-.page__content a.resource-badge[href*="aclanthology.org"] {
-  --badge-fg: #32645c;
-  --badge-bg: #f0f7f4;
-  --badge-label-bg: #e1eee8;
-  --badge-border: #c9dfd5;
-}
-.page__content a.resource-badge[href*="huggingface.co"] {
-  --badge-fg: #775e29;
-  --badge-bg: #fcf8ee;
-  --badge-label-bg: #f4ecd7;
-  --badge-border: #e5d8b7;
+.page__content .resource-badge__img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 20px;
 }
 .page__content a.resource-badge:hover {
-  color: var(--badge-fg);
   filter: brightness(0.96);
 }
 .page__content a.resource-badge:focus-visible {
-  outline: 2px solid var(--badge-fg);
+  outline: 2px solid var(--c-primary);
   outline-offset: 2px;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 #busuanzi_container_site_pv[style*="none"] + .info-sep {
   display: none;
@@ -1037,6 +1016,6 @@ body { overflow-wrap: break-word; }
   .sidebar { position: static; }
 }
 @media (forced-colors: active) {
-  .resource-badge span, .author__urls_sm a { border: 1px solid ButtonText; }
+  .resource-badge, .author__urls_sm a { border: 1px solid ButtonText; }
   .greedy-nav .visible-links a[aria-current="location"] { text-decoration: underline; }
 }

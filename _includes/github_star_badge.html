@@ -1,0 +1,2 @@
+{%- assign star_badge = site.data.github_star_badges[include.project] -%}
+<a class="github-star-badge" href="https://github.com/{{ star_badge.repo }}" aria-label="{{ star_badge.repo }} — {{ star_badge.label }}"><img src="{{ star_badge.image | relative_url }}?v={{ star_badge.version }}" width="{{ star_badge.width }}" height="{{ star_badge.height }}" alt="{{ star_badge.repo }} — {{ star_badge.label }}" decoding="async"></a>

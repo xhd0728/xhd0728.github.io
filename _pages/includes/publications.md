@@ -12,8 +12,8 @@
 Zijun Wang<sup>*</sup>, Yifan Ji<sup>*</sup>, **Haidong Xin**, [Zhenghao Liu<sup>†</sup>](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Zulong Chen](https://scholar.google.com/citations?user=nUVmSqUAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
 
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2610.13348" title="arXiv: Test-Time Memory Construction"><span>arXiv</span><span>2610.13348</span></a>
-<a class="resource-badge" href="https://github.com/OpenBMB/T2Mem" title="GitHub: T2Mem"><span>GitHub</span><span>Code</span></a>
+{% include resource_badge.html badge="arxiv-2610-13348" url="https://arxiv.org/abs/2610.13348" title="arXiv: Test-Time Memory Construction" %}
+{% include github_star_badge.html project="t2mem" %}
 </div>
 
 T<sup>2</sup>Mem defers memory construction to inference, progressively retrieving episode metadata and raw interactions to build query-specific memory. It improves long-term dialogue question answering on LoCoMo and LongMemEval while reducing offline construction overhead.
@@ -29,9 +29,9 @@ T<sup>2</sup>Mem defers memory construction to inference, progressively retrievi
 
 
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2602.11182" title="arXiv"><span>arXiv</span><span>2602.11182</span></a>
-<a class="resource-badge" href="https://doi.org/10.18653/v1/2026.findings-acl.270" title="DOI"><span>DOI</span><span>Paper</span></a>
-<a class="resource-badge" href="https://github.com/OpenBMB/MetaMem" title="GitHub: MetaMem"><span>GitHub</span><span>Code</span></a>
+{% include resource_badge.html badge="arxiv-2602-11182" url="https://arxiv.org/abs/2602.11182" title="arXiv" %}
+{% include resource_badge.html badge="doi-10-18653-v1-2026-findings-acl-270" url="https://doi.org/10.18653/v1/2026.findings-acl.270" title="DOI" %}
+{% include github_star_badge.html project="metamem" %}
 </div>
 
 MetaMem is a meta-memory framework that keeps its memory evolving through self-reflective symbolic optimization, enabling more effective knowledge use across long-horizon human-LLM interactions.
@@ -47,9 +47,9 @@ MetaMem is a meta-memory framework that keeps its memory evolving through self-r
 
 
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2505.22130" title="arXiv"><span>arXiv</span><span>2505.22130</span></a>
-<a class="resource-badge" href="https://doi.org/10.1145/3770854.3780337" title="DOI"><span>DOI</span><span>Paper</span></a>
-<a class="resource-badge" href="https://github.com/NEUIR/LISRec" title="GitHub: LISRec"><span>GitHub</span><span>Code</span></a>
+{% include resource_badge.html badge="arxiv-2505-22130" url="https://arxiv.org/abs/2505.22130" title="arXiv" %}
+{% include resource_badge.html badge="doi-10-1145-3770854-3780337" url="https://doi.org/10.1145/3770854.3780337" title="DOI" %}
+{% include github_star_badge.html project="lisrec" %}
 </div>
 
 LISRec strengthens sequential recommendation by learning personalized semantic shortcuts from user-item interaction histories, capturing stable user preferences more reliably.
@@ -65,7 +65,7 @@ LISRec strengthens sequential recommendation by learning personalized semantic s
 
   
 <div align="left">
-<a class="resource-badge" href="https://doi.org/10.1016/j.aiopen.2026.02.002" title="DOI"><span>DOI</span><span>Paper</span></a>
+{% include resource_badge.html badge="doi-10-1016-j-aiopen-2026-02-002" url="https://doi.org/10.1016/j.aiopen.2026.02.002" title="DOI" %}
 </div>
 
 A comprehensive survey of Retrieval-Augmented Generation from an agentic perspective: it organizes knowledge-intensive agents into knowledge-acquisition and knowledge-utilization roles, and outlines future directions for jointly optimizing multi-agent RAG systems.
@@ -81,9 +81,9 @@ A comprehensive survey of Retrieval-Augmented Generation from an agentic perspec
 
   
 <div align="left">
-<a class="resource-badge" href="https://huggingface.co/collections/xhd0728/taste-plus" title="Hugging Face: Models"><span>Hugging Face</span><span>Models</span></a>
-<a class="resource-badge" href="https://doi.org/10.1007/978-981-95-6426-2_52" title="DOI"><span>DOI</span><span>Paper</span></a>
-<a class="resource-badge" href="https://github.com/NEUIR/TASTE-plus" title="GitHub: TASTE-plus"><span>GitHub</span><span>Code</span></a>
+{% include resource_badge.html badge="hugging-face-models" url="https://huggingface.co/collections/xhd0728/taste-plus" title="Hugging Face: Models" %}
+{% include resource_badge.html badge="doi-10-1007-978-981-95-6426-2-52" url="https://doi.org/10.1007/978-981-95-6426-2_52" title="DOI" %}
+{% include github_star_badge.html project="taste-plus" %}
 </div>
 
 By bringing language-model pretraining into recommendation, TASTE+ substantially improves the performance of text-matching-based recommendation.
@@ -99,9 +99,9 @@ By bringing language-model pretraining into recommendation, TASTE+ substantially
 
   
 <div align="left">
-<a class="resource-badge" href="https://llmsparks.github.io" title="Homepage: LLMsPark"><span>Homepage</span><span>LLMsPark</span></a>
-<a class="resource-badge" href="https://arxiv.org/abs/2509.16610" title="arXiv"><span>arXiv</span><span>2509.16610</span></a>
-<a class="resource-badge" href="https://doi.org/10.18653/v1/2025.findings-emnlp.12" title="DOI"><span>DOI</span><span>Paper</span></a>
+{% include resource_badge.html badge="homepage-llmspark" url="https://llmsparks.github.io" title="Homepage: LLMsPark" %}
+{% include resource_badge.html badge="arxiv-2509-16610" url="https://arxiv.org/abs/2509.16610" title="arXiv" %}
+{% include resource_badge.html badge="doi-10-18653-v1-2025-findings-emnlp-12" url="https://doi.org/10.18653/v1/2025.findings-emnlp.12" title="DOI" %}
 </div>
 
 LLMsPark is a game-theoretic benchmark for evaluating the strategic behavior and decision-making of large language models in multi-agent environments, offering a new lens on model intelligence.
@@ -117,10 +117,9 @@ LLMsPark is a game-theoretic benchmark for evaluating the strategic behavior and
 
   
 <div align="left">
-<a class="resource-badge" href="https://daria8976.github.io/mmad-page/" title="Homepage: MMAD"><span>Homepage</span><span>MMAD</span></a>
-<a class="resource-badge" href="https://aclanthology.org/2024.lrec-main.998/" title="ACL Anthology"><span>ACL Anthology</span><span>COLING 2024</span></a>
-<a class="resource-badge" href="https://doi.org/10.63317/4s5pfq3wxzuq" title="DOI"><span>DOI</span><span>Paper</span></a>
-<a class="resource-badge" href="https://github.com/Daria8976/MMAD" title="GitHub: MMAD"><span>GitHub</span><span>Code</span></a>
+{% include resource_badge.html badge="homepage-mmad" url="https://daria8976.github.io/mmad-page/" title="Homepage: MMAD" %}
+{% include resource_badge.html badge="doi-10-63317-4s5pfq3wxzuq" url="https://doi.org/10.63317/4s5pfq3wxzuq" title="DOI" %}
+{% include github_star_badge.html project="mmad" %}
 </div>
 
 MMAD advances multi-modal movie audio description, bringing a richer movie-watching experience to people who are blind or have low vision.
@@ -136,9 +135,9 @@ MMAD advances multi-modal movie audio description, bringing a richer movie-watch
 
 
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2606.28338" title="arXiv"><span>arXiv</span><span>2606.28338</span></a>
-<a class="resource-badge" href="https://huggingface.co/datasets/sxs-shuo/MemShot" title="HuggingFace Dataset"><span>Hugging Face</span><span>Dataset</span></a>
-<a class="resource-badge" href="https://github.com/NEUIR/MemShot" title="GitHub: MemShot"><span>GitHub</span><span>Code</span></a>
+{% include resource_badge.html badge="arxiv-2606-28338" url="https://arxiv.org/abs/2606.28338" title="arXiv" %}
+{% include resource_badge.html badge="hugging-face-dataset" url="https://huggingface.co/datasets/sxs-shuo/MemShot" title="HuggingFace Dataset" %}
+{% include github_star_badge.html project="memshot" %}
 </div>
 
 MemShot renders dialogue spans into structured visual memory units and uses the model's visual reasoning to link key episodes, making long-term dialogue memory construction up to 70x faster.
@@ -154,9 +153,9 @@ Minghai Jiao, Jing Xiao<sup>†</sup>, Peng Xiao, Ende Zhang, Shuang Kan, Wenyan
 
 
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2604.03650" title="arXiv"><span>arXiv</span><span>2604.03650</span></a>
-<a class="resource-badge" href="https://doi.org/10.1007/978-981-92-3417-2_26" title="DOI"><span>DOI</span><span>Paper</span></a>
-<a class="resource-badge" href="https://github.com/User2024-xj/CAGMamba" title="GitHub: CAGMamba"><span>GitHub</span><span>Code</span></a>
+{% include resource_badge.html badge="arxiv-2604-03650" url="https://arxiv.org/abs/2604.03650" title="arXiv" %}
+{% include resource_badge.html badge="doi-10-1007-978-981-92-3417-2-26" url="https://doi.org/10.1007/978-981-92-3417-2_26" title="DOI" %}
+{% include github_star_badge.html project="cagmamba" %}
 </div>
 
 CAGMamba is a context-aware gated cross-modal Mamba network for multimodal sentiment analysis that models dialogue-level sentiment evolution and adaptively balances cross-modal fusion against modality-specific cues.
@@ -172,8 +171,8 @@ CAGMamba is a context-aware gated cross-modal Mamba network for multimodal senti
 
 
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2601.09402" title="arXiv"><span>arXiv</span><span>2601.09402</span></a>
-<a class="resource-badge" href="https://github.com/OpenBMB/PAGER" title="GitHub: PAGER"><span>GitHub</span><span>Code</span></a>
+{% include resource_badge.html badge="arxiv-2601-09402" url="https://arxiv.org/abs/2601.09402" title="arXiv" %}
+{% include github_star_badge.html project="pager" %}
 </div>
 
 SEEK steers LLM reasoning for RAG with internal reasoning sketches that guide iterative retrieval, organize knowledge along multiple dimensions, and lead to more accurate answers.
@@ -189,7 +188,7 @@ SEEK steers LLM reasoning for RAG with internal reasoning sketches that guide it
 
   
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2403.19433" title="arXiv"><span>arXiv</span><span>2403.19433</span></a>
+{% include resource_badge.html badge="arxiv-2403-19433" url="https://arxiv.org/abs/2403.19433" title="arXiv" %}
 </div>
 
 A detailed quantitative study of the Wordle game that uncovers the statistical patterns behind its solution words.

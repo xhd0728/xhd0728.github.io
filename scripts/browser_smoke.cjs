@@ -59,12 +59,12 @@ async function testEngine(name) {
         );
         assert.equal(
           await page
-            .locator(".resource-badge")
-            .evaluateAll((els) => els.some((e) => !e.textContent.trim())),
+            .locator(".resource-badge img")
+            .evaluateAll((els) => els.some((e) => !e.alt.trim())),
           false,
         );
         assert.equal(
-          await page.locator(".resource-badge span").evaluateAll((els) =>
+          await page.locator(".resource-badge img").evaluateAll((els) =>
             els.every((e) => {
               const r = e.getBoundingClientRect();
               return r.height > 0 && r.height <= 24;
@@ -218,7 +218,7 @@ async function testEngine(name) {
         await p.locator(".lang-menu__option[href]").isVisible(),
         true,
       );
-      assert.equal(await p.locator('img[src*="t2mem"]').count(), 1);
+      assert.equal(await p.locator('.paper-image-link img[src*="/images/paper/t2mem"]').count(), 1);
       assert.equal(
         await p.locator('.visible-links a[href$="#publications"]').isVisible(),
         true,

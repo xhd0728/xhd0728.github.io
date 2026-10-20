@@ -10,9 +10,9 @@
 [面壁智能](https://modelbest.cn/)、[东北大学-面壁智能数据智能联合实验室](https://neuir.github.io/)、[清华大学 THUNLP 实验室](https://nlp.csai.tsinghua.edu.cn/)、[OpenBMB](https://www.openbmb.cn/home) 与 [AI9Stars](https://github.com/AI9Stars)
 
 <div align="left">
-<a class="resource-badge" href="https://staffdeck.openbmb.cn/" title="StaffDeck 官网"><span>Homepage</span><span>StaffDeck</span></a>
-<a class="resource-badge" href="https://staffdeck.openbmb.cn/#/docs/introduce?lang=zh" title="StaffDeck 文档"><span>Docs</span><span>StaffDeck</span></a>
-<a class="resource-badge" href="https://github.com/OpenBMB/StaffDeck" title="GitHub: StaffDeck"><span>GitHub</span><span>代码</span></a>
+{% include resource_badge.html badge="homepage-staffdeck" url="https://staffdeck.openbmb.cn/" title="StaffDeck 官网" %}
+{% include resource_badge.html badge="docs-staffdeck" url="https://staffdeck.openbmb.cn/#/docs/introduce?lang=zh" title="StaffDeck 文档" %}
+{% include github_star_badge.html project="staffdeck" %}
 </div>
 
 StaffDeck 是一套面向企业的数字员工构建与管理平台，帮助专业员工将工作经验、业务流程和判断标准固化为可以持续工作的数字员工，接手重复性任务，并将个人能力沉淀为可复用、可迭代、可追溯的组织资产。
@@ -27,9 +27,9 @@ StaffDeck 是一套面向企业的数字员工构建与管理平台，帮助专�
 [THUNLP](https://nlp.csai.tsinghua.edu.cn/)、[ModelBest](https://modelbest.cn/)、[OpenBMB](https://www.openbmb.cn/) 与 [AI9Stars](https://github.com/AI9Stars)
 
 <div align="left">
-<a class="resource-badge" href="https://pilotdeck.openbmb.cn/" title="PilotDeck homepage"><span>Homepage</span><span>PilotDeck</span></a>
-<a class="resource-badge" href="https://pilotdeck.openbmb.cn/pilotdeck.github.io/demo/p/pilotdeck-demo" title="PilotDeck live demo"><span>Demo</span><span>Live</span></a>
-<a class="resource-badge" href="https://github.com/OpenBMB/PilotDeck" title="GitHub: PilotDeck"><span>GitHub</span><span>代码</span></a>
+{% include resource_badge.html badge="homepage-pilotdeck" url="https://pilotdeck.openbmb.cn/" title="PilotDeck homepage" %}
+{% include resource_badge.html badge="demo-live" url="https://pilotdeck.openbmb.cn/pilotdeck.github.io/demo/p/pilotdeck-demo" title="PilotDeck live demo" %}
+{% include github_star_badge.html project="pilotdeck" %}
 </div>
 
 PilotDeck 是一款以工作区为核心的开源智能体操作系统，面向长周期的生产力场景，提供工作区隔离、白盒记忆、智能路由以及常驻后台运行等能力。
@@ -44,9 +44,9 @@ PilotDeck 是一款以工作区为核心的开源智能体操作系统，面向�
 [THUNLP](https://nlp.csai.tsinghua.edu.cn/)、[NEU-ModelBest数据智能联合实验室](https://neuir.github.io)、[OpenBMB](https://www.openbmb.cn/home) 与 [AI9Stars](https://github.com/AI9Stars)
 
 <div align="left">
-<a class="resource-badge" href="https://ultrarag.github.io/" title="UltraRAG homepage"><span>Homepage</span><span>UltraRAG</span></a>
-<a class="resource-badge" href="https://ultrarag.openbmb.cn/" title="UltraRAG documentation"><span>Docs</span><span>UltraRAG</span></a>
-<a class="resource-badge" href="https://github.com/OpenBMB/UltraRAG" title="GitHub: UltraRAG"><span>GitHub</span><span>代码</span></a>
+{% include resource_badge.html badge="homepage-ultrarag" url="https://ultrarag.github.io/" title="UltraRAG homepage" %}
+{% include resource_badge.html badge="docs-ultrarag" url="https://ultrarag.openbmb.cn/" title="UltraRAG documentation" %}
+{% include github_star_badge.html project="ultrarag" %}
 </div>
 
 UltraRAG 是一个基于 MCP 的低代码 RAG 框架，将检索与生成模块标准化为 MCP Server，并提供可视化编排、评测与演示部署的一站式流程。

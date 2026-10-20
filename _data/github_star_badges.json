@@ -1,0 +1,98 @@
+{
+  "staffdeck": {
+    "repo": "OpenBMB/StaffDeck",
+    "image": "/images/github-stars/staffdeck.svg",
+    "label": "Code Stars: 2k",
+    "width": 114,
+    "height": 20,
+    "version": "7daddd44801c"
+  },
+  "pilotdeck": {
+    "repo": "OpenBMB/PilotDeck",
+    "image": "/images/github-stars/pilotdeck.svg",
+    "label": "Code Stars: 4.8k",
+    "width": 122,
+    "height": 20,
+    "version": "26c269e079d7"
+  },
+  "ultrarag": {
+    "repo": "OpenBMB/UltraRAG",
+    "image": "/images/github-stars/ultrarag.svg",
+    "label": "Code Stars: 5.7k",
+    "width": 122,
+    "height": 20,
+    "version": "0e7080c2e559"
+  },
+  "heu-icicles": {
+    "repo": "HEUOpenResource/heu-icicles",
+    "image": "/images/github-stars/heu-icicles.svg",
+    "label": "Code Stars: 416",
+    "width": 120,
+    "height": 20,
+    "version": "34901435e612"
+  },
+  "t2mem": {
+    "repo": "OpenBMB/T2Mem",
+    "image": "/images/github-stars/t2mem.svg",
+    "label": "Code Stars: 4",
+    "width": 108,
+    "height": 20,
+    "version": "1b7d7eabd23a"
+  },
+  "metamem": {
+    "repo": "OpenBMB/MetaMem",
+    "image": "/images/github-stars/metamem.svg",
+    "label": "Code Stars: 48",
+    "width": 114,
+    "height": 20,
+    "version": "c524143ed327"
+  },
+  "lisrec": {
+    "repo": "NEUIR/LISRec",
+    "image": "/images/github-stars/lisrec.svg",
+    "label": "Code Stars: 18",
+    "width": 114,
+    "height": 20,
+    "version": "5c06ca36edb8"
+  },
+  "taste-plus": {
+    "repo": "NEUIR/TASTE-plus",
+    "image": "/images/github-stars/taste-plus.svg",
+    "label": "Code Stars: 4",
+    "width": 108,
+    "height": 20,
+    "version": "af8d21cb3d9b"
+  },
+  "mmad": {
+    "repo": "Daria8976/MMAD",
+    "image": "/images/github-stars/mmad.svg",
+    "label": "Code Stars: 17",
+    "width": 114,
+    "height": 20,
+    "version": "83374762fe7c"
+  },
+  "memshot": {
+    "repo": "NEUIR/MemShot",
+    "image": "/images/github-stars/memshot.svg",
+    "label": "Code Stars: 5",
+    "width": 108,
+    "height": 20,
+    "version": "345a80d208ad"
+  },
+  "cagmamba": {
+    "repo": "User2024-xj/CAGMamba",
+    "image": "/images/github-stars/cagmamba.svg",
+    "label": "Code Stars: 5",
+    "width": 108,
+    "height": 20,
+    "version": "c1a38fc6cd50"
+  },
+  "pager": {
+    "repo": "OpenBMB/PAGER",
+    "image": "/images/github-stars/pager.svg",
+    "label": "Code Stars: 6",
+    "width": 108,
+    "height": 20,
+    "version": "fc5150917c6e"
+  }
+}

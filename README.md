@@ -18,6 +18,16 @@ The icon fonts are checked-in WOFF2 subsets. After adding an icon, install the o
 `fonttools[woff]` authoring dependency and run `python3 scripts/subset_icon_fonts.py`.
 Keep the corresponding selector in `_sass/vendor/font-awesome/_icons-subset.scss`.
 
+GitHub star badges in News, projects, and publications are saved locally so they remain visible without a third-party
+request. Run `python3 scripts/update_github_star_badges.py` to refresh them; the publishing
+workflow also refreshes them before each build and keeps saved badges if the service is unavailable.
+
+Other resource links use the standard Shields.io `flat` style, also stored locally.
+Their shared labels, full DOI identifiers, icons and colors live in `_data/resource_badges.json`.
+Colors distinguish resource types: arXiv red, Hugging Face yellow, Homepage blue,
+Docs teal, Demo green, and DOI orange.
+After changing them, run `python3 scripts/build_resource_badges.py` to regenerate the SVGs.
+
 For the optional browser regression suite, install Playwright without changing the
 Ruby build (`npm install --no-save --package-lock=false playwright`, then
 `npx playwright install chromium webkit firefox`). Serve `_site` locally and run:

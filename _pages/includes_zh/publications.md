@@ -12,8 +12,8 @@
 Zijun Wang<sup>*</sup>, Yifan Ji<sup>*</sup>, **Haidong Xin**, [Zhenghao Liu<sup>†</sup>](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Zulong Chen](https://scholar.google.com/citations?user=nUVmSqUAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
 
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2610.13348" title="arXiv: Test-Time Memory Construction"><span>arXiv</span><span>2610.13348</span></a>
-<a class="resource-badge" href="https://github.com/OpenBMB/T2Mem" title="GitHub: T2Mem"><span>GitHub</span><span>代码</span></a>
+{% include resource_badge.html badge="arxiv-2610-13348" url="https://arxiv.org/abs/2610.13348" title="arXiv: Test-Time Memory Construction" %}
+{% include github_star_badge.html project="t2mem" %}
 </div>
 
 T<sup>2</sup>Mem 将记忆构建推迟到推理阶段，通过逐步检索片段级元数据与原始交互，构建面向当前问题的记忆。该框架在 LoCoMo 和 LongMemEval 长期对话问答基准上提升了效果，同时降低了离线记忆构建开销。
@@ -28,9 +28,9 @@ T<sup>2</sup>Mem 将记忆构建推迟到推理阶段，通过逐步检索片段
 **Haidong Xin**<sup>*</sup>, [Xinze Li<sup>*</sup>](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Zhenghao Liu<sup>†</sup>](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Yukun Yan<sup>†</sup>](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Cheng Yang](https://scholar.google.com/citations?user=OlLjVUcAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
 
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2602.11182" title="arXiv"><span>arXiv</span><span>2602.11182</span></a>
-<a class="resource-badge" href="https://doi.org/10.18653/v1/2026.findings-acl.270" title="DOI"><span>DOI</span><span>论文</span></a>
-<a class="resource-badge" href="https://github.com/OpenBMB/MetaMem" title="GitHub: MetaMem"><span>GitHub</span><span>代码</span></a>
+{% include resource_badge.html badge="arxiv-2602-11182" url="https://arxiv.org/abs/2602.11182" title="arXiv" %}
+{% include resource_badge.html badge="doi-10-18653-v1-2026-findings-acl-270" url="https://doi.org/10.18653/v1/2026.findings-acl.270" title="DOI" %}
+{% include github_star_badge.html project="metamem" %}
 </div>
 
 MetaMem 借助自我反思式的符号优化让“元记忆”不断演化，从而在长程人机交互中更充分地利用知识。
@@ -45,9 +45,9 @@ MetaMem 借助自我反思式的符号优化让“元记忆”不断演化，从
 **Haidong Xin**, [Zhenghao Liu<sup>†</sup>](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Yukun Yan](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shi Yu](https://scholar.google.com/citations?user=xcMVPTgAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zulong Chen](https://scholar.google.com/citations?user=nUVmSqUAAAAJ), [Yu Gu](https://scholar.google.com/citations?user=IDYbTZwAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Chenyan Xiong](https://scholar.google.com/citations?user=E9BaEBYAAAAJ)
 
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2505.22130" title="arXiv"><span>arXiv</span><span>2505.22130</span></a>
-<a class="resource-badge" href="https://doi.org/10.1145/3770854.3780337" title="DOI"><span>DOI</span><span>论文</span></a>
-<a class="resource-badge" href="https://github.com/NEUIR/LISRec" title="GitHub: LISRec"><span>GitHub</span><span>代码</span></a>
+{% include resource_badge.html badge="arxiv-2505-22130" url="https://arxiv.org/abs/2505.22130" title="arXiv" %}
+{% include resource_badge.html badge="doi-10-1145-3770854-3780337" url="https://doi.org/10.1145/3770854.3780337" title="DOI" %}
+{% include github_star_badge.html project="lisrec" %}
 </div>
 
 LISRec 从用户的历史交互中学习个性化的语义捷径，更稳定地刻画用户偏好，进而提升序列推荐的效果。
@@ -63,7 +63,7 @@ LISRec 从用户的历史交互中学习个性化的语义捷径，更稳定地�
 
   
 <div align="left">
-<a class="resource-badge" href="https://doi.org/10.1016/j.aiopen.2026.02.002" title="DOI"><span>DOI</span><span>论文</span></a>
+{% include resource_badge.html badge="doi-10-1016-j-aiopen-2026-02-002" url="https://doi.org/10.1016/j.aiopen.2026.02.002" title="DOI" %}
 </div>
 
 我们从智能体视角系统梳理了检索增强生成（RAG），将知识密集型智能体划分为“知识获取”与“知识利用”两类，并探讨了多智能体 RAG 联合优化的未来方向。
@@ -79,9 +79,9 @@ LISRec 从用户的历史交互中学习个性化的语义捷径，更稳定地�
 
   
 <div align="left">
-<a class="resource-badge" href="https://huggingface.co/collections/xhd0728/taste-plus" title="Hugging Face: Models"><span>Hugging Face</span><span>Models</span></a>
-<a class="resource-badge" href="https://doi.org/10.1007/978-981-95-6426-2_52" title="DOI"><span>DOI</span><span>论文</span></a>
-<a class="resource-badge" href="https://github.com/NEUIR/TASTE-plus" title="GitHub: TASTE-plus"><span>GitHub</span><span>代码</span></a>
+{% include resource_badge.html badge="hugging-face-models" url="https://huggingface.co/collections/xhd0728/taste-plus" title="Hugging Face: Models" %}
+{% include resource_badge.html badge="doi-10-1007-978-981-95-6426-2-52" url="https://doi.org/10.1007/978-981-95-6426-2_52" title="DOI" %}
+{% include github_star_badge.html project="taste-plus" %}
 </div>
 
 我们将语言模型的预训练能力引入推荐系统，显著提升了文本匹配任务的表现。
@@ -97,9 +97,9 @@ LISRec 从用户的历史交互中学习个性化的语义捷径，更稳定地�
 
   
 <div align="left">
-<a class="resource-badge" href="https://llmsparks.github.io" title="Homepage: LLMsPark"><span>Homepage</span><span>LLMsPark</span></a>
-<a class="resource-badge" href="https://arxiv.org/abs/2509.16610" title="arXiv"><span>arXiv</span><span>2509.16610</span></a>
-<a class="resource-badge" href="https://doi.org/10.18653/v1/2025.findings-emnlp.12" title="DOI"><span>DOI</span><span>论文</span></a>
+{% include resource_badge.html badge="homepage-llmspark" url="https://llmsparks.github.io" title="Homepage: LLMsPark" %}
+{% include resource_badge.html badge="arxiv-2509-16610" url="https://arxiv.org/abs/2509.16610" title="arXiv" %}
+{% include resource_badge.html badge="doi-10-18653-v1-2025-findings-emnlp-12" url="https://doi.org/10.18653/v1/2025.findings-emnlp.12" title="DOI" %}
 </div>
 
 LLMsPark 是一个面向策略博弈场景的大语言模型评测基准，可在多智能体环境中系统衡量模型的策略行为与决策能力。
@@ -115,10 +115,9 @@ LLMsPark 是一个面向策略博弈场景的大语言模型评测基准，可�
 
   
 <div align="left">
-<a class="resource-badge" href="https://daria8976.github.io/mmad-page/" title="Homepage: MMAD"><span>Homepage</span><span>MMAD</span></a>
-<a class="resource-badge" href="https://aclanthology.org/2024.lrec-main.998/" title="ACL Anthology"><span>ACL Anthology</span><span>COLING 2024</span></a>
-<a class="resource-badge" href="https://doi.org/10.63317/4s5pfq3wxzuq" title="DOI"><span>DOI</span><span>论文</span></a>
-<a class="resource-badge" href="https://github.com/Daria8976/MMAD" title="GitHub: MMAD"><span>GitHub</span><span>代码</span></a>
+{% include resource_badge.html badge="homepage-mmad" url="https://daria8976.github.io/mmad-page/" title="Homepage: MMAD" %}
+{% include resource_badge.html badge="doi-10-63317-4s5pfq3wxzuq" url="https://doi.org/10.63317/4s5pfq3wxzuq" title="DOI" %}
+{% include github_star_badge.html project="mmad" %}
 </div>
 
 MMAD 为视障人群带来了全新的观影体验，也拓展了电影音频描述在多模态方向上的能力边界。
@@ -134,9 +133,9 @@ MMAD 为视障人群带来了全新的观影体验，也拓展了电影音频描
 
 
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2606.28338" title="arXiv"><span>arXiv</span><span>2606.28338</span></a>
-<a class="resource-badge" href="https://huggingface.co/datasets/sxs-shuo/MemShot" title="HuggingFace Dataset"><span>Hugging Face</span><span>Dataset</span></a>
-<a class="resource-badge" href="https://github.com/NEUIR/MemShot" title="GitHub: MemShot"><span>GitHub</span><span>代码</span></a>
+{% include resource_badge.html badge="arxiv-2606-28338" url="https://arxiv.org/abs/2606.28338" title="arXiv" %}
+{% include resource_badge.html badge="hugging-face-dataset" url="https://huggingface.co/datasets/sxs-shuo/MemShot" title="HuggingFace Dataset" %}
+{% include github_star_badge.html project="memshot" %}
 </div>
 
 MemShot 将对话片段渲染为结构化的视觉记忆单元，借助模型自身的视觉推理关联关键片段，使长程对话的记忆构建提速达 70 倍。
@@ -151,9 +150,9 @@ MemShot 将对话片段渲染为结构化的视觉记忆单元，借助模型自
 Minghai Jiao, Jing Xiao<sup>†</sup>, Peng Xiao, Ende Zhang, Shuang Kan, Wenyan Jiang, Jinyao Li, Yixian Liu, **Haidong Xin**
 
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2604.03650" title="arXiv"><span>arXiv</span><span>2604.03650</span></a>
-<a class="resource-badge" href="https://doi.org/10.1007/978-981-92-3417-2_26" title="DOI"><span>DOI</span><span>论文</span></a>
-<a class="resource-badge" href="https://github.com/User2024-xj/CAGMamba" title="GitHub: CAGMamba"><span>GitHub</span><span>代码</span></a>
+{% include resource_badge.html badge="arxiv-2604-03650" url="https://arxiv.org/abs/2604.03650" title="arXiv" %}
+{% include resource_badge.html badge="doi-10-1007-978-981-92-3417-2-26" url="https://doi.org/10.1007/978-981-92-3417-2_26" title="DOI" %}
+{% include github_star_badge.html project="cagmamba" %}
 </div>
 
 CAGMamba 提出一种上下文感知的门控 Mamba 框架，用于多模态情感分析；它能刻画对话级别的情感演化，并在跨模态融合与单模态信息之间自适应地取得平衡。
@@ -168,8 +167,8 @@ CAGMamba 提出一种上下文感知的门控 Mamba 框架，用于多模态情�
 [Xinze Li](https://scholar.google.com/citations?user=Feo2PhwAAAAJ), [Yuqing Lan](https://yuqinglanok.github.io/), [Zhenghao Liu<sup>†</sup>](https://scholar.google.com/citations?user=4vrZRk0AAAAJ), **Haidong Xin**, [Yukun Yan<sup>†</sup>](https://scholar.google.com/citations?user=B88nSvIAAAAJ), [Shuo Wang](https://scholar.google.com/citations?user=5vm5yAMAAAAJ), [Zheni Zeng](https://scholar.google.com/citations?user=CM3VSeQAAAAJ), [Sen Mei](https://scholar.google.com/citations?user=JWqmlrcAAAAJ), [Ge Yu](https://scholar.google.com/citations?user=HClMOmUAAAAJ), [Maosong Sun](https://scholar.google.com/citations?user=zIgT0HMAAAAJ)
 
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2601.09402" title="arXiv"><span>arXiv</span><span>2601.09402</span></a>
-<a class="resource-badge" href="https://github.com/OpenBMB/PAGER" title="GitHub: PAGER"><span>GitHub</span><span>代码</span></a>
+{% include resource_badge.html badge="arxiv-2601-09402" url="https://arxiv.org/abs/2601.09402" title="arXiv" %}
+{% include github_star_badge.html project="pager" %}
 </div>
 
 SEEK 通过构建结构化的“认知提纲”来引导迭代检索，帮助 RAG 系统更有条理地组织多维知识，从而生成更准确的答案。
@@ -185,7 +184,7 @@ SEEK 通过构建结构化的“认知提纲”来引导迭代检索，帮助 RA
 
   
 <div align="left">
-<a class="resource-badge" href="https://arxiv.org/abs/2403.19433" title="arXiv"><span>arXiv</span><span>2403.19433</span></a>
+{% include resource_badge.html badge="arxiv-2403-19433" url="https://arxiv.org/abs/2403.19433" title="arXiv" %}
 </div>
 
 我们对 Wordle 游戏做了细致的数值分析，揭示了其中蕴含的统计规律。

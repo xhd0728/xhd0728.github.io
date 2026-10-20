@@ -10,9 +10,9 @@
 [ModelBest](https://modelbest.cn/), [NEU-ModelBest Data Intelligence Joint Lab](https://neuir.github.io/), [THUNLP](https://nlp.csai.tsinghua.edu.cn/), [OpenBMB](https://www.openbmb.cn/home), and [AI9Stars](https://github.com/AI9Stars)
 
 <div align="left">
-<a class="resource-badge" href="https://staffdeck.openbmb.cn/" title="StaffDeck homepage"><span>Homepage</span><span>StaffDeck</span></a>
-<a class="resource-badge" href="https://staffdeck.openbmb.cn/#/docs/introduce?lang=en" title="StaffDeck documentation"><span>Docs</span><span>StaffDeck</span></a>
-<a class="resource-badge" href="https://github.com/OpenBMB/StaffDeck" title="GitHub: StaffDeck"><span>GitHub</span><span>Code</span></a>
+{% include resource_badge.html badge="homepage-staffdeck" url="https://staffdeck.openbmb.cn/" title="StaffDeck homepage" %}
+{% include resource_badge.html badge="docs-staffdeck" url="https://staffdeck.openbmb.cn/#/docs/introduce?lang=en" title="StaffDeck documentation" %}
+{% include github_star_badge.html project="staffdeck" %}
 </div>
 
 StaffDeck is an enterprise platform for building and managing digital employees. It turns professional experience, business processes, and decision criteria into digital employees that can work continuously, take over repetitive tasks, and preserve individual expertise as reusable, evolvable, and traceable organizational assets.
@@ -27,9 +27,9 @@ StaffDeck is an enterprise platform for building and managing digital employees.
 [THUNLP](https://nlp.csai.tsinghua.edu.cn/), [ModelBest](https://modelbest.cn/), [OpenBMB](https://www.openbmb.cn/), and [AI9Stars](https://github.com/AI9Stars)
 
 <div align="left">
-<a class="resource-badge" href="https://pilotdeck.openbmb.cn/" title="PilotDeck homepage"><span>Homepage</span><span>PilotDeck</span></a>
-<a class="resource-badge" href="https://pilotdeck.openbmb.cn/pilotdeck.github.io/demo/p/pilotdeck-demo" title="PilotDeck live demo"><span>Demo</span><span>Live</span></a>
-<a class="resource-badge" href="https://github.com/OpenBMB/PilotDeck" title="GitHub: PilotDeck"><span>GitHub</span><span>Code</span></a>
+{% include resource_badge.html badge="homepage-pilotdeck" url="https://pilotdeck.openbmb.cn/" title="PilotDeck homepage" %}
+{% include resource_badge.html badge="demo-live" url="https://pilotdeck.openbmb.cn/pilotdeck.github.io/demo/p/pilotdeck-demo" title="PilotDeck live demo" %}
+{% include github_star_badge.html project="pilotdeck" %}
 </div>
 
 PilotDeck is an open-source agent operating system built around workspace-level isolation, white-box memory, smart routing, and always-on background execution for long-running productivity tasks.
@@ -44,9 +44,9 @@ PilotDeck is an open-source agent operating system built around workspace-level 
 [THUNLP](https://nlp.csai.tsinghua.edu.cn/), [NEU-ModelBest Data Intelligence Joint Lab](https://neuir.github.io), [OpenBMB](https://www.openbmb.cn/home), and [AI9Stars](https://github.com/AI9Stars)
 
 <div align="left">
-<a class="resource-badge" href="https://ultrarag.github.io/" title="UltraRAG homepage"><span>Homepage</span><span>UltraRAG</span></a>
-<a class="resource-badge" href="https://ultrarag.openbmb.cn/" title="UltraRAG documentation"><span>Docs</span><span>UltraRAG</span></a>
-<a class="resource-badge" href="https://github.com/OpenBMB/UltraRAG" title="GitHub: UltraRAG"><span>GitHub</span><span>Code</span></a>
+{% include resource_badge.html badge="homepage-ultrarag" url="https://ultrarag.github.io/" title="UltraRAG homepage" %}
+{% include resource_badge.html badge="docs-ultrarag" url="https://ultrarag.openbmb.cn/" title="UltraRAG documentation" %}
+{% include github_star_badge.html project="ultrarag" %}
 </div>
 
 UltraRAG is a low-code MCP-based RAG framework that standardizes retrieval and generation components as MCP servers, with visual orchestration, evaluation, and demo deployment workflows.

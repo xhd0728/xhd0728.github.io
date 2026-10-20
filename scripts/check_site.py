@@ -24,6 +24,9 @@ class Page(HTMLParser):
         self.duplicates = []
         self.jsonld = []
         self.in_jsonld = False
+        self.star_badges = []
+        self.resource_badges = []
+        self.resource_href = None
         self.feed(path.read_text())
 
     def handle_starttag(self, tag, attrs):
@@ -40,6 +43,12 @@ class Page(HTMLParser):
                 self.references.append(candidate.strip().split()[0])
         if tag == "html":
             self.metadata["lang"] = attrs.get("lang")
+        if tag == "a":
+            self.resource_href = attrs.get("href") if "resource-badge" in attrs.get("class", "").split() else None
+        if tag == "img" and "/images/github-stars/" in attrs.get("src", ""):
+            self.star_badges.append(attrs)
+        if tag == "img" and "/images/resource-badges/" in attrs.get("src", ""):
+            self.resource_badges.append({**attrs, "href": self.resource_href})
         if tag == "meta":
             self.metadata[attrs.get("property", attrs.get("name"))] = attrs.get("content")
         if tag == "link" and attrs.get("rel") == "canonical":
@@ -48,6 +57,8 @@ class Page(HTMLParser):
             self.in_jsonld = True
 
     def handle_endtag(self, tag):
+        if tag == "a":
+            self.resource_href = None
         if tag == "script":
             self.in_jsonld = False
 
@@ -106,9 +117,22 @@ def main():
         assert re.search(r"\d{4}-\d{2}-\d{2}", text)
         assert not re.search(r"\$\^", text), "Author markers should work without MathJax"
         assert "img.shields.io/" not in text, "Resource badges should not depend on an external API"
+        assert page.star_badges, "Restore the GitHub star badges in both languages"
+        for badge in page.star_badges:
+            assert re.search(r"Code Stars: \d", badge.get("alt", "")), "Star badges need readable counts"
+            assert int(badge["width"]) > 0 and int(badge["height"]) == 20, "Reserve the badge dimensions"
+        assert page.resource_badges, "Resource links need standard badges"
+        for badge in page.resource_badges:
+            assert badge["href"] and badge.get("alt"), "Keep resource links accessible"
+            svg = ElementTree.parse(root / urlsplit(badge["src"]).path.lstrip("/")).getroot()
+            assert svg.attrib.get("aria-label") == badge["alt"], "Badge pixels and accessible labels must agree"
+            if urlsplit(badge["href"]).hostname == "doi.org":
+                assert badge["alt"] == "DOI: " + unquote(urlsplit(badge["href"]).path).lstrip("/"), "Show the complete DOI identifier"
 
     en = (root / "index.html").read_text()
     zh = (root / "zh_cn/index.html").read_text()
+    assert [badge["src"] for badge in pages[root / "index.html"].star_badges] == [badge["src"] for badge in pages[root / "zh_cn/index.html"].star_badges], "Bilingual GitHub star badge mismatch"
+    assert [badge["src"] for badge in pages[root / "index.html"].resource_badges] == [badge["src"] for badge in pages[root / "zh_cn/index.html"].resource_badges], "Bilingual resource badge mismatch"
     for expression in [r"src=['\"](/images/(?:paper|projects)/[^'\"]+)", r"href=\"(https://arxiv.org/abs/[^\"]+)\""]:
         assert re.findall(expression, en) == re.findall(expression, zh), "Bilingual publication/project mismatch"
 

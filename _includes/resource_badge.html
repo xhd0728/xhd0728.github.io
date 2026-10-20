@@ -1,0 +1,2 @@
+{%- assign badge = site.data.resource_badges[include.badge] -%}
+<a class="resource-badge" href="{{ include.url | escape }}" title="{{ include.title | escape }}"><img class="resource-badge__img" src="{{ badge.image | relative_url }}?v={{ badge.version }}" width="{{ badge.width }}" height="{{ badge.height }}" alt="{{ badge.label | escape }}: {{ badge.message | escape }}" decoding="async"></a>
