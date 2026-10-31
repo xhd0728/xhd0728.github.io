@@ -1,7 +1,7 @@
 {
-  "citedby": 94,
-  "citedby5y": 94,
-  "fetched_at": "2026-10-30T07:14:51Z",
+  "citedby": 95,
+  "citedby5y": 95,
+  "fetched_at": "2026-10-31T07:03:20Z",
   "hindex": 5,
   "hindex5y": 5,
   "i10index": 3,
@@ -34,7 +34,7 @@
       "year": 2024
     },
     "WF5omc3nYNoC": {
-      "num_citations": 18,
+      "num_citations": 19,
       "title": "LLMsPark: A Benchmark for Evaluating Large Language Models in Strategic Gaming Contexts",
       "year": 2025
     },
