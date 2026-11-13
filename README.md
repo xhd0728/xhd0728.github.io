@@ -1,5 +1,10 @@
 forked from [acad-homepage](https://github.com/RayeRen/acad-homepage.github.io)
 
+Use the Ruby version in `.ruby-version` for local development and CI. GitHub Actions
+uses Ubuntu 24.04 explicitly so a change to `ubuntu-latest` cannot silently switch
+the build environment. When upgrading the runner image, check that `ruby/setup-ruby`
+provides the selected Ruby patch release for that image.
+
 ```shell
 # install
 bundle install

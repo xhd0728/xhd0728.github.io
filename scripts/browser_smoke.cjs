@@ -149,6 +149,13 @@ async function testEngine(name) {
             await i.decode().catch(() => {});
           }
         });
+        // Responsive image selection may replace a pending decode request.
+        // Wait for the final sources to load before checking their dimensions.
+        await page.waitForFunction(() =>
+          [...document.querySelectorAll("img[src]")]
+            .filter((i) => !i.closest("dialog"))
+            .every((i) => i.complete && i.naturalWidth > 0),
+        );
         assert.equal(
           await page
             .locator("img[src]")
