@@ -16,7 +16,7 @@ concurrency:
 jobs:
   site:
     name: Build Jekyll site
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
 
     steps:
@@ -39,7 +39,7 @@ jobs:
 
   citation:
     name: Test citation updater
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
 
     steps:
