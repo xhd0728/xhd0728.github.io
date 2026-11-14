@@ -1,0 +1,6 @@
+# Cloudflare Pages: CSS/JS URLs change with each build; fonts are versioned assets.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
