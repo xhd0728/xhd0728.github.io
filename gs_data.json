@@ -1,7 +1,7 @@
 {
-  "citedby": 99,
-  "citedby5y": 99,
-  "fetched_at": "2026-11-14T07:38:56Z",
+  "citedby": 100,
+  "citedby5y": 100,
+  "fetched_at": "2026-11-15T07:55:11Z",
   "hindex": 5,
   "hindex5y": 5,
   "i10index": 3,
@@ -39,7 +39,7 @@
       "year": 2025
     },
     "Wp0gIr-vW9MC": {
-      "num_citations": 8,
+      "num_citations": 9,
       "title": "Knowledge intensive agents",
       "year": 2026
     },
