@@ -1,7 +1,7 @@
 {
-  "citedby": 101,
-  "citedby5y": 101,
-  "fetched_at": "2026-11-17T09:17:40Z",
+  "citedby": 102,
+  "citedby5y": 102,
+  "fetched_at": "2026-11-18T08:36:47Z",
   "hindex": 5,
   "hindex5y": 5,
   "i10index": 3,
@@ -59,7 +59,7 @@
       "year": 2026
     },
     "mVmsd5A6BfQC": {
-      "num_citations": 0,
+      "num_citations": 1,
       "title": "CAGMamba: Context-Aware Gated Cross-Modal Mamba Network for Multimodal Sentiment Analysis",
       "year": 2026
     },
